@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://cxq21.gitee.io/2020/11/27/%E6%8B%BE%E6%9F%92%E5%B7%A5%E4%BD%9C%E5%AE%A4/</loc>
+    <loc>https://cxq21.gitee.io/2020/11/28/Spring-ioc%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3/</loc>
     
     <lastmod>2020-11-28</lastmod>
     
@@ -10,6 +10,13 @@
   
   <url>
     <loc>https://cxq21.gitee.io/2020/11/27/%E5%8F%8B%E9%93%BE%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2020-11-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://cxq21.gitee.io/2020/11/27/%E6%8B%BE%E6%9F%92%E5%B7%A5%E4%BD%9C%E5%AE%A4/</loc>
     
     <lastmod>2020-11-28</lastmod>
     
@@ -60,7 +67,7 @@
   </url>
   
   <url>
-    <loc>https://cxq21.gitee.io/tags/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/</loc>
+    <loc>https://cxq21.gitee.io/tags/%E6%A1%88%E4%BE%8B%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2020-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -73,10 +80,24 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://cxq21.gitee.io/tags/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/</loc>
+    <lastmod>2020-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
     <loc>https://cxq21.gitee.io/categories/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</loc>
+    <lastmod>2020-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cxq21.gitee.io/categories/JAVA/</loc>
     <lastmod>2020-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

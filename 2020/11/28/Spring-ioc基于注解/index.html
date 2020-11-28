@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    Spring-ioc基于注解 |  LIEFox
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?70837313b75a2b48b1e427bcabe5c0d9";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-Spring-ioc基于注解"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Spring-ioc基于注解
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/11/28/Spring-ioc%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3/" class="article-date">
+  <time datetime="2020-11-28T12:23:03.383Z" itemprop="datePublished">2020-11-28</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JAVA/">JAVA</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.1k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">4 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="要求"><a href="#要求" class="headerlink" title="要求"></a><strong>要求</strong></h1><p>使用Spring的IoC容器，实际上就是通过类似XML这样的配置文件，把我们自己的Bean的依赖关系描述出来，然后让容器来创建并装配Bean。一旦容器初始化完毕，我们就直接从容器中获取Bean使用它们。</p>
+<p>使用XML配置的优点是所有的Bean都能一目了然地列出来，并通过配置注入能直观地看到每个Bean的依赖。它的缺点是写起来非常繁琐，每增加一个组件，就必须把新的Bean配置到XML中。</p>
+<p>有没有其他更简单的配置方式呢？</p>
+<p>有！我们可以使用Annotation配置，可以完全不需要XML，让Spring自动扫描Bean并组装它们。</p>
+<h3 id="所以今天我们用注解来写一个基于注解的Spring"><a href="#所以今天我们用注解来写一个基于注解的Spring" class="headerlink" title="所以今天我们用注解来写一个基于注解的Spring"></a>所以今天我们用注解来写一个基于注解的Spring</h3><p><strong><a target="_blank" rel="noopener" href="https://imgchr.com/i/D6E1Mj"><img src="https://s3.ax1x.com/2020/11/28/D6E1Mj.md.png" alt="D6E1Mj.md.png"></a></strong></p>
+<hr>
+<p><strong><a id="more"></a></strong></p>
+<p><strong>由于是基于注解的IoC的Spring开发，所以我们要导入一个关键的jar包</strong></p>
+<p><strong><a target="_blank" rel="noopener" href="https://imgchr.com/i/D6Z7Pf"><img src="https://s3.ax1x.com/2020/11/28/D6Z7Pf.png" alt="D6Z7Pf.png"></a></strong></p>
+<hr>
+<h4 id="好啦，正题开始"><a href="#好啦，正题开始" class="headerlink" title="好啦，正题开始"></a><strong>好啦，正题开始</strong></h4><h1 id="第一步，万恶之源，打开我们的idea"><a href="#第一步，万恶之源，打开我们的idea" class="headerlink" title="第一步，万恶之源，打开我们的idea"></a><strong>第一步，万恶之源，打开我们的idea</strong></h1><ol>
+<li><p><strong>创建一个java项目</strong></p>
+</li>
+<li><p><strong>在src里创建如下3个包</strong></p>
+<p><strong><a target="_blank" rel="noopener" href="https://imgchr.com/i/D6mV1S"><img src="https://s3.ax1x.com/2020/11/28/D6mV1S.png" alt="D6mV1S.png"></a></strong></p>
+<ul>
+<li><p><strong>Dao包（数据持久层）</strong></p>
+</li>
+<li><p><strong>Service包（业务逻辑层）</strong>    </p>
+</li>
+<li><p><strong>Web包（显示层）</strong></p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>3.接着在src下创建一个xml文件，名为（ApplicationContext.xml)</strong></p>
+<p><strong><a target="_blank" rel="noopener" href="https://imgchr.com/i/D6nngO"><img src="https://s3.ax1x.com/2020/11/28/D6nngO.md.png" alt="D6nngO.md.png"></a></strong></p>
+<p><strong>src&gt;New&gt;XML File&gt;名为（ApplicationContext.xml)</strong></p>
+<p><strong>4.xml文件里的代码如下</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:context</span>=<span class="string">&quot;http://www.springframework.org/schema/context&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context/spring-context-4.3.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">&quot;Service&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">context:component-scan</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--&lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包</span></span><br><span class="line"><span class="comment">    &lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>5.接下来导jar包</strong></p>
+<p><strong>Flie》Project Structure》Liberals》＋》Java》找到自己放spring jar包的地方》选中》OK》取个名字（Spring_Jars）》OK</strong></p>
+<p><strong><a target="_blank" rel="noopener" href="https://imgchr.com/i/D6u3yF"><img src="https://s3.ax1x.com/2020/11/28/D6u3yF.md.png" alt="D6u3yF.md.png"></a></strong></p>
+<p><strong><a target="_blank" rel="noopener" href="https://imgchr.com/i/D6Ku0H"><img src="https://s3.ax1x.com/2020/11/28/D6Ku0H.md.png" alt="D6Ku0H.md.png"></a></strong></p>
+<p><strong>看一下加成功了没有</strong></p>
+<p><strong><a target="_blank" rel="noopener" href="https://imgchr.com/i/D6Mlb4"><img src="https://s3.ax1x.com/2020/11/28/D6Mlb4.png" alt="D6Mlb4.png"></a></strong></p>
+<p><strong>好的，有Spring_Jars包了</strong></p>
+<p><strong>到这一步，咱们就算上车了，开始飙车了</strong></p>
+<hr>
+<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a><strong>第二步</strong></h1><p><strong>安照题目要求</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Dao层：接口文件StudentDao，包含方法selectAll</span><br><span class="line">        实现类StudentDaoImpl,包含selectAll方法的实现（仅写输出语句表示方法调用成功即可）</span><br><span class="line">Service层：接口文件StudentService，包含方法selectAll</span><br><span class="line">            实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)</span><br><span class="line">Web层:类WebMain,主方法中调用Service层的selectAll方法。</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p><strong>在Dao包里新建一个接口文件StudentDao</strong></p>
+</li>
+<li><p><strong>在Dao包里新建一个java文件StudentDaoImpl</strong></p>
+</li>
+<li><p><strong>Service。。。</strong></p>
+</li>
+<li><p><strong>Web。。。</strong></p>
+</li>
+<li><p><strong>以下面这个结构来建，咱们把框架给搭起来，就快了！！</strong></p>
+<p><strong><a target="_blank" rel="noopener" href="https://imgchr.com/i/D6QlSP"><img src="https://s3.ax1x.com/2020/11/28/D6QlSP.png" alt="D6QlSP.png"></a></strong></p>
+<hr>
+</li>
+</ol>
+<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a><strong>第三步</strong></h1><p><strong>骨架欧克了，我们现在去丰满他的细节</strong></p>
+<p><strong>1.</strong></p>
+<p><strong>Dao》StudentDao</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentDao</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Dao》StudentDaoImpl</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentDaoImpl</span> <span class="keyword">implements</span> <span class="title">StudentDao</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询所有学生信息！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.</strong></p>
+<p><strong>Service》StudentService</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentService</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Service》StudentServiceImpl</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Value;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Repository;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@Repository(value = &quot;StudentService&quot;)</span><span class="comment">//@Repository:用于持久层的注解，作用与Component相同</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentServiceImpl</span> <span class="keyword">implements</span> <span class="title">StudentService</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)*/</span></span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Value(&quot;LIEFox&quot;)</span><span class="comment">//与&lt;property&gt;标签作用一样</span></span><br><span class="line">    <span class="keyword">private</span> String SName;</span><br><span class="line">    <span class="meta">@Value(&quot;https:cxq21.gitee.io&quot;)</span><span class="comment">//偷偷的打个广告嘿嘿</span></span><br><span class="line">    <span class="keyword">private</span> String SId;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询到了一个名为&quot;</span>+SName+<span class="string">&quot;网站,网址为&quot;</span>+SId);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.</strong></p>
+<p><strong>Web》WebMain</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> Service.StudentService;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Web层:类WebMain,主方法中调用Service层的selectAll方法。</span></span><br><span class="line">	</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.容器初始化</span></span><br><span class="line">        ApplicationContext context=<span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">&quot;ApplicationContext.xml&quot;</span>);</span><br><span class="line">        <span class="comment">//2.创建实例</span></span><br><span class="line">        StudentService service=(StudentService) context.getBean(<span class="string">&quot;StudentService&quot;</span>);</span><br><span class="line">        service.selectAll();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>这样，我们的一个基于注解的Spring项目是写完了。</strong></p>
+<hr>
+<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a><strong>第四步</strong></h1><p><strong>运行项目。。。</strong></p>
+<p><strong>结果出来了</strong></p>
+<p><strong><a target="_blank" rel="noopener" href="https://imgchr.com/i/D68G3n"><img src="https://s3.ax1x.com/2020/11/28/D68G3n.md.png" alt="D68G3n.md.png"></a></strong></p>
+<hr>
+<h2 id="原项目"><a href="#原项目" class="headerlink" title="原项目"></a>原项目</h2><p><strong>最后，附上，我的gitee原项目，地址：<a target="_blank" rel="noopener" href="https://gitee.com/cxq21/spring_-ioc">https://gitee.com/cxq21/spring_-ioc</a></strong></p>
+<p><strong>下载zip，然后解压就欧克了</strong></p>
+<p><strong><a target="_blank" rel="noopener" href="https://imgchr.com/i/D6Gfs0"><img src="https://s3.ax1x.com/2020/11/28/D6Gfs0.md.png" alt="D6Gfs0.md.png"></a></strong></p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a><strong>小结</strong></h1><p><strong>使用Annotation可以大幅简化配置，每个Bean通过<code>@Component</code>和<code>@Autowired</code>注入；</strong></p>
+<p><strong>必须合理设计包的层次结构，才能发挥<code>@ComponentScan</code>的威力。</strong></p>
+<p><strong><em>作者：zjh</em></strong></p>
+<h2 id="码字不易，留下你的评论吧"><a href="#码字不易，留下你的评论吧" class="headerlink" title="码字不易，留下你的评论吧"></a>码字不易，留下你的评论吧</h2> 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本网站所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cxq21.gitee.io/2020/11/28/Spring-ioc%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%A1%88%E4%BE%8B%E8%AE%B0%E5%BD%95/" rel="tag">案例记录</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2020/11/27/%E5%8F%8B%E9%93%BE%E4%BD%BF%E7%94%A8/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">友链使用</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
+    app_key: "VheJztjyMzs24xKQPGGI1bmh",
+    path: window.location.pathname,
+    avatar: "robohash",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+    enableQQ: true,
+    boolean: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020
+        <i class="ri-heart-fill heart_icon"></i> 拾柒工作室
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+        <li>
+          <a href="http://www.beian.miit.gov.cn/" target="_black" rel="nofollow">浙ICP备17171717号</a>
+        </li>
+        
+    </ul>
+    <ul>
+      
+      <li>
+          <img src="/images/beian.png"></img>
+          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" target="_black" rel="nofollow">浙公网安备000322号</a>
+      </li>
+        
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1279472270&amp;web_id=1279472270'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/LIEFox.png" alt="LIEFox"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+
+<script src="/js/clickLove.js"></script>
+
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+<script src="/js/dz.js"></script>
+
+
+
+    
+  </div>
+</body>
+
+</html>

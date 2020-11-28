@@ -13,13 +13,112 @@
 <p>​    具有过硬的前端语言（HTML+CSS+JS)等等（选）</p>
 <p>​    具有审美高的UI设计（PS+AI+会使用图床）等等（选）</p>
 <p>​    具有JAVA,JAVAScript,Python等等清晰过硬的理论（选）</p>
-<h1 id="加入邮箱（-50-54-48-54-48-x39-x37-50-49-56-x40-113-113-46-99-x6f-x6d"><a href="#加入邮箱（-50-54-48-54-48-x39-x37-50-49-56-x40-113-113-46-99-x6f-x6d" class="headerlink" title="加入邮箱（&#50;&#54;&#48;&#54;&#48;&#x39;&#x37;&#50;&#49;&#56;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#x6d;)"></a>加入邮箱（<a href="mailto:&#50;&#54;&#48;&#54;&#48;&#x39;&#x37;&#50;&#49;&#56;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#x6d;">&#50;&#54;&#48;&#54;&#48;&#x39;&#x37;&#50;&#49;&#56;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#x6d;</a>)</h1><h1 id="联系电话（15270055490-佐佳豪）"><a href="#联系电话（15270055490-佐佳豪）" class="headerlink" title="联系电话（15270055490 佐佳豪）"></a>联系电话（15270055490 佐佳豪）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
+<h1 id="加入邮箱（-x32-x36-48-x36-48-57-x37-x32-x31-x38-64-x71-113-46-99-x6f-x6d"><a href="#加入邮箱（-x32-x36-48-x36-48-57-x37-x32-x31-x38-64-x71-113-46-99-x6f-x6d" class="headerlink" title="加入邮箱（&#x32;&#x36;&#48;&#x36;&#48;&#57;&#x37;&#x32;&#x31;&#x38;&#64;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;)"></a>加入邮箱（<a href="mailto:&#x32;&#x36;&#48;&#x36;&#48;&#57;&#x37;&#x32;&#x31;&#x38;&#64;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;">&#x32;&#x36;&#48;&#x36;&#48;&#57;&#x37;&#x32;&#x31;&#x38;&#64;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;</a>)</h1><h1 id="联系电话（15270055490-佐佳豪）"><a href="#联系电话（15270055490-佐佳豪）" class="headerlink" title="联系电话（15270055490 佐佳豪）"></a>联系电话（15270055490 佐佳豪）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
 ]]></content>
       <categories>
         <category>关于本站</category>
       </categories>
       <tags>
         <tag>关于我们</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring-ioc基于注解</title>
+    <url>/2020/11/28/Spring-ioc%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3/</url>
+    <content><![CDATA[<h1 id="要求"><a href="#要求" class="headerlink" title="要求"></a><strong>要求</strong></h1><p>使用Spring的IoC容器，实际上就是通过类似XML这样的配置文件，把我们自己的Bean的依赖关系描述出来，然后让容器来创建并装配Bean。一旦容器初始化完毕，我们就直接从容器中获取Bean使用它们。</p>
+<p>使用XML配置的优点是所有的Bean都能一目了然地列出来，并通过配置注入能直观地看到每个Bean的依赖。它的缺点是写起来非常繁琐，每增加一个组件，就必须把新的Bean配置到XML中。</p>
+<p>有没有其他更简单的配置方式呢？</p>
+<p>有！我们可以使用Annotation配置，可以完全不需要XML，让Spring自动扫描Bean并组装它们。</p>
+<h3 id="所以今天我们用注解来写一个基于注解的Spring"><a href="#所以今天我们用注解来写一个基于注解的Spring" class="headerlink" title="所以今天我们用注解来写一个基于注解的Spring"></a>所以今天我们用注解来写一个基于注解的Spring</h3><p><strong><a href="https://imgchr.com/i/D6E1Mj"><img src="https://s3.ax1x.com/2020/11/28/D6E1Mj.md.png" alt="D6E1Mj.md.png"></a></strong></p>
+<hr>
+<p><strong><a id="more"></a></strong></p>
+<p><strong>由于是基于注解的IoC的Spring开发，所以我们要导入一个关键的jar包</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Z7Pf"><img src="https://s3.ax1x.com/2020/11/28/D6Z7Pf.png" alt="D6Z7Pf.png"></a></strong></p>
+<hr>
+<h4 id="好啦，正题开始"><a href="#好啦，正题开始" class="headerlink" title="好啦，正题开始"></a><strong>好啦，正题开始</strong></h4><h1 id="第一步，万恶之源，打开我们的idea"><a href="#第一步，万恶之源，打开我们的idea" class="headerlink" title="第一步，万恶之源，打开我们的idea"></a><strong>第一步，万恶之源，打开我们的idea</strong></h1><ol>
+<li><p><strong>创建一个java项目</strong></p>
+</li>
+<li><p><strong>在src里创建如下3个包</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6mV1S"><img src="https://s3.ax1x.com/2020/11/28/D6mV1S.png" alt="D6mV1S.png"></a></strong></p>
+<ul>
+<li><p><strong>Dao包（数据持久层）</strong></p>
+</li>
+<li><p><strong>Service包（业务逻辑层）</strong>    </p>
+</li>
+<li><p><strong>Web包（显示层）</strong></p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>3.接着在src下创建一个xml文件，名为（ApplicationContext.xml)</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6nngO"><img src="https://s3.ax1x.com/2020/11/28/D6nngO.md.png" alt="D6nngO.md.png"></a></strong></p>
+<p><strong>src&gt;New&gt;XML File&gt;名为（ApplicationContext.xml)</strong></p>
+<p><strong>4.xml文件里的代码如下</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:context</span>=<span class="string">&quot;http://www.springframework.org/schema/context&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context/spring-context-4.3.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">&quot;Service&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">context:component-scan</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--&lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包</span></span><br><span class="line"><span class="comment">    &lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>5.接下来导jar包</strong></p>
+<p><strong>Flie》Project Structure》Liberals》＋》Java》找到自己放spring jar包的地方》选中》OK》取个名字（Spring_Jars）》OK</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6u3yF"><img src="https://s3.ax1x.com/2020/11/28/D6u3yF.md.png" alt="D6u3yF.md.png"></a></strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Ku0H"><img src="https://s3.ax1x.com/2020/11/28/D6Ku0H.md.png" alt="D6Ku0H.md.png"></a></strong></p>
+<p><strong>看一下加成功了没有</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Mlb4"><img src="https://s3.ax1x.com/2020/11/28/D6Mlb4.png" alt="D6Mlb4.png"></a></strong></p>
+<p><strong>好的，有Spring_Jars包了</strong></p>
+<p><strong>到这一步，咱们就算上车了，开始飙车了</strong></p>
+<hr>
+<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a><strong>第二步</strong></h1><p><strong>安照题目要求</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Dao层：接口文件StudentDao，包含方法selectAll</span><br><span class="line">        实现类StudentDaoImpl,包含selectAll方法的实现（仅写输出语句表示方法调用成功即可）</span><br><span class="line">Service层：接口文件StudentService，包含方法selectAll</span><br><span class="line">            实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)</span><br><span class="line">Web层:类WebMain,主方法中调用Service层的selectAll方法。</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p><strong>在Dao包里新建一个接口文件StudentDao</strong></p>
+</li>
+<li><p><strong>在Dao包里新建一个java文件StudentDaoImpl</strong></p>
+</li>
+<li><p><strong>Service。。。</strong></p>
+</li>
+<li><p><strong>Web。。。</strong></p>
+</li>
+<li><p><strong>以下面这个结构来建，咱们把框架给搭起来，就快了！！</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6QlSP"><img src="https://s3.ax1x.com/2020/11/28/D6QlSP.png" alt="D6QlSP.png"></a></strong></p>
+<hr>
+</li>
+</ol>
+<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a><strong>第三步</strong></h1><p><strong>骨架欧克了，我们现在去丰满他的细节</strong></p>
+<p><strong>1.</strong></p>
+<p><strong>Dao》StudentDao</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentDao</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Dao》StudentDaoImpl</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentDaoImpl</span> <span class="keyword">implements</span> <span class="title">StudentDao</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询所有学生信息！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.</strong></p>
+<p><strong>Service》StudentService</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentService</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Service》StudentServiceImpl</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Value;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Repository;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@Repository(value = &quot;StudentService&quot;)</span><span class="comment">//@Repository:用于持久层的注解，作用与Component相同</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentServiceImpl</span> <span class="keyword">implements</span> <span class="title">StudentService</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)*/</span></span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Value(&quot;LIEFox&quot;)</span><span class="comment">//与&lt;property&gt;标签作用一样</span></span><br><span class="line">    <span class="keyword">private</span> String SName;</span><br><span class="line">    <span class="meta">@Value(&quot;https:cxq21.gitee.io&quot;)</span><span class="comment">//偷偷的打个广告嘿嘿</span></span><br><span class="line">    <span class="keyword">private</span> String SId;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询到了一个名为&quot;</span>+SName+<span class="string">&quot;网站,网址为&quot;</span>+SId);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.</strong></p>
+<p><strong>Web》WebMain</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> Service.StudentService;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Web层:类WebMain,主方法中调用Service层的selectAll方法。</span></span><br><span class="line">	</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.容器初始化</span></span><br><span class="line">        ApplicationContext context=<span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">&quot;ApplicationContext.xml&quot;</span>);</span><br><span class="line">        <span class="comment">//2.创建实例</span></span><br><span class="line">        StudentService service=(StudentService) context.getBean(<span class="string">&quot;StudentService&quot;</span>);</span><br><span class="line">        service.selectAll();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>这样，我们的一个基于注解的Spring项目是写完了。</strong></p>
+<hr>
+<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a><strong>第四步</strong></h1><p><strong>运行项目。。。</strong></p>
+<p><strong>结果出来了</strong></p>
+<p><strong><a href="https://imgchr.com/i/D68G3n"><img src="https://s3.ax1x.com/2020/11/28/D68G3n.md.png" alt="D68G3n.md.png"></a></strong></p>
+<hr>
+<h2 id="原项目"><a href="#原项目" class="headerlink" title="原项目"></a>原项目</h2><p><strong>最后，附上，我的gitee原项目，地址：<a href="https://gitee.com/cxq21/spring_-ioc">https://gitee.com/cxq21/spring_-ioc</a></strong></p>
+<p><strong>下载zip，然后解压就欧克了</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Gfs0"><img src="https://s3.ax1x.com/2020/11/28/D6Gfs0.md.png" alt="D6Gfs0.md.png"></a></strong></p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a><strong>小结</strong></h1><p><strong>使用Annotation可以大幅简化配置，每个Bean通过<code>@Component</code>和<code>@Autowired</code>注入；</strong></p>
+<p><strong>必须合理设计包的层次结构，才能发挥<code>@ComponentScan</code>的威力。</strong></p>
+<p><strong><em>作者：zjh</em></strong></p>
+<h2 id="码字不易，留下你的评论吧"><a href="#码字不易，留下你的评论吧" class="headerlink" title="码字不易，留下你的评论吧"></a>码字不易，留下你的评论吧</h2>]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>案例记录</tag>
       </tags>
   </entry>
   <entry>
@@ -47,7 +146,7 @@
 <thead>
 <tr>
 <th align="center">邮箱</th>
-<th align="center"><a href="mailto:&#50;&#54;&#48;&#54;&#48;&#x39;&#x37;&#x32;&#49;&#x38;&#x40;&#113;&#x71;&#x2e;&#x63;&#x6f;&#109;">&#50;&#54;&#48;&#54;&#48;&#x39;&#x37;&#x32;&#49;&#x38;&#x40;&#113;&#x71;&#x2e;&#x63;&#x6f;&#109;</a></th>
+<th align="center"><a href="mailto:&#50;&#54;&#48;&#x36;&#x30;&#x39;&#x37;&#50;&#x31;&#56;&#64;&#x71;&#113;&#46;&#x63;&#111;&#109;">&#50;&#54;&#48;&#x36;&#x30;&#x39;&#x37;&#50;&#x31;&#56;&#64;&#x71;&#113;&#46;&#x63;&#111;&#109;</a></th>
 </tr>
 </thead>
 <tbody><tr>
