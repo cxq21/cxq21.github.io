@@ -67,6 +67,13 @@
 
   
   <url>
+    <loc>https://cxq21.gitee.io/tags/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-12-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://cxq21.gitee.io/tags/%E6%A1%88%E4%BE%8B%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2020-12-01</lastmod>
     <changefreq>daily</changefreq>
@@ -81,7 +88,7 @@
   </url>
   
   <url>
-    <loc>https://cxq21.gitee.io/tags/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://cxq21.gitee.io/tags/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</loc>
     <lastmod>2020-12-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -94,14 +101,14 @@
     <priority>0.6</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://cxq21.gitee.io/tags/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</loc>
+    <loc>https://cxq21.gitee.io/categories/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2020-12-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
-  
-
   
   <url>
     <loc>https://cxq21.gitee.io/categories/JAVA/</loc>
@@ -112,13 +119,6 @@
   
   <url>
     <loc>https://cxq21.gitee.io/categories/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</loc>
-    <lastmod>2020-12-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cxq21.gitee.io/categories/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2020-12-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
