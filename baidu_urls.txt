@@ -1,7 +1,7 @@
-https://cxq21.gitee.io/2020/12/04/JAVA%E7%AC%94%E8%AE%B0/
-https://cxq21.gitee.io/2020/12/04/Spring-ioc%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3/
-https://cxq21.gitee.io/2020/12/04/%E5%8F%8B%E9%93%BE%E4%BD%BF%E7%94%A8/
-https://cxq21.gitee.io/2020/12/04/%E6%8B%BE%E6%9F%92%E5%B7%A5%E4%BD%9C%E5%AE%A4/
-https://cxq21.gitee.io/2020/12/04/%E6%B1%9F%E4%BF%A119%E7%BA%A7%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%88%B7%E9%A2%98%E7%B3%BB%E7%BB%9F/
-https://cxq21.gitee.io/2020/12/04/%E7%BD%91%E7%AB%99%E6%9D%A5%E6%BA%90%E7%81%B5%E6%84%9F/
-https://cxq21.gitee.io/2020/12/04/Java%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/
+https://cxq21.gitee.io/posts/fdedec16.html
+https://cxq21.gitee.io/posts/693b31a5.html
+https://cxq21.gitee.io/posts/57d1587b.html
+https://cxq21.gitee.io/posts/3dc898ff.html
+https://cxq21.gitee.io/posts/1e3f2157.html
+https://cxq21.gitee.io/posts/6b5b190a.html
+https://cxq21.gitee.io/posts/98ac5948.html
