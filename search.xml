@@ -13,7 +13,7 @@
 <p>​    具有过硬的前端语言（HTML+CSS+JS)等等（选）</p>
 <p>​    具有审美高的UI设计（PS+AI+会使用图床）等等（选）</p>
 <p>​    具有JAVA,JAVAScript,Python等等清晰过硬的理论（选）</p>
-<h1 id="加入邮箱（-x32-x36-48-x36-48-57-x37-50-x31-56-64-x71-113-x2e-99-111-x6d"><a href="#加入邮箱（-x32-x36-48-x36-48-57-x37-50-x31-56-64-x71-113-x2e-99-111-x6d" class="headerlink" title="加入邮箱（&#x32;&#x36;&#48;&#x36;&#48;&#57;&#x37;&#50;&#x31;&#56;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#x6d;)"></a>加入邮箱（<a href="mailto:&#x32;&#x36;&#48;&#x36;&#48;&#57;&#x37;&#50;&#x31;&#56;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#x6d;">&#x32;&#x36;&#48;&#x36;&#48;&#57;&#x37;&#50;&#x31;&#56;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#x6d;</a>)</h1><h1 id="联系电话（15270055490-佐佳豪）"><a href="#联系电话（15270055490-佐佳豪）" class="headerlink" title="联系电话（15270055490 佐佳豪）"></a>联系电话（15270055490 佐佳豪）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
+<h1 id="加入邮箱（-x32-54-x30-54-48-57-x37-x32-x31-56-64-113-113-x2e-x63-x6f-109"><a href="#加入邮箱（-x32-54-x30-54-48-57-x37-x32-x31-56-64-113-113-x2e-x63-x6f-109" class="headerlink" title="加入邮箱（&#x32;&#54;&#x30;&#54;&#48;&#57;&#x37;&#x32;&#x31;&#56;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;)"></a>加入邮箱（<a href="mailto:&#x32;&#54;&#x30;&#54;&#48;&#57;&#x37;&#x32;&#x31;&#56;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;">&#x32;&#54;&#x30;&#54;&#48;&#57;&#x37;&#x32;&#x31;&#56;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;</a>)</h1><h1 id="联系电话（15270055490-佐佳豪）"><a href="#联系电话（15270055490-佐佳豪）" class="headerlink" title="联系电话（15270055490 佐佳豪）"></a>联系电话（15270055490 佐佳豪）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
 ]]></content>
       <categories>
         <category>关于本站</category>
@@ -40,6 +40,47 @@
       </categories>
       <tags>
         <tag>实用工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JAVA笔记——前言</title>
+    <url>/2020/12/04/JAVA%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="今天开始正式写Java笔记"><a href="#今天开始正式写Java笔记" class="headerlink" title="今天开始正式写Java笔记"></a>今天开始正式写Java笔记</h1><h2 id="为什么要写Java笔记？"><a href="#为什么要写Java笔记？" class="headerlink" title="为什么要写Java笔记？"></a>为什么要写Java笔记？</h2><p>作为一个学习技术的的小站</p>
+<p>LIEFox已经磨刀了许久，终于要正式推出Java菜鸟笔记了。在这里我要立个Flag，从入门到入坟一定要坚持写完。顺便巩固一下自己的基础（就是因为鄙人太弱了，哎~），以免面试的时候被问到自闭！！！</p>
+<hr>
+<h4 id="JAVA笔记将会分为以下几个阶段"><a href="#JAVA笔记将会分为以下几个阶段" class="headerlink" title="JAVA笔记将会分为以下几个阶段"></a>JAVA笔记将会分为以下几个阶段</h4><h1 id="（目录）"><a href="#（目录）" class="headerlink" title="（目录）"></a><strong>（目录）</strong></h1><h2 id="一、JAVA入门"><a href="#一、JAVA入门" class="headerlink" title="一、JAVA入门"></a>一、JAVA入门</h2><ul>
+<li>Java快速入门</li>
+<li>面向对象编程</li>
+<li>异常处理</li>
+<li>反射</li>
+<li>注解</li>
+<li>泛型</li>
+<li>集合</li>
+<li>IO</li>
+<li>日期与时间</li>
+<li>单元测试</li>
+<li>正则表达式</li>
+</ul>
+<h2 id="二、JAVA进阶"><a href="#二、JAVA进阶" class="headerlink" title="二、JAVA进阶"></a>二、JAVA进阶</h2><ul>
+<li>加密与安全</li>
+<li>多线程</li>
+<li>Maven基础</li>
+<li>网络编程</li>
+<li>XML与JSON</li>
+<li>JDBC编程</li>
+<li>Mybaits技术</li>
+<li>函数式编程</li>
+<li>设计模式</li>
+<li>Web开发</li>
+<li>Spring开发</li>
+<li>SpringMVC开发</li>
+</ul>
+]]></content>
+      <categories>
+        <category>JAVA笔记</category>
+      </categories>
+      <tags>
+        <tag>JAVA笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -166,7 +207,7 @@
 <thead>
 <tr>
 <th align="center">邮箱</th>
-<th align="center"><a href="mailto:&#50;&#x36;&#48;&#54;&#x30;&#57;&#x37;&#50;&#x31;&#56;&#x40;&#113;&#x71;&#46;&#x63;&#111;&#109;">&#50;&#x36;&#48;&#54;&#x30;&#57;&#x37;&#50;&#x31;&#56;&#x40;&#113;&#x71;&#46;&#x63;&#111;&#109;</a></th>
+<th align="center"><a href="mailto:&#x32;&#x36;&#48;&#54;&#x30;&#x39;&#55;&#x32;&#49;&#56;&#64;&#x71;&#113;&#x2e;&#x63;&#111;&#109;">&#x32;&#x36;&#48;&#54;&#x30;&#x39;&#55;&#x32;&#49;&#56;&#64;&#x71;&#113;&#x2e;&#x63;&#111;&#109;</a></th>
 </tr>
 </thead>
 <tbody><tr>
