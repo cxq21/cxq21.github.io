@@ -93,7 +93,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">4k</span>
+            <span class="post-count">6.4k</span>
         </span>
     </span>
 
@@ -102,7 +102,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">15 分钟</span>
+            <span class="post-count">25 分钟</span>
         </span>
     </span>
 </div>
@@ -125,11 +125,7 @@ var _hmt = _hmt || [];
 </li>
 <li><p>变量和数据类型</p>
 </li>
-<li><p>整数运算</p>
-</li>
-<li><p>浮点数运算</p>
-</li>
-<li><p>布尔运算</p>
+<li><p>Java中的运算符</p>
 </li>
 <li><p>字符和字符串</p>
 </li>
@@ -235,25 +231,25 @@ var _hmt = _hmt || [];
 <table>
 <thead>
 <tr>
-<th align="center">（8位）</th>
-<th align="center">正数（第一位为0为正数）</th>
-<th align="center">负数（第一位为1为负数）</th>
+<th align="center">(8位)</th>
+<th align="left">正数(第一位为0为正数)</th>
+<th align="left">负数(第一位为1为负数)</th>
 </tr>
 </thead>
 <tbody><tr>
 <td align="center">原码</td>
-<td align="center">00000001</td>
-<td align="center">10000001（符号位不变，其余各位不变）</td>
+<td align="left">00000001</td>
+<td align="left">10000001(符号位不变,其余各位不变)</td>
 </tr>
 <tr>
 <td align="center">反码</td>
-<td align="center">00000001</td>
-<td align="center">11111110（符号位不变，其余各位取反）</td>
+<td align="left">00000001</td>
+<td align="left">11111110(符号位不变,其余各位取反)</td>
 </tr>
 <tr>
 <td align="center">补码</td>
-<td align="center">00000001</td>
-<td align="center">11111111（符号位不变，其余各位取反后加1）</td>
+<td align="left">00000001</td>
+<td align="left">11111111(符号位不变,其余各位取反后加1)</td>
 </tr>
 </tbody></table>
 <p>计算机所用的就是<strong>补码</strong>，对补码取反加1就是原码</p>
@@ -331,12 +327,12 @@ var _hmt = _hmt || [];
 </ul>
 <h3 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h3><p>浮点类型的数就是小数，因为小数用科学计数法表示的时候，小数点是可以“浮动”的，如1234.5可以表示成12.345x102，也可以表示成1.2345x103，所以称为浮点数。</p>
 <p>下面是定义浮点数的例子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">float f1 &#x3D; 3.14f;</span><br><span class="line">float f2 &#x3D; 3.14e38f; &#x2F;&#x2F; 科学计数法表示的3.14x10^38</span><br><span class="line">double d &#x3D; 1.79e308;</span><br><span class="line">double d2 &#x3D; -1.79e308;</span><br><span class="line">double d3 &#x3D; 4.9e-324; &#x2F;&#x2F; 科学计数法表示的4.9x10^-324</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> f1 = <span class="number">3.14f</span>;</span><br><span class="line"><span class="keyword">float</span> f2 = <span class="number">3.14e38f</span>; <span class="comment">// 科学计数法表示的3.14x10^38</span></span><br><span class="line"><span class="keyword">double</span> d = <span class="number">1.79e308</span>;</span><br><span class="line"><span class="keyword">double</span> d2 = -<span class="number">1.79e308</span>;</span><br><span class="line"><span class="keyword">double</span> d3 = <span class="number">4.9e-324</span>; <span class="comment">// 科学计数法表示的4.9x10^-324</span></span><br></pre></td></tr></table></figure>
 
 <p>对于<code>float</code>类型，需要加上<code>f</code>后缀。</p>
 <p>浮点数可表示的范围非常大，<code>float</code>类型可最大表示3.4x1038，而<code>double</code>类型可最大表示1.79x10308。</p>
 <h3 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h3><p>布尔类型<code>boolean</code>只有<code>true</code>和<code>false</code>两个值，布尔类型总是关系运算的计算结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">boolean b1 &#x3D; true;</span><br><span class="line">boolean b2 &#x3D; false;</span><br><span class="line">boolean isGreater &#x3D; 5 &gt; 3; &#x2F;&#x2F; 计算结果为true</span><br><span class="line">int age &#x3D; 12;</span><br><span class="line">boolean isAdult &#x3D; age &gt;&#x3D; 18; &#x2F;&#x2F; 计算结果为false</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">boolean</span> b1 = <span class="keyword">true</span>;</span><br><span class="line"><span class="keyword">boolean</span> b2 = <span class="keyword">false</span>;</span><br><span class="line"><span class="keyword">boolean</span> isGreater = <span class="number">5</span> &gt; <span class="number">3</span>; <span class="comment">// 计算结果为true</span></span><br><span class="line"><span class="keyword">int</span> age = <span class="number">12</span>;</span><br><span class="line"><span class="keyword">boolean</span> isAdult = age &gt;= <span class="number">18</span>; <span class="comment">// 计算结果为false</span></span><br></pre></td></tr></table></figure>
 
 <p>Java语言对布尔类型的存储并没有做规定，因为理论上存储布尔类型只需要1 bit，但是通常JVM内部会把<code>boolean</code>表示为4字节整数。</p>
 <h3 id="字符类型"><a href="#字符类型" class="headerlink" title="字符类型"></a>字符类型</h3><p>字符类型<code>char</code>表示一个字符。Java的<code>char</code>类型除了可表示标准的ASCII外，还可以表示一个Unicode字符：</p>
@@ -354,7 +350,7 @@ var _hmt = _hmt || [];
 <p>常量的作用是用有意义的变量名来避免魔术数字（Magic number），例如，不要在代码中到处写<code>3.14</code>，而是定义一个常量。如果将来需要提高计算精度，我们只需要在常量的定义处修改，例如，改成<code>3.1416</code>，而不必在所有地方替换<code>3.14</code>。</p>
 <p><strong>根据习惯，常量名通常全部大写。</strong></p>
 <h3 id="变量的作用范围"><a href="#变量的作用范围" class="headerlink" title="变量的作用范围"></a>变量的作用范围</h3><p>在Java中，多行语句用{ }括起来。很多控制语句，例如条件判断和循环，都以{ }作为它们自身的范围，例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">if (...) &#123; &#x2F;&#x2F; if开始</span><br><span class="line">    ...</span><br><span class="line">    while (...) &#123; while 开始</span><br><span class="line">        ...</span><br><span class="line">        if (...) &#123; &#x2F;&#x2F; if开始</span><br><span class="line">            ...</span><br><span class="line">        &#125; &#x2F;&#x2F; if结束</span><br><span class="line">        ...</span><br><span class="line">    &#125; &#x2F;&#x2F; while结束</span><br><span class="line">    ...</span><br><span class="line">&#125; &#x2F;&#x2F; if结束</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (...) &#123; <span class="comment">// if开始</span></span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">while</span> (...) &#123; <span class="keyword">while</span> 开始</span><br><span class="line">        ...</span><br><span class="line">        <span class="keyword">if</span> (...) &#123; <span class="comment">// if开始</span></span><br><span class="line">            ...</span><br><span class="line">        &#125; <span class="comment">// if结束</span></span><br><span class="line">        ...</span><br><span class="line">    &#125; <span class="comment">// while结束</span></span><br><span class="line">    ...</span><br><span class="line">&#125; <span class="comment">// if结束</span></span><br></pre></td></tr></table></figure>
 
 <p>只要正确地嵌套这些{ }，编译器就能识别出语句块的开始和结束。而在语句块中定义的变量，它有一个作用域，就是从定义处开始，到语句块结束。超出了作用域引用这些变量，编译器会报错。举个例子：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>; <span class="comment">// 变量i从这里开始定义</span></span><br><span class="line">    ...</span><br><span class="line">    &#123;</span><br><span class="line">        ...</span><br><span class="line">        <span class="keyword">int</span> x = <span class="number">1</span>; <span class="comment">// 变量x从这里开始定义</span></span><br><span class="line">        ...</span><br><span class="line">        &#123;</span><br><span class="line">            ...</span><br><span class="line">            String s = <span class="string">&quot;LIEFox&quot;</span>; <span class="comment">// 变量s从这里开始定义</span></span><br><span class="line">            ...</span><br><span class="line">        &#125; <span class="comment">// 变量s作用域到此结束</span></span><br><span class="line">        ...</span><br><span class="line">        <span class="comment">// 注意，这是一个新的变量s，它和上面的变量同名，</span></span><br><span class="line">        <span class="comment">// 但是因为作用域不同，它们是两个不同的变量:</span></span><br><span class="line">        String s = <span class="string">&quot;hi_LIEFox&quot;</span>;</span><br><span class="line">        ...</span><br><span class="line">    &#125; <span class="comment">// 变量x和s作用域到此结束</span></span><br><span class="line">    ...</span><br><span class="line">&#125; <span class="comment">// 变量i作用域到此结束</span></span><br></pre></td></tr></table></figure>
@@ -365,8 +361,164 @@ var _hmt = _hmt || [];
 <p>变量可重新赋值，等号是赋值语句，不是数学意义的等号。</p>
 <p>常量在初始化后不可重新赋值，使用常量便于理解程序意图。</p>
 <p>[TOC]</p>
+<hr>
+<h1 id="5）Java中的运算符"><a href="#5）Java中的运算符" class="headerlink" title="(5）Java中的运算符"></a>(5）Java中的运算符</h1><h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p><a target="_blank" rel="noopener" href="https://imgchr.com/i/Dzq3Uf"><img src="https://s3.ax1x.com/2020/12/08/Dzq3Uf.png" alt="Dzq3Uf.png"></a></p>
+<p>进行除法运算时，除数和被除数都为整数时，得到的结果也是整数，就算结果有小数位，也会忽略小数。例如：2510/1000=2,2.5。如果有小数参与，得到的结果也就是小数，不会忽略，例如：2.5/10=0.25。</p>
+<p>在进行取模的时候，运算的结果取决于%左边的数的正负，如果为负数，结果就为负数，例如：（-5）%3=-2。而5%（-3）=2。</p>
+<p>java中整数运算分为int类型的加减乘除，限于整数类型的长度，运算结果过大会出现数据溢出，导致得到的结果是一个奇怪的数，例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> x = <span class="number">2147483640</span>;</span><br><span class="line">        <span class="keyword">int</span> y = <span class="number">15</span>;</span><br><span class="line">        <span class="keyword">int</span> sum = x + y;</span><br><span class="line">        System.out.println(sum); <span class="comment">// -2147483641</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我们用二进制算法来计算这两个数，将他们转为二进制</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">  0111 1111 1111 1111 1111 1111 1111 1000</span><br><span class="line">+ 0000 0000 0000 0000 0000 0000 0000 1111</span><br><span class="line">-----------------------------------------</span><br><span class="line">  1000 0000 0000 0000 0000 0000 0000 0111</span><br></pre></td></tr></table></figure>
+
+<p>因为第一位符号位为<strong>1</strong>，所以负数。</p>
+<p>所以平常运算的时候要注意数据类型的长度，以免数据产生一个奇奇怪怪的数字。</p>
+<p>重点说自增和自减</p>
+<h4 id="自增"><a href="#自增" class="headerlink" title="自增"></a>自增</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">2</span></span><br><span class="line"><span class="keyword">int</span> b=<span class="number">3</span></span><br><span class="line"><span class="keyword">int</span> c=a+b++</span><br><span class="line"><span class="comment">//c=5,因为b++是先运算后自增，所以结果为5</span></span><br><span class="line"><span class="comment">//a=2</span></span><br><span class="line"><span class="comment">//b=4，因为已经运算，所以自增1</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">2</span>;</span><br><span class="line"><span class="keyword">int</span> b=<span class="number">3</span>;</span><br><span class="line"><span class="keyword">int</span> c=a-++b;</span><br><span class="line"><span class="comment">//c=-2，b先自增后运算，所以b=4</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="自减"><a href="#自减" class="headerlink" title="自减"></a>自减</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">2</span>;</span><br><span class="line"><span class="keyword">int</span> b=<span class="number">3</span>;</span><br><span class="line"><span class="keyword">int</span> c=a-b--;</span><br><span class="line"><span class="comment">//c=-1，b先运算后自减，所以b=2</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">2</span>;</span><br><span class="line"><span class="keyword">int</span> b=<span class="number">3</span>;</span><br><span class="line"><span class="keyword">int</span> c=a+--b;</span><br><span class="line"><span class="comment">//c=4，b先自减后运算，所以b=2</span></span><br></pre></td></tr></table></figure>
+
+<p> 注意：自增和自减不可以运用到数字上，比如8++，–8就会报错。</p>
+<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>含义</th>
+<th>实例</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+=</td>
+<td>将该运算符左边的数值加上右边的数值， 其结果赋值给左边变量本身</td>
+<td>int a=5; a+=2;</td>
+<td>a=7</td>
+</tr>
+<tr>
+<td>-=</td>
+<td>将该运算符左边的数值减去右边的数值， 其结果赋值给左边变量本身</td>
+<td>int a=5; a-=2;</td>
+<td>a=3</td>
+</tr>
+<tr>
+<td>*=</td>
+<td>将该运算符左边的数值乘以右边的数值， 其结果赋值给左边变量本身</td>
+<td>int a=5; a*=2;</td>
+<td>a=10</td>
+</tr>
+<tr>
+<td>/=</td>
+<td>将该运算符左边的数值整除右边的数值， 其结果赋值给左边变量本身</td>
+<td>int a=5; a/=2;</td>
+<td>a=2</td>
+</tr>
+<tr>
+<td>%=</td>
+<td>将该运算符左边的数值除以右边的数值后取余，其结果赋值给左边变量本身</td>
+<td>int a=5; a%=2;</td>
+<td>a=1</td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x, y, z; <span class="comment">// 定义3个整型的变量</span></span><br><span class="line">x = y = z = <span class="number">5</span>; <span class="comment">// 为变量赋初值为5</span></span><br><span class="line">x += <span class="number">10</span>; <span class="comment">// 等价于x=x+10，结果x=15</span></span><br><span class="line">y -= <span class="number">3</span>; <span class="comment">// 等价于y=y-3，结果y=2</span></span><br><span class="line">z *= <span class="number">5</span>; <span class="comment">// 等价于z=z*5，结果z=25</span></span><br><span class="line">x /= <span class="number">4</span>; <span class="comment">// 等价于x=x/4，结果x=1</span></span><br><span class="line">z %= x; <span class="comment">// 等价于z=z%x，结果z=0</span></span><br></pre></td></tr></table></figure>
+
+<p>注意：赋值运算符可以自动实现强制类型转换</p>
+<p>举个栗子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">short</span> s=<span class="number">3</span></span><br><span class="line"><span class="keyword">int</span> i=<span class="number">5</span></span><br><span class="line">s+=i</span><br><span class="line">sout(s)?<span class="comment">// System.out.println()→sout</span></span><br><span class="line"><span class="comment">//s=8</span></span><br></pre></td></tr></table></figure>
+
+<p>虽然s和i相加会成为int类型，但java虚拟机会自动将类型装换成int，就可以省去强制类型装换i=（short）s。</p>
+<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>关系运算符（relational operators）也可以称为“比较运算符”，用于用来比较判断两个变量或常量的大小。关系运算符是二元运算符，运算结果是 boolean 型。当运算符对应的关系成立时，运算结果是 true，否则是 false。</p>
+<p>关系表达式是由关系运算符连接起来的表达式。关系运算符中“关系”二字的含义是指一个数据与另一个数据之间的关系，这种关系只有成立与不成立两种可能情况，可以用逻辑值来表示，逻辑上的 true 与 false 用数字 1 与 0 来表示。关系成立时表达式的结果为 true（或 1），否则表达式的结果为 false（或 0）。表 1 给出了比较运算符的含义及其实例应用。</p>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/rS1e7d"><img src="https://s3.ax1x.com/2020/12/08/rS1e7d.md.png" alt="rS1e7d.md.png"></a></p>
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p><a target="_blank" rel="noopener" href="https://imgchr.com/i/rS1w90"><img src="https://s3.ax1x.com/2020/12/08/rS1w90.md.png" alt="rS1w90.md.png"></a></p>
+<p>短路还是很形象的，区别：</p>
+<ul>
+<li>&amp;&amp; 与 &amp; 区别：如果 a 为 false，则不计算 b（因为不论 b 为何值，结果都为 false）</li>
+<li>|| 与 | 区别：如果 a 为 true，则不计算 b（因为不论 b 为何值，结果都为 true）</li>
+</ul>
+<p>注意：短路与（&amp;&amp;）和短路或（||）能够采用最优化的计算方式，从而提高效率。在实际编程时，应该优先考虑使用短路与和短路或。</p>
+<h3 id="运算符的优先级"><a href="#运算符的优先级" class="headerlink" title="运算符的优先级"></a>运算符的优先级</h3><p>运算符中“（）”优先级最高，“（）”可以控制你想最先运算的的优先级。不必硬记。</p>
+<hr>
+<p>[TOC]</p>
+<h1 id="6-字符和字符串"><a href="#6-字符和字符串" class="headerlink" title="(6)字符和字符串"></a>(6)字符和字符串</h1><ul>
+<li>char类型用’’括起来</li>
+<li>String类型用””表示括起来</li>
+</ul>
+<p>举个栗子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> c=<span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">String s=<span class="string">&quot;LIEFox&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3><p>常见的转义字符包括：</p>
+<ul>
+<li><code>\&quot;</code> 表示字符<code>&quot;</code></li>
+<li><code>\&#39;</code> 表示字符<code>&#39;</code></li>
+<li><code>\\</code> 表示字符<code>\</code></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String s = <span class="string">&quot;abc\&quot;xyz&quot;</span>; <span class="comment">// 包含7个字符: a, b, c, &quot;, x, y, z</span></span><br><span class="line">String s = <span class="string">&quot;abc\&#x27;xyz&quot;</span>; <span class="comment">// 包含7个字符: a, b, c, &#x27;, x, y, z</span></span><br><span class="line">String s = <span class="string">&quot;abc\\xyz&quot;</span>; <span class="comment">// 包含7个字符: a, b, c, \, x, y, z</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>\n</code> 表示换行符</li>
+<li><code>\r</code> 表示回车符</li>
+<li><code>\t</code> 表示Tab</li>
+<li><code>\u####</code> 表示一个Unicode编码的字符</li>
+</ul>
+<h3 id="字符串连接"><a href="#字符串连接" class="headerlink" title="字符串连接"></a>字符串连接</h3><p>Java的编译器对字符串做了特殊照顾，可以使用<code>+</code>连接任意字符串和其他数据类型，这样极大地方便了字符串的处理。例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String s1 = <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">        String s2 = <span class="string">&quot;world&quot;</span>;</span><br><span class="line">        String s = s1 + <span class="string">&quot; &quot;</span> + s2 + <span class="string">&quot;!&quot;</span>;</span><br><span class="line">        System.out.println(s);<span class="comment">//Hello world!</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果用<code>+</code>连接字符串和其他数据类型，会将其他数据类型先自动转型为字符串，再连接：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> age = <span class="number">25</span>;</span><br><span class="line">        String s = <span class="string">&quot;age is &quot;</span> + age;</span><br><span class="line">        System.out.println(s);<span class="comment">//age is 25</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="注意：String类型的值不可变！！！"><a href="#注意：String类型的值不可变！！！" class="headerlink" title="注意：String类型的值不可变！！！"></a>注意：String类型的值不可变！！！</h3><h3 id="空值null"><a href="#空值null" class="headerlink" title="空值null"></a>空值null</h3><p>引用类型的变量可以指向一个空值<code>null</code>，它表示不存在，即该变量不指向任何对象。例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String s1 = <span class="keyword">null</span>; <span class="comment">// s1是null</span></span><br><span class="line">String s2; <span class="comment">// 没有赋初值值，s2也是null</span></span><br><span class="line">String s3 = s1; <span class="comment">// s3也是null</span></span><br><span class="line">String s4 = <span class="string">&quot;&quot;</span>; <span class="comment">// s4指向空字符串，不是null</span></span><br></pre></td></tr></table></figure>
+
+<p>注意要区分空值<code>null</code>和空字符串<code>&quot;&quot;</code>，空字符串是一个有效的字符串对象，它不等于<code>null</code>。</p>
+<h3 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h3><p>Java的字符类型<code>char</code>是基本类型，字符串类型<code>String</code>是引用类型；</p>
+<p>基本类型的变量是“持有”某个数值，引用类型的变量是“指向”某个对象；</p>
+<p>引用类型的变量可以是空值<code>null</code>；</p>
+<p>要区分空值<code>null</code>和空字符串<code>&quot;&quot;</code>。</p>
+<hr>
+<p>[TOC]</p>
+<h1 id="7-数组类型"><a href="#7-数组类型" class="headerlink" title="(7)数组类型"></a>(7)数组类型</h1><p>如果我们有一组类型相同的变量，例如，5位同学的成绩，可以这么写：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 5位同学的成绩:</span></span><br><span class="line">        <span class="keyword">int</span> n1 = <span class="number">68</span>;</span><br><span class="line">        <span class="keyword">int</span> n2 = <span class="number">79</span>;</span><br><span class="line">        <span class="keyword">int</span> n3 = <span class="number">91</span>;</span><br><span class="line">        <span class="keyword">int</span> n4 = <span class="number">85</span>;</span><br><span class="line">        <span class="keyword">int</span> n5 = <span class="number">62</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>但如果数据量大了，一个一个创建变量，会很不银型化。所以就有了数组这个神奇的东西。</p>
+<p>我们可以优化成这样：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 5位同学的成绩:</span></span><br><span class="line">       <span class="keyword">int</span>[] ns = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line">       ns[<span class="number">0</span>] = <span class="number">68</span>;</span><br><span class="line">       ns[<span class="number">1</span>] = <span class="number">79</span>;</span><br><span class="line">       ns[<span class="number">2</span>] = <span class="number">91</span>;</span><br><span class="line">       ns[<span class="number">3</span>] = <span class="number">85</span>;</span><br><span class="line">       ns[<span class="number">4</span>] = <span class="number">62</span>;</span><br></pre></td></tr></table></figure>
+
+<p>定义一个数组类型的变量，使用数组类型“类型[]”，例如，<code>int[]</code>。和单个基本类型变量不同，数组变量初始化必须使用<code>new int[5]</code>表示创建一个可容纳5个<code>int</code>元素的数组。</p>
+<p>Java的数组有几个特点：</p>
+<ul>
+<li>数组所有元素初始化为默认值，整型都是<code>0</code>，浮点型是<code>0.0</code>，布尔型是<code>false</code>；</li>
+<li>数组一旦创建后，大小就不可改变。</li>
+</ul>
+<p>要访问数组中的某一个元素，需要使用索引。数组索引从<code>0</code>开始，例如，5个元素的数组，索引范围是<code>0</code>~`4`。</p>
+<p>可以修改数组中的某一个元素，使用赋值语句，例如，<code>ns[1] = 79;</code>。</p>
+<p>可以用<code>数组变量.length</code>获取数组大小：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] ns = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line">System.out.println(ns.length); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+
+<p>也可以在定义数组时直接指定初始化的元素，这样就不必写出数组大小，而是由编译器自动推算数组大小。例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 5位同学的成绩:</span></span><br><span class="line">        <span class="keyword">int</span>[] ns = <span class="keyword">new</span> <span class="keyword">int</span>[] &#123; <span class="number">68</span>, <span class="number">79</span>, <span class="number">91</span>, <span class="number">85</span>, <span class="number">62</span> &#125;;还可以简写：<span class="keyword">int</span>[] ns = &#123; <span class="number">68</span>, <span class="number">79</span>, <span class="number">91</span>, <span class="number">85</span>, <span class="number">62</span> &#125;;</span><br><span class="line">        System.out.println(ns.length); <span class="comment">// 编译器自动推算数组大小为5</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意数组是引用类型，并且数组大小不可变。</strong></p>
+<h3 id="字符串数组"><a href="#字符串数组" class="headerlink" title="字符串数组"></a>字符串数组</h3><p>如果数组元素不是基本类型，而是一个引用类型，那么，修改数组元素会有哪些不同？</p>
+<p>字符串是引用类型，因此我们先定义一个字符串数组：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String[] names &#x3D; &#123;</span><br><span class="line">    &quot;ABC&quot;, &quot;XYZ&quot;, &quot;zoo&quot;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>对于<code>String[]</code>类型的数组变量<code>names</code>，它实际上包含3个元素，但每个元素都指向某个字符串对象：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">          ┌─────────────────────────┐</span><br><span class="line">    names │   ┌─────────────────────┼───────────┐</span><br><span class="line">      │   │   │                     │           │</span><br><span class="line">      ▼   │   │                     ▼           ▼</span><br><span class="line">┌───┬───┬─┴─┬─┴─┬───┬───────┬───┬───────┬───┬───────┬───┐</span><br><span class="line">│   │░░░│░░░│░░░│   │ &quot;ABC&quot; │   │ &quot;XYZ&quot; │   │ &quot;zoo&quot; │   │</span><br><span class="line">└───┴─┬─┴───┴───┴───┴───────┴───┴───────┴───┴───────┴───┘</span><br><span class="line">      │                 ▲</span><br><span class="line">      └─────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>对<code>names[1]</code>进行赋值，例如<code>names[1] = &quot;cat&quot;;</code>，效果如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">          ┌─────────────────────────────────────────────────┐</span><br><span class="line">    names │   ┌─────────────────────────────────┐           │</span><br><span class="line">      │   │   │                                 │           │</span><br><span class="line">      ▼   │   │                                 ▼           ▼</span><br><span class="line">┌───┬───┬─┴─┬─┴─┬───┬───────┬───┬───────┬───┬───────┬───┬───────┬───┐</span><br><span class="line">│   │░░░│░░░│░░░│   │ &quot;ABC&quot; │   │ &quot;XYZ&quot; │   │ &quot;zoo&quot; │   │ &quot;cat&quot; │   │</span><br><span class="line">└───┴─┬─┴───┴───┴───┴───────┴───┴───────┴───┴───────┴───┴───────┴───┘</span><br><span class="line">      │                 ▲</span><br><span class="line">      └─────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>这里注意到原来<code>names[1]</code>指向的字符串<code>&quot;XYZ&quot;</code>并没有改变，仅仅是将<code>names[1]</code>的引用从指向<code>&quot;XYZ&quot;</code>改成了指向<code>&quot;cat&quot;</code>，其结果是字符串<code>&quot;XYZ&quot;</code>再也无法通过<code>names[1]</code>访问到了。</p>
+<h3 id="小结-2"><a href="#小结-2" class="headerlink" title="小结"></a>小结</h3><p>数组是同一数据类型的集合，数组一旦创建后，大小就不可变；</p>
+<p>可以通过索引访问数组元素，但索引超出范围将报错；</p>
+<p>数组元素可以是值类型（如int）或引用类型（如String），但数组本身是引用类型；</p>
+<p>[TOC]</p>
 <p>。。。。。。。。。</p>
-<p><strong><em>作者：zjhx</em></strong></p>
+<p><strong><em>作者：zjh</em></strong></p>
  
       <!-- reward -->
       
@@ -449,6 +601,15 @@ var _hmt = _hmt || [];
 
    
   <nav class="article-nav">
+    
+      <a href="/posts/368ebfeb.html" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            流程控制
+          
+        </div>
+      </a>
     
     
       <a href="/posts/fdedec16.html" class="article-nav-link">
