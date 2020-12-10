@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="baidu-site-verification" content="code-pR8Cu8CCAR" />
+  <meta name="google-site-verification" content="kPx7uwBYN8ZNVw-1hPQgk5yziYYGu7ZawLlYvgTblwQ" />
+  <meta name="sogou_site_verification" content="bt3Su26Lme"/>
+  <meta name="360-site-verification" content="73ba99e99d3fc1e5f8a37d8c1d998703" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    数组控制 |  LIEFox
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?70837313b75a2b48b1e427bcabe5c0d9";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-数组控制"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  数组控制
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/posts/335f9f1b.html" class="article-date">
+  <time datetime="2020-12-08T13:16:34.905Z" itemprop="datePublished">2020-12-08</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JAVA%E7%AC%94%E8%AE%B0/">JAVA笔记</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.4k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">6 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>本节我们将讲解对数组的操作，包括：</p>
+<ul>
+<li>遍历；</li>
+<li>排序。</li>
+</ul>
+<p>以及多维数组的概念。</p>
+<hr>
+<p>[TOC]</p>
+<h1 id="（1）数组遍历"><a href="#（1）数组遍历" class="headerlink" title="（1）数组遍历"></a>（1）数组遍历</h1><p>数组遍历有两种方法：</p>
+<p>1、for循环</p>
+<p>2、for each循环</p>
+<p>一一道来；</p>
+<p>for循环来遍历数组</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[]num =&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">23</span>,<span class="number">42</span>,<span class="number">11</span>,<span class="number">90</span>&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;num.length;i++)&#123;</span><br><span class="line">    System.out.print(num[i]+<span class="string">&quot; &quot;</span>);</span><br><span class="line">&#125;<span class="comment">//打印 1 2 23 42 11 90</span></span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<p>如果循环索引超过数组的长度会报空指针异常（ArrayIndexOutOfBoundsException）。为了避免，我们应该注意索引不要超过数组长度，举个栗子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[]num =&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">23</span>,<span class="number">42</span>,<span class="number">11</span>,<span class="number">90</span>&#125;; <span class="comment">//num.length=6,不可超过6，所以一般遍历的时候，循环条件都会是i&lt;num.length</span></span><br></pre></td></tr></table></figure>
+
+<p>for each 遍历</p>
+<p>for each 是一种循环数组更简单一点的方法，只不过他只可以读取数据，不可以像for遍历改变或写入数组里的数据。但只是遍历数组的数据的时候，却很好用。上才艺：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[]num =&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">23</span>,<span class="number">42</span>,<span class="number">11</span>,<span class="number">90</span>&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> n:num)&#123;</span><br><span class="line">    sout(n);</span><br><span class="line">&#125;<span class="comment">//打印 1 2 23 42 11 90</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="（2）排序"><a href="#（2）排序" class="headerlink" title="（2）排序"></a>（2）排序</h1><p>讲到排序，比较经典的是冒泡排序了，就是将数组里的数值像水里的气泡一样，从下往上冒</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] ns = &#123; <span class="number">28</span>, <span class="number">12</span>, <span class="number">89</span>, <span class="number">73</span>, <span class="number">65</span>, <span class="number">18</span>, <span class="number">96</span>, <span class="number">50</span>, <span class="number">8</span>, <span class="number">36</span> &#125;;</span><br><span class="line">        <span class="comment">// 排序前:</span></span><br><span class="line">        System.out.println(Arrays.toString(ns));</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; ns.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; ns.length - i - <span class="number">1</span>; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (ns[j] &gt; ns[j+<span class="number">1</span>]) &#123;</span><br><span class="line">                    <span class="comment">// 交换ns[j]和ns[j+1]:</span></span><br><span class="line">                    <span class="keyword">int</span> tmp = ns[j];</span><br><span class="line">                    ns[j] = ns[j+<span class="number">1</span>];</span><br><span class="line">                    ns[j+<span class="number">1</span>] = tmp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 排序后:</span></span><br><span class="line">        System.out.println(Arrays.toString(ns));</span><br><span class="line">    &#125;<span class="comment">//[28, 12, 89, 73, 65, 18, 96, 50, 8, 36]</span></span><br><span class="line">	<span class="comment">//[8, 12, 18, 28, 36, 50, 65, 73, 89, 96]	</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>冒泡排序的特点是，每一轮循环后，最大的一个数被交换到末尾，因此，下一轮循环就可以“刨除”最后的数，每一轮循环都比上一轮循环的结束位置靠前一位。</p>
+<p>另外，注意到交换两个变量的值必须借助一个临时变量。</p>
+<p>正确的写法是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">int x &#x3D; 1;</span><br><span class="line">int y &#x3D; 2;</span><br><span class="line"></span><br><span class="line">int t &#x3D; x; &#x2F;&#x2F; 把x的值保存在临时变量t中, t现在是1</span><br><span class="line">x &#x3D; y; &#x2F;&#x2F; x现在是2</span><br><span class="line">y &#x3D; t; &#x2F;&#x2F; y现在是t的值1</span><br></pre></td></tr></table></figure>
+
+<p>实际上，Java的标准库已经内置了排序功能，我们只需要调用JDK提供的<code>Arrays.sort()</code>就可以排序：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span>[] ns = &#123; <span class="number">28</span>, <span class="number">12</span>, <span class="number">89</span>, <span class="number">73</span>, <span class="number">65</span>, <span class="number">18</span>, <span class="number">96</span>, <span class="number">50</span>, <span class="number">8</span>, <span class="number">36</span> &#125;;</span><br><span class="line">    Arrays.sort(ns);</span><br><span class="line">    System.out.println(Arrays.toString(ns));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>必须注意，对数组排序实际上修改了数组本身。例如，排序前的数组是：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] ns = &#123; <span class="number">9</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">5</span> &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>在内存中，这个整型数组表示如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">      ┌───┬───┬───┬───┐</span><br><span class="line">ns───&gt;│ 9 │ 3 │ 6 │ 5 │</span><br><span class="line">      └───┴───┴───┴───┘</span><br></pre></td></tr></table></figure>
+
+<p>当我们调用<code>Arrays.sort(ns);</code>后，这个整型数组在内存中变为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">      ┌───┬───┬───┬───┐</span><br><span class="line">ns───&gt;│ 3 │ 5 │ 6 │ 9 │</span><br><span class="line">      └───┴───┴───┴───┘</span><br></pre></td></tr></table></figure>
+
+<p>即变量<code>ns</code>指向的数组内容已经被改变了。</p>
+<p>如果对一个字符串数组进行排序，例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String[] ns = &#123; <span class="string">&quot;banana&quot;</span>, <span class="string">&quot;apple&quot;</span>, <span class="string">&quot;pear&quot;</span> &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>排序前，这个数组在内存中表示如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">                   ┌──────────────────────────────────┐</span><br><span class="line">               ┌───┼──────────────────────┐           │</span><br><span class="line">               │   │                      ▼           ▼</span><br><span class="line">         ┌───┬─┴─┬─┴─┬───┬────────┬───┬───────┬───┬──────┬───┐</span><br><span class="line">ns ─────&gt;│░░░│░░░│░░░│   │&quot;banana&quot;│   │&quot;apple&quot;│   │&quot;pear&quot;│   │</span><br><span class="line">         └─┬─┴───┴───┴───┴────────┴───┴───────┴───┴──────┴───┘</span><br><span class="line">           │                 ▲</span><br><span class="line">           └─────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>调用<code>Arrays.sort(ns);</code>排序后，这个数组在内存中表示如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">                   ┌──────────────────────────────────┐</span><br><span class="line">               ┌───┼──────────┐                       │</span><br><span class="line">               │   │          ▼                       ▼</span><br><span class="line">         ┌───┬─┴─┬─┴─┬───┬────────┬───┬───────┬───┬──────┬───┐</span><br><span class="line">ns ─────&gt;│░░░│░░░│░░░│   │&quot;banana&quot;│   │&quot;apple&quot;│   │&quot;pear&quot;│   │</span><br><span class="line">         └─┬─┴───┴───┴───┴────────┴───┴───────┴───┴──────┴───┘</span><br><span class="line">           │                              ▲</span><br><span class="line">           └──────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>原来的3个字符串在内存中均没有任何变化，但是<code>ns</code>数组的每个元素指向变化了。</p>
+<p>[TOC]</p>
+<h1 id="（3）多维数组"><a href="#（3）多维数组" class="headerlink" title="（3）多维数组"></a>（3）多维数组</h1><h3 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h3><p>二维数组就是数组的数组。定义一个二维数组如下：</p>
+<h4 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[][] ns = &#123;</span><br><span class="line">            &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> &#125;,</span><br><span class="line">            &#123; <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span> &#125;,</span><br><span class="line">            &#123; <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span> &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        System.out.println(ns.length); <span class="comment">// 3</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> [] [] arr = <span class="keyword">new</span> <span class="keyword">int</span> [<span class="number">3</span>] [<span class="number">4</span>];</span><br><span class="line"><span class="keyword">int</span> [<span class="number">0</span>] [] =&#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> &#125;;</span><br><span class="line"><span class="keyword">int</span> [<span class="number">1</span>] [] =&#123; <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>  &#125;;</span><br><span class="line"><span class="keyword">int</span> [<span class="number">2</span>] [] =&#123; <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span> &#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> [] [] arr = <span class="keyword">new</span> <span class="keyword">int</span> [<span class="number">3</span>] [];</span><br><span class="line"><span class="keyword">int</span> [<span class="number">0</span>] [] =&#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> &#125;;</span><br><span class="line"><span class="keyword">int</span> [<span class="number">1</span>] [] =&#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> &#125;;</span><br><span class="line"><span class="keyword">int</span> [<span class="number">2</span>] [] =&#123; <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span> &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>因为<code>ns</code>包含3个数组，因此，<code>ns.length</code>为<code>3</code>。实际上<code>ns</code>在内存中的结构如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">                    ┌───┬───┬───┬───┐</span><br><span class="line">         ┌───┐  ┌──&gt;│ 1 │ 2 │ 3 │ 4 │</span><br><span class="line">ns ─────&gt;│░░░│──┘   └───┴───┴───┴───┘</span><br><span class="line">         ├───┤      ┌───┬───┬───┬───┐</span><br><span class="line">         │░░░│─────&gt;│ 5 │ 6 │ 7 │ 8 │</span><br><span class="line">         ├───┤      └───┴───┴───┴───┘</span><br><span class="line">         │░░░│──┐   ┌───┬───┬───┬───┐</span><br><span class="line">         └───┘  └──&gt;│ 9 │10 │11 │12 │</span><br><span class="line">                    └───┴───┴───┴───┘</span><br></pre></td></tr></table></figure>
+
+<p>要打印一个二维数组，可以使用两层嵌套的for循环：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span>[] arr : ns) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> n : arr) &#123;</span><br><span class="line">        System.out.print(n);</span><br><span class="line">        System.out.print(<span class="string">&#x27;, &#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="三维数组"><a href="#三维数组" class="headerlink" title="三维数组"></a>三维数组</h3><p>三维数组就是二维数组的数组。可以这么定义一个三维数组：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">int[][][] ns &#x3D; &#123;</span><br><span class="line">    &#123;</span><br><span class="line">        &#123;1, 2, 3&#125;,</span><br><span class="line">        &#123;4, 5, 6&#125;,</span><br><span class="line">        &#123;7, 8, 9&#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &#123;10, 11&#125;,</span><br><span class="line">        &#123;12, 13&#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &#123;14, 15, 16&#125;,</span><br><span class="line">        &#123;17, 18&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>它在内存中的结构如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">                              ┌───┬───┬───┐</span><br><span class="line">                   ┌───┐  ┌──&gt;│ 1 │ 2 │ 3 │</span><br><span class="line">               ┌──&gt;│░░░│──┘   └───┴───┴───┘</span><br><span class="line">               │   ├───┤      ┌───┬───┬───┐</span><br><span class="line">               │   │░░░│─────&gt;│ 4 │ 5 │ 6 │</span><br><span class="line">               │   ├───┤      └───┴───┴───┘</span><br><span class="line">               │   │░░░│──┐   ┌───┬───┬───┐</span><br><span class="line">        ┌───┐  │   └───┘  └──&gt;│ 7 │ 8 │ 9 │</span><br><span class="line">ns ────&gt;│░░░│──┘              └───┴───┴───┘</span><br><span class="line">        ├───┤      ┌───┐      ┌───┬───┐</span><br><span class="line">        │░░░│─────&gt;│░░░│─────&gt;│10 │11 │</span><br><span class="line">        ├───┤      ├───┤      └───┴───┘</span><br><span class="line">        │░░░│──┐   │░░░│──┐   ┌───┬───┐</span><br><span class="line">        └───┘  │   └───┘  └──&gt;│12 │13 │</span><br><span class="line">               │              └───┴───┘</span><br><span class="line">               │   ┌───┐      ┌───┬───┬───┐</span><br><span class="line">               └──&gt;│░░░│─────&gt;│14 │15 │16 │</span><br><span class="line">                   ├───┤      └───┴───┴───┘</span><br><span class="line">                   │░░░│──┐   ┌───┬───┐</span><br><span class="line">                   └───┘  └──&gt;│17 │18 │</span><br><span class="line">                              └───┴───┘</span><br></pre></td></tr></table></figure>
+
+<p>如果我们要访问三维数组的某个元素，例如，<code>ns[2][0][1]</code>，只需要顺着定位找到对应的最终元素<code>15</code>即可。</p>
+<p>理论上，我们可以定义任意的N维数组。但在实际应用中，除了二维数组在某些时候还能用得上，更高维度的数组很少使用。</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>二维数组就是数组的数组，三维数组就是二维数组的数组；</p>
+<p>多维数组的每个数组元素长度都不要求相同；</p>
+<p>最常见的多维数组是二维数组，访问二维数组的一个元素使用<code>array[row][col]</code>。</p>
+<p>[TOC]</p>
+<p>。。。。。。。。。。</p>
+<p><em>作者：zjh</em></p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本网站所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cxq21.gitee.io/posts/335f9f1b.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA%E7%AC%94%E8%AE%B0/" rel="tag">JAVA笔记</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/posts/9d9ad23f.html" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            面向对象基础
+          
+        </div>
+      </a>
+    
+    
+      <a href="/posts/368ebfeb.html" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">流程控制</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+    <div id="vcomments">
+    </div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!-- <script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script> -->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<!-- 评论背景 -->                                                         
+<style>
+    #veditor{min-height: 15rem;
+        background-image: url(https://s3.ax1x.com/2020/12/04/DqMJfA.gif);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: rgba(255,255,255,0);
+        resize: none;}
+</style>
+<!-- Valine配置 --> 
+<script>
+    new Valine({
+        el: '#vcomments',
+        enableQQ: true,
+        app_id: 'lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz',
+        app_key: 'VheJztjyMzs24xKQPGGI1bmh',
+        path: window.location.pathname,
+        //notify: '',
+        //verify: '',
+        avatar: 'monsterid# 头像样式(https://valine.js.org/avatar.html)',
+        placeholder: '吐槽一下作者(在昵称上填QQ号自动显示头像喔)',
+        recordIP: true,
+
+        // 设置Bilibili表情包地址
+        emojiCDN: 'https://cdn.jsdelivr.net/gh/XXXZhy/Blog_Image/valine_emoticon/', 
+        // 表情title和图片映射
+        emojiMaps: {
+            "墙角滑稽": "害怕滑稽.gif",
+            "仙女下凡": "仙女下凡.webp",
+            "听歌": "听歌.webp",
+            "嫌弃": "嫌弃.webp",
+            "害羞": "害羞.webp",
+            "彩虹滑稽": "彩虹滑稽.webp",
+            "快走": "快走.webp",
+            "扯脸": "扯脸.webp",
+            "摸脸": "摸脸.webp",
+            "流汗": "流汗.webp",
+            "滑滑板": "滑滑板.webp",
+            "点赞": "点赞.webp",
+            "转圈圈": "转圈圈.webp",
+            // ... 更多表情
+        }     
+    });
+    const infoEle = document.querySelector('#vcomments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+        infoEle.childNodes.forEach(function (item) {
+            item.parentNode.removeChild(item);
+        });
+    }
+</script>
+
+<style>
+    #vcomments-box {
+        padding: 10px 0px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #vcomments-box {
+            padding: 5px 30px;
+        }
+    }
+
+    #vcomments-box #vcomments {
+        background-color: #FFF;
+    }
+
+    .v .vlist .vcard .vh {
+        padding-right: 20px;
+    }
+
+    .v .vlist .vcard {
+        padding-left: 10px;
+    }
+</style>
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020
+        <i class="ri-heart-fill heart_icon"></i> 拾柒工作室
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1279472270&amp;web_id=1279472270'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/LIEFox.png" alt="LIEFox"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/update">更新日志</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于LIEFox</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+
+<script src="/js/clickBoom2.js"></script>
+
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+<script src="/js/dz.js"></script>
+
+
+
+    
+  </div>
+</body>
+
+</html>

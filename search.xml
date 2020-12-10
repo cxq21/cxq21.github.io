@@ -1,6 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>JAVA目录</title>
+    <url>/posts/fdedec16.html</url>
+    <content><![CDATA[<h1 id="今天开始正式写Java笔记"><a href="#今天开始正式写Java笔记" class="headerlink" title="今天开始正式写Java笔记"></a>今天开始正式写Java笔记</h1><h2 id="为什么要写Java笔记？"><a href="#为什么要写Java笔记？" class="headerlink" title="为什么要写Java笔记？"></a>为什么要写Java笔记？</h2><p>作为一个学习技术的的小站</p>
+<p>LIEFox已经磨刀了许久，终于要正式推出Java菜鸟笔记了。在这里我要立个Flag，从入门到入坟一定要坚持写完。顺便巩固一下自己的基础（就是因为鄙人太弱了，哎~），以免面试的时候被问到自闭！！！</p>
+<h3 id="最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！"><a href="#最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！" class="headerlink" title="最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！"></a>最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！</h3><hr>
+<h4 id="JAVA笔记将会分为以下几个阶段"><a href="#JAVA笔记将会分为以下几个阶段" class="headerlink" title="JAVA笔记将会分为以下几个阶段"></a>JAVA笔记将会分为以下几个阶段</h4><h1 id="（目录）"><a href="#（目录）" class="headerlink" title="（目录）"></a><strong>（目录）</strong></h1><h2 id="一、JAVA入门"><a href="#一、JAVA入门" class="headerlink" title="一、JAVA入门"></a>一、JAVA入门</h2><ul>
+<li>Java快速入门<ol>
+<li><a href="https://cxq21.gitee.io/posts/98ac5948.html" target="_blank">JAVA简介</a></li>
+<li><a href="https://cxq21.gitee.io/posts/bdfde94f.html" target="_blank">JAVA程序基础</a></li>
+<li><a href="https://cxq21.gitee.io/posts/368ebfeb.html" target="_blank">流程控制</a></li>
+<li><a href="https://cxq21.gitee.io/posts/335f9f1b.html" target="_blank">数组控制</a></li>
+</ol>
+</li>
+<li>面向对象编程<ol>
+<li><a href="https://cxq21.gitee.io/posts/9d9ad23f.html" target="_blank">面向对象基础</a></li>
+<li>Java核心类</li>
+</ol>
+</li>
+<li>异常处理</li>
+<li>反射</li>
+<li>注解</li>
+<li>泛型</li>
+<li>集合</li>
+<li>IO</li>
+<li>日期与时间</li>
+<li>单元测试</li>
+<li>正则表达式</li>
+</ul>
+<h2 id="二、JAVA进阶"><a href="#二、JAVA进阶" class="headerlink" title="二、JAVA进阶"></a>二、JAVA进阶</h2><ul>
+<li>加密与安全</li>
+<li>多线程</li>
+<li>Maven基础</li>
+<li>网络编程</li>
+<li>XML与JSON</li>
+<li>JDBC编程</li>
+<li>Mybaits技术</li>
+<li>函数式编程</li>
+<li>设计模式</li>
+<li>Web开发</li>
+<li>Spring开发</li>
+<li>SpringMVC开发</li>
+</ul>
+]]></content>
+      <categories>
+        <category>JAVA笔记</category>
+      </categories>
+      <tags>
+        <tag>JAVA笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring-ioc基于注解</title>
+    <url>/posts/693b31a5.html</url>
+    <content><![CDATA[<h1 id="要求"><a href="#要求" class="headerlink" title="要求"></a><strong>要求</strong></h1><p>使用Spring的IoC容器，实际上就是通过类似XML这样的配置文件，把我们自己的Bean的依赖关系描述出来，然后让容器来创建并装配Bean。一旦容器初始化完毕，我们就直接从容器中获取Bean使用它们。</p>
+<p>使用XML配置的优点是所有的Bean都能一目了然地列出来，并通过配置注入能直观地看到每个Bean的依赖。它的缺点是写起来非常繁琐，每增加一个组件，就必须把新的Bean配置到XML中。</p>
+<p>有没有其他更简单的配置方式呢？</p>
+<p>有！我们可以使用Annotation配置，可以完全不需要XML，让Spring自动扫描Bean并组装它们。</p>
+<h3 id="所以今天我们用注解来写一个基于注解的Spring"><a href="#所以今天我们用注解来写一个基于注解的Spring" class="headerlink" title="所以今天我们用注解来写一个基于注解的Spring"></a>所以今天我们用注解来写一个基于注解的Spring</h3><p><strong><a href="https://imgchr.com/i/D6E1Mj"><img src="https://s3.ax1x.com/2020/11/28/D6E1Mj.md.png" alt="D6E1Mj.md.png"></a></strong></p>
+<hr>
+<p><strong><a id="more"></a></strong></p>
+<p><strong>由于是基于注解的IoC的Spring开发，所以我们要导入一个关键的jar包</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Z7Pf"><img src="https://s3.ax1x.com/2020/11/28/D6Z7Pf.png" alt="D6Z7Pf.png"></a></strong></p>
+<hr>
+<h4 id="好啦，正题开始"><a href="#好啦，正题开始" class="headerlink" title="好啦，正题开始"></a><strong>好啦，正题开始</strong></h4><h1 id="第一步，万恶之源，打开我们的idea"><a href="#第一步，万恶之源，打开我们的idea" class="headerlink" title="第一步，万恶之源，打开我们的idea"></a><strong>第一步，万恶之源，打开我们的idea</strong></h1><ol>
+<li><p><strong>创建一个java项目</strong></p>
+</li>
+<li><p><strong>在src里创建如下3个包</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6mV1S"><img src="https://s3.ax1x.com/2020/11/28/D6mV1S.png" alt="D6mV1S.png"></a></strong></p>
+<ul>
+<li><p><strong>Dao包（数据持久层）</strong></p>
+</li>
+<li><p><strong>Service包（业务逻辑层）</strong>    </p>
+</li>
+<li><p><strong>Web包（显示层）</strong></p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>3.接着在src下创建一个xml文件，名为（ApplicationContext.xml)</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6nngO"><img src="https://s3.ax1x.com/2020/11/28/D6nngO.md.png" alt="D6nngO.md.png"></a></strong></p>
+<p><strong>src&gt;New&gt;XML File&gt;名为（ApplicationContext.xml)</strong></p>
+<p><strong>4.xml文件里的代码如下</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:context</span>=<span class="string">&quot;http://www.springframework.org/schema/context&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context/spring-context-4.3.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">&quot;Service&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">context:component-scan</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--&lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包</span></span><br><span class="line"><span class="comment">    &lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>5.接下来导jar包</strong></p>
+<p><strong>Flie》Project Structure》Liberals》＋》Java》找到自己放spring jar包的地方》选中》OK》取个名字（Spring_Jars）》OK</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6u3yF"><img src="https://s3.ax1x.com/2020/11/28/D6u3yF.md.png" alt="D6u3yF.md.png"></a></strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Ku0H"><img src="https://s3.ax1x.com/2020/11/28/D6Ku0H.md.png" alt="D6Ku0H.md.png"></a></strong></p>
+<p><strong>看一下加成功了没有</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Mlb4"><img src="https://s3.ax1x.com/2020/11/28/D6Mlb4.png" alt="D6Mlb4.png"></a></strong></p>
+<p><strong>好的，有Spring_Jars包了</strong></p>
+<p><strong>到这一步，咱们就算上车了，开始飙车了</strong></p>
+<hr>
+<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a><strong>第二步</strong></h1><p><strong>安照题目要求</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Dao层：接口文件StudentDao，包含方法selectAll</span><br><span class="line">        实现类StudentDaoImpl,包含selectAll方法的实现（仅写输出语句表示方法调用成功即可）</span><br><span class="line">Service层：接口文件StudentService，包含方法selectAll</span><br><span class="line">            实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)</span><br><span class="line">Web层:类WebMain,主方法中调用Service层的selectAll方法。</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p><strong>在Dao包里新建一个接口文件StudentDao</strong></p>
+</li>
+<li><p><strong>在Dao包里新建一个java文件StudentDaoImpl</strong></p>
+</li>
+<li><p><strong>Service。。。</strong></p>
+</li>
+<li><p><strong>Web。。。</strong></p>
+</li>
+<li><p><strong>以下面这个结构来建，咱们把框架给搭起来，就快了！！</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6QlSP"><img src="https://s3.ax1x.com/2020/11/28/D6QlSP.png" alt="D6QlSP.png"></a></strong></p>
+<hr>
+</li>
+</ol>
+<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a><strong>第三步</strong></h1><p><strong>骨架欧克了，我们现在去丰满他的细节</strong></p>
+<p><strong>1.</strong></p>
+<p><strong>Dao》StudentDao</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentDao</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Dao》StudentDaoImpl</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentDaoImpl</span> <span class="keyword">implements</span> <span class="title">StudentDao</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询所有学生信息！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.</strong></p>
+<p><strong>Service》StudentService</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentService</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Service》StudentServiceImpl</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Value;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Repository;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@Repository(value = &quot;StudentService&quot;)</span><span class="comment">//@Repository:用于持久层的注解，作用与Component相同</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentServiceImpl</span> <span class="keyword">implements</span> <span class="title">StudentService</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)*/</span></span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Value(&quot;LIEFox&quot;)</span><span class="comment">//与&lt;property&gt;标签作用一样</span></span><br><span class="line">    <span class="keyword">private</span> String SName;</span><br><span class="line">    <span class="meta">@Value(&quot;https:cxq21.gitee.io&quot;)</span><span class="comment">//偷偷的打个广告嘿嘿</span></span><br><span class="line">    <span class="keyword">private</span> String SId;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询到了一个名为&quot;</span>+SName+<span class="string">&quot;网站,网址为&quot;</span>+SId);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.</strong></p>
+<p><strong>Web》WebMain</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> Service.StudentService;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Web层:类WebMain,主方法中调用Service层的selectAll方法。</span></span><br><span class="line">	</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.容器初始化</span></span><br><span class="line">        ApplicationContext context=<span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">&quot;ApplicationContext.xml&quot;</span>);</span><br><span class="line">        <span class="comment">//2.创建实例</span></span><br><span class="line">        StudentService service=(StudentService) context.getBean(<span class="string">&quot;StudentService&quot;</span>);</span><br><span class="line">        service.selectAll();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>这样，我们的一个基于注解的Spring项目是写完了。</strong></p>
+<hr>
+<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a><strong>第四步</strong></h1><p><strong>运行项目。。。</strong></p>
+<p><strong>结果出来了</strong></p>
+<p><strong><a href="https://imgchr.com/i/D68G3n"><img src="https://s3.ax1x.com/2020/11/28/D68G3n.md.png" alt="D68G3n.md.png"></a></strong></p>
+<hr>
+<h2 id="原项目"><a href="#原项目" class="headerlink" title="原项目"></a>原项目</h2><p><strong>最后，附上，我的gitee原项目，地址：<a href="https://gitee.com/cxq21/spring_-ioc">https://gitee.com/cxq21/spring_-ioc</a></strong></p>
+<p><strong>下载zip，然后解压就欧克了</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Gfs0"><img src="https://s3.ax1x.com/2020/11/28/D6Gfs0.md.png" alt="D6Gfs0.md.png"></a></strong></p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a><strong>小结</strong></h1><p><strong>使用Annotation可以大幅简化配置，每个Bean通过<code>@Component</code>和<code>@Autowired</code>注入；</strong></p>
+<p><strong>必须合理设计包的层次结构，才能发挥<code>@ComponentScan</code>的威力。</strong></p>
+<p><strong><em>作者：zjh</em></strong></p>
+<h2 id="码字不易，留下你的评论吧"><a href="#码字不易，留下你的评论吧" class="headerlink" title="码字不易，留下你的评论吧"></a>码字不易，留下你的评论吧</h2>]]></content>
+      <categories>
+        <category>JAVA案例</category>
+      </categories>
+      <tags>
+        <tag>案例记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>友链使用</title>
+    <url>/posts/57d1587b.html</url>
+    <content><![CDATA[<h1 id="友链使用"><a href="#友链使用" class="headerlink" title="友链使用"></a>友链使用</h1><p><a href="https://imgchr.com/i/DrR4iR"><img src="https://s3.ax1x.com/2020/11/27/DrR4iR.png" alt="DrR4iR.png"></a></p>
+<h3 id="友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！"><a href="#友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！" class="headerlink" title="友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！"></a>友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！</h3><hr>
+<a id="more"></a>
+
+<h1 id="时光邮局："><a href="#时光邮局：" class="headerlink" title="时光邮局："></a>时光邮局：</h1><p>​        点进去，撰写信件，然后绑定一个自己的邮箱，然后在未来的某一时间寄给自己或某人！！！</p>
+<p><a href="https://imgchr.com/i/Dr4FeO"><img src="https://s3.ax1x.com/2020/11/27/Dr4FeO.png" alt="Dr4FeO.png"></a></p>
+<h2 id="为什么要给未来写信？"><a href="#为什么要给未来写信？" class="headerlink" title="为什么要给未来写信？"></a>为什么要给未来写信？</h2><p>​                从过去获得惊喜，<br>​                给你的未来一些灵感或安慰的话，<br>​                或者预测一下你的生活，这个世界，你的家人。<br>​                以及一年，五年会发生什么。</p>
+<h2 id="可以给任何人写信么？"><a href="#可以给任何人写信么？" class="headerlink" title="可以给任何人写信么？"></a>可以给任何人写信么？</h2><p>​                为了防止骚扰，营销邮件，<br>​                每次写信后都会往收件箱发一封验证邮件<br>​                点击了验证邮件，未来才会收到写的信<br>​                后续官网应该会开放更多功能哦</p>
+<hr>
+<h1 id="码云"><a href="#码云" class="headerlink" title="码云"></a>码云</h1><p><strong>码云</strong>：代码托管·协作开发平台，开发者超过 500 万，托管项目超过 1000 万，汇聚几乎所有本土原创开源项目，并于 2016 年推出企业版，提供企业级代码托管服务，成为开发领域领先的 SaaS 服务提供商。</p>
+<p>此码云并非彼马云，这个名字或许是蹭了某爸的热度。。但在这里，除了Github，GItee就是国内最好的代码托管了。毕竟</p>
+<p>鄙人的第一个静态网页就是在我师傅的教导，在gitee上搭建的。</p>
+<p>后期：我将会出一门git教程。教大家如何使用，并利用git来搭建自己的静态网页。</p>
+<hr>
+<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p><a href="https://imgchr.com/i/Dr5WCj"><img src="https://s3.ax1x.com/2020/11/27/Dr5WCj.png" alt="Dr5WCj.png"></a></p>
+<p>本网站就基于hexo框架及arey框架搭建。。</p>
+<p>感谢，感谢，感谢。</p>
+<p><strong>大家想去搭属于自己的网站的话</strong>，可以联系我们<strong>拾柒工作室</strong>，我们将<strong>有偿搭建</strong>（<strong>价格私聊</strong>）：</p>
+<table>
+<thead>
+<tr>
+<th align="center">邮箱</th>
+<th align="center"><a href="mailto:&#x32;&#x36;&#x30;&#x36;&#48;&#x39;&#x37;&#x32;&#x31;&#x38;&#x40;&#x71;&#113;&#46;&#99;&#111;&#109;">&#x32;&#x36;&#x30;&#x36;&#48;&#x39;&#x37;&#x32;&#x31;&#x38;&#x40;&#x71;&#113;&#46;&#99;&#111;&#109;</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>电话</strong></td>
+<td align="center">15270055490</td>
+</tr>
+<tr>
+<td align="center"><strong>工作室地址</strong></td>
+<td align="center">江信学院教学楼（606）</td>
+</tr>
+<tr>
+<td align="center"><strong>QQ</strong></td>
+<td align="center">2606097218</td>
+</tr>
+</tbody></table>
+<h1 id="高清壁纸"><a href="#高清壁纸" class="headerlink" title="高清壁纸"></a>高清壁纸</h1><p><a href="https://imgchr.com/i/DrTFgA"><img src="https://s3.ax1x.com/2020/11/27/DrTFgA.png" alt="DrTFgA.png"></a></p>
+<p>该工具是真的强悍；电脑壁纸多，精，美。最主要是有4k呀！</p>
+<hr>
+<h1 id="爱奇艺vip视频解析"><a href="#爱奇艺vip视频解析" class="headerlink" title="爱奇艺vip视频解析"></a>爱奇艺vip视频解析</h1><p>点击链接，将会看到一个地址栏，他要你填写一串链接，不要慌，我来教你，如何去嫖免费爱奇艺视频</p>
+<p><a href="https://imgchr.com/i/DrTHVf"><img src="https://s3.ax1x.com/2020/11/27/DrTHVf.png" alt="DrTHVf.png"></a></p>
+<ul>
+<li><h3 id="同时打开爱奇艺在线视频网站"><a href="#同时打开爱奇艺在线视频网站" class="headerlink" title="同时打开爱奇艺在线视频网站"></a>同时打开爱奇艺在线视频网站</h3></li>
+</ul>
+<p><a href="https://imgchr.com/i/Dr7MdK"><img src="https://s3.ax1x.com/2020/11/27/Dr7MdK.png" alt="Dr7MdK.png"></a></p>
+<ul>
+<li><h3 id="选择任意一个VIP电影，比如姜子牙，需要收费"><a href="#选择任意一个VIP电影，比如姜子牙，需要收费" class="headerlink" title="选择任意一个VIP电影，比如姜子牙，需要收费"></a>选择任意一个VIP电影，比如姜子牙，需要收费</h3></li>
+</ul>
+<p><a href="https://imgchr.com/i/Dr7NLt"><img src="https://s3.ax1x.com/2020/11/27/Dr7NLt.png" alt="Dr7NLt.png"></a></p>
+<ul>
+<li><h3 id="复制地址栏的爱奇艺视频链接"><a href="#复制地址栏的爱奇艺视频链接" class="headerlink" title="复制地址栏的爱奇艺视频链接"></a>复制地址栏的爱奇艺视频链接</h3><p><a href="https://imgchr.com/i/DrHb9g"><img src="https://s3.ax1x.com/2020/11/27/DrHb9g.png" alt="DrHb9g.png"></a></p>
+</li>
+<li><h3 id="返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了"><a href="#返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了" class="headerlink" title="返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了"></a>返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了</h3></li>
+</ul>
+<p><a href="https://imgchr.com/i/DrbQ8e"><img src="https://s3.ax1x.com/2020/11/27/DrbQ8e.png" alt="DrbQ8e.png"></a></p>
+<hr>
+<h1 id="糗事百科"><a href="#糗事百科" class="headerlink" title="糗事百科"></a>糗事百科</h1><p>点击进去</p>
+<p><a href="https://imgchr.com/i/DrbGDI"><img src="https://s3.ax1x.com/2020/11/27/DrbGDI.png" alt="DrbGDI.png"></a></p>
+<p>学习了一天，应该逛逛糗事@@@</p>
+<hr>
+<h1 id="阿里矢量ico"><a href="#阿里矢量ico" class="headerlink" title="阿里矢量ico"></a>阿里矢量ico</h1><p><a href="https://imgchr.com/i/Drbh24"><img src="https://s3.ax1x.com/2020/11/27/Drbh24.png" alt="Drbh24.png"></a></p>
+<p>阿里妈妈MUX倾力打造的矢量图标管理、交流平台。</p>
+<h4 id="设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。"><a href="#设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。" class="headerlink" title="设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。"></a>设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。</h4><hr>
+<h4 id="后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》https-cxq21-gitee-io"><a href="#后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》https-cxq21-gitee-io" class="headerlink" title="后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》https://cxq21.gitee.io/"></a>后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》<a href="https://cxq21.gitee.io/">https://cxq21.gitee.io/</a></h4><p>​                                                                                                                                                                                                                <em>作者：zjh</em>    </p>
+]]></content>
+      <categories>
+        <category>说明文档</category>
+      </categories>
+      <tags>
+        <tag>实用工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>加入拾柒工作室</title>
     <url>/posts/3dc898ff.html</url>
     <content><![CDATA[<h1 id="关于拾柒工作室"><a href="#关于拾柒工作室" class="headerlink" title="关于拾柒工作室"></a>关于拾柒工作室</h1><p>拾柒工作室是由三个在校大学生创建的一个小工作室。为何取名为“拾柒”，是因为我们三个人都来自17寝室，然后取名为拾柒，然后偷偷告诉你们，还有一个含义，大家可以在评论区留言，来揣测一下。</p>
@@ -13,13 +240,106 @@
 <p>​    具有过硬的前端语言（HTML+CSS+JS)等等（选）</p>
 <p>​    具有审美高的UI设计（PS+AI+会使用图床）等等（选）</p>
 <p>​    具有JAVA,JAVAScript,Python等等清晰过硬的理论（选）</p>
-<h1 id="加入邮箱（-x32-x36-48-54-48-57-x37-50-x31-x38-64-x71-113-46-99-111-109"><a href="#加入邮箱（-x32-x36-48-54-48-57-x37-50-x31-x38-64-x71-113-46-99-111-109" class="headerlink" title="加入邮箱（&#x32;&#x36;&#48;&#54;&#48;&#57;&#x37;&#50;&#x31;&#x38;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;)"></a>加入邮箱（<a href="mailto:&#x32;&#x36;&#48;&#54;&#48;&#57;&#x37;&#50;&#x31;&#x38;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;">&#x32;&#x36;&#48;&#54;&#48;&#57;&#x37;&#50;&#x31;&#x38;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;</a>)</h1><h1 id="联系电话（15270055490-佐佳豪）"><a href="#联系电话（15270055490-佐佳豪）" class="headerlink" title="联系电话（15270055490 佐佳豪）"></a>联系电话（15270055490 佐佳豪）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
+<h1 id="加入邮箱（-x32-54-x30-54-48-57-x37-50-49-x38-64-113-x71-46-99-111-109"><a href="#加入邮箱（-x32-54-x30-54-48-57-x37-50-49-x38-64-113-x71-46-99-111-109" class="headerlink" title="加入邮箱（&#x32;&#54;&#x30;&#54;&#48;&#57;&#x37;&#50;&#49;&#x38;&#64;&#113;&#x71;&#46;&#99;&#111;&#109;)"></a>加入邮箱（<a href="mailto:&#x32;&#54;&#x30;&#54;&#48;&#57;&#x37;&#50;&#49;&#x38;&#64;&#113;&#x71;&#46;&#99;&#111;&#109;">&#x32;&#54;&#x30;&#54;&#48;&#57;&#x37;&#50;&#49;&#x38;&#64;&#113;&#x71;&#46;&#99;&#111;&#109;</a>)</h1><h1 id="联系电话（15270055490-佐佳豪）"><a href="#联系电话（15270055490-佐佳豪）" class="headerlink" title="联系电话（15270055490 佐佳豪）"></a>联系电话（15270055490 佐佳豪）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
 ]]></content>
       <categories>
         <category>关于本站</category>
       </categories>
       <tags>
         <tag>关于我们</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数组控制</title>
+    <url>/posts/335f9f1b.html</url>
+    <content><![CDATA[<p>本节我们将讲解对数组的操作，包括：</p>
+<ul>
+<li>遍历；</li>
+<li>排序。</li>
+</ul>
+<p>以及多维数组的概念。</p>
+<hr>
+<p>[TOC]</p>
+<h1 id="（1）数组遍历"><a href="#（1）数组遍历" class="headerlink" title="（1）数组遍历"></a>（1）数组遍历</h1><p>数组遍历有两种方法：</p>
+<p>1、for循环</p>
+<p>2、for each循环</p>
+<p>一一道来；</p>
+<p>for循环来遍历数组</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span>[]num =&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">23</span>,<span class="number">42</span>,<span class="number">11</span>,<span class="number">90</span>&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;num.length;i++)&#123;</span><br><span class="line">    System.out.print(num[i]+<span class="string">&quot; &quot;</span>);</span><br><span class="line">&#125;<span class="comment">//打印 1 2 23 42 11 90</span></span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<p>如果循环索引超过数组的长度会报空指针异常（ArrayIndexOutOfBoundsException）。为了避免，我们应该注意索引不要超过数组长度，举个栗子：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span>[]num =&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">23</span>,<span class="number">42</span>,<span class="number">11</span>,<span class="number">90</span>&#125;; <span class="comment">//num.length=6,不可超过6，所以一般遍历的时候，循环条件都会是i&lt;num.length</span></span><br></pre></td></tr></table></figure>
+
+<p>for each 遍历</p>
+<p>for each 是一种循环数组更简单一点的方法，只不过他只可以读取数据，不可以像for遍历改变或写入数组里的数据。但只是遍历数组的数据的时候，却很好用。上才艺：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span>[]num =&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">23</span>,<span class="number">42</span>,<span class="number">11</span>,<span class="number">90</span>&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> n:num)&#123;</span><br><span class="line">    sout(n);</span><br><span class="line">&#125;<span class="comment">//打印 1 2 23 42 11 90</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="（2）排序"><a href="#（2）排序" class="headerlink" title="（2）排序"></a>（2）排序</h1><p>讲到排序，比较经典的是冒泡排序了，就是将数组里的数值像水里的气泡一样，从下往上冒</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] ns = &#123; <span class="number">28</span>, <span class="number">12</span>, <span class="number">89</span>, <span class="number">73</span>, <span class="number">65</span>, <span class="number">18</span>, <span class="number">96</span>, <span class="number">50</span>, <span class="number">8</span>, <span class="number">36</span> &#125;;</span><br><span class="line">        <span class="comment">// 排序前:</span></span><br><span class="line">        System.out.println(Arrays.toString(ns));</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; ns.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; ns.length - i - <span class="number">1</span>; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (ns[j] &gt; ns[j+<span class="number">1</span>]) &#123;</span><br><span class="line">                    <span class="comment">// 交换ns[j]和ns[j+1]:</span></span><br><span class="line">                    <span class="keyword">int</span> tmp = ns[j];</span><br><span class="line">                    ns[j] = ns[j+<span class="number">1</span>];</span><br><span class="line">                    ns[j+<span class="number">1</span>] = tmp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 排序后:</span></span><br><span class="line">        System.out.println(Arrays.toString(ns));</span><br><span class="line">    &#125;<span class="comment">//[28, 12, 89, 73, 65, 18, 96, 50, 8, 36]</span></span><br><span class="line">	<span class="comment">//[8, 12, 18, 28, 36, 50, 65, 73, 89, 96]	</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>冒泡排序的特点是，每一轮循环后，最大的一个数被交换到末尾，因此，下一轮循环就可以“刨除”最后的数，每一轮循环都比上一轮循环的结束位置靠前一位。</p>
+<p>另外，注意到交换两个变量的值必须借助一个临时变量。</p>
+<p>正确的写法是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int x &#x3D; 1;</span><br><span class="line">int y &#x3D; 2;</span><br><span class="line"></span><br><span class="line">int t &#x3D; x; &#x2F;&#x2F; 把x的值保存在临时变量t中, t现在是1</span><br><span class="line">x &#x3D; y; &#x2F;&#x2F; x现在是2</span><br><span class="line">y &#x3D; t; &#x2F;&#x2F; y现在是t的值1</span><br></pre></td></tr></table></figure>
+
+<p>实际上，Java的标准库已经内置了排序功能，我们只需要调用JDK提供的<code>Arrays.sort()</code>就可以排序：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span>[] ns = &#123; <span class="number">28</span>, <span class="number">12</span>, <span class="number">89</span>, <span class="number">73</span>, <span class="number">65</span>, <span class="number">18</span>, <span class="number">96</span>, <span class="number">50</span>, <span class="number">8</span>, <span class="number">36</span> &#125;;</span><br><span class="line">    Arrays.sort(ns);</span><br><span class="line">    System.out.println(Arrays.toString(ns));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>必须注意，对数组排序实际上修改了数组本身。例如，排序前的数组是：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span>[] ns = &#123; <span class="number">9</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">5</span> &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>在内存中，这个整型数组表示如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">      ┌───┬───┬───┬───┐</span><br><span class="line">ns───&gt;│ 9 │ 3 │ 6 │ 5 │</span><br><span class="line">      └───┴───┴───┴───┘</span><br></pre></td></tr></table></figure>
+
+<p>当我们调用<code>Arrays.sort(ns);</code>后，这个整型数组在内存中变为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">      ┌───┬───┬───┬───┐</span><br><span class="line">ns───&gt;│ 3 │ 5 │ 6 │ 9 │</span><br><span class="line">      └───┴───┴───┴───┘</span><br></pre></td></tr></table></figure>
+
+<p>即变量<code>ns</code>指向的数组内容已经被改变了。</p>
+<p>如果对一个字符串数组进行排序，例如：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String[] ns = &#123; <span class="string">&quot;banana&quot;</span>, <span class="string">&quot;apple&quot;</span>, <span class="string">&quot;pear&quot;</span> &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>排序前，这个数组在内存中表示如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">                   ┌──────────────────────────────────┐</span><br><span class="line">               ┌───┼──────────────────────┐           │</span><br><span class="line">               │   │                      ▼           ▼</span><br><span class="line">         ┌───┬─┴─┬─┴─┬───┬────────┬───┬───────┬───┬──────┬───┐</span><br><span class="line">ns ─────&gt;│░░░│░░░│░░░│   │&quot;banana&quot;│   │&quot;apple&quot;│   │&quot;pear&quot;│   │</span><br><span class="line">         └─┬─┴───┴───┴───┴────────┴───┴───────┴───┴──────┴───┘</span><br><span class="line">           │                 ▲</span><br><span class="line">           └─────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>调用<code>Arrays.sort(ns);</code>排序后，这个数组在内存中表示如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">                   ┌──────────────────────────────────┐</span><br><span class="line">               ┌───┼──────────┐                       │</span><br><span class="line">               │   │          ▼                       ▼</span><br><span class="line">         ┌───┬─┴─┬─┴─┬───┬────────┬───┬───────┬───┬──────┬───┐</span><br><span class="line">ns ─────&gt;│░░░│░░░│░░░│   │&quot;banana&quot;│   │&quot;apple&quot;│   │&quot;pear&quot;│   │</span><br><span class="line">         └─┬─┴───┴───┴───┴────────┴───┴───────┴───┴──────┴───┘</span><br><span class="line">           │                              ▲</span><br><span class="line">           └──────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>原来的3个字符串在内存中均没有任何变化，但是<code>ns</code>数组的每个元素指向变化了。</p>
+<p>[TOC]</p>
+<h1 id="（3）多维数组"><a href="#（3）多维数组" class="headerlink" title="（3）多维数组"></a>（3）多维数组</h1><h3 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h3><p>二维数组就是数组的数组。定义一个二维数组如下：</p>
+<h4 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[][] ns = &#123;</span><br><span class="line">            &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> &#125;,</span><br><span class="line">            &#123; <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span> &#125;,</span><br><span class="line">            &#123; <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span> &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        System.out.println(ns.length); <span class="comment">// 3</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> [] [] arr = <span class="keyword">new</span> <span class="keyword">int</span> [<span class="number">3</span>] [<span class="number">4</span>];</span><br><span class="line"><span class="keyword">int</span> [<span class="number">0</span>] [] =&#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> &#125;;</span><br><span class="line"><span class="keyword">int</span> [<span class="number">1</span>] [] =&#123; <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>  &#125;;</span><br><span class="line"><span class="keyword">int</span> [<span class="number">2</span>] [] =&#123; <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span> &#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> [] [] arr = <span class="keyword">new</span> <span class="keyword">int</span> [<span class="number">3</span>] [];</span><br><span class="line"><span class="keyword">int</span> [<span class="number">0</span>] [] =&#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> &#125;;</span><br><span class="line"><span class="keyword">int</span> [<span class="number">1</span>] [] =&#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> &#125;;</span><br><span class="line"><span class="keyword">int</span> [<span class="number">2</span>] [] =&#123; <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span> &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>因为<code>ns</code>包含3个数组，因此，<code>ns.length</code>为<code>3</code>。实际上<code>ns</code>在内存中的结构如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">                    ┌───┬───┬───┬───┐</span><br><span class="line">         ┌───┐  ┌──&gt;│ 1 │ 2 │ 3 │ 4 │</span><br><span class="line">ns ─────&gt;│░░░│──┘   └───┴───┴───┴───┘</span><br><span class="line">         ├───┤      ┌───┬───┬───┬───┐</span><br><span class="line">         │░░░│─────&gt;│ 5 │ 6 │ 7 │ 8 │</span><br><span class="line">         ├───┤      └───┴───┴───┴───┘</span><br><span class="line">         │░░░│──┐   ┌───┬───┬───┬───┐</span><br><span class="line">         └───┘  └──&gt;│ 9 │10 │11 │12 │</span><br><span class="line">                    └───┴───┴───┴───┘</span><br></pre></td></tr></table></figure>
+
+<p>要打印一个二维数组，可以使用两层嵌套的for循环：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span>[] arr : ns) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> n : arr) &#123;</span><br><span class="line">        System.out.print(n);</span><br><span class="line">        System.out.print(<span class="string">&#x27;, &#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="三维数组"><a href="#三维数组" class="headerlink" title="三维数组"></a>三维数组</h3><p>三维数组就是二维数组的数组。可以这么定义一个三维数组：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int[][][] ns &#x3D; &#123;</span><br><span class="line">    &#123;</span><br><span class="line">        &#123;1, 2, 3&#125;,</span><br><span class="line">        &#123;4, 5, 6&#125;,</span><br><span class="line">        &#123;7, 8, 9&#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &#123;10, 11&#125;,</span><br><span class="line">        &#123;12, 13&#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &#123;14, 15, 16&#125;,</span><br><span class="line">        &#123;17, 18&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>它在内存中的结构如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">                              ┌───┬───┬───┐</span><br><span class="line">                   ┌───┐  ┌──&gt;│ 1 │ 2 │ 3 │</span><br><span class="line">               ┌──&gt;│░░░│──┘   └───┴───┴───┘</span><br><span class="line">               │   ├───┤      ┌───┬───┬───┐</span><br><span class="line">               │   │░░░│─────&gt;│ 4 │ 5 │ 6 │</span><br><span class="line">               │   ├───┤      └───┴───┴───┘</span><br><span class="line">               │   │░░░│──┐   ┌───┬───┬───┐</span><br><span class="line">        ┌───┐  │   └───┘  └──&gt;│ 7 │ 8 │ 9 │</span><br><span class="line">ns ────&gt;│░░░│──┘              └───┴───┴───┘</span><br><span class="line">        ├───┤      ┌───┐      ┌───┬───┐</span><br><span class="line">        │░░░│─────&gt;│░░░│─────&gt;│10 │11 │</span><br><span class="line">        ├───┤      ├───┤      └───┴───┘</span><br><span class="line">        │░░░│──┐   │░░░│──┐   ┌───┬───┐</span><br><span class="line">        └───┘  │   └───┘  └──&gt;│12 │13 │</span><br><span class="line">               │              └───┴───┘</span><br><span class="line">               │   ┌───┐      ┌───┬───┬───┐</span><br><span class="line">               └──&gt;│░░░│─────&gt;│14 │15 │16 │</span><br><span class="line">                   ├───┤      └───┴───┴───┘</span><br><span class="line">                   │░░░│──┐   ┌───┬───┐</span><br><span class="line">                   └───┘  └──&gt;│17 │18 │</span><br><span class="line">                              └───┴───┘</span><br></pre></td></tr></table></figure>
+
+<p>如果我们要访问三维数组的某个元素，例如，<code>ns[2][0][1]</code>，只需要顺着定位找到对应的最终元素<code>15</code>即可。</p>
+<p>理论上，我们可以定义任意的N维数组。但在实际应用中，除了二维数组在某些时候还能用得上，更高维度的数组很少使用。</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>二维数组就是数组的数组，三维数组就是二维数组的数组；</p>
+<p>多维数组的每个数组元素长度都不要求相同；</p>
+<p>最常见的多维数组是二维数组，访问二维数组的一个元素使用<code>array[row][col]</code>。</p>
+<p>[TOC]</p>
+<p>。。。。。。。。。。</p>
+<p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>JAVA笔记</category>
+      </categories>
+      <tags>
+        <tag>JAVA笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -45,7 +365,145 @@
   <entry>
     <title>流程控制</title>
     <url>/posts/368ebfeb.html</url>
-    <content><![CDATA[<p>。。。。。。。</p>
+    <content><![CDATA[<p>[TOC]</p>
+<h1 id="（1）选择结构语句"><a href="#（1）选择结构语句" class="headerlink" title="（1）选择结构语句"></a>（1）选择结构语句</h1><h2 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h2><p>if语句格式是</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(条件语句)&#123;</span><br><span class="line">	代码块</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>条件语句里是只可以放布尔值，当为true是，执行代码块里的，反之。举个栗子：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> i=<span class="number">1</span>;</span><br><span class="line">       <span class="keyword">if</span>(i&gt;<span class="number">0</span>)&#123;</span><br><span class="line">           i++;</span><br><span class="line">       &#125;</span><br><span class="line">       System.out.println(i);<span class="comment">//2</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="if…else语句"><a href="#if…else语句" class="headerlink" title="if…else语句"></a>if…else语句</h2><p>当判断条件为true时，执行if语句的。如果为false执行else里的。</p>
+<p>语法格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(判断条件)&#123;</span><br><span class="line">	执行语句</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	执行语句</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>举个栗子</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> i=<span class="number">1</span>;</span><br><span class="line">       <span class="keyword">if</span>(i&gt;<span class="number">2</span>)&#123;<span class="comment">//false</span></span><br><span class="line">           System.out.println(i);</span><br><span class="line">       &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">           System.out.println(<span class="string">&quot;执行else&quot;</span>);<span class="comment">//打印执行else</span></span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+
+<p>还有一种三元运算，类似if…else：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">判断条件？表达式1：表达式2</span><br></pre></td></tr></table></figure>
+
+<p>当判断条件为true时，执行冒号前面的，反之，执行冒号后面的。</p>
+<h2 id="if…else-if…else语句"><a href="#if…else-if…else语句" class="headerlink" title="if…else if…else语句"></a>if…else if…else语句</h2><p>该语句根据多种判断结果，执行相应结果。</p>
+<p>语法格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(判断条件)&#123;</span><br><span class="line">	执行语句</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(判断条件)&#123;</span><br><span class="line">	执行语句</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	执行语句。。。</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>举个栗子</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">if</span>(i&gt;<span class="number">11</span>)&#123;</span><br><span class="line">	sout(<span class="string">&quot;执行语句&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">	sout(<span class="string">&quot;LIEFox&quot;</span>);<span class="comment">//最后打印出来的结果是LIEFox</span></span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	sout(<span class="string">&quot;FOX&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h2><p>语法格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span> (表达式)&#123;</span><br><span class="line">           <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">               执行语句<span class="number">1</span>;</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">           <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">               执行语句<span class="number">2</span>;</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">           <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">               执行语句<span class="number">3</span>;</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">           <span class="keyword">default</span>:</span><br><span class="line">               执行语句<span class="number">4</span>;</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果不break，将不会结束语句，会执行下一个语句。举个栗子</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span> (<span class="number">2</span>)&#123;</span><br><span class="line">           <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">               sout(<span class="number">1</span>);</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">           <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">               sout(<span class="number">2</span>);</span><br><span class="line">           <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">               sout(<span class="number">3</span>);</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">           <span class="keyword">default</span>:</span><br><span class="line">               sout(<span class="number">4</span>);</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">       &#125;</span><br><span class="line"><span class="comment">/*结果为23。因为表达式为2，就从case 2 开始执行，</span></span><br><span class="line"><span class="comment">打印2、又因为没有break，不会跳出循环，就会继续执</span></span><br><span class="line"><span class="comment">行case 3 里的语句，直到break跳出语句。*/</span></span><br></pre></td></tr></table></figure>
+
+<p>switch在JDK7.0的时候，加入了可以判断String类型。</p>
+<p>switch中还加入了简单的写法，因为有些情况，case1、2、3都有可能结果相同，所以可以这样：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span> (<span class="number">2</span>)&#123;</span><br><span class="line">           <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">           <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">           <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">               sout(<span class="number">3</span>);</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">           <span class="keyword">default</span>:</span><br><span class="line">               sout(<span class="number">4</span>);</span><br><span class="line">               <span class="keyword">break</span>;</span><br><span class="line">       &#125;<span class="comment">//结果为3</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>[TOC]</p>
+<h1 id="（2）循环结构语句"><a href="#（2）循环结构语句" class="headerlink" title="（2）循环结构语句"></a>（2）循环结构语句</h1><h2 id="while语句"><a href="#while语句" class="headerlink" title="while语句"></a>while语句</h2><p>语法格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (循环条件)&#123;</span><br><span class="line">	执行语句</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>循环条件里依旧，true就执行，false就停止。</p>
+<p>举个栗子</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> i =<span class="number">1</span>;</span><br><span class="line">       <span class="keyword">while</span> (i&lt;=<span class="number">5</span>)&#123;</span><br><span class="line">           System.out.println(<span class="string">&quot;i=&quot;</span>+i);</span><br><span class="line">           i++;</span><br><span class="line">       &#125;</span><br><span class="line">       结果<span class="comment">/*i=1</span></span><br><span class="line"><span class="comment">            i=2</span></span><br><span class="line"><span class="comment">            i=3</span></span><br><span class="line"><span class="comment">            i=4</span></span><br><span class="line"><span class="comment">            i=5*/</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="do…while循环语句"><a href="#do…while循环语句" class="headerlink" title="do…while循环语句"></a>do…while循环语句</h2><p>语法格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	执行语句</span><br><span class="line">&#125;<span class="keyword">while</span>(循环条件)</span><br></pre></td></tr></table></figure>
+
+<p>可见，<code>do while</code>循环会至少循环一次。</p>
+<p>我们把对1到100的求和用<code>do while</code>循环改写一下：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> n = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">do</span> &#123;</span><br><span class="line">            sum = sum + n;</span><br><span class="line">            n ++;</span><br><span class="line">        &#125; <span class="keyword">while</span> (n &lt;= <span class="number">100</span>);</span><br><span class="line">        System.out.println(sum);<span class="comment">//结果为5050</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p><code>do while</code>循环先执行循环，再判断条件；</p>
+<p><code>do while</code>循环会至少执行一次。</p>
+<h2 id="for语句"><a href="#for语句" class="headerlink" title="for语句"></a>for语句</h2><p>语法格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (初始化表达式;循环条件;操作表达式)&#123;</span><br><span class="line">	执行语句</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>举个栗子</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i =<span class="number">0</span>;i&lt;=<span class="number">7</span>;i++)&#123;</span><br><span class="line">      System.out.println(<span class="string">&quot;LIEFox&quot;</span>);</span><br><span class="line">&#125;<span class="comment">//将会打印7次LIEFox</span></span><br></pre></td></tr></table></figure>
+
+<p>执行顺序是这样的》</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.起始位置从i&#x3D;0开始，“0&lt;&#x3D;7”为true，打印LIEFox，回到i++,i&#x3D;1。</span><br><span class="line">2.i&#x3D;1,&quot;1&lt;&#x3D;7&quot;为true，打印LIEFox，回到i++,i&#x3D;2。</span><br><span class="line">。。。。。</span><br><span class="line">7.i&#x3D;7,&quot;7&lt;&#x3D;7&quot;为true，打印LIEFox，回到i++,i&#x3D;8。</span><br><span class="line">8.i&#x3D;8,&quot;8&lt;&#x3D;7&quot;为false，循环结束。</span><br></pre></td></tr></table></figure>
+
+<h2 id="循环嵌套"><a href="#循环嵌套" class="headerlink" title="循环嵌套"></a>循环嵌套</h2><p>所谓循环嵌套，指的是多种控制语句相组合，实现自己想要的功能。</p>
+<p>就简单的两层for循环，就可以实现一个美妙的形状组成的实现。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i =<span class="number">0</span>;i&lt;=<span class="number">10</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> x =i;x&lt;=<span class="number">5</span>;x++)&#123;</span><br><span class="line">                 System.out.print(<span class="string">&quot;*&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println();</span><br><span class="line">        &#125;</span><br><span class="line">******</span><br><span class="line">*****</span><br><span class="line">****</span><br><span class="line">***</span><br><span class="line">**</span><br><span class="line">*</span><br></pre></td></tr></table></figure>
+
+<p>运行到第二层的for循环，因为最后i=x=6；6&lt;=5=false,就停止打印*</p>
+<p><a href="https://imgchr.com/i/rpcv5R"><img src="https://s3.ax1x.com/2020/12/08/rpcv5R.png" alt="rpcv5R.png"></a></p>
+<h2 id="跳转语句"><a href="#跳转语句" class="headerlink" title="跳转语句"></a>跳转语句</h2><p>break和continue</p>
+<p>break：在之前的switch控制语句就用到了，执行到break，就结束循环。</p>
+<p>continue：是跳出本次循环。</p>
+<p>举个continue的栗子</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=<span class="number">5</span>; i++) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;begin i = &quot;</span> + i);</span><br><span class="line">            <span class="keyword">if</span> (i % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">continue</span>; <span class="comment">// continue语句会结束本次循环</span></span><br><span class="line">            &#125;</span><br><span class="line">            sum = sum + i;</span><br><span class="line">            System.out.println(<span class="string">&quot;end i = &quot;</span> + i);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(sum); <span class="comment">// 9</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//结果</span></span><br><span class="line">begin i = <span class="number">1</span></span><br><span class="line">end i = <span class="number">1</span></span><br><span class="line">begin i = <span class="number">2</span></span><br><span class="line">begin i = <span class="number">3</span></span><br><span class="line">end i = <span class="number">3</span></span><br><span class="line">begin i = <span class="number">4</span></span><br><span class="line">begin i = <span class="number">5</span></span><br><span class="line">end i = <span class="number">5</span></span><br><span class="line"><span class="number">9</span></span><br></pre></td></tr></table></figure>
+
+<p>注意观察<code>continue</code>语句的效果。当<code>i</code>为奇数时，完整地执行了整个循环，因此，会打印<code>begin i=1</code>和<code>end i=1</code>。在i为偶数时，<code>continue</code>语句会提前结束本次循环，因此，会打印<code>begin i=2</code>但不会打印<code>end i = 2</code>。</p>
+<p>在多层嵌套的循环中，<code>continue</code>语句同样是结束本次自己所在的循环。</p>
+<h3 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h3><p><code>break</code>语句可以跳出当前循环；</p>
+<p><code>break</code>语句通常配合<code>if</code>，在满足条件时提前结束整个循环；</p>
+<p><code>break</code>语句总是跳出最近的一层循环；</p>
+<p><code>continue</code>语句可以提前结束本次循环；</p>
+<p><code>continue</code>语句通常配合<code>if</code>，在满足条件时提前结束本次循环。</p>
+<hr>
+<p>。。。。。。。</p>
+<p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>JAVA笔记</category>
+      </categories>
+      <tags>
+        <tag>JAVA笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站来源灵感</title>
+    <url>/posts/6b5b190a.html</url>
+    <content><![CDATA[<p>欢迎来到<a href="https://cxq21.gitee.io/">LIEFox</a>! 这是我们的官方网站.这是我们第一篇文章！！！</p>
+<h1 id="网站来源灵感"><a href="#网站来源灵感" class="headerlink" title="网站来源灵感"></a>网站来源灵感</h1><p>为什么要搭建出这个网站，原因是发现许多同学在课后作业不会做时，迷茫不知去和处寻找。目前百度可以搜到的也只有CSDN里面里的代码。但CSDN里的代码少数可以为我们所用，对许多初学者并不友好，所以，我发现这个问题，一开始将项目放在Gitee上<a href="https://gitee.com/cxq21">我的项目</a>,发现许多同学并不会正确使用。导致项目并不可以正常运行。<strong>因此，</strong>我就找到了我的室友（前端攻城狮：万津津）、（UI射击狮：李玮峰）联手搭建了这个网站！！！<a id="more"></a></p>
+<h1 id="站名之源"><a href="#站名之源" class="headerlink" title="站名之源"></a>站名之源</h1><p><a href="https://cxq21.gitee.io/">LIEFox</a>，LIE：谎言；Fox:狐狸。！！！没错！！！组合起来是“谎言之狐”。希望网站可以使用户思维像西伯利亚的雪狐一样，在代码中寻找自己需要的猎物（代码），并做到（谎）花草丛中过，片叶不沾身。</p>
+<h1 id="LOGO灵感"><a href="#LOGO灵感" class="headerlink" title="LOGO灵感"></a>LOGO灵感</h1><p><a href="https://imgchr.com/i/DDAP1I"><img src="https://s3.ax1x.com/2020/11/27/DDAP1I.png" alt="DDAP1I.png"></a></p>
+<p>应景了站名LIEFox，可爱logo是折纸风格的狐狸与站名相结合，liefox采取了狐狸身上的几个主要颜色。</p>
+<p>为什么选狐狸呢？肯定是狐狸可爱呀哈哈哈，像这样的</p>
+<p><a href="https://imgchr.com/i/DDAeAg"><img src="https://s3.ax1x.com/2020/11/27/DDAeAg.md.jpg" alt="DDAeAg.md.jpg"></a></p>
+<p>这样的</p>
+<p><a href="https://imgchr.com/i/DDAIDf"><img src="https://s3.ax1x.com/2020/11/27/DDAIDf.jpg" alt="DDAIDf.jpg"></a></p>
+<p>这样的</p>
+<p><a href="https://imgchr.com/i/DDA5KP"><img src="https://s3.ax1x.com/2020/11/27/DDA5KP.jpg" alt="DDA5KP.jpg"></a></p>
+<p>这样的</p>
+<p><a href="https://imgchr.com/i/DDAhvt"><img src="https://s3.ax1x.com/2020/11/27/DDAhvt.jpg" alt="DDAhvt.jpg"></a></p>
+<p>爱了爱了爱了</p>
+<h2 id="不出意外的话过些天将是我们LIEFox的吉祥物。"><a href="#不出意外的话过些天将是我们LIEFox的吉祥物。" class="headerlink" title="不出意外的话过些天将是我们LIEFox的吉祥物。"></a>不出意外的话过些天将是我们LIEFox的吉祥物。</h2><p>​                                                                                                                                                                                                                <em>作者：zjh</em>    </p>
+]]></content>
+      <categories>
+        <category>关于本站</category>
+      </categories>
+      <tags>
+        <tag>网站来源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象基础</title>
+    <url>/posts/9d9ad23f.html</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h1 id="（1）面向对象的概念"><a href="#（1）面向对象的概念" class="headerlink" title="（1）面向对象的概念"></a>（1）面向对象的概念</h1><p>面向对象是一种符合人类思维的编程思想，将万物比作对象，说一个栗子：</p>
+<p><strong>把大象装进冰箱需要几步</strong></p>
+<p>三步</p>
+<ol>
+<li>打开冰箱</li>
+<li>装进大象</li>
+<li>关上冰箱门</li>
+</ol>
+<p><strong>这个是一个典型的面向过程的编程思想，把这个事情，像成敲java代码，如果换成装狐狸，那也要重新写一遍代码，将狐狸放进冰箱，执行三步，如果又换把狐狸放进笼子里呢，又要重新写一遍。所以为了解决事情的重复性，就有了面向对象思想。</strong></p>
+<p>就可以将装进某件事物封装成一个对象，只需要改动一点点，就可以实现这个功能。。。。</p>
+<p>而面向对象有三个特点：</p>
+<p>1.封装性</p>
+<p>封装性是将对象的属性和行为封装起来，然后不需要让用户知道他是怎么执行的，只需要改变对应的参数，就可以实现用户想要达到的功能。</p>
+<p>2.继承性</p>
+<p>继承性主要讲的是类与类之间的关系，可以通过继承将代码的冗余降低。用最少的代码，做更多的功能。</p>
+<p>3.多态性</p>
+<p>多态性是指程序之间允许出现重名的现象。在继承关系中，子类如果定义了一个与父类方法签名完全相同的方法，被称为覆写（Override）。</p>
 ]]></content>
       <categories>
         <category>JAVA笔记</category>
@@ -433,7 +891,7 @@
 <li>数组所有元素初始化为默认值，整型都是<code>0</code>，浮点型是<code>0.0</code>，布尔型是<code>false</code>；</li>
 <li>数组一旦创建后，大小就不可改变。</li>
 </ul>
-<p>要访问数组中的某一个元素，需要使用索引。数组索引从<code>0</code>开始，例如，5个元素的数组，索引范围是<code>0</code>~`4`。</p>
+<p>要访问数组中的某一个元素，需要使用索引。<strong>数组索引从<code>0</code>开始，例如，5个元素的数组，索引范围是<code>0</code>~`4`。</strong></p>
 <p>可以修改数组中的某一个元素，使用赋值语句，例如，<code>ns[1] = 79;</code>。</p>
 <p>可以用<code>数组变量.length</code>获取数组大小：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span>[] ns = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line">System.out.println(ns.length); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
@@ -465,255 +923,6 @@
       </categories>
       <tags>
         <tag>JAVA笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JAVA目录</title>
-    <url>/posts/fdedec16.html</url>
-    <content><![CDATA[<h1 id="今天开始正式写Java笔记"><a href="#今天开始正式写Java笔记" class="headerlink" title="今天开始正式写Java笔记"></a>今天开始正式写Java笔记</h1><h2 id="为什么要写Java笔记？"><a href="#为什么要写Java笔记？" class="headerlink" title="为什么要写Java笔记？"></a>为什么要写Java笔记？</h2><p>作为一个学习技术的的小站</p>
-<p>LIEFox已经磨刀了许久，终于要正式推出Java菜鸟笔记了。在这里我要立个Flag，从入门到入坟一定要坚持写完。顺便巩固一下自己的基础（就是因为鄙人太弱了，哎~），以免面试的时候被问到自闭！！！</p>
-<h3 id="最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！"><a href="#最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！" class="headerlink" title="最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！"></a>最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！</h3><hr>
-<h4 id="JAVA笔记将会分为以下几个阶段"><a href="#JAVA笔记将会分为以下几个阶段" class="headerlink" title="JAVA笔记将会分为以下几个阶段"></a>JAVA笔记将会分为以下几个阶段</h4><h1 id="（目录）"><a href="#（目录）" class="headerlink" title="（目录）"></a><strong>（目录）</strong></h1><h2 id="一、JAVA入门"><a href="#一、JAVA入门" class="headerlink" title="一、JAVA入门"></a>一、JAVA入门</h2><ul>
-<li>Java快速入门<ol>
-<li><a href="https://cxq21.gitee.io/posts/98ac5948.html" target="_blank">JAVA简介</a></li>
-<li><a href="https://cxq21.gitee.io/posts/bdfde94f.html" target="_blank">JAVA程序基础</a></li>
-<li><a href="https://cxq21.gitee.io/posts/368ebfeb.html" target="_blank">流程控制</a></li>
-<li>数组控制</li>
-</ol>
-</li>
-<li>面向对象编程</li>
-<li>异常处理</li>
-<li>反射</li>
-<li>注解</li>
-<li>泛型</li>
-<li>集合</li>
-<li>IO</li>
-<li>日期与时间</li>
-<li>单元测试</li>
-<li>正则表达式</li>
-</ul>
-<h2 id="二、JAVA进阶"><a href="#二、JAVA进阶" class="headerlink" title="二、JAVA进阶"></a>二、JAVA进阶</h2><ul>
-<li>加密与安全</li>
-<li>多线程</li>
-<li>Maven基础</li>
-<li>网络编程</li>
-<li>XML与JSON</li>
-<li>JDBC编程</li>
-<li>Mybaits技术</li>
-<li>函数式编程</li>
-<li>设计模式</li>
-<li>Web开发</li>
-<li>Spring开发</li>
-<li>SpringMVC开发</li>
-</ul>
-]]></content>
-      <categories>
-        <category>JAVA笔记</category>
-      </categories>
-      <tags>
-        <tag>JAVA笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring-ioc基于注解</title>
-    <url>/posts/693b31a5.html</url>
-    <content><![CDATA[<h1 id="要求"><a href="#要求" class="headerlink" title="要求"></a><strong>要求</strong></h1><p>使用Spring的IoC容器，实际上就是通过类似XML这样的配置文件，把我们自己的Bean的依赖关系描述出来，然后让容器来创建并装配Bean。一旦容器初始化完毕，我们就直接从容器中获取Bean使用它们。</p>
-<p>使用XML配置的优点是所有的Bean都能一目了然地列出来，并通过配置注入能直观地看到每个Bean的依赖。它的缺点是写起来非常繁琐，每增加一个组件，就必须把新的Bean配置到XML中。</p>
-<p>有没有其他更简单的配置方式呢？</p>
-<p>有！我们可以使用Annotation配置，可以完全不需要XML，让Spring自动扫描Bean并组装它们。</p>
-<h3 id="所以今天我们用注解来写一个基于注解的Spring"><a href="#所以今天我们用注解来写一个基于注解的Spring" class="headerlink" title="所以今天我们用注解来写一个基于注解的Spring"></a>所以今天我们用注解来写一个基于注解的Spring</h3><p><strong><a href="https://imgchr.com/i/D6E1Mj"><img src="https://s3.ax1x.com/2020/11/28/D6E1Mj.md.png" alt="D6E1Mj.md.png"></a></strong></p>
-<hr>
-<p><strong><a id="more"></a></strong></p>
-<p><strong>由于是基于注解的IoC的Spring开发，所以我们要导入一个关键的jar包</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6Z7Pf"><img src="https://s3.ax1x.com/2020/11/28/D6Z7Pf.png" alt="D6Z7Pf.png"></a></strong></p>
-<hr>
-<h4 id="好啦，正题开始"><a href="#好啦，正题开始" class="headerlink" title="好啦，正题开始"></a><strong>好啦，正题开始</strong></h4><h1 id="第一步，万恶之源，打开我们的idea"><a href="#第一步，万恶之源，打开我们的idea" class="headerlink" title="第一步，万恶之源，打开我们的idea"></a><strong>第一步，万恶之源，打开我们的idea</strong></h1><ol>
-<li><p><strong>创建一个java项目</strong></p>
-</li>
-<li><p><strong>在src里创建如下3个包</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6mV1S"><img src="https://s3.ax1x.com/2020/11/28/D6mV1S.png" alt="D6mV1S.png"></a></strong></p>
-<ul>
-<li><p><strong>Dao包（数据持久层）</strong></p>
-</li>
-<li><p><strong>Service包（业务逻辑层）</strong>    </p>
-</li>
-<li><p><strong>Web包（显示层）</strong></p>
-</li>
-</ul>
-</li>
-</ol>
-<p><strong>3.接着在src下创建一个xml文件，名为（ApplicationContext.xml)</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6nngO"><img src="https://s3.ax1x.com/2020/11/28/D6nngO.md.png" alt="D6nngO.md.png"></a></strong></p>
-<p><strong>src&gt;New&gt;XML File&gt;名为（ApplicationContext.xml)</strong></p>
-<p><strong>4.xml文件里的代码如下</strong></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:context</span>=<span class="string">&quot;http://www.springframework.org/schema/context&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context/spring-context-4.3.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">&quot;Service&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">context:component-scan</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--&lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包</span></span><br><span class="line"><span class="comment">    &lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>5.接下来导jar包</strong></p>
-<p><strong>Flie》Project Structure》Liberals》＋》Java》找到自己放spring jar包的地方》选中》OK》取个名字（Spring_Jars）》OK</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6u3yF"><img src="https://s3.ax1x.com/2020/11/28/D6u3yF.md.png" alt="D6u3yF.md.png"></a></strong></p>
-<p><strong><a href="https://imgchr.com/i/D6Ku0H"><img src="https://s3.ax1x.com/2020/11/28/D6Ku0H.md.png" alt="D6Ku0H.md.png"></a></strong></p>
-<p><strong>看一下加成功了没有</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6Mlb4"><img src="https://s3.ax1x.com/2020/11/28/D6Mlb4.png" alt="D6Mlb4.png"></a></strong></p>
-<p><strong>好的，有Spring_Jars包了</strong></p>
-<p><strong>到这一步，咱们就算上车了，开始飙车了</strong></p>
-<hr>
-<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a><strong>第二步</strong></h1><p><strong>安照题目要求</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Dao层：接口文件StudentDao，包含方法selectAll</span><br><span class="line">        实现类StudentDaoImpl,包含selectAll方法的实现（仅写输出语句表示方法调用成功即可）</span><br><span class="line">Service层：接口文件StudentService，包含方法selectAll</span><br><span class="line">            实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)</span><br><span class="line">Web层:类WebMain,主方法中调用Service层的selectAll方法。</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li><p><strong>在Dao包里新建一个接口文件StudentDao</strong></p>
-</li>
-<li><p><strong>在Dao包里新建一个java文件StudentDaoImpl</strong></p>
-</li>
-<li><p><strong>Service。。。</strong></p>
-</li>
-<li><p><strong>Web。。。</strong></p>
-</li>
-<li><p><strong>以下面这个结构来建，咱们把框架给搭起来，就快了！！</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6QlSP"><img src="https://s3.ax1x.com/2020/11/28/D6QlSP.png" alt="D6QlSP.png"></a></strong></p>
-<hr>
-</li>
-</ol>
-<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a><strong>第三步</strong></h1><p><strong>骨架欧克了，我们现在去丰满他的细节</strong></p>
-<p><strong>1.</strong></p>
-<p><strong>Dao》StudentDao</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentDao</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Dao》StudentDaoImpl</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentDaoImpl</span> <span class="keyword">implements</span> <span class="title">StudentDao</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询所有学生信息！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>2.</strong></p>
-<p><strong>Service》StudentService</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentService</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Service》StudentServiceImpl</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Value;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Repository;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@Repository(value = &quot;StudentService&quot;)</span><span class="comment">//@Repository:用于持久层的注解，作用与Component相同</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentServiceImpl</span> <span class="keyword">implements</span> <span class="title">StudentService</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)*/</span></span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Value(&quot;LIEFox&quot;)</span><span class="comment">//与&lt;property&gt;标签作用一样</span></span><br><span class="line">    <span class="keyword">private</span> String SName;</span><br><span class="line">    <span class="meta">@Value(&quot;https:cxq21.gitee.io&quot;)</span><span class="comment">//偷偷的打个广告嘿嘿</span></span><br><span class="line">    <span class="keyword">private</span> String SId;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询到了一个名为&quot;</span>+SName+<span class="string">&quot;网站,网址为&quot;</span>+SId);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>3.</strong></p>
-<p><strong>Web》WebMain</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> Service.StudentService;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Web层:类WebMain,主方法中调用Service层的selectAll方法。</span></span><br><span class="line">	</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.容器初始化</span></span><br><span class="line">        ApplicationContext context=<span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">&quot;ApplicationContext.xml&quot;</span>);</span><br><span class="line">        <span class="comment">//2.创建实例</span></span><br><span class="line">        StudentService service=(StudentService) context.getBean(<span class="string">&quot;StudentService&quot;</span>);</span><br><span class="line">        service.selectAll();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>这样，我们的一个基于注解的Spring项目是写完了。</strong></p>
-<hr>
-<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a><strong>第四步</strong></h1><p><strong>运行项目。。。</strong></p>
-<p><strong>结果出来了</strong></p>
-<p><strong><a href="https://imgchr.com/i/D68G3n"><img src="https://s3.ax1x.com/2020/11/28/D68G3n.md.png" alt="D68G3n.md.png"></a></strong></p>
-<hr>
-<h2 id="原项目"><a href="#原项目" class="headerlink" title="原项目"></a>原项目</h2><p><strong>最后，附上，我的gitee原项目，地址：<a href="https://gitee.com/cxq21/spring_-ioc">https://gitee.com/cxq21/spring_-ioc</a></strong></p>
-<p><strong>下载zip，然后解压就欧克了</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6Gfs0"><img src="https://s3.ax1x.com/2020/11/28/D6Gfs0.md.png" alt="D6Gfs0.md.png"></a></strong></p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a><strong>小结</strong></h1><p><strong>使用Annotation可以大幅简化配置，每个Bean通过<code>@Component</code>和<code>@Autowired</code>注入；</strong></p>
-<p><strong>必须合理设计包的层次结构，才能发挥<code>@ComponentScan</code>的威力。</strong></p>
-<p><strong><em>作者：zjh</em></strong></p>
-<h2 id="码字不易，留下你的评论吧"><a href="#码字不易，留下你的评论吧" class="headerlink" title="码字不易，留下你的评论吧"></a>码字不易，留下你的评论吧</h2>]]></content>
-      <categories>
-        <category>JAVA案例</category>
-      </categories>
-      <tags>
-        <tag>案例记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>友链使用</title>
-    <url>/posts/57d1587b.html</url>
-    <content><![CDATA[<h1 id="友链使用"><a href="#友链使用" class="headerlink" title="友链使用"></a>友链使用</h1><p><a href="https://imgchr.com/i/DrR4iR"><img src="https://s3.ax1x.com/2020/11/27/DrR4iR.png" alt="DrR4iR.png"></a></p>
-<h3 id="友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！"><a href="#友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！" class="headerlink" title="友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！"></a>友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！</h3><hr>
-<a id="more"></a>
-
-<h1 id="时光邮局："><a href="#时光邮局：" class="headerlink" title="时光邮局："></a>时光邮局：</h1><p>​        点进去，撰写信件，然后绑定一个自己的邮箱，然后在未来的某一时间寄给自己或某人！！！</p>
-<p><a href="https://imgchr.com/i/Dr4FeO"><img src="https://s3.ax1x.com/2020/11/27/Dr4FeO.png" alt="Dr4FeO.png"></a></p>
-<h2 id="为什么要给未来写信？"><a href="#为什么要给未来写信？" class="headerlink" title="为什么要给未来写信？"></a>为什么要给未来写信？</h2><p>​                从过去获得惊喜，<br>​                给你的未来一些灵感或安慰的话，<br>​                或者预测一下你的生活，这个世界，你的家人。<br>​                以及一年，五年会发生什么。</p>
-<h2 id="可以给任何人写信么？"><a href="#可以给任何人写信么？" class="headerlink" title="可以给任何人写信么？"></a>可以给任何人写信么？</h2><p>​                为了防止骚扰，营销邮件，<br>​                每次写信后都会往收件箱发一封验证邮件<br>​                点击了验证邮件，未来才会收到写的信<br>​                后续官网应该会开放更多功能哦</p>
-<hr>
-<h1 id="码云"><a href="#码云" class="headerlink" title="码云"></a>码云</h1><p><strong>码云</strong>：代码托管·协作开发平台，开发者超过 500 万，托管项目超过 1000 万，汇聚几乎所有本土原创开源项目，并于 2016 年推出企业版，提供企业级代码托管服务，成为开发领域领先的 SaaS 服务提供商。</p>
-<p>此码云并非彼马云，这个名字或许是蹭了某爸的热度。。但在这里，除了Github，GItee就是国内最好的代码托管了。毕竟</p>
-<p>鄙人的第一个静态网页就是在我师傅的教导，在gitee上搭建的。</p>
-<p>后期：我将会出一门git教程。教大家如何使用，并利用git来搭建自己的静态网页。</p>
-<hr>
-<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p><a href="https://imgchr.com/i/Dr5WCj"><img src="https://s3.ax1x.com/2020/11/27/Dr5WCj.png" alt="Dr5WCj.png"></a></p>
-<p>本网站就基于hexo框架及arey框架搭建。。</p>
-<p>感谢，感谢，感谢。</p>
-<p><strong>大家想去搭属于自己的网站的话</strong>，可以联系我们<strong>拾柒工作室</strong>，我们将<strong>有偿搭建</strong>（<strong>价格私聊</strong>）：</p>
-<table>
-<thead>
-<tr>
-<th align="center">邮箱</th>
-<th align="center"><a href="mailto:&#50;&#x36;&#48;&#x36;&#48;&#x39;&#55;&#x32;&#x31;&#56;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#109;">&#50;&#x36;&#48;&#x36;&#48;&#x39;&#55;&#x32;&#x31;&#56;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#109;</a></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><strong>电话</strong></td>
-<td align="center">15270055490</td>
-</tr>
-<tr>
-<td align="center"><strong>工作室地址</strong></td>
-<td align="center">江信学院教学楼（606）</td>
-</tr>
-<tr>
-<td align="center"><strong>QQ</strong></td>
-<td align="center">2606097218</td>
-</tr>
-</tbody></table>
-<h1 id="高清壁纸"><a href="#高清壁纸" class="headerlink" title="高清壁纸"></a>高清壁纸</h1><p><a href="https://imgchr.com/i/DrTFgA"><img src="https://s3.ax1x.com/2020/11/27/DrTFgA.png" alt="DrTFgA.png"></a></p>
-<p>该工具是真的强悍；电脑壁纸多，精，美。最主要是有4k呀！</p>
-<hr>
-<h1 id="爱奇艺vip视频解析"><a href="#爱奇艺vip视频解析" class="headerlink" title="爱奇艺vip视频解析"></a>爱奇艺vip视频解析</h1><p>点击链接，将会看到一个地址栏，他要你填写一串链接，不要慌，我来教你，如何去嫖免费爱奇艺视频</p>
-<p><a href="https://imgchr.com/i/DrTHVf"><img src="https://s3.ax1x.com/2020/11/27/DrTHVf.png" alt="DrTHVf.png"></a></p>
-<ul>
-<li><h3 id="同时打开爱奇艺在线视频网站"><a href="#同时打开爱奇艺在线视频网站" class="headerlink" title="同时打开爱奇艺在线视频网站"></a>同时打开爱奇艺在线视频网站</h3></li>
-</ul>
-<p><a href="https://imgchr.com/i/Dr7MdK"><img src="https://s3.ax1x.com/2020/11/27/Dr7MdK.png" alt="Dr7MdK.png"></a></p>
-<ul>
-<li><h3 id="选择任意一个VIP电影，比如姜子牙，需要收费"><a href="#选择任意一个VIP电影，比如姜子牙，需要收费" class="headerlink" title="选择任意一个VIP电影，比如姜子牙，需要收费"></a>选择任意一个VIP电影，比如姜子牙，需要收费</h3></li>
-</ul>
-<p><a href="https://imgchr.com/i/Dr7NLt"><img src="https://s3.ax1x.com/2020/11/27/Dr7NLt.png" alt="Dr7NLt.png"></a></p>
-<ul>
-<li><h3 id="复制地址栏的爱奇艺视频链接"><a href="#复制地址栏的爱奇艺视频链接" class="headerlink" title="复制地址栏的爱奇艺视频链接"></a>复制地址栏的爱奇艺视频链接</h3><p><a href="https://imgchr.com/i/DrHb9g"><img src="https://s3.ax1x.com/2020/11/27/DrHb9g.png" alt="DrHb9g.png"></a></p>
-</li>
-<li><h3 id="返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了"><a href="#返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了" class="headerlink" title="返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了"></a>返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了</h3></li>
-</ul>
-<p><a href="https://imgchr.com/i/DrbQ8e"><img src="https://s3.ax1x.com/2020/11/27/DrbQ8e.png" alt="DrbQ8e.png"></a></p>
-<hr>
-<h1 id="糗事百科"><a href="#糗事百科" class="headerlink" title="糗事百科"></a>糗事百科</h1><p>点击进去</p>
-<p><a href="https://imgchr.com/i/DrbGDI"><img src="https://s3.ax1x.com/2020/11/27/DrbGDI.png" alt="DrbGDI.png"></a></p>
-<p>学习了一天，应该逛逛糗事@@@</p>
-<hr>
-<h1 id="阿里矢量ico"><a href="#阿里矢量ico" class="headerlink" title="阿里矢量ico"></a>阿里矢量ico</h1><p><a href="https://imgchr.com/i/Drbh24"><img src="https://s3.ax1x.com/2020/11/27/Drbh24.png" alt="Drbh24.png"></a></p>
-<p>阿里妈妈MUX倾力打造的矢量图标管理、交流平台。</p>
-<h4 id="设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。"><a href="#设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。" class="headerlink" title="设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。"></a>设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。</h4><hr>
-<h4 id="后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》https-cxq21-gitee-io"><a href="#后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》https-cxq21-gitee-io" class="headerlink" title="后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》https://cxq21.gitee.io/"></a>后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》<a href="https://cxq21.gitee.io/">https://cxq21.gitee.io/</a></h4><p>​                                                                                                                                                                                                                <em>作者：zjh</em>    </p>
-]]></content>
-      <categories>
-        <category>说明文档</category>
-      </categories>
-      <tags>
-        <tag>实用工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网站来源灵感</title>
-    <url>/posts/6b5b190a.html</url>
-    <content><![CDATA[<p>欢迎来到<a href="https://cxq21.gitee.io/">LIEFox</a>! 这是我们的官方网站.这是我们第一篇文章！！！</p>
-<h1 id="网站来源灵感"><a href="#网站来源灵感" class="headerlink" title="网站来源灵感"></a>网站来源灵感</h1><p>为什么要搭建出这个网站，原因是发现许多同学在课后作业不会做时，迷茫不知去和处寻找。目前百度可以搜到的也只有CSDN里面里的代码。但CSDN里的代码少数可以为我们所用，对许多初学者并不友好，所以，我发现这个问题，一开始将项目放在Gitee上<a href="https://gitee.com/cxq21">我的项目</a>,发现许多同学并不会正确使用。导致项目并不可以正常运行。<strong>因此，</strong>我就找到了我的室友（前端攻城狮：万津津）、（UI射击狮：李玮峰）联手搭建了这个网站！！！<a id="more"></a></p>
-<h1 id="站名之源"><a href="#站名之源" class="headerlink" title="站名之源"></a>站名之源</h1><p><a href="https://cxq21.gitee.io/">LIEFox</a>，LIE：谎言；Fox:狐狸。！！！没错！！！组合起来是“谎言之狐”。希望网站可以使用户思维像西伯利亚的雪狐一样，在代码中寻找自己需要的猎物（代码），并做到（谎）花草丛中过，片叶不沾身。</p>
-<h1 id="LOGO灵感"><a href="#LOGO灵感" class="headerlink" title="LOGO灵感"></a>LOGO灵感</h1><p><a href="https://imgchr.com/i/DDAP1I"><img src="https://s3.ax1x.com/2020/11/27/DDAP1I.png" alt="DDAP1I.png"></a></p>
-<p>应景了站名LIEFox，可爱logo是折纸风格的狐狸与站名相结合，liefox采取了狐狸身上的几个主要颜色。</p>
-<p>为什么选狐狸呢？肯定是狐狸可爱呀哈哈哈，像这样的</p>
-<p><a href="https://imgchr.com/i/DDAeAg"><img src="https://s3.ax1x.com/2020/11/27/DDAeAg.md.jpg" alt="DDAeAg.md.jpg"></a></p>
-<p>这样的</p>
-<p><a href="https://imgchr.com/i/DDAIDf"><img src="https://s3.ax1x.com/2020/11/27/DDAIDf.jpg" alt="DDAIDf.jpg"></a></p>
-<p>这样的</p>
-<p><a href="https://imgchr.com/i/DDA5KP"><img src="https://s3.ax1x.com/2020/11/27/DDA5KP.jpg" alt="DDA5KP.jpg"></a></p>
-<p>这样的</p>
-<p><a href="https://imgchr.com/i/DDAhvt"><img src="https://s3.ax1x.com/2020/11/27/DDAhvt.jpg" alt="DDAhvt.jpg"></a></p>
-<p>爱了爱了爱了</p>
-<h2 id="不出意外的话过些天将是我们LIEFox的吉祥物。"><a href="#不出意外的话过些天将是我们LIEFox的吉祥物。" class="headerlink" title="不出意外的话过些天将是我们LIEFox的吉祥物。"></a>不出意外的话过些天将是我们LIEFox的吉祥物。</h2><p>​                                                                                                                                                                                                                <em>作者：zjh</em>    </p>
-]]></content>
-      <categories>
-        <category>关于本站</category>
-      </categories>
-      <tags>
-        <tag>网站来源</tag>
       </tags>
   </entry>
   <entry>
