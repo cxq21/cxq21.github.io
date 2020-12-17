@@ -56,13 +56,26 @@ var _hmt = _hmt || [];
 <body>
   <div id="app">
     
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
       
-      <canvas width="1777" height="841"
-        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
       
     <main class="content on">
       
 <section class="cover">
+    
+      
+      <a class="forkMe" href="https://gitee.com/cxq21/cxq21"
+        target="_blank"><img width="149" height="149" src="/images/forkme.png"
+          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
     
   <div class="cover-frame">
     <div class="bg-box">
@@ -95,7 +108,7 @@ var _hmt = _hmt || [];
   <script>
     try {
       var typed = new Typed("#subtitle", {
-        strings: ['花草丛中过，片叶不沾身', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+        strings: ['恭喜LIEFox访客破2000', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
         startDelay: 0,
         typeSpeed: 100,
         loop: true,
@@ -890,11 +903,12 @@ var _hmt = _hmt || [];
 
 <!-- ClickBoom1 -->
 
+<script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+
+
 <!-- ClickBoom2 -->
-
-
-<script src="/js/clickBoom2.js"></script>
-
 
 <!-- CodeCopy -->
 
