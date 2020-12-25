@@ -64,13 +64,85 @@
 <p>​    具有过硬的前端语言（HTML+CSS+JS)等等（选）</p>
 <p>​    具有审美高的UI设计（PS+AI+会使用图床）等等（选）</p>
 <p>​    具有JAVA,JAVAScript,Python等等清晰过硬的理论（选）</p>
-<h1 id="加入邮箱（-50-x36-48-54-x30-x39-x37-50-x31-x38-64-113-113-x2e-99-111-x6d"><a href="#加入邮箱（-50-x36-48-54-x30-x39-x37-50-x31-x38-64-113-113-x2e-99-111-x6d" class="headerlink" title="加入邮箱（&#50;&#x36;&#48;&#54;&#x30;&#x39;&#x37;&#50;&#x31;&#x38;&#64;&#113;&#113;&#x2e;&#99;&#111;&#x6d;)"></a>加入邮箱（<a href="mailto:&#50;&#x36;&#48;&#54;&#x30;&#x39;&#x37;&#50;&#x31;&#x38;&#64;&#113;&#113;&#x2e;&#99;&#111;&#x6d;">&#50;&#x36;&#48;&#54;&#x30;&#x39;&#x37;&#50;&#x31;&#x38;&#64;&#113;&#113;&#x2e;&#99;&#111;&#x6d;</a>)</h1><h1 id="联系电话（15270055490-佐佳豪）"><a href="#联系电话（15270055490-佐佳豪）" class="headerlink" title="联系电话（15270055490 佐佳豪）"></a>联系电话（15270055490 佐佳豪）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
+<h1 id="加入邮箱（-x32-54-x30-54-48-x39-55-x32-x31-x38-x40-x71-113-x2e-x63-111-x6d"><a href="#加入邮箱（-x32-54-x30-54-48-x39-55-x32-x31-x38-x40-x71-113-x2e-x63-111-x6d" class="headerlink" title="加入邮箱（&#x32;&#54;&#x30;&#54;&#48;&#x39;&#55;&#x32;&#x31;&#x38;&#x40;&#x71;&#113;&#x2e;&#x63;&#111;&#x6d;)"></a>加入邮箱（<a href="mailto:&#x32;&#54;&#x30;&#54;&#48;&#x39;&#55;&#x32;&#x31;&#x38;&#x40;&#x71;&#113;&#x2e;&#x63;&#111;&#x6d;">&#x32;&#54;&#x30;&#54;&#48;&#x39;&#55;&#x32;&#x31;&#x38;&#x40;&#x71;&#113;&#x2e;&#x63;&#111;&#x6d;</a>)</h1><h1 id="联系电话（15270055490-佐佳豪）"><a href="#联系电话（15270055490-佐佳豪）" class="headerlink" title="联系电话（15270055490 佐佳豪）"></a>联系电话（15270055490 佐佳豪）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
 ]]></content>
       <categories>
         <category>关于本站</category>
       </categories>
       <tags>
         <tag>关于我们</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建自己的第一个网站</title>
+    <url>/posts/56146dea.html</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>平常，我们自己在编辑器写的网页想要进行浏览可以很简单，但我们有没有想过一个问题，当我们想发给别人看的时候，他人要看只可以在文件看，而不可以发个链接直接看，这样的话，对非专业的人很不友好，也不方便。那么，站长将在这里写一篇如何利用Gitee Pages搭建自己的第一个静态网页。（LIEFox就是利用了Gitee Pages 部署的）</p>
+<p>作为一个即将跨入程序员行业的码蚁，每个人都想搭建一个属于自己的网站，然后这个教程我将教大家如何将自己写的网站部署在gitee的仓库上，并实现一个网址就可以在线浏览的方法。好啦，话不多说，直奔主题。</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ol>
+<li>需要准备一个带有 index.html 的网页</li>
+<li>下载 git 工具</li>
+<li>创建 gitee 仓库</li>
+</ol>
+<p>来开造</p>
+<h1 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h1><p>写一个网页，文件名记得改成index.html，因为到时候部署在gitee page进入的是首页，如果不是index会报404。</p>
+<p><a href="https://imgchr.com/i/r2orO1"><img src="https://s3.ax1x.com/2020/12/24/r2orO1.md.png" alt="r2orO1.md.png"></a></p>
+<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><h2 id="1-下载git工具"><a href="#1-下载git工具" class="headerlink" title="1.下载git工具"></a>1.下载git工具</h2><p>git工具已经发在了网盘上了，请云盘下载</p>
+<h4 id="git下载地址"><a href="#git下载地址" class="headerlink" title="git下载地址"></a><a href="https://wws.lanzous.com/iSnBAjobi3a">git下载地址</a></h4><h2 id="2-下载好了，双击进入安装界面"><a href="#2-下载好了，双击进入安装界面" class="headerlink" title="2.下载好了，双击进入安装界面"></a>2.下载好了，双击进入安装界面</h2><p><a href="https://imgchr.com/i/r2TkhF"><img src="https://s3.ax1x.com/2020/12/24/r2TkhF.png" alt="r2TkhF.png"></a></p>
+<h2 id="3-点击Next"><a href="#3-点击Next" class="headerlink" title="3.点击Next"></a>3.点击Next</h2><p><a href="https://imgchr.com/i/r2TltO"><img src="https://s3.ax1x.com/2020/12/24/r2TltO.png" alt="r2TltO.png"></a></p>
+<h2 id="4-选择安装路径》点击Next"><a href="#4-选择安装路径》点击Next" class="headerlink" title="4.选择安装路径》点击Next"></a>4.选择安装路径》点击Next</h2><p><a href="https://imgchr.com/i/r2H56J"><img src="https://s3.ax1x.com/2020/12/24/r2H56J.png" alt="r2H56J.png"></a></p>
+<h2 id="5-选择需要的主键→点击Next"><a href="#5-选择需要的主键→点击Next" class="headerlink" title="5.选择需要的主键→点击Next"></a>5.选择需要的主键→点击Next</h2><p><a href="https://imgchr.com/i/r2b90I"><img src="https://s3.ax1x.com/2020/12/24/r2b90I.md.png" alt="r2b90I.md.png"></a></p>
+<h2 id="6-点击Next"><a href="#6-点击Next" class="headerlink" title="6.点击Next"></a>6.点击Next</h2><p><a href="https://imgchr.com/i/r2buBn"><img src="https://s3.ax1x.com/2020/12/24/r2buBn.md.png" alt="r2buBn.md.png"></a></p>
+<h2 id="7-点击Next"><a href="#7-点击Next" class="headerlink" title="7.点击Next"></a>7.点击Next</h2><p><a href="https://imgchr.com/i/r2qDZn"><img src="https://s3.ax1x.com/2020/12/24/r2qDZn.md.png" alt="r2qDZn.md.png"></a></p>
+<h2 id="8-后面一直点Next"><a href="#8-后面一直点Next" class="headerlink" title="8.后面一直点Next"></a>8.后面一直点Next</h2><h2 id="9-点击install"><a href="#9-点击install" class="headerlink" title="9.点击install"></a>9.点击install</h2><p><a href="https://imgchr.com/i/r2L9FP"><img src="https://s3.ax1x.com/2020/12/24/r2L9FP.md.png" alt="r2L9FP.md.png"></a></p>
+<h2 id="10-安装ing"><a href="#10-安装ing" class="headerlink" title="10.安装ing"></a>10.安装ing</h2><p><a href="https://imgchr.com/i/r2LFSS"><img src="https://s3.ax1x.com/2020/12/24/r2LFSS.md.png" alt="r2LFSS.md.png"></a></p>
+<h2 id="11-点击Finish"><a href="#11-点击Finish" class="headerlink" title="11.点击Finish"></a>11.点击Finish</h2><p><a href="https://imgchr.com/i/r2LELj"><img src="https://s3.ax1x.com/2020/12/24/r2LELj.md.png" alt="r2LELj.md.png"></a></p>
+<p>看看，安装成功了没有</p>
+<p><a href="https://imgchr.com/i/r2Lymd"><img src="https://s3.ax1x.com/2020/12/24/r2Lymd.png" alt="r2Lymd.png"></a></p>
+<p>右击桌面空白处，看看有没有<strong>Git Bash Here</strong> 这个命令。</p>
+<p>[TOC]</p>
+<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1><p>创建gitee仓库，点击链接进入gitee官网。</p>
+<p><a href="https://gitee.com/">gitee官网</a></p>
+<p>没有的同学自己注册一个，登录好了来到这一步。</p>
+<h2 id="1-点击网页右上角的-号→新建仓库"><a href="#1-点击网页右上角的-号→新建仓库" class="headerlink" title="1.点击网页右上角的 + 号→新建仓库"></a>1.点击网页右上角的 + 号→新建仓库</h2><p><a href="https://imgchr.com/i/r2OzPP"><img src="https://s3.ax1x.com/2020/12/24/r2OzPP.png" alt="r2OzPP.png"></a></p>
+<h2 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2.创建仓库"></a>2.创建仓库</h2><ul>
+<li><h4 id="仓库名称任意，尽量规范；注意：当填仓库名称时，路径将会自动转成英文。"><a href="#仓库名称任意，尽量规范；注意：当填仓库名称时，路径将会自动转成英文。" class="headerlink" title="仓库名称任意，尽量规范；注意：当填仓库名称时，路径将会自动转成英文。"></a>仓库名称任意，尽量规范；注意：当填仓库名称时，路径将会自动转成英文。</h4></li>
+<li><h4 id="仓库介绍非必填；"><a href="#仓库介绍非必填；" class="headerlink" title="仓库介绍非必填；"></a>仓库介绍非必填；</h4></li>
+<li><h4 id="开源选择公开；"><a href="#开源选择公开；" class="headerlink" title="开源选择公开；"></a>开源选择<strong>公开</strong>；</h4></li>
+<li><h4 id="选择语言，选择-JavaScript；"><a href="#选择语言，选择-JavaScript；" class="headerlink" title="选择语言，选择 JavaScript；"></a>选择语言，选择 <strong>JavaScript</strong>；</h4></li>
+<li><h4 id="点击创建按钮"><a href="#点击创建按钮" class="headerlink" title="点击创建按钮"></a>点击<strong>创建</strong>按钮</h4></li>
+</ul>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a href="https://imgchr.com/i/r2X0qH"><img src="https://s3.ax1x.com/2020/12/24/r2X0qH.md.png" alt="r2X0qH.md.png"></a></h2><h2 id="3-进入到git命令界面"><a href="#3-进入到git命令界面" class="headerlink" title="3.进入到git命令界面"></a>3.进入到git命令界面</h2><p><a href="https://imgchr.com/i/r2jD6U"><img src="https://s3.ax1x.com/2020/12/24/r2jD6U.md.png" alt="r2jD6U.md.png"></a></p>
+<p>创建好了，现在我们回到刚刚写的网页的文件夹。</p>
+<p>[TOC]</p>
+<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h1><h2 id="部署项目到gitee上"><a href="#部署项目到gitee上" class="headerlink" title="部署项目到gitee上"></a>部署项目到gitee上</h2><h2 id="1-来到刚刚写的-index-html-文件夹，右击空白处，点击Git-Bash-Here。注意：上传项目时，文件夹是整个项目，就是说项目里的根目录。"><a href="#1-来到刚刚写的-index-html-文件夹，右击空白处，点击Git-Bash-Here。注意：上传项目时，文件夹是整个项目，就是说项目里的根目录。" class="headerlink" title="1.来到刚刚写的 index.html 文件夹，右击空白处，点击Git Bash Here。注意：上传项目时，文件夹是整个项目，就是说项目里的根目录。"></a>1.来到刚刚写的 index.html 文件夹，右击空白处，点击Git Bash Here。注意：上传项目时，文件夹是整个项目，就是说项目里的根目录。</h2><p><a href="https://imgchr.com/i/r2vkhq"><img src="https://s3.ax1x.com/2020/12/24/r2vkhq.png" alt="r2vkhq.png"></a></p>
+<h2 id="2-进入命令窗口"><a href="#2-进入命令窗口" class="headerlink" title="2.进入命令窗口"></a>2.进入命令窗口</h2><p><a href="https://imgchr.com/i/r2x5ee"><img src="https://s3.ax1x.com/2020/12/24/r2x5ee.md.png" alt="r2x5ee.md.png"></a></p>
+<h2 id="3-输入语句，回车"><a href="#3-输入语句，回车" class="headerlink" title="3.输入语句，回车"></a>3.输入语句，回车</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">&#x2F;&#x2F;注意回车</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://imgchr.com/i/r2zxc6"><img src="https://s3.ax1x.com/2020/12/24/r2zxc6.png" alt="r2zxc6.png"></a></p>
+<h2 id="4-回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。"><a href="#4-回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。" class="headerlink" title="4.回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。"></a>4.回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。</h2><p><a href="https://imgchr.com/i/r2zuk9"><img src="https://s3.ax1x.com/2020/12/24/r2zuk9.md.png" alt="r2zuk9.md.png"></a></p>
+<p><strong>注意：命令行窗口里不可以 ctrl+v ,命令行的粘贴快捷键是 shift+insert</strong>  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add origin https:&#x2F;&#x2F;gitee.com&#x2F;cxq21&#x2F;first-page.git</span><br><span class="line">git push -u origin master</span><br><span class="line">&#x2F;&#x2F;注意回车</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://imgchr.com/i/rRSnu8"><img src="https://s3.ax1x.com/2020/12/24/rRSnu8.png" alt="rRSnu8.png"></a></p>
+<p><a href="https://imgchr.com/i/rRpuxx"><img src="https://s3.ax1x.com/2020/12/24/rRpuxx.png" alt="rRpuxx.png"></a></p>
+<h2 id="5-上传成功，回到git命令页面，刷新一下网页。"><a href="#5-上传成功，回到git命令页面，刷新一下网页。" class="headerlink" title="5.上传成功，回到git命令页面，刷新一下网页。"></a>5.上传成功，回到git命令页面，刷新一下网页。</h2><p><a href="https://imgchr.com/i/rRpYid"><img src="https://s3.ax1x.com/2020/12/24/rRpYid.md.png" alt="rRpYid.md.png"></a></p>
+<p>进入到这个仓库网页，胜利就在眼前，加油！马上就可以看到成果了。</p>
+<p><a href="https://imgchr.com/i/rRpUzt"><img src="https://s3.ax1x.com/2020/12/24/rRpUzt.md.png" alt="rRpUzt.md.png"></a></p>
+<h2 id="6-点击-服务-→-Gitee-Pages"><a href="#6-点击-服务-→-Gitee-Pages" class="headerlink" title="6.点击 服务 → Gitee Pages"></a>6.点击 服务 → Gitee Pages</h2><p><a href="https://imgchr.com/i/rRC14H"><img src="https://s3.ax1x.com/2020/12/24/rRC14H.md.png" alt="rRC14H.md.png"></a></p>
+<h2 id="7-点击启动，等待一会儿，将会给个地址。"><a href="#7-点击启动，等待一会儿，将会给个地址。" class="headerlink" title="7.点击启动，等待一会儿，将会给个地址。"></a>7.点击启动，等待一会儿，将会给个地址。</h2><p><a href="https://imgchr.com/i/rRC7x1"><img src="https://s3.ax1x.com/2020/12/24/rRC7x1.md.png" alt="rRC7x1.md.png"></a></p>
+<h2 id="8-gitee会给你一个网站地址：-http-cxq21-gitee-io-first-page-没错，这就是你的第一个网站。点击它，就可以进去了。"><a href="#8-gitee会给你一个网站地址：-http-cxq21-gitee-io-first-page-没错，这就是你的第一个网站。点击它，就可以进去了。" class="headerlink" title="8.gitee会给你一个网站地址： http://cxq21.gitee.io/first-page 没错，这就是你的第一个网站。点击它，就可以进去了。"></a>8.gitee会给你一个网站地址： <a href="http://cxq21.gitee.io/first-page">http://cxq21.gitee.io/first-page</a> 没错，这就是你的第一个网站。点击它，就可以进去了。</h2><p><a href="https://imgchr.com/i/rRCLqK"><img src="https://s3.ax1x.com/2020/12/24/rRCLqK.png" alt="rRCLqK.png"></a></p>
+<p>[TOC]</p>
+<h1 id="大功告成"><a href="#大功告成" class="headerlink" title="大功告成"></a>大功告成</h1><p><a href="https://imgchr.com/i/rRPUzR"><img src="https://s3.ax1x.com/2020/12/24/rRPUzR.md.png" alt="rRPUzR.md.png"></a></p>
+<p><strong>可以将网站链接分享给别人啦，又get到一个技能了。</strong></p>
+<p><strong>如果在途中出现什么问题，可以在进QQ群咨询，有大佬帮忙。</strong></p>
+<p><a href="https://imgchr.com/i/rRiCY4"><img src="https://s3.ax1x.com/2020/12/25/rRiCY4.md.png" alt="rRiCY4.md.png"></a></p>
+<p>作者：<a href="https://cxq21.gitee.io/">LIEFox</a>  zjh</p>
+]]></content>
+      <categories>
+        <category>JS案例</category>
+      </categories>
+      <tags>
+        <tag>案例记录</tag>
       </tags>
   </entry>
   <entry>
@@ -1020,7 +1092,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
 <thead>
 <tr>
 <th align="center">邮箱</th>
-<th align="center"><a href="mailto:&#x32;&#54;&#x30;&#54;&#x30;&#57;&#x37;&#x32;&#x31;&#x38;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#109;">&#x32;&#54;&#x30;&#54;&#x30;&#57;&#x37;&#x32;&#x31;&#x38;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#109;</a></th>
+<th align="center"><a href="mailto:&#50;&#54;&#x30;&#54;&#48;&#x39;&#x37;&#50;&#x31;&#56;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;">&#50;&#54;&#x30;&#54;&#48;&#x39;&#x37;&#50;&#x31;&#56;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;</a></th>
 </tr>
 </thead>
 <tbody><tr>
