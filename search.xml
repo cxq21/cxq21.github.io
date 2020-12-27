@@ -1,86 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>搭建自己的第一个网站</title>
-    <url>/posts/56146dea.html</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>平常，我们自己在编辑器写的网页想要进行浏览可以很简单，但我们有没有想过一个问题，当我们想发给别人看的时候，他人要看只可以在文件看，而不可以发个链接直接看，这样的话，对非专业的人很不友好，也不方便。那么，站长将在这里写一篇如何利用Gitee Pages搭建自己的第一个静态网页。（LIEFox就是利用了Gitee Pages 部署的）</p>
-<p>作为一个即将跨入程序员行业的码蚁，每个人都想搭建一个属于自己的网站，然后这个教程我将教大家如何将自己写的网站部署在gitee的仓库上，并实现一个网址就可以在线浏览的方法。好啦，话不多说，直奔主题。</p>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ol>
-<li>需要准备一个带有 index.html 的网页</li>
-<li>下载 git 工具</li>
-<li>创建 gitee 仓库</li>
-</ol>
-<p>来开造</p>
-<h1 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h1><p>写一个网页，文件名记得改成index.html，因为到时候部署在gitee page进入的是首页，如果不是index会报404。</p>
-<p><a href="https://imgchr.com/i/r2orO1"><img src="https://s3.ax1x.com/2020/12/24/r2orO1.md.png" alt="r2orO1.md.png"></a></p>
-<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><h2 id="1-下载git工具"><a href="#1-下载git工具" class="headerlink" title="1.下载git工具"></a>1.下载git工具</h2><p>git工具已经发在了网盘上了，请云盘下载</p>
-<h4 id="git下载地址"><a href="#git下载地址" class="headerlink" title="git下载地址"></a><a href="https://wws.lanzous.com/iSnBAjobi3a">git下载地址</a></h4><h2 id="2-下载好了，双击进入安装界面"><a href="#2-下载好了，双击进入安装界面" class="headerlink" title="2.下载好了，双击进入安装界面"></a>2.下载好了，双击进入安装界面</h2><p><a href="https://imgchr.com/i/r2TkhF"><img src="https://s3.ax1x.com/2020/12/24/r2TkhF.png" alt="r2TkhF.png"></a></p>
-<h2 id="3-点击Next"><a href="#3-点击Next" class="headerlink" title="3.点击Next"></a>3.点击Next</h2><p><a href="https://imgchr.com/i/r2TltO"><img src="https://s3.ax1x.com/2020/12/24/r2TltO.png" alt="r2TltO.png"></a></p>
-<h2 id="4-选择安装路径》点击Next"><a href="#4-选择安装路径》点击Next" class="headerlink" title="4.选择安装路径》点击Next"></a>4.选择安装路径》点击Next</h2><p><a href="https://imgchr.com/i/r2H56J"><img src="https://s3.ax1x.com/2020/12/24/r2H56J.png" alt="r2H56J.png"></a></p>
-<h2 id="5-选择需要的主键→点击Next"><a href="#5-选择需要的主键→点击Next" class="headerlink" title="5.选择需要的主键→点击Next"></a>5.选择需要的主键→点击Next</h2><p><a href="https://imgchr.com/i/r2b90I"><img src="https://s3.ax1x.com/2020/12/24/r2b90I.md.png" alt="r2b90I.md.png"></a></p>
-<h2 id="6-点击Next"><a href="#6-点击Next" class="headerlink" title="6.点击Next"></a>6.点击Next</h2><p><a href="https://imgchr.com/i/r2buBn"><img src="https://s3.ax1x.com/2020/12/24/r2buBn.md.png" alt="r2buBn.md.png"></a></p>
-<h2 id="7-点击Next"><a href="#7-点击Next" class="headerlink" title="7.点击Next"></a>7.点击Next</h2><p><a href="https://imgchr.com/i/r2qDZn"><img src="https://s3.ax1x.com/2020/12/24/r2qDZn.md.png" alt="r2qDZn.md.png"></a></p>
-<h2 id="8-后面一直点Next"><a href="#8-后面一直点Next" class="headerlink" title="8.后面一直点Next"></a>8.后面一直点Next</h2><h2 id="9-点击install"><a href="#9-点击install" class="headerlink" title="9.点击install"></a>9.点击install</h2><p><a href="https://imgchr.com/i/r2L9FP"><img src="https://s3.ax1x.com/2020/12/24/r2L9FP.md.png" alt="r2L9FP.md.png"></a></p>
-<h2 id="10-安装ing"><a href="#10-安装ing" class="headerlink" title="10.安装ing"></a>10.安装ing</h2><p><a href="https://imgchr.com/i/r2LFSS"><img src="https://s3.ax1x.com/2020/12/24/r2LFSS.md.png" alt="r2LFSS.md.png"></a></p>
-<h2 id="11-点击Finish"><a href="#11-点击Finish" class="headerlink" title="11.点击Finish"></a>11.点击Finish</h2><p><a href="https://imgchr.com/i/r2LELj"><img src="https://s3.ax1x.com/2020/12/24/r2LELj.md.png" alt="r2LELj.md.png"></a></p>
-<p>看看，安装成功了没有</p>
-<p><a href="https://imgchr.com/i/r2Lymd"><img src="https://s3.ax1x.com/2020/12/24/r2Lymd.png" alt="r2Lymd.png"></a></p>
-<p>右击桌面空白处，看看有没有<strong>Git Bash Here</strong> 这个命令。</p>
-<p>[TOC]</p>
-<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1><p>创建gitee仓库，点击链接进入gitee官网。</p>
-<p><a href="https://gitee.com/">gitee官网</a></p>
-<p>没有的同学自己注册一个，登录好了来到这一步。</p>
-<h2 id="1-点击网页右上角的-号→新建仓库"><a href="#1-点击网页右上角的-号→新建仓库" class="headerlink" title="1.点击网页右上角的 + 号→新建仓库"></a>1.点击网页右上角的 + 号→新建仓库</h2><p><a href="https://imgchr.com/i/r2OzPP"><img src="https://s3.ax1x.com/2020/12/24/r2OzPP.png" alt="r2OzPP.png"></a></p>
-<h2 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2.创建仓库"></a>2.创建仓库</h2><ul>
-<li><h4 id="仓库名称任意，尽量规范；注意：当填仓库名称时，路径将会自动转成英文。"><a href="#仓库名称任意，尽量规范；注意：当填仓库名称时，路径将会自动转成英文。" class="headerlink" title="仓库名称任意，尽量规范；注意：当填仓库名称时，路径将会自动转成英文。"></a>仓库名称任意，尽量规范；注意：当填仓库名称时，路径将会自动转成英文。</h4></li>
-<li><h4 id="仓库介绍非必填；"><a href="#仓库介绍非必填；" class="headerlink" title="仓库介绍非必填；"></a>仓库介绍非必填；</h4></li>
-<li><h4 id="开源选择公开；"><a href="#开源选择公开；" class="headerlink" title="开源选择公开；"></a>开源选择<strong>公开</strong>；</h4></li>
-<li><h4 id="选择语言，选择-JavaScript；"><a href="#选择语言，选择-JavaScript；" class="headerlink" title="选择语言，选择 JavaScript；"></a>选择语言，选择 <strong>JavaScript</strong>；</h4></li>
-<li><h4 id="点击创建按钮"><a href="#点击创建按钮" class="headerlink" title="点击创建按钮"></a>点击<strong>创建</strong>按钮</h4></li>
-</ul>
-<h2 id=""><a href="#" class="headerlink" title=""></a><a href="https://imgchr.com/i/r2X0qH"><img src="https://s3.ax1x.com/2020/12/24/r2X0qH.md.png" alt="r2X0qH.md.png"></a></h2><h2 id="3-进入到git命令界面"><a href="#3-进入到git命令界面" class="headerlink" title="3.进入到git命令界面"></a>3.进入到git命令界面</h2><p><a href="https://imgchr.com/i/r2jD6U"><img src="https://s3.ax1x.com/2020/12/24/r2jD6U.md.png" alt="r2jD6U.md.png"></a></p>
-<p>创建好了，现在我们回到刚刚写的网页的文件夹。</p>
-<p>[TOC]</p>
-<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h1><h2 id="部署项目到gitee上"><a href="#部署项目到gitee上" class="headerlink" title="部署项目到gitee上"></a>部署项目到gitee上</h2><h2 id="1-来到刚刚写的-index-html-文件夹，右击空白处，点击Git-Bash-Here。注意：上传项目时，文件夹是整个项目，就是说项目里的根目录。"><a href="#1-来到刚刚写的-index-html-文件夹，右击空白处，点击Git-Bash-Here。注意：上传项目时，文件夹是整个项目，就是说项目里的根目录。" class="headerlink" title="1.来到刚刚写的 index.html 文件夹，右击空白处，点击Git Bash Here。注意：上传项目时，文件夹是整个项目，就是说项目里的根目录。"></a>1.来到刚刚写的 index.html 文件夹，右击空白处，点击Git Bash Here。注意：上传项目时，文件夹是整个项目，就是说项目里的根目录。</h2><p><a href="https://imgchr.com/i/r2vkhq"><img src="https://s3.ax1x.com/2020/12/24/r2vkhq.png" alt="r2vkhq.png"></a></p>
-<h2 id="2-进入命令窗口"><a href="#2-进入命令窗口" class="headerlink" title="2.进入命令窗口"></a>2.进入命令窗口</h2><p><a href="https://imgchr.com/i/r2x5ee"><img src="https://s3.ax1x.com/2020/12/24/r2x5ee.md.png" alt="r2x5ee.md.png"></a></p>
-<h2 id="3-回到刚刚的git代码帮助页面"><a href="#3-回到刚刚的git代码帮助页面" class="headerlink" title="3.回到刚刚的git代码帮助页面"></a>3.回到刚刚的git代码帮助页面</h2><ul>
-<li>第一步，在黑窗口输入图下圈住的Git全局设置命令。（如果以后还要部署的话，就不用在再执行这一步了）</li>
-</ul>
-<p><a href="https://imgchr.com/i/rRHOG8"><img src="https://s3.ax1x.com/2020/12/25/rRHOG8.md.png" alt="rRHOG8.md.png"></a></p>
-<ul>
-<li>第二步，在接着输入下面语句</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">&#x2F;&#x2F;注意回车</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://imgchr.com/i/r2zxc6"><img src="https://s3.ax1x.com/2020/12/24/r2zxc6.png" alt="r2zxc6.png"></a></p>
-<h2 id="4-回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。"><a href="#4-回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。" class="headerlink" title="4.回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。"></a>4.回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。</h2><p><a href="https://imgchr.com/i/r2zuk9"><img src="https://s3.ax1x.com/2020/12/24/r2zuk9.md.png" alt="r2zuk9.md.png"></a></p>
-<h3 id="注意：命令行窗口里不可以-ctrl-v-命令行的粘贴快捷键是-shift-insert"><a href="#注意：命令行窗口里不可以-ctrl-v-命令行的粘贴快捷键是-shift-insert" class="headerlink" title="注意：命令行窗口里不可以 ctrl+v ,命令行的粘贴快捷键是 shift+insert"></a><strong>注意：命令行窗口里不可以 ctrl+v ,命令行的粘贴快捷键是 shift+insert</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add origin https:&#x2F;&#x2F;gitee.com&#x2F;cxq21&#x2F;first-page.git</span><br><span class="line">git push -u origin master</span><br><span class="line">&#x2F;&#x2F;注意回车</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://imgchr.com/i/rRSnu8"><img src="https://s3.ax1x.com/2020/12/24/rRSnu8.png" alt="rRSnu8.png"></a></p>
-<h3 id="注意：当运行到-”git-push-u-origin-master“-时，他会弹出一个窗口，填入你当时注册时的用户名和密码，确定。"><a href="#注意：当运行到-”git-push-u-origin-master“-时，他会弹出一个窗口，填入你当时注册时的用户名和密码，确定。" class="headerlink" title="注意：当运行到 ”git push -u origin master“ 时，他会弹出一个窗口，填入你当时注册时的用户名和密码，确定。"></a>注意：当运行到 ”git push -u origin master“ 时，他会弹出一个窗口，填入你当时注册时的用户名和密码，确定。</h3><p><a href="https://imgchr.com/i/rRqmp8"><img src="https://s3.ax1x.com/2020/12/25/rRqmp8.jpg" alt="rRqmp8.jpg"></a></p>
-<p>当加载到100%时，就代表上传成功。</p>
-<p><a href="https://imgchr.com/i/rRpuxx"><img src="https://s3.ax1x.com/2020/12/24/rRpuxx.png" alt="rRpuxx.png"></a></p>
-<h2 id="5-上传成功，回到git命令页面，刷新一下网页。"><a href="#5-上传成功，回到git命令页面，刷新一下网页。" class="headerlink" title="5.上传成功，回到git命令页面，刷新一下网页。"></a>5.上传成功，回到git命令页面，刷新一下网页。</h2><p><a href="https://imgchr.com/i/rRpYid"><img src="https://s3.ax1x.com/2020/12/24/rRpYid.md.png" alt="rRpYid.md.png"></a></p>
-<p>进入到这个仓库网页，胜利就在眼前，加油！马上就可以看到成果了。</p>
-<p><a href="https://imgchr.com/i/rRpUzt"><img src="https://s3.ax1x.com/2020/12/24/rRpUzt.md.png" alt="rRpUzt.md.png"></a></p>
-<h2 id="6-点击-服务-→-Gitee-Pages"><a href="#6-点击-服务-→-Gitee-Pages" class="headerlink" title="6.点击 服务 → Gitee Pages"></a>6.点击 服务 → Gitee Pages</h2><p><a href="https://imgchr.com/i/rRC14H"><img src="https://s3.ax1x.com/2020/12/24/rRC14H.md.png" alt="rRC14H.md.png"></a></p>
-<h2 id="7-点击启动，等待一会儿，将会给个地址。"><a href="#7-点击启动，等待一会儿，将会给个地址。" class="headerlink" title="7.点击启动，等待一会儿，将会给个地址。"></a>7.点击启动，等待一会儿，将会给个地址。</h2><p><a href="https://imgchr.com/i/rRC7x1"><img src="https://s3.ax1x.com/2020/12/24/rRC7x1.md.png" alt="rRC7x1.md.png"></a></p>
-<h2 id="8-gitee会给你一个网站地址：-http-cxq21-gitee-io-first-page-没错，这就是你的第一个网站。点击它，就可以进去了。"><a href="#8-gitee会给你一个网站地址：-http-cxq21-gitee-io-first-page-没错，这就是你的第一个网站。点击它，就可以进去了。" class="headerlink" title="8.gitee会给你一个网站地址： http://cxq21.gitee.io/first-page 没错，这就是你的第一个网站。点击它，就可以进去了。"></a>8.gitee会给你一个网站地址： <a href="http://cxq21.gitee.io/first-page">http://cxq21.gitee.io/first-page</a> 没错，这就是你的第一个网站。点击它，就可以进去了。</h2><p><a href="https://imgchr.com/i/rRCLqK"><img src="https://s3.ax1x.com/2020/12/24/rRCLqK.png" alt="rRCLqK.png"></a></p>
-<p>[TOC]</p>
-<h1 id="大功告成"><a href="#大功告成" class="headerlink" title="大功告成"></a>大功告成</h1><p><a href="https://imgchr.com/i/rRPUzR"><img src="https://s3.ax1x.com/2020/12/24/rRPUzR.md.png" alt="rRPUzR.md.png"></a></p>
-<p><strong>可以将网站链接分享给别人啦，又get到一个技能了。</strong></p>
-<p><strong>如果在途中出现什么问题，可以在进QQ群咨询，有大佬帮忙。</strong></p>
-<p><a href="https://imgchr.com/i/rRiCY4"><img src="https://s3.ax1x.com/2020/12/25/rRiCY4.md.png" alt="rRiCY4.md.png"></a></p>
-<p>作者：<a href="https://cxq21.gitee.io/">LIEFox</a>  zjh</p>
-]]></content>
-      <categories>
-        <category>JS案例</category>
-      </categories>
-      <tags>
-        <tag>案例记录</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JAVA目录</title>
     <url>/posts/fdedec16.html</url>
     <content><![CDATA[<h1 id="今天开始正式写Java笔记"><a href="#今天开始正式写Java笔记" class="headerlink" title="今天开始正式写Java笔记"></a>今天开始正式写Java笔记</h1><h2 id="为什么要写Java笔记？"><a href="#为什么要写Java笔记？" class="headerlink" title="为什么要写Java笔记？"></a>为什么要写Java笔记？</h2><p>作为一个学习技术的的小站</p>
@@ -132,25 +52,102 @@
       </tags>
   </entry>
   <entry>
-    <title>加入拾柒工作室</title>
-    <url>/posts/3dc898ff.html</url>
-    <content><![CDATA[<h1 id="关于拾柒工作室"><a href="#关于拾柒工作室" class="headerlink" title="关于拾柒工作室"></a>关于拾柒工作室</h1><p>拾柒工作室是由三个在校大学生创建的一个小工作室。为何取名为“拾柒”，是因为我们三个人都来自17寝室，然后取名为拾柒，然后偷偷告诉你们，还有一个含义，大家可以在评论区留言，来揣测一下。</p>
-<a id="more"></a>
+    <title>Spring-ioc基于注解</title>
+    <url>/posts/693b31a5.html</url>
+    <content><![CDATA[<h1 id="要求"><a href="#要求" class="headerlink" title="要求"></a><strong>要求</strong></h1><p>使用Spring的IoC容器，实际上就是通过类似XML这样的配置文件，把我们自己的Bean的依赖关系描述出来，然后让容器来创建并装配Bean。一旦容器初始化完毕，我们就直接从容器中获取Bean使用它们。</p>
+<p>使用XML配置的优点是所有的Bean都能一目了然地列出来，并通过配置注入能直观地看到每个Bean的依赖。它的缺点是写起来非常繁琐，每增加一个组件，就必须把新的Bean配置到XML中。</p>
+<p>有没有其他更简单的配置方式呢？</p>
+<p>有！我们可以使用Annotation配置，可以完全不需要XML，让Spring自动扫描Bean并组装它们。</p>
+<h3 id="所以今天我们用注解来写一个基于注解的Spring"><a href="#所以今天我们用注解来写一个基于注解的Spring" class="headerlink" title="所以今天我们用注解来写一个基于注解的Spring"></a>所以今天我们用注解来写一个基于注解的Spring</h3><p><strong><a href="https://imgchr.com/i/D6E1Mj"><img src="https://s3.ax1x.com/2020/11/28/D6E1Mj.md.png" alt="D6E1Mj.md.png"></a></strong></p>
+<hr>
+<p><strong><a id="more"></a></strong></p>
+<p><strong>由于是基于注解的IoC的Spring开发，所以我们要导入一个关键的jar包</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Z7Pf"><img src="https://s3.ax1x.com/2020/11/28/D6Z7Pf.png" alt="D6Z7Pf.png"></a></strong></p>
+<hr>
+<h4 id="好啦，正题开始"><a href="#好啦，正题开始" class="headerlink" title="好啦，正题开始"></a><strong>好啦，正题开始</strong></h4><h1 id="第一步，万恶之源，打开我们的idea"><a href="#第一步，万恶之源，打开我们的idea" class="headerlink" title="第一步，万恶之源，打开我们的idea"></a><strong>第一步，万恶之源，打开我们的idea</strong></h1><ol>
+<li><p><strong>创建一个java项目</strong></p>
+</li>
+<li><p><strong>在src里创建如下3个包</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6mV1S"><img src="https://s3.ax1x.com/2020/11/28/D6mV1S.png" alt="D6mV1S.png"></a></strong></p>
+<ul>
+<li><p><strong>Dao包（数据持久层）</strong></p>
+</li>
+<li><p><strong>Service包（业务逻辑层）</strong>    </p>
+</li>
+<li><p><strong>Web包（显示层）</strong></p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>3.接着在src下创建一个xml文件，名为（ApplicationContext.xml)</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6nngO"><img src="https://s3.ax1x.com/2020/11/28/D6nngO.md.png" alt="D6nngO.md.png"></a></strong></p>
+<p><strong>src&gt;New&gt;XML File&gt;名为（ApplicationContext.xml)</strong></p>
+<p><strong>4.xml文件里的代码如下</strong></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:context</span>=<span class="string">&quot;http://www.springframework.org/schema/context&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context/spring-context-4.3.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">&quot;Service&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">context:component-scan</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--&lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包</span></span><br><span class="line"><span class="comment">    &lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="拾柒工作室成员"><a href="#拾柒工作室成员" class="headerlink" title="拾柒工作室成员"></a>拾柒工作室成员</h2><h3 id="佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。"><a href="#佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。" class="headerlink" title="佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。"></a>佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。</h3><h3 id="万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。"><a href="#万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。" class="headerlink" title="万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。"></a>万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。</h3><h3 id="李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。"><a href="#李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。" class="headerlink" title="李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。"></a>李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。</h3><hr>
-<h1 id="欢迎加入我们"><a href="#欢迎加入我们" class="headerlink" title="欢迎加入我们"></a>欢迎加入我们</h1><h5 id="要求："><a href="#要求：" class="headerlink" title="要求："></a>要求：</h5><p>​    对网页搭建感兴趣，肯学习钻研（必）</p>
-<p>​    具有创新精神（必）</p>
-<p>​    具有团队合作精神（必）</p>
-<p>​    具有过硬的前端语言（HTML+CSS+JS)等等（选）</p>
-<p>​    具有审美高的UI设计（PS+AI+会使用图床）等等（选）</p>
-<p>​    具有JAVA,JAVAScript,Python等等清晰过硬的理论（选）</p>
-<h1 id="加入邮箱（-x32-54-48-54-x30-57-55-x32-x31-56-x40-x71-113-46-x63-111-x6d"><a href="#加入邮箱（-x32-54-48-54-x30-57-55-x32-x31-56-x40-x71-113-46-x63-111-x6d" class="headerlink" title="加入邮箱（&#x32;&#54;&#48;&#54;&#x30;&#57;&#55;&#x32;&#x31;&#56;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#x6d;)"></a>加入邮箱（<a href="mailto:&#x32;&#54;&#48;&#54;&#x30;&#57;&#55;&#x32;&#x31;&#56;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#x6d;">&#x32;&#54;&#48;&#54;&#x30;&#57;&#55;&#x32;&#x31;&#56;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#x6d;</a>)</h1><h1 id="联系电话（15270055490-佐佳豪）"><a href="#联系电话（15270055490-佐佳豪）" class="headerlink" title="联系电话（15270055490 佐佳豪）"></a>联系电话（15270055490 佐佳豪）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
-]]></content>
+<p><strong>5.接下来导jar包</strong></p>
+<p><strong>Flie》Project Structure》Liberals》＋》Java》找到自己放spring jar包的地方》选中》OK》取个名字（Spring_Jars）》OK</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6u3yF"><img src="https://s3.ax1x.com/2020/11/28/D6u3yF.md.png" alt="D6u3yF.md.png"></a></strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Ku0H"><img src="https://s3.ax1x.com/2020/11/28/D6Ku0H.md.png" alt="D6Ku0H.md.png"></a></strong></p>
+<p><strong>看一下加成功了没有</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Mlb4"><img src="https://s3.ax1x.com/2020/11/28/D6Mlb4.png" alt="D6Mlb4.png"></a></strong></p>
+<p><strong>好的，有Spring_Jars包了</strong></p>
+<p><strong>到这一步，咱们就算上车了，开始飙车了</strong></p>
+<hr>
+<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a><strong>第二步</strong></h1><p><strong>安照题目要求</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Dao层：接口文件StudentDao，包含方法selectAll</span><br><span class="line">        实现类StudentDaoImpl,包含selectAll方法的实现（仅写输出语句表示方法调用成功即可）</span><br><span class="line">Service层：接口文件StudentService，包含方法selectAll</span><br><span class="line">            实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)</span><br><span class="line">Web层:类WebMain,主方法中调用Service层的selectAll方法。</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p><strong>在Dao包里新建一个接口文件StudentDao</strong></p>
+</li>
+<li><p><strong>在Dao包里新建一个java文件StudentDaoImpl</strong></p>
+</li>
+<li><p><strong>Service。。。</strong></p>
+</li>
+<li><p><strong>Web。。。</strong></p>
+</li>
+<li><p><strong>以下面这个结构来建，咱们把框架给搭起来，就快了！！</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6QlSP"><img src="https://s3.ax1x.com/2020/11/28/D6QlSP.png" alt="D6QlSP.png"></a></strong></p>
+<hr>
+</li>
+</ol>
+<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a><strong>第三步</strong></h1><p><strong>骨架欧克了，我们现在去丰满他的细节</strong></p>
+<p><strong>1.</strong></p>
+<p><strong>Dao》StudentDao</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentDao</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Dao》StudentDaoImpl</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentDaoImpl</span> <span class="keyword">implements</span> <span class="title">StudentDao</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询所有学生信息！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.</strong></p>
+<p><strong>Service》StudentService</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentService</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Service》StudentServiceImpl</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Value;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Repository;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@Repository(value = &quot;StudentService&quot;)</span><span class="comment">//@Repository:用于持久层的注解，作用与Component相同</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentServiceImpl</span> <span class="keyword">implements</span> <span class="title">StudentService</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)*/</span></span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Value(&quot;LIEFox&quot;)</span><span class="comment">//与&lt;property&gt;标签作用一样</span></span><br><span class="line">    <span class="keyword">private</span> String SName;</span><br><span class="line">    <span class="meta">@Value(&quot;https:cxq21.gitee.io&quot;)</span><span class="comment">//偷偷的打个广告嘿嘿</span></span><br><span class="line">    <span class="keyword">private</span> String SId;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询到了一个名为&quot;</span>+SName+<span class="string">&quot;网站,网址为&quot;</span>+SId);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.</strong></p>
+<p><strong>Web》WebMain</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> Service.StudentService;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Web层:类WebMain,主方法中调用Service层的selectAll方法。</span></span><br><span class="line">	</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.容器初始化</span></span><br><span class="line">        ApplicationContext context=<span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">&quot;ApplicationContext.xml&quot;</span>);</span><br><span class="line">        <span class="comment">//2.创建实例</span></span><br><span class="line">        StudentService service=(StudentService) context.getBean(<span class="string">&quot;StudentService&quot;</span>);</span><br><span class="line">        service.selectAll();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>这样，我们的一个基于注解的Spring项目是写完了。</strong></p>
+<hr>
+<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a><strong>第四步</strong></h1><p><strong>运行项目。。。</strong></p>
+<p><strong>结果出来了</strong></p>
+<p><strong><a href="https://imgchr.com/i/D68G3n"><img src="https://s3.ax1x.com/2020/11/28/D68G3n.md.png" alt="D68G3n.md.png"></a></strong></p>
+<hr>
+<h2 id="原项目"><a href="#原项目" class="headerlink" title="原项目"></a>原项目</h2><p><strong>最后，附上，我的gitee原项目，地址：<a href="https://gitee.com/cxq21/spring_-ioc">https://gitee.com/cxq21/spring_-ioc</a></strong></p>
+<p><strong>下载zip，然后解压就欧克了</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Gfs0"><img src="https://s3.ax1x.com/2020/11/28/D6Gfs0.md.png" alt="D6Gfs0.md.png"></a></strong></p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a><strong>小结</strong></h1><p><strong>使用Annotation可以大幅简化配置，每个Bean通过<code>@Component</code>和<code>@Autowired</code>注入；</strong></p>
+<p><strong>必须合理设计包的层次结构，才能发挥<code>@ComponentScan</code>的威力。</strong></p>
+<p><strong><em>作者：zjh</em></strong></p>
+<h2 id="码字不易，留下你的评论吧"><a href="#码字不易，留下你的评论吧" class="headerlink" title="码字不易，留下你的评论吧"></a>码字不易，留下你的评论吧</h2>]]></content>
       <categories>
-        <category>关于本站</category>
+        <category>JAVA案例</category>
       </categories>
       <tags>
-        <tag>关于我们</tag>
+        <tag>案例记录</tag>
       </tags>
   </entry>
   <entry>
@@ -239,71 +236,6 @@
       </tags>
   </entry>
   <entry>
-    <title>三大框架</title>
-    <url>/posts/367339a6.html</url>
-    <content><![CDATA[<h1 id="一、Mybatis"><a href="#一、Mybatis" class="headerlink" title="一、Mybatis"></a>一、Mybatis</h1><ol>
-<li>什么是Mybatis？</li>
-</ol>
-<p>半自动映射的数据持久层框架、ORM框架。</p>
-<p>2.</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>解压开车</title>
-    <url>/posts/a4acce0b.html</url>
-    <content><![CDATA[<h2 id="等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。"><a href="#等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。" class="headerlink" title="等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。"></a>等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。</h2></iframe><div style="position: relative; width: 100%; height: 90%; padding-bottom: 100%;"><iframe 
-src="https://bruno-simon.com/" scrolling="yes" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>
-
-<h4 id="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"><a href="#LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈" class="headerlink" title="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"></a>LIEFox加入了很多实用有趣的小工具，链接在这👉<a href="https://cxq21.gitee.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" target="_blank">实用工具传送门</a>👈</h4><p><em>作者：zjh</em></p>
-]]></content>
-      <categories>
-        <category>实用工具</category>
-      </categories>
-      <tags>
-        <tag>实用工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WebGL流体效果</title>
-    <url>/posts/3731d3f9.html</url>
-    <content><![CDATA[<p>WebGL流体效果，拖动鼠标即可展现炫酷的流体动画，可以截图用来做背景，发挥自己的创造力。。。《Close Controls》可以关闭菜单，自己研究英语。<strong>（显示不出的话，就刷新一下）</strong></p>
-<div style="position: relative; width: 100%; height: 100%; padding-bottom: 100%;"><iframe 
-src="https://paveldogreat.github.io/WebGL-Fluid-Simulation/" scrolling="yes" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>
-
-
-<h4 id="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"><a href="#LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈" class="headerlink" title="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"></a>LIEFox加入了很多实用有趣的小工具，链接在这👉<a href="https://cxq21.gitee.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" target="_blank">实用工具传送门</a>👈</h4><p><em>作者：zjh</em></p>
-]]></content>
-      <categories>
-        <category>实用工具</category>
-      </categories>
-      <tags>
-        <tag>实用工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解压小虫子</title>
-    <url>/posts/b50949c5.html</url>
-    <content><![CDATA[<p>还有这个蠕动的虫，随着你的鼠标（或手指），会有不同得变化，简直不要太魔性！</p>
-<p><strong>点击快的话，还能有段鬼畜，试试就知道。哈哈哈，能骗一个是一个。</strong></p>
-<div style="position: relative; width: 100%; height: 100%; padding-bottom: 100%;"><iframe 
-src="http://www.staggeringbeauty.com/" scrolling="yes" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>
-
-<h4 id="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"><a href="#LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈" class="headerlink" title="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"></a>LIEFox加入了很多实用有趣的小工具，链接在这👉<a href="https://cxq21.gitee.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" target="_blank">实用工具传送门</a>👈</h4><p><em>作者：zjh</em></p>
-]]></content>
-      <categories>
-        <category>实用工具</category>
-      </categories>
-      <tags>
-        <tag>实用工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>VIP电影</title>
     <url>/posts/78a19d7.html</url>
     <content><![CDATA[<h1 id="高清电影在线观看"><a href="#高清电影在线观看" class="headerlink" title="高清电影在线观看"></a>高清电影在线观看</h1><div style="position: relative; width: 100%; height: 100%; padding-bottom: 100%;"><iframe 
@@ -319,6 +251,28 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
       </categories>
       <tags>
         <tag>实用工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>加入拾柒工作室</title>
+    <url>/posts/3dc898ff.html</url>
+    <content><![CDATA[<h1 id="关于拾柒工作室"><a href="#关于拾柒工作室" class="headerlink" title="关于拾柒工作室"></a>关于拾柒工作室</h1><p>拾柒工作室是由三个在校大学生创建的一个小工作室。为何取名为“拾柒”，是因为我们三个人都来自17寝室，然后取名为拾柒，然后偷偷告诉你们，还有一个含义，大家可以在评论区留言，来揣测一下。</p>
+<a id="more"></a>
+
+<h2 id="拾柒工作室成员"><a href="#拾柒工作室成员" class="headerlink" title="拾柒工作室成员"></a>拾柒工作室成员</h2><h3 id="佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。"><a href="#佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。" class="headerlink" title="佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。"></a>佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。</h3><h3 id="万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。"><a href="#万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。" class="headerlink" title="万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。"></a>万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。</h3><h3 id="李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。"><a href="#李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。" class="headerlink" title="李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。"></a>李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。</h3><hr>
+<h1 id="欢迎加入我们"><a href="#欢迎加入我们" class="headerlink" title="欢迎加入我们"></a>欢迎加入我们</h1><h5 id="要求："><a href="#要求：" class="headerlink" title="要求："></a>要求：</h5><p>​    对网页搭建感兴趣，肯学习钻研（必）</p>
+<p>​    具有创新精神（必）</p>
+<p>​    具有团队合作精神（必）</p>
+<p>​    具有过硬的前端语言（HTML+CSS+JS)等等（选）</p>
+<p>​    具有审美高的UI设计（PS+AI+会使用图床）等等（选）</p>
+<p>​    具有JAVA,JAVAScript,Python等等清晰过硬的理论（选）</p>
+<h1 id="加入邮箱（-x32-54-48-54-x30-57-55-x32-x31-56-x40-x71-113-46-x63-111-x6d"><a href="#加入邮箱（-x32-54-48-54-x30-57-55-x32-x31-56-x40-x71-113-46-x63-111-x6d" class="headerlink" title="加入邮箱（&#x32;&#54;&#48;&#54;&#x30;&#57;&#55;&#x32;&#x31;&#56;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#x6d;)"></a>加入邮箱（<a href="mailto:&#x32;&#54;&#48;&#54;&#x30;&#57;&#55;&#x32;&#x31;&#56;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#x6d;">&#x32;&#54;&#48;&#54;&#x30;&#57;&#55;&#x32;&#x31;&#56;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#x6d;</a>)</h1><h1 id="联系电话（15270055490-佐佳豪）"><a href="#联系电话（15270055490-佐佳豪）" class="headerlink" title="联系电话（15270055490 佐佳豪）"></a>联系电话（15270055490 佐佳豪）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>关于本站</category>
+      </categories>
+      <tags>
+        <tag>关于我们</tag>
       </tags>
   </entry>
   <entry>
@@ -347,32 +301,193 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
       </tags>
   </entry>
   <entry>
-    <title>面向对象基础</title>
-    <url>/posts/9d9ad23f.html</url>
-    <content><![CDATA[<p>[TOC]</p>
-<h1 id="（1）面向对象的概念"><a href="#（1）面向对象的概念" class="headerlink" title="（1）面向对象的概念"></a>（1）面向对象的概念</h1><p>面向对象是一种符合人类思维的编程思想，将万物比作对象，说一个栗子：</p>
-<p><strong>把大象装进冰箱需要几步</strong></p>
-<p>三步</p>
-<ol>
-<li>打开冰箱</li>
-<li>装进大象</li>
-<li>关上冰箱门</li>
-</ol>
-<p><strong>这个是一个典型的面向过程的编程思想，把这个事情，像成敲java代码，如果换成装狐狸，那也要重新写一遍代码，将狐狸放进冰箱，执行三步，如果又换把狐狸放进笼子里呢，又要重新写一遍。所以为了解决事情的重复性，就有了面向对象思想。</strong></p>
-<p>就可以将装进某件事物封装成一个对象，只需要改动一点点，就可以实现这个功能。。。。</p>
-<p>而面向对象有三个特点：</p>
-<p>1.封装性</p>
-<p>封装性是将对象的属性和行为封装起来，然后不需要让用户知道他是怎么执行的，只需要改变对应的参数，就可以实现用户想要达到的功能。</p>
-<p>2.继承性</p>
-<p>继承性主要讲的是类与类之间的关系，可以通过继承将代码的冗余降低。用最少的代码，做更多的功能。</p>
-<p>3.多态性</p>
-<p>多态性是指程序之间允许出现重名的现象。在继承关系中，子类如果定义了一个与父类方法签名完全相同的方法，被称为覆写（Override）。</p>
+    <title>友链使用</title>
+    <url>/posts/57d1587b.html</url>
+    <content><![CDATA[<h1 id="友链使用"><a href="#友链使用" class="headerlink" title="友链使用"></a>友链使用</h1><p><a href="https://imgchr.com/i/DrR4iR"><img src="https://s3.ax1x.com/2020/11/27/DrR4iR.png" alt="DrR4iR.png"></a></p>
+<h3 id="友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！"><a href="#友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！" class="headerlink" title="友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！"></a>友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！</h3><hr>
+<a id="more"></a>
+
+<h1 id="时光邮局："><a href="#时光邮局：" class="headerlink" title="时光邮局："></a>时光邮局：</h1><p>​        点进去，撰写信件，然后绑定一个自己的邮箱，然后在未来的某一时间寄给自己或某人！！！</p>
+<p><a href="https://imgchr.com/i/Dr4FeO"><img src="https://s3.ax1x.com/2020/11/27/Dr4FeO.png" alt="Dr4FeO.png"></a></p>
+<h2 id="为什么要给未来写信？"><a href="#为什么要给未来写信？" class="headerlink" title="为什么要给未来写信？"></a>为什么要给未来写信？</h2><p>​                从过去获得惊喜，<br>​                给你的未来一些灵感或安慰的话，<br>​                或者预测一下你的生活，这个世界，你的家人。<br>​                以及一年，五年会发生什么。</p>
+<h2 id="可以给任何人写信么？"><a href="#可以给任何人写信么？" class="headerlink" title="可以给任何人写信么？"></a>可以给任何人写信么？</h2><p>​                为了防止骚扰，营销邮件，<br>​                每次写信后都会往收件箱发一封验证邮件<br>​                点击了验证邮件，未来才会收到写的信<br>​                后续官网应该会开放更多功能哦</p>
+<hr>
+<h1 id="码云"><a href="#码云" class="headerlink" title="码云"></a>码云</h1><p><strong>码云</strong>：代码托管·协作开发平台，开发者超过 500 万，托管项目超过 1000 万，汇聚几乎所有本土原创开源项目，并于 2016 年推出企业版，提供企业级代码托管服务，成为开发领域领先的 SaaS 服务提供商。</p>
+<p>此码云并非彼马云，这个名字或许是蹭了某爸的热度。。但在这里，除了Github，GItee就是国内最好的代码托管了。毕竟</p>
+<p>鄙人的第一个静态网页就是在我师傅的教导，在gitee上搭建的。</p>
+<p>后期：我将会出一门git教程。教大家如何使用，并利用git来搭建自己的静态网页。</p>
+<hr>
+<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p><a href="https://imgchr.com/i/Dr5WCj"><img src="https://s3.ax1x.com/2020/11/27/Dr5WCj.png" alt="Dr5WCj.png"></a></p>
+<p>本网站就基于hexo框架及arey框架搭建。。</p>
+<p>感谢，感谢，感谢。</p>
+<p><strong>大家想去搭属于自己的网站的话</strong>，可以联系我们<strong>拾柒工作室</strong>，我们将<strong>有偿搭建</strong>（<strong>价格私聊</strong>）：</p>
+<table>
+<thead>
+<tr>
+<th align="center">邮箱</th>
+<th align="center"><a href="mailto:&#50;&#x36;&#48;&#54;&#48;&#57;&#x37;&#50;&#x31;&#x38;&#64;&#113;&#113;&#46;&#99;&#x6f;&#109;">&#50;&#x36;&#48;&#54;&#48;&#57;&#x37;&#50;&#x31;&#x38;&#64;&#113;&#113;&#46;&#99;&#x6f;&#109;</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>电话</strong></td>
+<td align="center">15270055490</td>
+</tr>
+<tr>
+<td align="center"><strong>工作室地址</strong></td>
+<td align="center">江信学院教学楼（606）</td>
+</tr>
+<tr>
+<td align="center"><strong>QQ</strong></td>
+<td align="center">2606097218</td>
+</tr>
+</tbody></table>
+<h1 id="高清壁纸"><a href="#高清壁纸" class="headerlink" title="高清壁纸"></a>高清壁纸</h1><p><a href="https://imgchr.com/i/DrTFgA"><img src="https://s3.ax1x.com/2020/11/27/DrTFgA.png" alt="DrTFgA.png"></a></p>
+<p>该工具是真的强悍；电脑壁纸多，精，美。最主要是有4k呀！</p>
+<hr>
+<h1 id="爱奇艺vip视频解析"><a href="#爱奇艺vip视频解析" class="headerlink" title="爱奇艺vip视频解析"></a>爱奇艺vip视频解析</h1><p>点击链接，将会看到一个地址栏，他要你填写一串链接，不要慌，我来教你，如何去嫖免费爱奇艺视频</p>
+<p><a href="https://imgchr.com/i/DrTHVf"><img src="https://s3.ax1x.com/2020/11/27/DrTHVf.png" alt="DrTHVf.png"></a></p>
+<ul>
+<li><h3 id="同时打开爱奇艺在线视频网站"><a href="#同时打开爱奇艺在线视频网站" class="headerlink" title="同时打开爱奇艺在线视频网站"></a>同时打开爱奇艺在线视频网站</h3></li>
+</ul>
+<p><a href="https://imgchr.com/i/Dr7MdK"><img src="https://s3.ax1x.com/2020/11/27/Dr7MdK.png" alt="Dr7MdK.png"></a></p>
+<ul>
+<li><h3 id="选择任意一个VIP电影，比如姜子牙，需要收费"><a href="#选择任意一个VIP电影，比如姜子牙，需要收费" class="headerlink" title="选择任意一个VIP电影，比如姜子牙，需要收费"></a>选择任意一个VIP电影，比如姜子牙，需要收费</h3></li>
+</ul>
+<p><a href="https://imgchr.com/i/Dr7NLt"><img src="https://s3.ax1x.com/2020/11/27/Dr7NLt.png" alt="Dr7NLt.png"></a></p>
+<ul>
+<li><h3 id="复制地址栏的爱奇艺视频链接"><a href="#复制地址栏的爱奇艺视频链接" class="headerlink" title="复制地址栏的爱奇艺视频链接"></a>复制地址栏的爱奇艺视频链接</h3><p><a href="https://imgchr.com/i/DrHb9g"><img src="https://s3.ax1x.com/2020/11/27/DrHb9g.png" alt="DrHb9g.png"></a></p>
+</li>
+<li><h3 id="返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了"><a href="#返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了" class="headerlink" title="返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了"></a>返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了</h3></li>
+</ul>
+<p><a href="https://imgchr.com/i/DrbQ8e"><img src="https://s3.ax1x.com/2020/11/27/DrbQ8e.png" alt="DrbQ8e.png"></a></p>
+<hr>
+<h1 id="糗事百科"><a href="#糗事百科" class="headerlink" title="糗事百科"></a>糗事百科</h1><p>点击进去</p>
+<p><a href="https://imgchr.com/i/DrbGDI"><img src="https://s3.ax1x.com/2020/11/27/DrbGDI.png" alt="DrbGDI.png"></a></p>
+<p>学习了一天，应该逛逛糗事@@@</p>
+<hr>
+<h1 id="阿里矢量ico"><a href="#阿里矢量ico" class="headerlink" title="阿里矢量ico"></a>阿里矢量ico</h1><p><a href="https://imgchr.com/i/Drbh24"><img src="https://s3.ax1x.com/2020/11/27/Drbh24.png" alt="Drbh24.png"></a></p>
+<p>阿里妈妈MUX倾力打造的矢量图标管理、交流平台。</p>
+<h4 id="设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。"><a href="#设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。" class="headerlink" title="设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。"></a>设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。</h4><hr>
+<h4 id="后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》https-cxq21-gitee-io"><a href="#后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》https-cxq21-gitee-io" class="headerlink" title="后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》https://cxq21.gitee.io/"></a>后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》<a href="https://cxq21.gitee.io/">https://cxq21.gitee.io/</a></h4><p>​                                                                                                                                                                                                                <em>作者：zjh</em>    </p>
 ]]></content>
       <categories>
-        <category>JAVA笔记</category>
+        <category>说明文档</category>
       </categories>
       <tags>
-        <tag>JAVA笔记</tag>
+        <tag>实用工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>江信19级软件测试刷题系统</title>
+    <url>/posts/1e3f2157.html</url>
+    <content><![CDATA[<h1 id="江信19级软件测试刷题系统"><a href="#江信19级软件测试刷题系统" class="headerlink" title="江信19级软件测试刷题系统"></a>江信19级软件测试刷题系统</h1><hr>
+<h1 id="上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。"><a href="#上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。" class="headerlink" title="上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。"></a>上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。</h1><h1 id="这个系统手机电脑都可刷。有任何疑问请在微信群或评论区质询！"><a href="#这个系统手机电脑都可刷。有任何疑问请在微信群或评论区质询！" class="headerlink" title="这个系统手机电脑都可刷。有任何疑问请在微信群或评论区质询！"></a>这个系统手机电脑都可刷。有任何疑问请在<strong>微信群或评论区</strong>质询！</h1><p><a href="https://imgchr.com/i/rMyKOO"><img src="https://s3.ax1x.com/2020/12/15/rMyKOO.png" alt="rMyKOO.png" style="zoom:50%;" /></a></p>
+<h3 id="致敬题库制作人员：-佐佳豪、李玮峰"><a href="#致敬题库制作人员：-佐佳豪、李玮峰" class="headerlink" title="致敬题库制作人员： 佐佳豪、李玮峰"></a>致敬题库制作人员： 佐佳豪、李玮峰</h3><p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>江信1+X</category>
+      </categories>
+      <tags>
+        <tag>实用工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建自己的第一个网站</title>
+    <url>/posts/56146dea.html</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>平常，我们自己在编辑器写的网页想要进行浏览可以很简单，但我们有没有想过一个问题，当我们想发给别人看的时候，他人要看只可以在文件看，而不可以发个链接直接看，这样的话，对非专业的人很不友好，也不方便。那么，站长将在这里写一篇如何利用Gitee Pages搭建自己的第一个静态网页。（LIEFox就是利用了Gitee Pages 部署的）</p>
+<p>作为一个即将跨入程序员行业的码蚁，每个人都想搭建一个属于自己的网站，然后这个教程我将教大家如何将自己写的网站部署在gitee的仓库上，并实现一个网址就可以在线浏览的方法。好啦，话不多说，直奔主题。</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ol>
+<li>需要准备一个带有 index.html 的网页</li>
+<li>下载 git 工具</li>
+<li>创建 gitee 仓库</li>
+</ol>
+<p>来开造</p>
+<h1 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h1><p>写一个网页，文件名记得改成index.html，因为到时候部署在gitee page进入的是首页，如果不是index会报404。</p>
+<p><a href="https://imgchr.com/i/r2orO1"><img src="https://s3.ax1x.com/2020/12/24/r2orO1.md.png" alt="r2orO1.md.png"></a></p>
+<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><h2 id="1-下载git工具"><a href="#1-下载git工具" class="headerlink" title="1.下载git工具"></a>1.下载git工具</h2><p>git工具已经发在了网盘上了，请云盘下载</p>
+<h4 id="git下载地址"><a href="#git下载地址" class="headerlink" title="git下载地址"></a><a href="https://wws.lanzous.com/iSnBAjobi3a">git下载地址</a></h4><h2 id="2-下载好了，双击进入安装界面"><a href="#2-下载好了，双击进入安装界面" class="headerlink" title="2.下载好了，双击进入安装界面"></a>2.下载好了，双击进入安装界面</h2><p><a href="https://imgchr.com/i/r2TkhF"><img src="https://s3.ax1x.com/2020/12/24/r2TkhF.png" alt="r2TkhF.png"></a></p>
+<h2 id="3-点击Next"><a href="#3-点击Next" class="headerlink" title="3.点击Next"></a>3.点击Next</h2><p><a href="https://imgchr.com/i/r2TltO"><img src="https://s3.ax1x.com/2020/12/24/r2TltO.png" alt="r2TltO.png"></a></p>
+<h2 id="4-选择安装路径》点击Next"><a href="#4-选择安装路径》点击Next" class="headerlink" title="4.选择安装路径》点击Next"></a>4.选择安装路径》点击Next</h2><p><a href="https://imgchr.com/i/r2H56J"><img src="https://s3.ax1x.com/2020/12/24/r2H56J.png" alt="r2H56J.png"></a></p>
+<h2 id="5-选择需要的主键→点击Next"><a href="#5-选择需要的主键→点击Next" class="headerlink" title="5.选择需要的主键→点击Next"></a>5.选择需要的主键→点击Next</h2><p><a href="https://imgchr.com/i/r2b90I"><img src="https://s3.ax1x.com/2020/12/24/r2b90I.md.png" alt="r2b90I.md.png"></a></p>
+<h2 id="6-点击Next"><a href="#6-点击Next" class="headerlink" title="6.点击Next"></a>6.点击Next</h2><p><a href="https://imgchr.com/i/r2buBn"><img src="https://s3.ax1x.com/2020/12/24/r2buBn.md.png" alt="r2buBn.md.png"></a></p>
+<h2 id="7-点击Next"><a href="#7-点击Next" class="headerlink" title="7.点击Next"></a>7.点击Next</h2><p><a href="https://imgchr.com/i/r2qDZn"><img src="https://s3.ax1x.com/2020/12/24/r2qDZn.md.png" alt="r2qDZn.md.png"></a></p>
+<h2 id="8-后面一直点Next"><a href="#8-后面一直点Next" class="headerlink" title="8.后面一直点Next"></a>8.后面一直点Next</h2><h2 id="9-点击install"><a href="#9-点击install" class="headerlink" title="9.点击install"></a>9.点击install</h2><p><a href="https://imgchr.com/i/r2L9FP"><img src="https://s3.ax1x.com/2020/12/24/r2L9FP.md.png" alt="r2L9FP.md.png"></a></p>
+<h2 id="10-安装ing"><a href="#10-安装ing" class="headerlink" title="10.安装ing"></a>10.安装ing</h2><p><a href="https://imgchr.com/i/r2LFSS"><img src="https://s3.ax1x.com/2020/12/24/r2LFSS.md.png" alt="r2LFSS.md.png"></a></p>
+<h2 id="11-点击Finish"><a href="#11-点击Finish" class="headerlink" title="11.点击Finish"></a>11.点击Finish</h2><p><a href="https://imgchr.com/i/r2LELj"><img src="https://s3.ax1x.com/2020/12/24/r2LELj.md.png" alt="r2LELj.md.png"></a></p>
+<p>看看，安装成功了没有</p>
+<p><a href="https://imgchr.com/i/r2Lymd"><img src="https://s3.ax1x.com/2020/12/24/r2Lymd.png" alt="r2Lymd.png"></a></p>
+<p>右击桌面空白处，看看有没有<strong>Git Bash Here</strong> 这个命令。</p>
+<p>[TOC]</p>
+<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1><p>创建gitee仓库，点击链接进入gitee官网。</p>
+<p><a href="https://gitee.com/">gitee官网</a></p>
+<p>没有的同学自己注册一个，登录好了来到这一步。</p>
+<h2 id="1-点击网页右上角的-号→新建仓库"><a href="#1-点击网页右上角的-号→新建仓库" class="headerlink" title="1.点击网页右上角的 + 号→新建仓库"></a>1.点击网页右上角的 + 号→新建仓库</h2><p><a href="https://imgchr.com/i/r2OzPP"><img src="https://s3.ax1x.com/2020/12/24/r2OzPP.png" alt="r2OzPP.png"></a></p>
+<h2 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2.创建仓库"></a>2.创建仓库</h2><ul>
+<li><h4 id="仓库名称任意，尽量规范；注意：当填仓库名称时，路径将会自动转成英文。"><a href="#仓库名称任意，尽量规范；注意：当填仓库名称时，路径将会自动转成英文。" class="headerlink" title="仓库名称任意，尽量规范；注意：当填仓库名称时，路径将会自动转成英文。"></a>仓库名称任意，尽量规范；注意：当填仓库名称时，路径将会自动转成英文。</h4></li>
+<li><h4 id="仓库介绍非必填；"><a href="#仓库介绍非必填；" class="headerlink" title="仓库介绍非必填；"></a>仓库介绍非必填；</h4></li>
+<li><h4 id="开源选择公开；"><a href="#开源选择公开；" class="headerlink" title="开源选择公开；"></a>开源选择<strong>公开</strong>；</h4></li>
+<li><h4 id="选择语言，选择-JavaScript；"><a href="#选择语言，选择-JavaScript；" class="headerlink" title="选择语言，选择 JavaScript；"></a>选择语言，选择 <strong>JavaScript</strong>；</h4></li>
+<li><h4 id="点击创建按钮"><a href="#点击创建按钮" class="headerlink" title="点击创建按钮"></a>点击<strong>创建</strong>按钮</h4></li>
+</ul>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a href="https://imgchr.com/i/r2X0qH"><img src="https://s3.ax1x.com/2020/12/24/r2X0qH.md.png" alt="r2X0qH.md.png"></a></h2><h2 id="3-进入到git命令界面"><a href="#3-进入到git命令界面" class="headerlink" title="3.进入到git命令界面"></a>3.进入到git命令界面</h2><p><a href="https://imgchr.com/i/r2jD6U"><img src="https://s3.ax1x.com/2020/12/24/r2jD6U.md.png" alt="r2jD6U.md.png"></a></p>
+<p>创建好了，现在我们回到刚刚写的网页的文件夹。</p>
+<p>[TOC]</p>
+<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h1><h2 id="部署项目到gitee上"><a href="#部署项目到gitee上" class="headerlink" title="部署项目到gitee上"></a>部署项目到gitee上</h2><h2 id="1-来到刚刚写的-index-html-文件夹，右击空白处，点击Git-Bash-Here。注意：上传项目时，文件夹是整个项目，就是说项目里的根目录。"><a href="#1-来到刚刚写的-index-html-文件夹，右击空白处，点击Git-Bash-Here。注意：上传项目时，文件夹是整个项目，就是说项目里的根目录。" class="headerlink" title="1.来到刚刚写的 index.html 文件夹，右击空白处，点击Git Bash Here。注意：上传项目时，文件夹是整个项目，就是说项目里的根目录。"></a>1.来到刚刚写的 index.html 文件夹，右击空白处，点击Git Bash Here。注意：上传项目时，文件夹是整个项目，就是说项目里的根目录。</h2><p><a href="https://imgchr.com/i/r2vkhq"><img src="https://s3.ax1x.com/2020/12/24/r2vkhq.png" alt="r2vkhq.png"></a></p>
+<h2 id="2-进入命令窗口"><a href="#2-进入命令窗口" class="headerlink" title="2.进入命令窗口"></a>2.进入命令窗口</h2><p><a href="https://imgchr.com/i/r2x5ee"><img src="https://s3.ax1x.com/2020/12/24/r2x5ee.md.png" alt="r2x5ee.md.png"></a></p>
+<h2 id="3-回到刚刚的git代码帮助页面"><a href="#3-回到刚刚的git代码帮助页面" class="headerlink" title="3.回到刚刚的git代码帮助页面"></a>3.回到刚刚的git代码帮助页面</h2><ul>
+<li>第一步，在黑窗口输入图下圈住的Git全局设置命令。（如果以后还要部署的话，就不用在再执行这一步了）</li>
+</ul>
+<p><a href="https://imgchr.com/i/rRHOG8"><img src="https://s3.ax1x.com/2020/12/25/rRHOG8.md.png" alt="rRHOG8.md.png"></a></p>
+<ul>
+<li>第二步，在接着输入下面语句</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">&#x2F;&#x2F;注意回车</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://imgchr.com/i/r2zxc6"><img src="https://s3.ax1x.com/2020/12/24/r2zxc6.png" alt="r2zxc6.png"></a></p>
+<h2 id="4-回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。"><a href="#4-回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。" class="headerlink" title="4.回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。"></a>4.回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。</h2><p><a href="https://imgchr.com/i/r2zuk9"><img src="https://s3.ax1x.com/2020/12/24/r2zuk9.md.png" alt="r2zuk9.md.png"></a></p>
+<h3 id="注意：命令行窗口里不可以-ctrl-v-命令行的粘贴快捷键是-shift-insert"><a href="#注意：命令行窗口里不可以-ctrl-v-命令行的粘贴快捷键是-shift-insert" class="headerlink" title="注意：命令行窗口里不可以 ctrl+v ,命令行的粘贴快捷键是 shift+insert"></a><strong>注意：命令行窗口里不可以 ctrl+v ,命令行的粘贴快捷键是 shift+insert</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add origin https:&#x2F;&#x2F;gitee.com&#x2F;cxq21&#x2F;first-page.git</span><br><span class="line">git push -u origin master</span><br><span class="line">&#x2F;&#x2F;注意回车</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://imgchr.com/i/rRSnu8"><img src="https://s3.ax1x.com/2020/12/24/rRSnu8.png" alt="rRSnu8.png"></a></p>
+<h3 id="注意：当运行到-”git-push-u-origin-master“-时，他会弹出一个窗口，填入你当时注册时的用户名和密码，确定。"><a href="#注意：当运行到-”git-push-u-origin-master“-时，他会弹出一个窗口，填入你当时注册时的用户名和密码，确定。" class="headerlink" title="注意：当运行到 ”git push -u origin master“ 时，他会弹出一个窗口，填入你当时注册时的用户名和密码，确定。"></a>注意：当运行到 ”git push -u origin master“ 时，他会弹出一个窗口，填入你当时注册时的用户名和密码，确定。</h3><p><a href="https://imgchr.com/i/rRqmp8"><img src="https://s3.ax1x.com/2020/12/25/rRqmp8.jpg" alt="rRqmp8.jpg"></a></p>
+<p>当加载到100%时，就代表上传成功。</p>
+<p><a href="https://imgchr.com/i/rRpuxx"><img src="https://s3.ax1x.com/2020/12/24/rRpuxx.png" alt="rRpuxx.png"></a></p>
+<h2 id="5-上传成功，回到git命令页面，刷新一下网页。"><a href="#5-上传成功，回到git命令页面，刷新一下网页。" class="headerlink" title="5.上传成功，回到git命令页面，刷新一下网页。"></a>5.上传成功，回到git命令页面，刷新一下网页。</h2><p><a href="https://imgchr.com/i/rRpYid"><img src="https://s3.ax1x.com/2020/12/24/rRpYid.md.png" alt="rRpYid.md.png"></a></p>
+<p>进入到这个仓库网页，胜利就在眼前，加油！马上就可以看到成果了。</p>
+<p><a href="https://imgchr.com/i/rRpUzt"><img src="https://s3.ax1x.com/2020/12/24/rRpUzt.md.png" alt="rRpUzt.md.png"></a></p>
+<h2 id="6-点击-服务-→-Gitee-Pages"><a href="#6-点击-服务-→-Gitee-Pages" class="headerlink" title="6.点击 服务 → Gitee Pages"></a>6.点击 服务 → Gitee Pages</h2><p><a href="https://imgchr.com/i/rRC14H"><img src="https://s3.ax1x.com/2020/12/24/rRC14H.md.png" alt="rRC14H.md.png"></a></p>
+<h2 id="7-点击启动，等待一会儿，将会给个地址。"><a href="#7-点击启动，等待一会儿，将会给个地址。" class="headerlink" title="7.点击启动，等待一会儿，将会给个地址。"></a>7.点击启动，等待一会儿，将会给个地址。</h2><p><a href="https://imgchr.com/i/rRC7x1"><img src="https://s3.ax1x.com/2020/12/24/rRC7x1.md.png" alt="rRC7x1.md.png"></a></p>
+<h2 id="8-gitee会给你一个网站地址：-http-cxq21-gitee-io-first-page-没错，这就是你的第一个网站。点击它，就可以进去了。"><a href="#8-gitee会给你一个网站地址：-http-cxq21-gitee-io-first-page-没错，这就是你的第一个网站。点击它，就可以进去了。" class="headerlink" title="8.gitee会给你一个网站地址： http://cxq21.gitee.io/first-page 没错，这就是你的第一个网站。点击它，就可以进去了。"></a>8.gitee会给你一个网站地址： <a href="http://cxq21.gitee.io/first-page">http://cxq21.gitee.io/first-page</a> 没错，这就是你的第一个网站。点击它，就可以进去了。</h2><p><a href="https://imgchr.com/i/rRCLqK"><img src="https://s3.ax1x.com/2020/12/24/rRCLqK.png" alt="rRCLqK.png"></a></p>
+<p>[TOC]</p>
+<h1 id="大功告成"><a href="#大功告成" class="headerlink" title="大功告成"></a>大功告成</h1><p><a href="https://imgchr.com/i/rRPUzR"><img src="https://s3.ax1x.com/2020/12/24/rRPUzR.md.png" alt="rRPUzR.md.png"></a></p>
+<p><strong>可以将网站链接分享给别人啦，又get到一个技能了。</strong></p>
+<p><strong>如果在途中出现什么问题，可以在进QQ群咨询，有大佬帮忙。</strong></p>
+<p><a href="https://imgchr.com/i/rRiCY4"><img src="https://s3.ax1x.com/2020/12/25/rRiCY4.md.png" alt="rRiCY4.md.png"></a></p>
+<p>作者：<a href="https://cxq21.gitee.io/">LIEFox</a>  zjh</p>
+]]></content>
+      <categories>
+        <category>JS案例</category>
+      </categories>
+      <tags>
+        <tag>案例记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WebGL流体效果</title>
+    <url>/posts/3731d3f9.html</url>
+    <content><![CDATA[<p>WebGL流体效果，拖动鼠标即可展现炫酷的流体动画，可以截图用来做背景，发挥自己的创造力。。。《Close Controls》可以关闭菜单，自己研究英语。<strong>（显示不出的话，就刷新一下）</strong></p>
+<div style="position: relative; width: 100%; height: 100%; padding-bottom: 100%;"><iframe 
+src="https://paveldogreat.github.io/WebGL-Fluid-Simulation/" scrolling="yes" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
+height: 100%; left: 0; top: 0;"> </iframe></div>
+
+
+<h4 id="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"><a href="#LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈" class="headerlink" title="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"></a>LIEFox加入了很多实用有趣的小工具，链接在这👉<a href="https://cxq21.gitee.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" target="_blank">实用工具传送门</a>👈</h4><p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>实用工具</category>
+      </categories>
+      <tags>
+        <tag>实用工具</tag>
       </tags>
   </entry>
   <entry>
@@ -555,6 +670,335 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
 <hr>
 <p>。。。。。。。</p>
 <p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>JAVA笔记</category>
+      </categories>
+      <tags>
+        <tag>JAVA笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解压开车</title>
+    <url>/posts/a4acce0b.html</url>
+    <content><![CDATA[<h2 id="等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。"><a href="#等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。" class="headerlink" title="等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。"></a>等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。</h2></iframe><div style="position: relative; width: 100%; height: 90%; padding-bottom: 100%;"><iframe 
+src="https://bruno-simon.com/" scrolling="yes" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
+height: 100%; left: 0; top: 0;"> </iframe></div>
+
+<h4 id="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"><a href="#LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈" class="headerlink" title="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"></a>LIEFox加入了很多实用有趣的小工具，链接在这👉<a href="https://cxq21.gitee.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" target="_blank">实用工具传送门</a>👈</h4><p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>实用工具</category>
+      </categories>
+      <tags>
+        <tag>实用工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解压小虫子</title>
+    <url>/posts/b50949c5.html</url>
+    <content><![CDATA[<p>还有这个蠕动的虫，随着你的鼠标（或手指），会有不同得变化，简直不要太魔性！</p>
+<p><strong>点击快的话，还能有段鬼畜，试试就知道。哈哈哈，能骗一个是一个。</strong></p>
+<div style="position: relative; width: 100%; height: 100%; padding-bottom: 100%;"><iframe 
+src="http://www.staggeringbeauty.com/" scrolling="yes" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
+height: 100%; left: 0; top: 0;"> </iframe></div>
+
+<h4 id="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"><a href="#LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈" class="headerlink" title="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"></a>LIEFox加入了很多实用有趣的小工具，链接在这👉<a href="https://cxq21.gitee.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" target="_blank">实用工具传送门</a>👈</h4><p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>实用工具</category>
+      </categories>
+      <tags>
+        <tag>实用工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站来源灵感</title>
+    <url>/posts/6b5b190a.html</url>
+    <content><![CDATA[<p>欢迎来到<a href="https://cxq21.gitee.io/">LIEFox</a>! 这是我们的官方网站.这是我们第一篇文章！！！</p>
+<h1 id="网站来源灵感"><a href="#网站来源灵感" class="headerlink" title="网站来源灵感"></a>网站来源灵感</h1><p>为什么要搭建出这个网站，原因是发现许多同学在课后作业不会做时，迷茫不知去和处寻找。目前百度可以搜到的也只有CSDN里面里的代码。但CSDN里的代码少数可以为我们所用，对许多初学者并不友好，所以，我发现这个问题，一开始将项目放在Gitee上<a href="https://gitee.com/cxq21">我的项目</a>,发现许多同学并不会正确使用。导致项目并不可以正常运行。<strong>因此，</strong>我就找到了我的室友（前端攻城狮：万津津）、（UI射击狮：李玮峰）联手搭建了这个网站！！！<a id="more"></a></p>
+<h1 id="站名之源"><a href="#站名之源" class="headerlink" title="站名之源"></a>站名之源</h1><p><a href="https://cxq21.gitee.io/">LIEFox</a>，LIE：谎言；Fox:狐狸。！！！没错！！！组合起来是“谎言之狐”。希望网站可以使用户思维像西伯利亚的雪狐一样，在代码中寻找自己需要的猎物（代码），并做到（谎）花草丛中过，片叶不沾身。</p>
+<h1 id="LOGO灵感"><a href="#LOGO灵感" class="headerlink" title="LOGO灵感"></a>LOGO灵感</h1><p><a href="https://imgchr.com/i/DDAP1I"><img src="https://s3.ax1x.com/2020/11/27/DDAP1I.png" alt="DDAP1I.png"></a></p>
+<p>应景了站名LIEFox，可爱logo是折纸风格的狐狸与站名相结合，liefox采取了狐狸身上的几个主要颜色。</p>
+<p>为什么选狐狸呢？肯定是狐狸可爱呀哈哈哈，像这样的</p>
+<p><a href="https://imgchr.com/i/DDAeAg"><img src="https://s3.ax1x.com/2020/11/27/DDAeAg.md.jpg" alt="DDAeAg.md.jpg"></a></p>
+<p>这样的</p>
+<p><a href="https://imgchr.com/i/DDAIDf"><img src="https://s3.ax1x.com/2020/11/27/DDAIDf.jpg" alt="DDAIDf.jpg"></a></p>
+<p>这样的</p>
+<p><a href="https://imgchr.com/i/DDA5KP"><img src="https://s3.ax1x.com/2020/11/27/DDA5KP.jpg" alt="DDA5KP.jpg"></a></p>
+<p>这样的</p>
+<p><a href="https://imgchr.com/i/DDAhvt"><img src="https://s3.ax1x.com/2020/11/27/DDAhvt.jpg" alt="DDAhvt.jpg"></a></p>
+<p>爱了爱了爱了</p>
+<h2 id="不出意外的话过些天将是我们LIEFox的吉祥物。"><a href="#不出意外的话过些天将是我们LIEFox的吉祥物。" class="headerlink" title="不出意外的话过些天将是我们LIEFox的吉祥物。"></a>不出意外的话过些天将是我们LIEFox的吉祥物。</h2><p>​                                                                                                                                                                                                                <em>作者：zjh</em>    </p>
+]]></content>
+      <categories>
+        <category>关于本站</category>
+      </categories>
+      <tags>
+        <tag>网站来源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象基础</title>
+    <url>/posts/9d9ad23f.html</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h1 id="（1）面向对象的概念"><a href="#（1）面向对象的概念" class="headerlink" title="（1）面向对象的概念"></a>（1）面向对象的概念</h1><p>面向对象是一种符合人类思维的编程思想，将万物比作对象，说一个栗子：</p>
+<p><strong>把大象装进冰箱需要几步</strong></p>
+<p>三步</p>
+<ol>
+<li>打开冰箱</li>
+<li>装进大象</li>
+<li>关上冰箱门</li>
+</ol>
+<p><strong>这个是一个典型的面向过程的编程思想，把这个事情，像成敲java代码，如果换成装狐狸，那也要重新写一遍代码，将狐狸放进冰箱，执行三步，如果又换把狐狸放进笼子里呢，又要重新写一遍。所以为了解决事情的重复性，就有了面向对象思想。</strong></p>
+<p>就可以将装进某件事物封装成一个对象，只需要改动一点点，就可以实现这个功能。。。。</p>
+<p>而面向对象有三个特点：</p>
+<p>1.封装性</p>
+<p>封装性是将对象的属性和行为封装起来，然后不需要让用户知道他是怎么执行的，只需要改变对应的参数，就可以实现用户想要达到的功能。</p>
+<p>2.继承性</p>
+<p>继承性主要讲的是类与类之间的关系，可以通过继承将代码的冗余降低。用最少的代码，做更多的功能。</p>
+<p>3.多态性</p>
+<p>多态性是指程序之间允许出现重名的现象。在继承关系中，子类如果定义了一个与父类方法签名完全相同的方法，被称为覆写（Override）。</p>
+]]></content>
+      <categories>
+        <category>JAVA笔记</category>
+      </categories>
+      <tags>
+        <tag>JAVA笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>三大框架</title>
+    <url>/posts/367339a6.html</url>
+    <content><![CDATA[<h1 id="一、Mybatis"><a href="#一、Mybatis" class="headerlink" title="一、Mybatis"></a>一、Mybatis</h1><ol>
+<li>什么是Mybatis？</li>
+</ol>
+<p>半自动映射的数据持久层框架、ORM框架。</p>
+<p>2.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>JAVA简介</title>
+    <url>/posts/98ac5948.html</url>
+    <content><![CDATA[<h1 id="（1）JAVA简介"><a href="#（1）JAVA简介" class="headerlink" title="（1）JAVA简介"></a>（1）JAVA简介</h1><p>Java最早是由SUN公司（已被Oracle收购）的<a href="https://en.wikipedia.org/wiki/James_Gosling">詹姆斯·高斯林</a>（高斯林，人称Java之父）在上个世纪90年代初开发的一种编程语言，最初被命名为Oak，目标是针对小型家电设备的嵌入式应用，结果市场没啥反响。谁料到互联网的崛起，让Oak重新焕发了生机，于是SUN公司改造了Oak，在1995年以Java的名称正式发布，原因是Oak已经被人注册了，因此SUN注册了Java这个商标。随着互联网的高速发展，Java逐渐成为最重要的网络编程语言。</p>
+<p>Java介于编译型语言和解释型语言之间。编译型语言如C、C++，代码是直接编译成机器码执行，但是不同的平台（x86、ARM等）CPU的指令集不同，因此，需要编译出每一种平台的对应机器码。解释型语言如Python、Ruby没有这个问题，可以由解释器直接加载源码然后运行，代价是运行效率太低。而Java是将代码编译成一种“字节码”，它类似于抽象的CPU指令，然后，针对不同平台编写虚拟机，不同平台的虚拟机负责加载字节码并执行，这样就实现了“一次编写，到处运行”的效果。当然，这是针对Java开发者而言。对于虚拟机，需要为每个平台分别开发。为了保证不同平台、不同公司开发的虚拟机都能正确执行Java字节码，SUN公司制定了一系列的Java虚拟机规范。从实践的角度看，JVM的兼容性做得非常好，低版本的Java字节码完全可以正常运行在高版本的JVM上。</p>
+<p>随着Java的发展，SUN给Java又分出了三个不同版本：</p>
+<ul>
+<li>Java SE：Standard Edition</li>
+<li>Java EE：Enterprise Edition</li>
+<li>Java ME：Micro Edition</li>
+</ul>
+<p>这三者之间有啥关系呢？</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">┌───────────────────────────┐</span><br><span class="line">│Java EE                    │</span><br><span class="line">│    ┌────────────────────┐ │</span><br><span class="line">│    │Java SE             │ │</span><br><span class="line">│    │    ┌─────────────┐ │ │</span><br><span class="line">│    │    │   Java ME   │ │ │</span><br><span class="line">│    │    └─────────────┘ │ │</span><br><span class="line">│    └────────────────────┘ │</span><br><span class="line">└───────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>简单来说，Java SE就是标准版，包含标准的JVM和标准库，而Java EE是企业版，它只是在Java SE的基础上加上了大量的API和库，以便方便开发Web应用、数据库、消息服务等，Java EE的应用使用的虚拟机和Java SE完全相同。</p>
+<p>Java ME就和Java SE不同，它是一个针对嵌入式设备的“瘦身版”，Java SE的标准库无法在Java ME上使用，Java ME的虚拟机也是“瘦身版”。</p>
+<p>毫无疑问，Java SE是整个Java平台的核心，而Java EE是进一步学习Web应用所必须的。我们熟悉的Spring等框架都是Java EE开源生态系统的一部分。不幸的是，Java ME从来没有真正流行起来，反而是Android开发成为了移动平台的标准之一，因此，没有特殊需求，不建议学习Java ME。</p>
+<p>因此我们推荐的Java学习路线图如下：</p>
+<ol>
+<li>首先要学习Java SE，掌握Java语言本身、Java核心开发技术以及Java标准库的使用；</li>
+<li>如果继续学习Java EE，那么Spring框架、数据库开发、分布式架构就是需要学习的；</li>
+<li>如果要学习大数据开发，那么Hadoop、Spark、Flink这些大数据平台就是需要学习的，他们都基于Java或Scala开发；</li>
+<li>如果想要学习移动开发，那么就深入Android平台，掌握Android App开发。</li>
+</ol>
+<p>无论怎么选择，Java SE的核心技术是基础，这个教程的目的就是让你完全精通Java SE！</p>
+<h3 id="Java版本"><a href="#Java版本" class="headerlink" title="Java版本"></a>Java版本</h3><p>从1995年发布1.0版本开始，到目前为止，最新的Java版本是Java 15：</p>
+<table>
+<thead>
+<tr>
+<th align="left">时间</th>
+<th align="left">版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1995</td>
+<td align="left">1.0</td>
+</tr>
+<tr>
+<td align="left">1998</td>
+<td align="left">1.2</td>
+</tr>
+<tr>
+<td align="left">2000</td>
+<td align="left">1.3</td>
+</tr>
+<tr>
+<td align="left">2002</td>
+<td align="left">1.4</td>
+</tr>
+<tr>
+<td align="left">2004</td>
+<td align="left">1.5 / 5.0</td>
+</tr>
+<tr>
+<td align="left">2005</td>
+<td align="left">1.6 / 6.0</td>
+</tr>
+<tr>
+<td align="left">2011</td>
+<td align="left">1.7 / 7.0</td>
+</tr>
+<tr>
+<td align="left">2014</td>
+<td align="left">1.8 / 8.0</td>
+</tr>
+<tr>
+<td align="left">2017/9</td>
+<td align="left">1.9 / 9.0</td>
+</tr>
+<tr>
+<td align="left">2018/3</td>
+<td align="left">10</td>
+</tr>
+<tr>
+<td align="left">2018/9</td>
+<td align="left">11</td>
+</tr>
+<tr>
+<td align="left">2019/3</td>
+<td align="left">12</td>
+</tr>
+<tr>
+<td align="left">2019/9</td>
+<td align="left">13</td>
+</tr>
+<tr>
+<td align="left">2020/3</td>
+<td align="left">14</td>
+</tr>
+<tr>
+<td align="left">2020/9</td>
+<td align="left">15</td>
+</tr>
+</tbody></table>
+<p>本教程使用的Java版本是最新版的<strong>Java 8</strong>。</p>
+<h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><p>初学者学Java，经常听到JDK、JRE这些名词，它们到底是啥？</p>
+<ul>
+<li>JDK：Java Development Kit</li>
+<li>JRE：Java Runtime Environment</li>
+</ul>
+<p>简单地说，JRE就是运行Java字节码的虚拟机。但是，如果只有Java源码，要编译成Java字节码，就需要JDK，因为JDK除了包含JRE，还提供了编译器、调试器等开发工具。</p>
+<p>二者关系如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> ┌─    ┌──────────────────────────────────┐</span><br><span class="line"> │     │     Compiler, debugger, etc.     │</span><br><span class="line"> │     └──────────────────────────────────┘</span><br><span class="line">JDK ┌─ ┌──────────────────────────────────┐</span><br><span class="line"> │  │  │                                  │</span><br><span class="line"> │ JRE │      JVM + Runtime Library       │</span><br><span class="line"> │  │  │                                  │</span><br><span class="line"> └─ └─ └──────────────────────────────────┘</span><br><span class="line">       ┌───────┐┌───────┐┌───────┐┌───────┐</span><br><span class="line">       │Windows││ Linux ││ macOS ││others │</span><br><span class="line">       └───────┘└───────┘└───────┘└───────┘</span><br></pre></td></tr></table></figure>
+
+<p>要学习Java开发，当然需要安装JDK了。</p>
+<p>那JSR、JCP……又是啥？</p>
+<ul>
+<li>JSR规范：Java Specification Request</li>
+<li>JCP组织：Java Community Process</li>
+</ul>
+<p>为了保证Java语言的规范性，SUN公司搞了一个JSR规范，凡是想给Java平台加一个功能，比如说访问数据库的功能，大家要先创建一个JSR规范，定义好接口，这样，各个数据库厂商都按照规范写出Java驱动程序，开发者就不用担心自己写的数据库代码在MySQL上能跑，却不能跑在PostgreSQL上。</p>
+<p>所以JSR是一系列的规范，从JVM的内存模型到Web程序接口，全部都标准化了。而负责审核JSR的组织就是JCP。</p>
+<p>一个JSR规范发布时，为了让大家有个参考，还要同时发布一个“参考实现”，以及一个“兼容性测试套件”：</p>
+<ul>
+<li>RI：Reference Implementation</li>
+<li>TCK：Technology Compatibility Kit</li>
+</ul>
+<p>比如有人提议要搞一个基于Java开发的消息服务器，这个提议很好啊，但是光有提议还不行，得贴出真正能跑的代码，这就是RI。如果有其他人也想开发这样一个消息服务器，如何保证这些消息服务器对开发者来说接口、功能都是相同的？所以还得提供TCK。</p>
+<p>通常来说，RI只是一个“能跑”的正确的代码，它不追求速度，所以，如果真正要选择一个Java的消息服务器，一般是没人用RI的，大家都会选择一个有竞争力的商用或开源产品。</p>
+<hr>
+<p>[TOC]</p>
+<h1 id="（2）安装JDK"><a href="#（2）安装JDK" class="headerlink" title="（2）安装JDK"></a>（2）安装JDK</h1><p>因为Java程序必须运行在JVM之上，所以，我们第一件事情就是安装JDK。</p>
+<p>搜索JDK 15，确保从<a href="https://www.oracle.com/java/technologies/javase-downloads.html">Oracle的官网</a>下载最新的稳定版JDK：</p>
+<p><a href="https://imgchr.com/i/DjuG4g"><img src="https://s3.ax1x.com/2020/12/06/DjuG4g.md.png" alt="DjuG4g.md.png"></a></p>
+<p>找到Java SE 8的下载链接，下载安装即可。</p>
+<h3 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h3><p>安装完JDK后，需要设置一个<code>JAVA_HOME</code>的环境变量，它指向JDK的安装目录。在Windows下，它是安装目录，类似：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\Program Files\Java\jdk-8</span><br></pre></td></tr></table></figure>
+
+<p>在Mac下，它在<code>~/.bash_profile</code>或<code>~/.zprofile</code>里，它是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export JAVA_HOME&#x3D;&#96;&#x2F;usr&#x2F;libexec&#x2F;java_home -v 8&#96;</span><br></pre></td></tr></table></figure>
+
+<p>然后，把<code>JAVA_HOME</code>的<code>bin</code>目录附加到系统环境变量<code>PATH</code>上。在Windows下，它长这样：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Path&#x3D;%JAVA_HOME%\bin;&lt;现有的其他路径&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在Mac下，它在<code>~/.bash_profile</code>或<code>~/.zprofile</code>里，长这样：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export PATH&#x3D;$JAVA_HOME&#x2F;bin:$PATH</span><br></pre></td></tr></table></figure>
+
+<p>把<code>JAVA_HOME</code>的<code>bin</code>目录添加到<code>PATH</code>中是为了在任意文件夹下都可以运行<code>java</code>。打开命令提示符窗口，输入命令<code>java -version</code>，如果一切正常，你会看到如下输出：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">┌────────────────────────────────────────────────────────┐</span><br><span class="line">│Command Prompt                                    - □ x │</span><br><span class="line">├────────────────────────────────────────────────────────┤</span><br><span class="line">│Microsoft Windows [Version 10.0.0]                      │</span><br><span class="line">│(c) 2015 Microsoft Corporation. All rights reserved.    │</span><br><span class="line">│                                                        │</span><br><span class="line">│C:\&gt; java -version                                      │</span><br><span class="line">│java version &quot;8&quot; ...                                   │</span><br><span class="line">│Java(TM) SE Runtime Environment                         │</span><br><span class="line">│Java HotSpot(TM) 64-Bit Server VM                       │</span><br><span class="line">│                                                        │</span><br><span class="line">│C:\&gt;                                                    │</span><br><span class="line">│                                                        │</span><br><span class="line">│                                                        │</span><br><span class="line">└────────────────────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>如果你看到的版本号不是<code>8</code>，而是<code>14</code>、<code>1.4</code>之类，说明系统存在多个JDK，且默认JDK不是JDK 15，需要把JDK 8提到<code>PATH</code>前面。</p>
+<p>如果你得到一个错误输出：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">┌────────────────────────────────────────────────────────┐</span><br><span class="line">│Command Prompt                                    - □ x │</span><br><span class="line">├────────────────────────────────────────────────────────┤</span><br><span class="line">│Microsoft Windows [Version 10.0.0]                      │</span><br><span class="line">│(c) 2015 Microsoft Corporation. All rights reserved.    │</span><br><span class="line">│                                                        │</span><br><span class="line">│C:\&gt; java -version                                      │</span><br><span class="line">│&#39;java&#39; is not recognized as an internal or external comm│</span><br><span class="line">│and, operable program or batch file.                    │</span><br><span class="line">│                                                        │</span><br><span class="line">│C:\&gt;                                                    │</span><br><span class="line">│                                                        │</span><br><span class="line">│                                                        │</span><br><span class="line">│                                                        │</span><br><span class="line">└────────────────────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>这是因为系统无法找到Java虚拟机的程序<code>java.exe</code>，需要检查JAVA_HOME和PATH的配置。</p>
+<p>可以参考<a href="https://www.java.com/zh_CN/download/help/path.xml">如何设置或更改PATH系统变量</a>。</p>
+<h3 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h3><p>细心的童鞋还可以在<code>JAVA_HOME</code>的<code>bin</code>目录下找到很多可执行文件：</p>
+<ul>
+<li><p>java：这个可执行程序其实就是JVM，运行Java程序，就是启动JVM，然后让JVM执行指定的编译后的代码；</p>
+</li>
+<li><p>javac：这是Java的编译器，它用于把Java源码文件（以<code>.java</code>后缀结尾）编译为Java字节码文件（以<code>.class</code>后缀结尾）；</p>
+</li>
+<li><p>jar：用于把一组<code>.class</code>文件打包成一个<code>.jar</code>文件，便于发布；</p>
+</li>
+<li><p>javadoc：用于从Java源码中自动提取注释并生成文档；</p>
+</li>
+<li><p>jdb：Java调试器，用于开发阶段的运行调试。</p>
+<hr>
+<p>[TOC]</p>
+</li>
+</ul>
+<h1 id="（3）第一个Java程序"><a href="#（3）第一个Java程序" class="headerlink" title="（3）第一个Java程序"></a>（3）第一个Java程序</h1><p>我们来编写第一个Java程序。</p>
+<p>打开文本编辑器，输入以下代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello, LIEFox!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在一个Java程序中，你总能找到一个类似：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>的定义，这个定义被称为class（类），这里的类名是<code>Hello</code>，大小写敏感，<code>class</code>用来定义一个类，<code>public</code>表示这个类是公开的，<code>public</code>、<code>class</code>都是Java的关键字，必须小写，<code>Hello</code>是类的名字，按照习惯，首字母<code>H</code>要大写。而花括号<code>&#123;&#125;</code>中间则是类的定义。</p>
+<p>注意到类的定义中，我们定义了一个名为<code>main</code>的方法：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>方法是可执行的代码块，一个方法除了方法名<code>main</code>，还有用<code>()</code>括起来的方法参数，这里的<code>main</code>方法有一个参数，参数类型是<code>String[]</code>，参数名是<code>args</code>，<code>public</code>、<code>static</code>用来修饰方法，这里表示它是一个公开的静态方法，<code>void</code>是方法的返回类型，而花括号<code>&#123;&#125;</code>中间的就是方法的代码。</p>
+<p>方法的代码每一行用<code>;</code>结束，这里只有一行代码，就是：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;Hello, LIEFox!&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>它用来打印一个字符串到屏幕上。</p>
+<p>Java规定，某个类定义的<code>public static void main(String[] args)</code>是Java程序的固定入口方法，因此，Java程序总是从<code>main</code>方法开始执行。</p>
+<p>注意到Java源码的缩进不是必须的，但是用缩进后，格式好看，很容易看出代码块的开始和结束，缩进一般是4个空格或者一个tab。</p>
+<p>最后，当我们把代码保存为文件时，文件名必须是<code>Hello.java</code>，而且文件名也要注意大小写，因为要和我们定义的类名<code>Hello</code>完全保持一致。</p>
+<h3 id="如何运行Java程序"><a href="#如何运行Java程序" class="headerlink" title="如何运行Java程序"></a>如何运行Java程序</h3><p>Java源码本质上是一个文本文件，我们需要先用<code>javac</code>把<code>Hello.java</code>编译成字节码文件<code>Hello.class</code>，然后，用<code>java</code>命令执行这个字节码文件：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">┌──────────────────┐</span><br><span class="line">│    Hello.java    │&lt;─── source code</span><br><span class="line">└──────────────────┘</span><br><span class="line">          │ compile</span><br><span class="line">          ▼</span><br><span class="line">┌──────────────────┐</span><br><span class="line">│   Hello.class    │&lt;─── byte code</span><br><span class="line">└──────────────────┘</span><br><span class="line">          │ execute</span><br><span class="line">          ▼</span><br><span class="line">┌──────────────────┐</span><br><span class="line">│    Run on JVM    │</span><br><span class="line">└──────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p>因此，可执行文件<code>javac</code>是编译器，而可执行文件<code>java</code>就是虚拟机。</p>
+<p>第一步，在保存<code>Hello.java</code>的目录下执行命令<code>javac Hello.java</code>：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ javac Hello.java</span><br></pre></td></tr></table></figure>
+
+<p>如果源代码无误，上述命令不会有任何输出，而当前目录下会产生一个<code>Hello.class</code>文件：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ ls</span><br><span class="line">Hello.class	Hello.java</span><br></pre></td></tr></table></figure>
+
+<p>第二步，执行<code>Hello.class</code>，使用命令<code>java Hello</code>：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ java Hello</span><br><span class="line">Hello, LIEFox!</span><br></pre></td></tr></table></figure>
+
+<p>注意：给虚拟机传递的参数<code>Hello</code>是我们定义的类名，虚拟机自动查找对应的class文件并执行。</p>
+<p>有一些童鞋可能知道，直接运行<code>java Hello.java</code>也是可以的：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ java Hello.java </span><br><span class="line">Hello, LIEFox!</span><br></pre></td></tr></table></figure>
+
+<p>这是Java 11新增的一个功能，它可以直接运行一个单文件源码！</p>
+<p>需要注意的是，在实际项目中，单个不依赖第三方库的Java源码是非常罕见的，所以，绝大多数情况下，我们无法直接运行一个Java源码文件，原因是它需要依赖其他的库。</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>一个Java源码只能定义一个<code>public</code>类型的class，并且class名称和文件名要完全一致；</p>
+<p>使用<code>javac</code>可以将<code>.java</code>源码编译成<code>.class</code>字节码；</p>
+<p>使用<code>java</code>可以运行一个已编译的Java程序，参数是类名。</p>
+<p>[TOC]</p>
+<hr>
+<h1 id="（4）使用IDE"><a href="#（4）使用IDE" class="headerlink" title="（4）使用IDE"></a>（4）使用IDE</h1><p>IDE是集成开发环境：Integrated Development Environment的缩写。</p>
+<p>使用IDE的好处在于，可以把编写代码、组织项目、编译、运行、调试等放到一个环境中运行，能极大地提高开发效率。</p>
+<p>IDE提升开发效率主要靠以下几点：</p>
+<ul>
+<li>编辑器的自动提示，可以大大提高敲代码的速度；</li>
+<li>代码修改后可以自动重新编译，并直接运行；</li>
+<li>可以方便地进行断点调试。</li>
+</ul>
+<p>目前，流行的用于Java开发的IDE有：</p>
+<h3 id="Eclipse"><a href="#Eclipse" class="headerlink" title="Eclipse"></a>Eclipse</h3><p><a href="https://www.eclipse.org/">Eclipse</a>是由IBM开发并捐赠给开源社区的一个IDE，也是目前应用最广泛的IDE。Eclipse的特点是它本身是Java开发的，并且基于插件结构，即使是对Java开发的支持也是通过插件JDT实现的。</p>
+<p>除了用于Java开发，Eclipse配合插件也可以作为C/C++开发环境、PHP开发环境、Rust开发环境等。</p>
+<h3 id="IntelliJ-Idea"><a href="#IntelliJ-Idea" class="headerlink" title="IntelliJ Idea"></a>IntelliJ Idea</h3><p><a href="https://www.jetbrains.com/idea/">IntelliJ Idea</a>是由JetBrains公司开发的一个功能强大的IDE，分为免费版和商用付费版。JetBrains公司的IDE平台也是基于IDE平台+语言插件的模式，支持Python开发环境、Ruby开发环境、PHP开发环境等，这些开发环境也分为免费版和付费版。</p>
+<hr>
+<p>[TOC]</p>
+<p>。。。。。。。。。。。。。。</p>
+<p><strong><em>作者：zjh</em></strong></p>
 ]]></content>
       <categories>
         <category>JAVA笔记</category>
@@ -967,450 +1411,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
 <p>数组元素可以是值类型（如int）或引用类型（如String），但数组本身是引用类型；</p>
 <p>[TOC]</p>
 <p>。。。。。。。。。</p>
-<p><strong><em>作者：zjh</em></strong></p>
-]]></content>
-      <categories>
-        <category>JAVA笔记</category>
-      </categories>
-      <tags>
-        <tag>JAVA笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring-ioc基于注解</title>
-    <url>/posts/693b31a5.html</url>
-    <content><![CDATA[<h1 id="要求"><a href="#要求" class="headerlink" title="要求"></a><strong>要求</strong></h1><p>使用Spring的IoC容器，实际上就是通过类似XML这样的配置文件，把我们自己的Bean的依赖关系描述出来，然后让容器来创建并装配Bean。一旦容器初始化完毕，我们就直接从容器中获取Bean使用它们。</p>
-<p>使用XML配置的优点是所有的Bean都能一目了然地列出来，并通过配置注入能直观地看到每个Bean的依赖。它的缺点是写起来非常繁琐，每增加一个组件，就必须把新的Bean配置到XML中。</p>
-<p>有没有其他更简单的配置方式呢？</p>
-<p>有！我们可以使用Annotation配置，可以完全不需要XML，让Spring自动扫描Bean并组装它们。</p>
-<h3 id="所以今天我们用注解来写一个基于注解的Spring"><a href="#所以今天我们用注解来写一个基于注解的Spring" class="headerlink" title="所以今天我们用注解来写一个基于注解的Spring"></a>所以今天我们用注解来写一个基于注解的Spring</h3><p><strong><a href="https://imgchr.com/i/D6E1Mj"><img src="https://s3.ax1x.com/2020/11/28/D6E1Mj.md.png" alt="D6E1Mj.md.png"></a></strong></p>
-<hr>
-<p><strong><a id="more"></a></strong></p>
-<p><strong>由于是基于注解的IoC的Spring开发，所以我们要导入一个关键的jar包</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6Z7Pf"><img src="https://s3.ax1x.com/2020/11/28/D6Z7Pf.png" alt="D6Z7Pf.png"></a></strong></p>
-<hr>
-<h4 id="好啦，正题开始"><a href="#好啦，正题开始" class="headerlink" title="好啦，正题开始"></a><strong>好啦，正题开始</strong></h4><h1 id="第一步，万恶之源，打开我们的idea"><a href="#第一步，万恶之源，打开我们的idea" class="headerlink" title="第一步，万恶之源，打开我们的idea"></a><strong>第一步，万恶之源，打开我们的idea</strong></h1><ol>
-<li><p><strong>创建一个java项目</strong></p>
-</li>
-<li><p><strong>在src里创建如下3个包</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6mV1S"><img src="https://s3.ax1x.com/2020/11/28/D6mV1S.png" alt="D6mV1S.png"></a></strong></p>
-<ul>
-<li><p><strong>Dao包（数据持久层）</strong></p>
-</li>
-<li><p><strong>Service包（业务逻辑层）</strong>    </p>
-</li>
-<li><p><strong>Web包（显示层）</strong></p>
-</li>
-</ul>
-</li>
-</ol>
-<p><strong>3.接着在src下创建一个xml文件，名为（ApplicationContext.xml)</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6nngO"><img src="https://s3.ax1x.com/2020/11/28/D6nngO.md.png" alt="D6nngO.md.png"></a></strong></p>
-<p><strong>src&gt;New&gt;XML File&gt;名为（ApplicationContext.xml)</strong></p>
-<p><strong>4.xml文件里的代码如下</strong></p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:context</span>=<span class="string">&quot;http://www.springframework.org/schema/context&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context/spring-context-4.3.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">&quot;Service&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">context:component-scan</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--&lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包</span></span><br><span class="line"><span class="comment">    &lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>5.接下来导jar包</strong></p>
-<p><strong>Flie》Project Structure》Liberals》＋》Java》找到自己放spring jar包的地方》选中》OK》取个名字（Spring_Jars）》OK</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6u3yF"><img src="https://s3.ax1x.com/2020/11/28/D6u3yF.md.png" alt="D6u3yF.md.png"></a></strong></p>
-<p><strong><a href="https://imgchr.com/i/D6Ku0H"><img src="https://s3.ax1x.com/2020/11/28/D6Ku0H.md.png" alt="D6Ku0H.md.png"></a></strong></p>
-<p><strong>看一下加成功了没有</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6Mlb4"><img src="https://s3.ax1x.com/2020/11/28/D6Mlb4.png" alt="D6Mlb4.png"></a></strong></p>
-<p><strong>好的，有Spring_Jars包了</strong></p>
-<p><strong>到这一步，咱们就算上车了，开始飙车了</strong></p>
-<hr>
-<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a><strong>第二步</strong></h1><p><strong>安照题目要求</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Dao层：接口文件StudentDao，包含方法selectAll</span><br><span class="line">        实现类StudentDaoImpl,包含selectAll方法的实现（仅写输出语句表示方法调用成功即可）</span><br><span class="line">Service层：接口文件StudentService，包含方法selectAll</span><br><span class="line">            实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)</span><br><span class="line">Web层:类WebMain,主方法中调用Service层的selectAll方法。</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li><p><strong>在Dao包里新建一个接口文件StudentDao</strong></p>
-</li>
-<li><p><strong>在Dao包里新建一个java文件StudentDaoImpl</strong></p>
-</li>
-<li><p><strong>Service。。。</strong></p>
-</li>
-<li><p><strong>Web。。。</strong></p>
-</li>
-<li><p><strong>以下面这个结构来建，咱们把框架给搭起来，就快了！！</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6QlSP"><img src="https://s3.ax1x.com/2020/11/28/D6QlSP.png" alt="D6QlSP.png"></a></strong></p>
-<hr>
-</li>
-</ol>
-<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a><strong>第三步</strong></h1><p><strong>骨架欧克了，我们现在去丰满他的细节</strong></p>
-<p><strong>1.</strong></p>
-<p><strong>Dao》StudentDao</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentDao</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Dao》StudentDaoImpl</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentDaoImpl</span> <span class="keyword">implements</span> <span class="title">StudentDao</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询所有学生信息！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>2.</strong></p>
-<p><strong>Service》StudentService</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentService</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Service》StudentServiceImpl</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Value;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Repository;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@Repository(value = &quot;StudentService&quot;)</span><span class="comment">//@Repository:用于持久层的注解，作用与Component相同</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentServiceImpl</span> <span class="keyword">implements</span> <span class="title">StudentService</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)*/</span></span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Value(&quot;LIEFox&quot;)</span><span class="comment">//与&lt;property&gt;标签作用一样</span></span><br><span class="line">    <span class="keyword">private</span> String SName;</span><br><span class="line">    <span class="meta">@Value(&quot;https:cxq21.gitee.io&quot;)</span><span class="comment">//偷偷的打个广告嘿嘿</span></span><br><span class="line">    <span class="keyword">private</span> String SId;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询到了一个名为&quot;</span>+SName+<span class="string">&quot;网站,网址为&quot;</span>+SId);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>3.</strong></p>
-<p><strong>Web》WebMain</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> Service.StudentService;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Web层:类WebMain,主方法中调用Service层的selectAll方法。</span></span><br><span class="line">	</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.容器初始化</span></span><br><span class="line">        ApplicationContext context=<span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">&quot;ApplicationContext.xml&quot;</span>);</span><br><span class="line">        <span class="comment">//2.创建实例</span></span><br><span class="line">        StudentService service=(StudentService) context.getBean(<span class="string">&quot;StudentService&quot;</span>);</span><br><span class="line">        service.selectAll();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>这样，我们的一个基于注解的Spring项目是写完了。</strong></p>
-<hr>
-<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a><strong>第四步</strong></h1><p><strong>运行项目。。。</strong></p>
-<p><strong>结果出来了</strong></p>
-<p><strong><a href="https://imgchr.com/i/D68G3n"><img src="https://s3.ax1x.com/2020/11/28/D68G3n.md.png" alt="D68G3n.md.png"></a></strong></p>
-<hr>
-<h2 id="原项目"><a href="#原项目" class="headerlink" title="原项目"></a>原项目</h2><p><strong>最后，附上，我的gitee原项目，地址：<a href="https://gitee.com/cxq21/spring_-ioc">https://gitee.com/cxq21/spring_-ioc</a></strong></p>
-<p><strong>下载zip，然后解压就欧克了</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6Gfs0"><img src="https://s3.ax1x.com/2020/11/28/D6Gfs0.md.png" alt="D6Gfs0.md.png"></a></strong></p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a><strong>小结</strong></h1><p><strong>使用Annotation可以大幅简化配置，每个Bean通过<code>@Component</code>和<code>@Autowired</code>注入；</strong></p>
-<p><strong>必须合理设计包的层次结构，才能发挥<code>@ComponentScan</code>的威力。</strong></p>
-<p><strong><em>作者：zjh</em></strong></p>
-<h2 id="码字不易，留下你的评论吧"><a href="#码字不易，留下你的评论吧" class="headerlink" title="码字不易，留下你的评论吧"></a>码字不易，留下你的评论吧</h2>]]></content>
-      <categories>
-        <category>JAVA案例</category>
-      </categories>
-      <tags>
-        <tag>案例记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>友链使用</title>
-    <url>/posts/57d1587b.html</url>
-    <content><![CDATA[<h1 id="友链使用"><a href="#友链使用" class="headerlink" title="友链使用"></a>友链使用</h1><p><a href="https://imgchr.com/i/DrR4iR"><img src="https://s3.ax1x.com/2020/11/27/DrR4iR.png" alt="DrR4iR.png"></a></p>
-<h3 id="友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！"><a href="#友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！" class="headerlink" title="友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！"></a>友情链接里面有七款实用工具，许多作为我们程序员都可以玩的6起，接下来，我将会和大家解释这几款实用工具！！！</h3><hr>
-<a id="more"></a>
-
-<h1 id="时光邮局："><a href="#时光邮局：" class="headerlink" title="时光邮局："></a>时光邮局：</h1><p>​        点进去，撰写信件，然后绑定一个自己的邮箱，然后在未来的某一时间寄给自己或某人！！！</p>
-<p><a href="https://imgchr.com/i/Dr4FeO"><img src="https://s3.ax1x.com/2020/11/27/Dr4FeO.png" alt="Dr4FeO.png"></a></p>
-<h2 id="为什么要给未来写信？"><a href="#为什么要给未来写信？" class="headerlink" title="为什么要给未来写信？"></a>为什么要给未来写信？</h2><p>​                从过去获得惊喜，<br>​                给你的未来一些灵感或安慰的话，<br>​                或者预测一下你的生活，这个世界，你的家人。<br>​                以及一年，五年会发生什么。</p>
-<h2 id="可以给任何人写信么？"><a href="#可以给任何人写信么？" class="headerlink" title="可以给任何人写信么？"></a>可以给任何人写信么？</h2><p>​                为了防止骚扰，营销邮件，<br>​                每次写信后都会往收件箱发一封验证邮件<br>​                点击了验证邮件，未来才会收到写的信<br>​                后续官网应该会开放更多功能哦</p>
-<hr>
-<h1 id="码云"><a href="#码云" class="headerlink" title="码云"></a>码云</h1><p><strong>码云</strong>：代码托管·协作开发平台，开发者超过 500 万，托管项目超过 1000 万，汇聚几乎所有本土原创开源项目，并于 2016 年推出企业版，提供企业级代码托管服务，成为开发领域领先的 SaaS 服务提供商。</p>
-<p>此码云并非彼马云，这个名字或许是蹭了某爸的热度。。但在这里，除了Github，GItee就是国内最好的代码托管了。毕竟</p>
-<p>鄙人的第一个静态网页就是在我师傅的教导，在gitee上搭建的。</p>
-<p>后期：我将会出一门git教程。教大家如何使用，并利用git来搭建自己的静态网页。</p>
-<hr>
-<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p><a href="https://imgchr.com/i/Dr5WCj"><img src="https://s3.ax1x.com/2020/11/27/Dr5WCj.png" alt="Dr5WCj.png"></a></p>
-<p>本网站就基于hexo框架及arey框架搭建。。</p>
-<p>感谢，感谢，感谢。</p>
-<p><strong>大家想去搭属于自己的网站的话</strong>，可以联系我们<strong>拾柒工作室</strong>，我们将<strong>有偿搭建</strong>（<strong>价格私聊</strong>）：</p>
-<table>
-<thead>
-<tr>
-<th align="center">邮箱</th>
-<th align="center"><a href="mailto:&#50;&#x36;&#48;&#54;&#48;&#57;&#x37;&#50;&#x31;&#x38;&#64;&#113;&#113;&#46;&#99;&#x6f;&#109;">&#50;&#x36;&#48;&#54;&#48;&#57;&#x37;&#50;&#x31;&#x38;&#64;&#113;&#113;&#46;&#99;&#x6f;&#109;</a></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><strong>电话</strong></td>
-<td align="center">15270055490</td>
-</tr>
-<tr>
-<td align="center"><strong>工作室地址</strong></td>
-<td align="center">江信学院教学楼（606）</td>
-</tr>
-<tr>
-<td align="center"><strong>QQ</strong></td>
-<td align="center">2606097218</td>
-</tr>
-</tbody></table>
-<h1 id="高清壁纸"><a href="#高清壁纸" class="headerlink" title="高清壁纸"></a>高清壁纸</h1><p><a href="https://imgchr.com/i/DrTFgA"><img src="https://s3.ax1x.com/2020/11/27/DrTFgA.png" alt="DrTFgA.png"></a></p>
-<p>该工具是真的强悍；电脑壁纸多，精，美。最主要是有4k呀！</p>
-<hr>
-<h1 id="爱奇艺vip视频解析"><a href="#爱奇艺vip视频解析" class="headerlink" title="爱奇艺vip视频解析"></a>爱奇艺vip视频解析</h1><p>点击链接，将会看到一个地址栏，他要你填写一串链接，不要慌，我来教你，如何去嫖免费爱奇艺视频</p>
-<p><a href="https://imgchr.com/i/DrTHVf"><img src="https://s3.ax1x.com/2020/11/27/DrTHVf.png" alt="DrTHVf.png"></a></p>
-<ul>
-<li><h3 id="同时打开爱奇艺在线视频网站"><a href="#同时打开爱奇艺在线视频网站" class="headerlink" title="同时打开爱奇艺在线视频网站"></a>同时打开爱奇艺在线视频网站</h3></li>
-</ul>
-<p><a href="https://imgchr.com/i/Dr7MdK"><img src="https://s3.ax1x.com/2020/11/27/Dr7MdK.png" alt="Dr7MdK.png"></a></p>
-<ul>
-<li><h3 id="选择任意一个VIP电影，比如姜子牙，需要收费"><a href="#选择任意一个VIP电影，比如姜子牙，需要收费" class="headerlink" title="选择任意一个VIP电影，比如姜子牙，需要收费"></a>选择任意一个VIP电影，比如姜子牙，需要收费</h3></li>
-</ul>
-<p><a href="https://imgchr.com/i/Dr7NLt"><img src="https://s3.ax1x.com/2020/11/27/Dr7NLt.png" alt="Dr7NLt.png"></a></p>
-<ul>
-<li><h3 id="复制地址栏的爱奇艺视频链接"><a href="#复制地址栏的爱奇艺视频链接" class="headerlink" title="复制地址栏的爱奇艺视频链接"></a>复制地址栏的爱奇艺视频链接</h3><p><a href="https://imgchr.com/i/DrHb9g"><img src="https://s3.ax1x.com/2020/11/27/DrHb9g.png" alt="DrHb9g.png"></a></p>
-</li>
-<li><h3 id="返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了"><a href="#返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了" class="headerlink" title="返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了"></a>返回刚刚的视频解析工具，将链接复制进去，稍等一下就可以播放了</h3></li>
-</ul>
-<p><a href="https://imgchr.com/i/DrbQ8e"><img src="https://s3.ax1x.com/2020/11/27/DrbQ8e.png" alt="DrbQ8e.png"></a></p>
-<hr>
-<h1 id="糗事百科"><a href="#糗事百科" class="headerlink" title="糗事百科"></a>糗事百科</h1><p>点击进去</p>
-<p><a href="https://imgchr.com/i/DrbGDI"><img src="https://s3.ax1x.com/2020/11/27/DrbGDI.png" alt="DrbGDI.png"></a></p>
-<p>学习了一天，应该逛逛糗事@@@</p>
-<hr>
-<h1 id="阿里矢量ico"><a href="#阿里矢量ico" class="headerlink" title="阿里矢量ico"></a>阿里矢量ico</h1><p><a href="https://imgchr.com/i/Drbh24"><img src="https://s3.ax1x.com/2020/11/27/Drbh24.png" alt="Drbh24.png"></a></p>
-<p>阿里妈妈MUX倾力打造的矢量图标管理、交流平台。</p>
-<h4 id="设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。"><a href="#设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。" class="headerlink" title="设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。"></a>设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。</h4><hr>
-<h4 id="后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》https-cxq21-gitee-io"><a href="#后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》https-cxq21-gitee-io" class="headerlink" title="后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》https://cxq21.gitee.io/"></a>后期将接着添加好玩切有趣的网站供大家使用，收藏网址不迷路》<a href="https://cxq21.gitee.io/">https://cxq21.gitee.io/</a></h4><p>​                                                                                                                                                                                                                <em>作者：zjh</em>    </p>
-]]></content>
-      <categories>
-        <category>说明文档</category>
-      </categories>
-      <tags>
-        <tag>实用工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>江信19级软件测试刷题系统</title>
-    <url>/posts/1e3f2157.html</url>
-    <content><![CDATA[<h1 id="江信19级软件测试刷题系统"><a href="#江信19级软件测试刷题系统" class="headerlink" title="江信19级软件测试刷题系统"></a>江信19级软件测试刷题系统</h1><hr>
-<h1 id="上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。"><a href="#上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。" class="headerlink" title="上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。"></a>上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。</h1><h1 id="这个系统手机电脑都可刷。有任何疑问请在微信群或评论区质询！"><a href="#这个系统手机电脑都可刷。有任何疑问请在微信群或评论区质询！" class="headerlink" title="这个系统手机电脑都可刷。有任何疑问请在微信群或评论区质询！"></a>这个系统手机电脑都可刷。有任何疑问请在<strong>微信群或评论区</strong>质询！</h1><p><a href="https://imgchr.com/i/rMyKOO"><img src="https://s3.ax1x.com/2020/12/15/rMyKOO.png" alt="rMyKOO.png" style="zoom:50%;" /></a></p>
-<h3 id="致敬题库制作人员：-佐佳豪、李玮峰"><a href="#致敬题库制作人员：-佐佳豪、李玮峰" class="headerlink" title="致敬题库制作人员： 佐佳豪、李玮峰"></a>致敬题库制作人员： 佐佳豪、李玮峰</h3><p><em>作者：zjh</em></p>
-]]></content>
-      <categories>
-        <category>江信1+X</category>
-      </categories>
-      <tags>
-        <tag>实用工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网站来源灵感</title>
-    <url>/posts/6b5b190a.html</url>
-    <content><![CDATA[<p>欢迎来到<a href="https://cxq21.gitee.io/">LIEFox</a>! 这是我们的官方网站.这是我们第一篇文章！！！</p>
-<h1 id="网站来源灵感"><a href="#网站来源灵感" class="headerlink" title="网站来源灵感"></a>网站来源灵感</h1><p>为什么要搭建出这个网站，原因是发现许多同学在课后作业不会做时，迷茫不知去和处寻找。目前百度可以搜到的也只有CSDN里面里的代码。但CSDN里的代码少数可以为我们所用，对许多初学者并不友好，所以，我发现这个问题，一开始将项目放在Gitee上<a href="https://gitee.com/cxq21">我的项目</a>,发现许多同学并不会正确使用。导致项目并不可以正常运行。<strong>因此，</strong>我就找到了我的室友（前端攻城狮：万津津）、（UI射击狮：李玮峰）联手搭建了这个网站！！！<a id="more"></a></p>
-<h1 id="站名之源"><a href="#站名之源" class="headerlink" title="站名之源"></a>站名之源</h1><p><a href="https://cxq21.gitee.io/">LIEFox</a>，LIE：谎言；Fox:狐狸。！！！没错！！！组合起来是“谎言之狐”。希望网站可以使用户思维像西伯利亚的雪狐一样，在代码中寻找自己需要的猎物（代码），并做到（谎）花草丛中过，片叶不沾身。</p>
-<h1 id="LOGO灵感"><a href="#LOGO灵感" class="headerlink" title="LOGO灵感"></a>LOGO灵感</h1><p><a href="https://imgchr.com/i/DDAP1I"><img src="https://s3.ax1x.com/2020/11/27/DDAP1I.png" alt="DDAP1I.png"></a></p>
-<p>应景了站名LIEFox，可爱logo是折纸风格的狐狸与站名相结合，liefox采取了狐狸身上的几个主要颜色。</p>
-<p>为什么选狐狸呢？肯定是狐狸可爱呀哈哈哈，像这样的</p>
-<p><a href="https://imgchr.com/i/DDAeAg"><img src="https://s3.ax1x.com/2020/11/27/DDAeAg.md.jpg" alt="DDAeAg.md.jpg"></a></p>
-<p>这样的</p>
-<p><a href="https://imgchr.com/i/DDAIDf"><img src="https://s3.ax1x.com/2020/11/27/DDAIDf.jpg" alt="DDAIDf.jpg"></a></p>
-<p>这样的</p>
-<p><a href="https://imgchr.com/i/DDA5KP"><img src="https://s3.ax1x.com/2020/11/27/DDA5KP.jpg" alt="DDA5KP.jpg"></a></p>
-<p>这样的</p>
-<p><a href="https://imgchr.com/i/DDAhvt"><img src="https://s3.ax1x.com/2020/11/27/DDAhvt.jpg" alt="DDAhvt.jpg"></a></p>
-<p>爱了爱了爱了</p>
-<h2 id="不出意外的话过些天将是我们LIEFox的吉祥物。"><a href="#不出意外的话过些天将是我们LIEFox的吉祥物。" class="headerlink" title="不出意外的话过些天将是我们LIEFox的吉祥物。"></a>不出意外的话过些天将是我们LIEFox的吉祥物。</h2><p>​                                                                                                                                                                                                                <em>作者：zjh</em>    </p>
-]]></content>
-      <categories>
-        <category>关于本站</category>
-      </categories>
-      <tags>
-        <tag>网站来源</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JAVA简介</title>
-    <url>/posts/98ac5948.html</url>
-    <content><![CDATA[<h1 id="（1）JAVA简介"><a href="#（1）JAVA简介" class="headerlink" title="（1）JAVA简介"></a>（1）JAVA简介</h1><p>Java最早是由SUN公司（已被Oracle收购）的<a href="https://en.wikipedia.org/wiki/James_Gosling">詹姆斯·高斯林</a>（高斯林，人称Java之父）在上个世纪90年代初开发的一种编程语言，最初被命名为Oak，目标是针对小型家电设备的嵌入式应用，结果市场没啥反响。谁料到互联网的崛起，让Oak重新焕发了生机，于是SUN公司改造了Oak，在1995年以Java的名称正式发布，原因是Oak已经被人注册了，因此SUN注册了Java这个商标。随着互联网的高速发展，Java逐渐成为最重要的网络编程语言。</p>
-<p>Java介于编译型语言和解释型语言之间。编译型语言如C、C++，代码是直接编译成机器码执行，但是不同的平台（x86、ARM等）CPU的指令集不同，因此，需要编译出每一种平台的对应机器码。解释型语言如Python、Ruby没有这个问题，可以由解释器直接加载源码然后运行，代价是运行效率太低。而Java是将代码编译成一种“字节码”，它类似于抽象的CPU指令，然后，针对不同平台编写虚拟机，不同平台的虚拟机负责加载字节码并执行，这样就实现了“一次编写，到处运行”的效果。当然，这是针对Java开发者而言。对于虚拟机，需要为每个平台分别开发。为了保证不同平台、不同公司开发的虚拟机都能正确执行Java字节码，SUN公司制定了一系列的Java虚拟机规范。从实践的角度看，JVM的兼容性做得非常好，低版本的Java字节码完全可以正常运行在高版本的JVM上。</p>
-<p>随着Java的发展，SUN给Java又分出了三个不同版本：</p>
-<ul>
-<li>Java SE：Standard Edition</li>
-<li>Java EE：Enterprise Edition</li>
-<li>Java ME：Micro Edition</li>
-</ul>
-<p>这三者之间有啥关系呢？</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">┌───────────────────────────┐</span><br><span class="line">│Java EE                    │</span><br><span class="line">│    ┌────────────────────┐ │</span><br><span class="line">│    │Java SE             │ │</span><br><span class="line">│    │    ┌─────────────┐ │ │</span><br><span class="line">│    │    │   Java ME   │ │ │</span><br><span class="line">│    │    └─────────────┘ │ │</span><br><span class="line">│    └────────────────────┘ │</span><br><span class="line">└───────────────────────────┘</span><br></pre></td></tr></table></figure>
-
-<p>简单来说，Java SE就是标准版，包含标准的JVM和标准库，而Java EE是企业版，它只是在Java SE的基础上加上了大量的API和库，以便方便开发Web应用、数据库、消息服务等，Java EE的应用使用的虚拟机和Java SE完全相同。</p>
-<p>Java ME就和Java SE不同，它是一个针对嵌入式设备的“瘦身版”，Java SE的标准库无法在Java ME上使用，Java ME的虚拟机也是“瘦身版”。</p>
-<p>毫无疑问，Java SE是整个Java平台的核心，而Java EE是进一步学习Web应用所必须的。我们熟悉的Spring等框架都是Java EE开源生态系统的一部分。不幸的是，Java ME从来没有真正流行起来，反而是Android开发成为了移动平台的标准之一，因此，没有特殊需求，不建议学习Java ME。</p>
-<p>因此我们推荐的Java学习路线图如下：</p>
-<ol>
-<li>首先要学习Java SE，掌握Java语言本身、Java核心开发技术以及Java标准库的使用；</li>
-<li>如果继续学习Java EE，那么Spring框架、数据库开发、分布式架构就是需要学习的；</li>
-<li>如果要学习大数据开发，那么Hadoop、Spark、Flink这些大数据平台就是需要学习的，他们都基于Java或Scala开发；</li>
-<li>如果想要学习移动开发，那么就深入Android平台，掌握Android App开发。</li>
-</ol>
-<p>无论怎么选择，Java SE的核心技术是基础，这个教程的目的就是让你完全精通Java SE！</p>
-<h3 id="Java版本"><a href="#Java版本" class="headerlink" title="Java版本"></a>Java版本</h3><p>从1995年发布1.0版本开始，到目前为止，最新的Java版本是Java 15：</p>
-<table>
-<thead>
-<tr>
-<th align="left">时间</th>
-<th align="left">版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1995</td>
-<td align="left">1.0</td>
-</tr>
-<tr>
-<td align="left">1998</td>
-<td align="left">1.2</td>
-</tr>
-<tr>
-<td align="left">2000</td>
-<td align="left">1.3</td>
-</tr>
-<tr>
-<td align="left">2002</td>
-<td align="left">1.4</td>
-</tr>
-<tr>
-<td align="left">2004</td>
-<td align="left">1.5 / 5.0</td>
-</tr>
-<tr>
-<td align="left">2005</td>
-<td align="left">1.6 / 6.0</td>
-</tr>
-<tr>
-<td align="left">2011</td>
-<td align="left">1.7 / 7.0</td>
-</tr>
-<tr>
-<td align="left">2014</td>
-<td align="left">1.8 / 8.0</td>
-</tr>
-<tr>
-<td align="left">2017/9</td>
-<td align="left">1.9 / 9.0</td>
-</tr>
-<tr>
-<td align="left">2018/3</td>
-<td align="left">10</td>
-</tr>
-<tr>
-<td align="left">2018/9</td>
-<td align="left">11</td>
-</tr>
-<tr>
-<td align="left">2019/3</td>
-<td align="left">12</td>
-</tr>
-<tr>
-<td align="left">2019/9</td>
-<td align="left">13</td>
-</tr>
-<tr>
-<td align="left">2020/3</td>
-<td align="left">14</td>
-</tr>
-<tr>
-<td align="left">2020/9</td>
-<td align="left">15</td>
-</tr>
-</tbody></table>
-<p>本教程使用的Java版本是最新版的<strong>Java 8</strong>。</p>
-<h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><p>初学者学Java，经常听到JDK、JRE这些名词，它们到底是啥？</p>
-<ul>
-<li>JDK：Java Development Kit</li>
-<li>JRE：Java Runtime Environment</li>
-</ul>
-<p>简单地说，JRE就是运行Java字节码的虚拟机。但是，如果只有Java源码，要编译成Java字节码，就需要JDK，因为JDK除了包含JRE，还提供了编译器、调试器等开发工具。</p>
-<p>二者关系如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> ┌─    ┌──────────────────────────────────┐</span><br><span class="line"> │     │     Compiler, debugger, etc.     │</span><br><span class="line"> │     └──────────────────────────────────┘</span><br><span class="line">JDK ┌─ ┌──────────────────────────────────┐</span><br><span class="line"> │  │  │                                  │</span><br><span class="line"> │ JRE │      JVM + Runtime Library       │</span><br><span class="line"> │  │  │                                  │</span><br><span class="line"> └─ └─ └──────────────────────────────────┘</span><br><span class="line">       ┌───────┐┌───────┐┌───────┐┌───────┐</span><br><span class="line">       │Windows││ Linux ││ macOS ││others │</span><br><span class="line">       └───────┘└───────┘└───────┘└───────┘</span><br></pre></td></tr></table></figure>
-
-<p>要学习Java开发，当然需要安装JDK了。</p>
-<p>那JSR、JCP……又是啥？</p>
-<ul>
-<li>JSR规范：Java Specification Request</li>
-<li>JCP组织：Java Community Process</li>
-</ul>
-<p>为了保证Java语言的规范性，SUN公司搞了一个JSR规范，凡是想给Java平台加一个功能，比如说访问数据库的功能，大家要先创建一个JSR规范，定义好接口，这样，各个数据库厂商都按照规范写出Java驱动程序，开发者就不用担心自己写的数据库代码在MySQL上能跑，却不能跑在PostgreSQL上。</p>
-<p>所以JSR是一系列的规范，从JVM的内存模型到Web程序接口，全部都标准化了。而负责审核JSR的组织就是JCP。</p>
-<p>一个JSR规范发布时，为了让大家有个参考，还要同时发布一个“参考实现”，以及一个“兼容性测试套件”：</p>
-<ul>
-<li>RI：Reference Implementation</li>
-<li>TCK：Technology Compatibility Kit</li>
-</ul>
-<p>比如有人提议要搞一个基于Java开发的消息服务器，这个提议很好啊，但是光有提议还不行，得贴出真正能跑的代码，这就是RI。如果有其他人也想开发这样一个消息服务器，如何保证这些消息服务器对开发者来说接口、功能都是相同的？所以还得提供TCK。</p>
-<p>通常来说，RI只是一个“能跑”的正确的代码，它不追求速度，所以，如果真正要选择一个Java的消息服务器，一般是没人用RI的，大家都会选择一个有竞争力的商用或开源产品。</p>
-<hr>
-<p>[TOC]</p>
-<h1 id="（2）安装JDK"><a href="#（2）安装JDK" class="headerlink" title="（2）安装JDK"></a>（2）安装JDK</h1><p>因为Java程序必须运行在JVM之上，所以，我们第一件事情就是安装JDK。</p>
-<p>搜索JDK 15，确保从<a href="https://www.oracle.com/java/technologies/javase-downloads.html">Oracle的官网</a>下载最新的稳定版JDK：</p>
-<p><a href="https://imgchr.com/i/DjuG4g"><img src="https://s3.ax1x.com/2020/12/06/DjuG4g.md.png" alt="DjuG4g.md.png"></a></p>
-<p>找到Java SE 8的下载链接，下载安装即可。</p>
-<h3 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h3><p>安装完JDK后，需要设置一个<code>JAVA_HOME</code>的环境变量，它指向JDK的安装目录。在Windows下，它是安装目录，类似：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\Program Files\Java\jdk-8</span><br></pre></td></tr></table></figure>
-
-<p>在Mac下，它在<code>~/.bash_profile</code>或<code>~/.zprofile</code>里，它是：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export JAVA_HOME&#x3D;&#96;&#x2F;usr&#x2F;libexec&#x2F;java_home -v 8&#96;</span><br></pre></td></tr></table></figure>
-
-<p>然后，把<code>JAVA_HOME</code>的<code>bin</code>目录附加到系统环境变量<code>PATH</code>上。在Windows下，它长这样：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Path&#x3D;%JAVA_HOME%\bin;&lt;现有的其他路径&gt;</span><br></pre></td></tr></table></figure>
-
-<p>在Mac下，它在<code>~/.bash_profile</code>或<code>~/.zprofile</code>里，长这样：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export PATH&#x3D;$JAVA_HOME&#x2F;bin:$PATH</span><br></pre></td></tr></table></figure>
-
-<p>把<code>JAVA_HOME</code>的<code>bin</code>目录添加到<code>PATH</code>中是为了在任意文件夹下都可以运行<code>java</code>。打开命令提示符窗口，输入命令<code>java -version</code>，如果一切正常，你会看到如下输出：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">┌────────────────────────────────────────────────────────┐</span><br><span class="line">│Command Prompt                                    - □ x │</span><br><span class="line">├────────────────────────────────────────────────────────┤</span><br><span class="line">│Microsoft Windows [Version 10.0.0]                      │</span><br><span class="line">│(c) 2015 Microsoft Corporation. All rights reserved.    │</span><br><span class="line">│                                                        │</span><br><span class="line">│C:\&gt; java -version                                      │</span><br><span class="line">│java version &quot;8&quot; ...                                   │</span><br><span class="line">│Java(TM) SE Runtime Environment                         │</span><br><span class="line">│Java HotSpot(TM) 64-Bit Server VM                       │</span><br><span class="line">│                                                        │</span><br><span class="line">│C:\&gt;                                                    │</span><br><span class="line">│                                                        │</span><br><span class="line">│                                                        │</span><br><span class="line">└────────────────────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
-
-<p>如果你看到的版本号不是<code>8</code>，而是<code>14</code>、<code>1.4</code>之类，说明系统存在多个JDK，且默认JDK不是JDK 15，需要把JDK 8提到<code>PATH</code>前面。</p>
-<p>如果你得到一个错误输出：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">┌────────────────────────────────────────────────────────┐</span><br><span class="line">│Command Prompt                                    - □ x │</span><br><span class="line">├────────────────────────────────────────────────────────┤</span><br><span class="line">│Microsoft Windows [Version 10.0.0]                      │</span><br><span class="line">│(c) 2015 Microsoft Corporation. All rights reserved.    │</span><br><span class="line">│                                                        │</span><br><span class="line">│C:\&gt; java -version                                      │</span><br><span class="line">│&#39;java&#39; is not recognized as an internal or external comm│</span><br><span class="line">│and, operable program or batch file.                    │</span><br><span class="line">│                                                        │</span><br><span class="line">│C:\&gt;                                                    │</span><br><span class="line">│                                                        │</span><br><span class="line">│                                                        │</span><br><span class="line">│                                                        │</span><br><span class="line">└────────────────────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
-
-<p>这是因为系统无法找到Java虚拟机的程序<code>java.exe</code>，需要检查JAVA_HOME和PATH的配置。</p>
-<p>可以参考<a href="https://www.java.com/zh_CN/download/help/path.xml">如何设置或更改PATH系统变量</a>。</p>
-<h3 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h3><p>细心的童鞋还可以在<code>JAVA_HOME</code>的<code>bin</code>目录下找到很多可执行文件：</p>
-<ul>
-<li><p>java：这个可执行程序其实就是JVM，运行Java程序，就是启动JVM，然后让JVM执行指定的编译后的代码；</p>
-</li>
-<li><p>javac：这是Java的编译器，它用于把Java源码文件（以<code>.java</code>后缀结尾）编译为Java字节码文件（以<code>.class</code>后缀结尾）；</p>
-</li>
-<li><p>jar：用于把一组<code>.class</code>文件打包成一个<code>.jar</code>文件，便于发布；</p>
-</li>
-<li><p>javadoc：用于从Java源码中自动提取注释并生成文档；</p>
-</li>
-<li><p>jdb：Java调试器，用于开发阶段的运行调试。</p>
-<hr>
-<p>[TOC]</p>
-</li>
-</ul>
-<h1 id="（3）第一个Java程序"><a href="#（3）第一个Java程序" class="headerlink" title="（3）第一个Java程序"></a>（3）第一个Java程序</h1><p>我们来编写第一个Java程序。</p>
-<p>打开文本编辑器，输入以下代码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello, LIEFox!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在一个Java程序中，你总能找到一个类似：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>的定义，这个定义被称为class（类），这里的类名是<code>Hello</code>，大小写敏感，<code>class</code>用来定义一个类，<code>public</code>表示这个类是公开的，<code>public</code>、<code>class</code>都是Java的关键字，必须小写，<code>Hello</code>是类的名字，按照习惯，首字母<code>H</code>要大写。而花括号<code>&#123;&#125;</code>中间则是类的定义。</p>
-<p>注意到类的定义中，我们定义了一个名为<code>main</code>的方法：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>方法是可执行的代码块，一个方法除了方法名<code>main</code>，还有用<code>()</code>括起来的方法参数，这里的<code>main</code>方法有一个参数，参数类型是<code>String[]</code>，参数名是<code>args</code>，<code>public</code>、<code>static</code>用来修饰方法，这里表示它是一个公开的静态方法，<code>void</code>是方法的返回类型，而花括号<code>&#123;&#125;</code>中间的就是方法的代码。</p>
-<p>方法的代码每一行用<code>;</code>结束，这里只有一行代码，就是：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;Hello, LIEFox!&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<p>它用来打印一个字符串到屏幕上。</p>
-<p>Java规定，某个类定义的<code>public static void main(String[] args)</code>是Java程序的固定入口方法，因此，Java程序总是从<code>main</code>方法开始执行。</p>
-<p>注意到Java源码的缩进不是必须的，但是用缩进后，格式好看，很容易看出代码块的开始和结束，缩进一般是4个空格或者一个tab。</p>
-<p>最后，当我们把代码保存为文件时，文件名必须是<code>Hello.java</code>，而且文件名也要注意大小写，因为要和我们定义的类名<code>Hello</code>完全保持一致。</p>
-<h3 id="如何运行Java程序"><a href="#如何运行Java程序" class="headerlink" title="如何运行Java程序"></a>如何运行Java程序</h3><p>Java源码本质上是一个文本文件，我们需要先用<code>javac</code>把<code>Hello.java</code>编译成字节码文件<code>Hello.class</code>，然后，用<code>java</code>命令执行这个字节码文件：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">┌──────────────────┐</span><br><span class="line">│    Hello.java    │&lt;─── source code</span><br><span class="line">└──────────────────┘</span><br><span class="line">          │ compile</span><br><span class="line">          ▼</span><br><span class="line">┌──────────────────┐</span><br><span class="line">│   Hello.class    │&lt;─── byte code</span><br><span class="line">└──────────────────┘</span><br><span class="line">          │ execute</span><br><span class="line">          ▼</span><br><span class="line">┌──────────────────┐</span><br><span class="line">│    Run on JVM    │</span><br><span class="line">└──────────────────┘</span><br></pre></td></tr></table></figure>
-
-<p>因此，可执行文件<code>javac</code>是编译器，而可执行文件<code>java</code>就是虚拟机。</p>
-<p>第一步，在保存<code>Hello.java</code>的目录下执行命令<code>javac Hello.java</code>：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ javac Hello.java</span><br></pre></td></tr></table></figure>
-
-<p>如果源代码无误，上述命令不会有任何输出，而当前目录下会产生一个<code>Hello.class</code>文件：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ ls</span><br><span class="line">Hello.class	Hello.java</span><br></pre></td></tr></table></figure>
-
-<p>第二步，执行<code>Hello.class</code>，使用命令<code>java Hello</code>：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ java Hello</span><br><span class="line">Hello, LIEFox!</span><br></pre></td></tr></table></figure>
-
-<p>注意：给虚拟机传递的参数<code>Hello</code>是我们定义的类名，虚拟机自动查找对应的class文件并执行。</p>
-<p>有一些童鞋可能知道，直接运行<code>java Hello.java</code>也是可以的：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ java Hello.java </span><br><span class="line">Hello, LIEFox!</span><br></pre></td></tr></table></figure>
-
-<p>这是Java 11新增的一个功能，它可以直接运行一个单文件源码！</p>
-<p>需要注意的是，在实际项目中，单个不依赖第三方库的Java源码是非常罕见的，所以，绝大多数情况下，我们无法直接运行一个Java源码文件，原因是它需要依赖其他的库。</p>
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>一个Java源码只能定义一个<code>public</code>类型的class，并且class名称和文件名要完全一致；</p>
-<p>使用<code>javac</code>可以将<code>.java</code>源码编译成<code>.class</code>字节码；</p>
-<p>使用<code>java</code>可以运行一个已编译的Java程序，参数是类名。</p>
-<p>[TOC]</p>
-<hr>
-<h1 id="（4）使用IDE"><a href="#（4）使用IDE" class="headerlink" title="（4）使用IDE"></a>（4）使用IDE</h1><p>IDE是集成开发环境：Integrated Development Environment的缩写。</p>
-<p>使用IDE的好处在于，可以把编写代码、组织项目、编译、运行、调试等放到一个环境中运行，能极大地提高开发效率。</p>
-<p>IDE提升开发效率主要靠以下几点：</p>
-<ul>
-<li>编辑器的自动提示，可以大大提高敲代码的速度；</li>
-<li>代码修改后可以自动重新编译，并直接运行；</li>
-<li>可以方便地进行断点调试。</li>
-</ul>
-<p>目前，流行的用于Java开发的IDE有：</p>
-<h3 id="Eclipse"><a href="#Eclipse" class="headerlink" title="Eclipse"></a>Eclipse</h3><p><a href="https://www.eclipse.org/">Eclipse</a>是由IBM开发并捐赠给开源社区的一个IDE，也是目前应用最广泛的IDE。Eclipse的特点是它本身是Java开发的，并且基于插件结构，即使是对Java开发的支持也是通过插件JDT实现的。</p>
-<p>除了用于Java开发，Eclipse配合插件也可以作为C/C++开发环境、PHP开发环境、Rust开发环境等。</p>
-<h3 id="IntelliJ-Idea"><a href="#IntelliJ-Idea" class="headerlink" title="IntelliJ Idea"></a>IntelliJ Idea</h3><p><a href="https://www.jetbrains.com/idea/">IntelliJ Idea</a>是由JetBrains公司开发的一个功能强大的IDE，分为免费版和商用付费版。JetBrains公司的IDE平台也是基于IDE平台+语言插件的模式，支持Python开发环境、Ruby开发环境、PHP开发环境等，这些开发环境也分为免费版和付费版。</p>
-<hr>
-<p>[TOC]</p>
-<p>。。。。。。。。。。。。。。</p>
 <p><strong><em>作者：zjh</em></strong></p>
 ]]></content>
       <categories>
