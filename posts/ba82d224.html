@@ -17,7 +17,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    前端笔记目录 |  LIEFox
+    CSS初级 |  LIEFox
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -67,7 +67,7 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-前端笔记目录"
+  id="post-CSS初级"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -78,15 +78,15 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  前端笔记目录
+  CSS初级
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/posts/894d484f.html" class="article-date">
-  <time datetime="2021-01-05T00:23:49.614Z" itemprop="datePublished">2021-01-05</time>
+      <a href="/posts/ba82d224.html" class="article-date">
+  <time datetime="2021-01-06T03:27:25.864Z" itemprop="datePublished">2021-01-06</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">前端笔记</a>
@@ -97,7 +97,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">32</span>
+            <span class="post-count">653</span>
         </span>
     </span>
 
@@ -106,7 +106,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
+            <span class="post-count">2 分钟</span>
         </span>
     </span>
 </div>
@@ -121,10 +121,105 @@ var _hmt = _hmt || [];
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="前端笔记目录"><a href="#前端笔记目录" class="headerlink" title="前端笔记目录"></a>前端笔记目录</h1><hr>
-<h2 id="1-HTML基础标签"><a href="#1-HTML基础标签" class="headerlink" title="1.HTML基础标签"></a><a href="https://cxq21.gitee.io/posts/8c85f492.html" target="_blank">1.HTML基础标签</a></h2><h2 id="2-HTML高级标签"><a href="#2-HTML高级标签" class="headerlink" title="2.HTML高级标签"></a><a href="https://cxq21.gitee.io/posts/715f780f.html" target="_blank">2.HTML高级标签</a></h2><h2 id="3-CSS初级"><a href="#3-CSS初级" class="headerlink" title="3.CSS初级"></a><a href="https://cxq21.gitee.io/posts/ba82d224.html" target="_blank">3.CSS初级</a></h2><h2 id="4-CSS基础属性"><a href="#4-CSS基础属性" class="headerlink" title="4.CSS基础属性"></a><a href="https://cxq21.gitee.io/posts/b83b1352.html" target="_blank">4.CSS基础属性</a></h2><p>（未完待续。。。）</p>
+  <h1 id="CSS初级"><a href="#CSS初级" class="headerlink" title="CSS初级"></a>CSS初级</h1><p>HTML在平常开发的时候用作于网页的框架搭建，相当于大楼的框架，而CSS是大楼的装修。</p>
+<h2 id="引入CSS"><a href="#引入CSS" class="headerlink" title="引入CSS"></a>引入CSS</h2><h3 id="1-行间样式"><a href="#1-行间样式" class="headerlink" title="1.行间样式"></a>1.行间样式</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;width: 1000px; background-color: aqua;height: 20px;&quot;</span>&gt;</span>234<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在标签中写入 <code>style</code> 并设置对应css样式。</p>
+<h3 id="2-页面级CSS"><a href="#2-页面级CSS" class="headerlink" title="2.页面级CSS"></a>2.页面级CSS</h3><p>在 <code>&lt;herd&gt;</code>里写一对 <code>&lt;style&gt;</code>标签，<code>type=&quot;text/css&quot;</code>告诉浏览器是css样式，但可写可不写。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">			div&#123;</span><br><span class="line">				background-color: burlywood;</span><br><span class="line">			&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-外部CSS文件"><a href="#3-外部CSS文件" class="headerlink" title="3.外部CSS文件"></a>3.外部CSS文件</h3><p>在<code>&lt;herd&gt;</code>里写上 <code>&lt;link&gt;</code>标签，在 <code>href</code>里填入css文件路径</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;lessn1.css&quot;&gt;</span><br></pre></td></tr></table></figure>
+
 <hr>
-<p><em>作者：zjh</em></p>
+<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><p>以在css外链式操作</p>
+<h3 id="1-id选择器"><a href="#1-id选择器" class="headerlink" title="1.id选择器"></a>1.id选择器</h3><p>其特点是一对一。</p>
+<p>.html文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;only&quot;&gt;234&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>.css文件</p>
+<p><code>#</code>开头加上<code>id</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#only&#123;</span><br><span class="line">	background-color: aqua;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-类选择器"><a href="#2-类选择器" class="headerlink" title="2.类选择器"></a>2.类选择器</h3><p>类选择器特点是多对多</p>
+<p>class选择器可以拥有一个或多个类选择器，类选择器中空格隔开，</p>
+<p>.html文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;demo demo1&quot;&gt;234&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>.css文件</p>
+<p><code>.</code>开头</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.demo&#123;</span><br><span class="line">	background-color: aqua</span><br><span class="line">&#125;</span><br><span class="line">.demo1&#123;</span><br><span class="line">	width: 100px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-标签选择器"><a href="#3-标签选择器" class="headerlink" title="3.标签选择器"></a>3.标签选择器</h3><p>可以直接用标签选择,HTML文件中全部div表签都可生效</p>
+<p>.html文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;234&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>.css文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">	background-color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-通配符选择器"><a href="#4-通配符选择器" class="headerlink" title="4.通配符选择器"></a>4.通配符选择器</h3><p>以 <code>*</code>来选择，可以选择全部</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">	background-color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-选择器的优先级"><a href="#5-选择器的优先级" class="headerlink" title="5.选择器的优先级"></a>5.选择器的优先级</h3><h4 id="important-gt-行间样式-gt-id-gt-class-属性-gt-标签选择器-gt-通配符"><a href="#important-gt-行间样式-gt-id-gt-class-属性-gt-标签选择器-gt-通配符" class="headerlink" title="important &gt; 行间样式 &gt; id &gt; class|属性 &gt; 标签选择器 &gt; 通配符"></a><code>important</code> &gt; 行间样式 &gt; id &gt; class|属性 &gt; 标签选择器 &gt; 通配符</h4><h3 id="6-CSS权重"><a href="#6-CSS权重" class="headerlink" title="6.CSS权重"></a>6.CSS权重</h3><table>
+<thead>
+<tr>
+<th align="center">！important</th>
+<th align="center">Infinity（正无穷大）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">行间样式</td>
+<td align="center">1000</td>
+</tr>
+<tr>
+<td align="center">id</td>
+<td align="center">100</td>
+</tr>
+<tr>
+<td align="center">class|属性|伪类</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">标签|伪元素</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">通配符</td>
+<td align="center">0</td>
+</tr>
+</tbody></table>
+<p><strong><code>注意：</code>css权重是以256进制进行计算的</strong></p>
+<h2 id="CSS复杂选择器"><a href="#CSS复杂选择器" class="headerlink" title="CSS复杂选择器"></a>CSS复杂选择器</h2><h3 id="父类选择器"><a href="#父类选择器" class="headerlink" title="父类选择器"></a>父类选择器</h3><p>选择标签可以加很多修饰条件，但是只能修饰父子条件，父子选择器的每一个层级都不需要必须是标签，<br>可以用类标签</p>
+<p>举个栗子：</p>
+<p>.html</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;demo&quot;&gt;</span><br><span class="line">			&lt;span&gt;234&lt;&#x2F;span&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>.css</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div span&#123;</span><br><span class="line">	background-color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>也可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.demo span&#123;</span><br><span class="line">	background-color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="子元素选择器"><a href="#子元素选择器" class="headerlink" title="子元素选择器"></a>子元素选择器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div &gt; span &#123;</span><br><span class="line">	background-color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="并列选择器"><a href="#并列选择器" class="headerlink" title="并列选择器"></a>并列选择器</h3><p>用多个限制条件选择一个选择器并且不加空格</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div.demo&#123;</span><br><span class="line">	background-color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="分组选择器"><a href="#分组选择器" class="headerlink" title="分组选择器"></a>分组选择器</h3><p>.html</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;demo&quot;&gt;</span><br><span class="line">	&lt;strong&gt;</span><br><span class="line">			&lt;span&gt;234&lt;&#x2F;span&gt;</span><br><span class="line">	&lt;&#x2F;strong&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>.css</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">div,</span><br><span class="line">strong,</span><br><span class="line">span&#123;</span><br><span class="line">	background-color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>作者：<em>zjh</em></p>
  
       <!-- reward -->
       
@@ -195,7 +290,7 @@ var _hmt = _hmt || [];
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cxq21.gitee.io/posts/894d484f.html" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cxq21.gitee.io/posts/ba82d224.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -208,19 +303,19 @@ var _hmt = _hmt || [];
    
   <nav class="article-nav">
     
-      <a href="/posts/8c85f492.html" class="article-nav-link">
+      <a href="/posts/b83b1352.html" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            HTML基础标签
+            CSS基础属性
           
         </div>
       </a>
     
     
-      <a href="/posts/56146dea.html" class="article-nav-link">
+      <a href="/posts/715f780f.html" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">搭建自己的第一个网站</div>
+        <div class="article-nav-title">HTML高级标签</div>
       </a>
     
   </nav>
