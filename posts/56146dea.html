@@ -68,6 +68,14 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+<!-- 封面标闪烁 -->
+<link rel="stylesheet" href="/css/zhyBlogTitle.css">
+
+<!-- Highlight.js -->
+<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 </html>
@@ -112,7 +120,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">987</span>
+            <span class="post-count">981</span>
         </span>
     </span>
 
@@ -183,12 +191,15 @@ var _hmt = _hmt || [];
 <ul>
 <li>第二步，在接着输入下面语句</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">&#x2F;&#x2F;注意回车</span><br></pre></td></tr></table></figure>
-
+<pre><code class="git">git init
+git add .
+//注意回车</code></pre>
 <p><a target="_blank" rel="noopener" href="https://imgchr.com/i/r2zxc6"><img src="https://s3.ax1x.com/2020/12/24/r2zxc6.png" alt="r2zxc6.png"></a></p>
 <h2 id="4-回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。"><a href="#4-回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。" class="headerlink" title="4.回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。"></a>4.回到gitee创建仓库git命令页面，将圈起来的这三句复制下来，到Bash黑窗口。</h2><p><a target="_blank" rel="noopener" href="https://imgchr.com/i/r2zuk9"><img src="https://s3.ax1x.com/2020/12/24/r2zuk9.md.png" alt="r2zuk9.md.png"></a></p>
-<h3 id="注意：命令行窗口里不可以-ctrl-v-命令行的粘贴快捷键是-shift-insert"><a href="#注意：命令行窗口里不可以-ctrl-v-命令行的粘贴快捷键是-shift-insert" class="headerlink" title="注意：命令行窗口里不可以 ctrl+v ,命令行的粘贴快捷键是 shift+insert"></a><strong>注意：命令行窗口里不可以 ctrl+v ,命令行的粘贴快捷键是 shift+insert</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add origin https:&#x2F;&#x2F;gitee.com&#x2F;cxq21&#x2F;first-page.git</span><br><span class="line">git push -u origin master</span><br><span class="line">&#x2F;&#x2F;注意回车</span><br></pre></td></tr></table></figure>
-
+<h3 id="注意：命令行窗口里不可以-ctrl-v-命令行的粘贴快捷键是-shift-insert"><a href="#注意：命令行窗口里不可以-ctrl-v-命令行的粘贴快捷键是-shift-insert" class="headerlink" title="注意：命令行窗口里不可以 ctrl+v ,命令行的粘贴快捷键是 shift+insert"></a><strong>注意：命令行窗口里不可以 ctrl+v ,命令行的粘贴快捷键是 shift+insert</strong></h3><pre><code>git commit -m &quot;first commit&quot;
+git remote add origin https://gitee.com/cxq21/first-page.git
+git push -u origin master
+//注意回车</code></pre>
 <p><a target="_blank" rel="noopener" href="https://imgchr.com/i/rRSnu8"><img src="https://s3.ax1x.com/2020/12/24/rRSnu8.png" alt="rRSnu8.png"></a></p>
 <h3 id="注意：当运行到-”git-push-u-origin-master“-时，他会弹出一个窗口，填入你当时注册时的用户名和密码，确定。"><a href="#注意：当运行到-”git-push-u-origin-master“-时，他会弹出一个窗口，填入你当时注册时的用户名和密码，确定。" class="headerlink" title="注意：当运行到 ”git push -u origin master“ 时，他会弹出一个窗口，填入你当时注册时的用户名和密码，确定。"></a>注意：当运行到 ”git push -u origin master“ 时，他会弹出一个窗口，填入你当时注册时的用户名和密码，确定。</h3><p><a target="_blank" rel="noopener" href="https://imgchr.com/i/rRqmp8"><img src="https://s3.ax1x.com/2020/12/25/rRqmp8.jpg" alt="rRqmp8.jpg"></a></p>
 <p>当加载到100%时，就代表上传成功。</p>
@@ -312,8 +323,7 @@ var _hmt = _hmt || [];
     </div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<!-- <script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script> -->
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <!-- 评论背景 -->                                                         
 <style>
     #veditor{min-height: 15rem;
@@ -326,16 +336,16 @@ var _hmt = _hmt || [];
 </style>
 <!-- Valine配置 --> 
 <script>
-        new Valine({
-            el: "#vcomments",
-            app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
-            app_key: "VheJztjyMzs24xKQPGGI1bmh",
-            path: window.location.pathname,
-            avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
-            placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
-            recordIP: true,
-            enableQQ: true,
-            boolean: true,
+new Valine({
+    el: "#vcomments",
+    app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
+    app_key: "VheJztjyMzs24xKQPGGI1bmh",
+    path: window.location.pathname,
+    avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
+    placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
+    recordIP: true,
+    enableQQ: true,
+    boolean: true,
 
         // 设置Bilibili表情包地址
         emojiCDN: 'https://cdn.jsdelivr.net/gh/XXXZhy/Blog_Image/valine_emoticon/', 
@@ -414,7 +424,7 @@ var _hmt = _hmt || [];
         c = (b - B) * 60;
         C = Math.floor((b - B) * 60);
         D = Math.floor((c - C) * 60);
-        runtime_span.innerHTML = "LIEFox逃脱猎人的第: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+        runtime_span.innerHTML = "LIEFox逃脱猎人的第" + A + "天" + B + "小时" + C + "分" + D + "秒"
     }
     show_runtime();
 </script>

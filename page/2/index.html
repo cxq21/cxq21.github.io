@@ -68,6 +68,14 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+<!-- 封面标闪烁 -->
+<link rel="stylesheet" href="/css/zhyBlogTitle.css">
+
+<!-- Highlight.js -->
+<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 </html>
@@ -90,10 +98,11 @@ var _hmt = _hmt || [];
     
   <div class="cover-frame">
     <div class="bg-box">
-      <img src="http://img.soogif.com/ljzUg0YVCvtmKbEgdJGxXJeJXcDdX8uM.gif#http://img.soogif.com/cS2YRILUNYRMOLrUlfV9pzvMMRHQoMbl.gif#12" alt="image frame" />
+      <img src="/images/cover17.jpg" alt="image frame" />
     </div>
     <div class="cover-inner text-center text-white">
-      <h1><a href="/">LIEFox</a></h1>
+      <!-- 特效标题 <h1><a href="/">LIEFox</a></h1> -->
+      <h1 class="center-text glitch" data-text="LIEFox">LIEFox</h1>
       <div id="subtitle-box">
         
         <span id="subtitle"></span>
@@ -130,6 +139,7 @@ var _hmt = _hmt || [];
       console.log(err)
     }
   </script>
+
   
 <div id="main">
   <section class="outer">
@@ -844,7 +854,7 @@ var _hmt = _hmt || [];
         c = (b - B) * 60;
         C = Math.floor((b - B) * 60);
         D = Math.floor((c - C) * 60);
-        runtime_span.innerHTML = "LIEFox逃脱猎人的第: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+        runtime_span.innerHTML = "LIEFox逃脱猎人的第" + A + "天" + B + "小时" + C + "分" + D + "秒"
     }
     show_runtime();
 </script>

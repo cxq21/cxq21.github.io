@@ -68,6 +68,14 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+<!-- 封面标闪烁 -->
+<link rel="stylesheet" href="/css/zhyBlogTitle.css">
+
+<!-- Highlight.js -->
+<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 </html>
@@ -112,7 +120,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">676</span>
+            <span class="post-count">647</span>
         </span>
     </span>
 
@@ -121,7 +129,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">3 分钟</span>
+            <span class="post-count">2 分钟</span>
         </span>
     </span>
 </div>
@@ -137,47 +145,50 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
        
   <h1 id="CSS初级"><a href="#CSS初级" class="headerlink" title="CSS初级"></a>CSS初级</h1><p>HTML在平常开发的时候用作于网页的框架搭建，相当于大楼的框架，而CSS是大楼的装修。</p>
-<h2 id="引入CSS"><a href="#引入CSS" class="headerlink" title="引入CSS"></a>引入CSS</h2><h3 id="1-行间样式"><a href="#1-行间样式" class="headerlink" title="1.行间样式"></a>1.行间样式</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;width: 1000px; background-color: aqua;height: 20px;&quot;</span>&gt;</span>234<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="引入CSS"><a href="#引入CSS" class="headerlink" title="引入CSS"></a>引入CSS</h2><h3 id="1-行间样式"><a href="#1-行间样式" class="headerlink" title="1.行间样式"></a>1.行间样式</h3><pre><code class="HTML">&lt;div style=&quot;width: 1000px; background-color: aqua;height: 20px;&quot;&gt;234&lt;/div&gt;</code></pre>
 <p>在标签中写入 <code>style</code> 并设置对应css样式。</p>
 <h3 id="2-页面级CSS"><a href="#2-页面级CSS" class="headerlink" title="2.页面级CSS"></a>2.页面级CSS</h3><p>在 <code>&lt;herd&gt;</code>里写一对 <code>&lt;style&gt;</code>标签，<code>type=&quot;text/css&quot;</code>告诉浏览器是css样式，但可写可不写。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">			div&#123;</span><br><span class="line">				background-color: burlywood;</span><br><span class="line">			&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="html">&lt;style type=&quot;text/css&quot;&gt;
+            div&#123;
+                background-color: burlywood;
+            &#125;
+&lt;/style&gt;</code></pre>
 <h3 id="3-外部CSS文件"><a href="#3-外部CSS文件" class="headerlink" title="3.外部CSS文件"></a>3.外部CSS文件</h3><p>在<code>&lt;herd&gt;</code>里写上 <code>&lt;link&gt;</code>标签，在 <code>href</code>里填入css文件路径</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;lessn1.css&quot;&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;lessn1.css&quot;&gt;</code></pre>
 <hr>
 <h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><p>以在css外链式操作</p>
 <h3 id="1-id选择器"><a href="#1-id选择器" class="headerlink" title="1.id选择器"></a>1.id选择器</h3><p>其特点是一对一。</p>
 <p>.html文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;only&quot;&gt;234&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;div id=&quot;only&quot;&gt;234&lt;/div&gt;</code></pre>
 <p>.css文件</p>
 <p><code>#</code>开头加上<code>id</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#only&#123;</span><br><span class="line">	background-color: aqua;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code>#only&#123;
+    background-color: aqua;
+&#125;</code></pre>
 <h3 id="2-类选择器"><a href="#2-类选择器" class="headerlink" title="2.类选择器"></a>2.类选择器</h3><p>类选择器特点是多对多</p>
 <p>class选择器可以拥有一个或多个类选择器，类选择器中空格隔开，</p>
 <p>.html文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;demo demo1&quot;&gt;234&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;div class=&quot;demo demo1&quot;&gt;234&lt;/div&gt;</code></pre>
 <p>.css文件</p>
 <p><code>.</code>开头</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.demo&#123;</span><br><span class="line">	background-color: aqua</span><br><span class="line">&#125;</span><br><span class="line">.demo1&#123;</span><br><span class="line">	width: 100px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="html">.demo&#123;
+    background-color: aqua
+&#125;
+.demo1&#123;
+    width: 100px;
+&#125;</code></pre>
 <h3 id="3-标签选择器"><a href="#3-标签选择器" class="headerlink" title="3.标签选择器"></a>3.标签选择器</h3><p>可以直接用标签选择,HTML文件中全部div表签都可生效</p>
 <p>.html文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;234&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;div&gt;234&lt;/div&gt;</code></pre>
 <p>.css文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">	background-color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
+<pre><code>div&#123;
+    background-color: blue;
+&#125;</code></pre>
 <h3 id="4-通配符选择器"><a href="#4-通配符选择器" class="headerlink" title="4.通配符选择器"></a>4.通配符选择器</h3><p>以 <code>*</code>来选择，可以选择全部</p>
 <p><code>补充</code>：<strong>通配符的应用是初始化所有标签最好的一种方式</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">	background-color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code>*&#123;
+    background-color: blue;
+&#125;</code></pre>
 <h3 id="5-选择器的优先级"><a href="#5-选择器的优先级" class="headerlink" title="5.选择器的优先级"></a>5.选择器的优先级</h3><h4 id="important-gt-行间样式-gt-id-gt-class-属性-gt-标签选择器-gt-通配符"><a href="#important-gt-行间样式-gt-id-gt-class-属性-gt-标签选择器-gt-通配符" class="headerlink" title="important &gt; 行间样式 &gt; id &gt; class|属性 &gt; 标签选择器 &gt; 通配符"></a><code>important</code> &gt; 行间样式 &gt; id &gt; class|属性 &gt; 标签选择器 &gt; 通配符</h4><h3 id="6-CSS权重"><a href="#6-CSS权重" class="headerlink" title="6.CSS权重"></a>6.CSS权重</h3><table>
 <thead>
 <tr>
@@ -210,31 +221,36 @@ var _hmt = _hmt || [];
 <h2 id="CSS复杂选择器"><a href="#CSS复杂选择器" class="headerlink" title="CSS复杂选择器"></a>CSS复杂选择器</h2><h3 id="父类选择器"><a href="#父类选择器" class="headerlink" title="父类选择器"></a>父类选择器</h3><p>选择标签可以加很多修饰条件，但是只能修饰父子条件，父子选择器的每一个层级都不需要必须是标签，<br>可以用类标签</p>
 <p>举个栗子：</p>
 <p>.html</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;demo&quot;&gt;</span><br><span class="line">			&lt;span&gt;234&lt;&#x2F;span&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;div class=&quot;demo&quot;&gt;
+            &lt;span&gt;234&lt;/span&gt;
+&lt;/div&gt;</code></pre>
 <p>.css</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div span&#123;</span><br><span class="line">	background-color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code>div span&#123;
+    background-color: blue;
+&#125;</code></pre>
 <p>也可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.demo span&#123;</span><br><span class="line">	background-color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="子元素选择器"><a href="#子元素选择器" class="headerlink" title="子元素选择器"></a>子元素选择器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div &gt; span &#123;</span><br><span class="line">	background-color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
+<pre><code>.demo span&#123;
+    background-color: blue;
+&#125;</code></pre>
+<h3 id="子元素选择器"><a href="#子元素选择器" class="headerlink" title="子元素选择器"></a>子元素选择器</h3><pre><code>div &gt; span &#123;
+    background-color: red;
+&#125;</code></pre>
 <h3 id="并列选择器"><a href="#并列选择器" class="headerlink" title="并列选择器"></a>并列选择器</h3><p>用多个限制条件选择一个选择器并且不加空格</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div.demo&#123;</span><br><span class="line">	background-color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
+<pre><code>div.demo&#123;
+    background-color: red;
+&#125;</code></pre>
 <h3 id="分组选择器"><a href="#分组选择器" class="headerlink" title="分组选择器"></a>分组选择器</h3><p>.html</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;demo&quot;&gt;</span><br><span class="line">	&lt;strong&gt;</span><br><span class="line">			&lt;span&gt;234&lt;&#x2F;span&gt;</span><br><span class="line">	&lt;&#x2F;strong&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;div class=&quot;demo&quot;&gt;
+    &lt;strong&gt;
+            &lt;span&gt;234&lt;/span&gt;
+    &lt;/strong&gt;
+&lt;/div&gt;</code></pre>
 <p>.css</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">div,</span><br><span class="line">strong,</span><br><span class="line">span&#123;</span><br><span class="line">	background-color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code>div,
+strong,
+span&#123;
+    background-color: red;
+&#125;</code></pre>
 <p>作者：<em>zjh</em></p>
  
       <!-- reward -->
@@ -343,8 +359,7 @@ var _hmt = _hmt || [];
     </div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<!-- <script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script> -->
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <!-- 评论背景 -->                                                         
 <style>
     #veditor{min-height: 15rem;
@@ -357,16 +372,16 @@ var _hmt = _hmt || [];
 </style>
 <!-- Valine配置 --> 
 <script>
-        new Valine({
-            el: "#vcomments",
-            app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
-            app_key: "VheJztjyMzs24xKQPGGI1bmh",
-            path: window.location.pathname,
-            avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
-            placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
-            recordIP: true,
-            enableQQ: true,
-            boolean: true,
+new Valine({
+    el: "#vcomments",
+    app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
+    app_key: "VheJztjyMzs24xKQPGGI1bmh",
+    path: window.location.pathname,
+    avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
+    placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
+    recordIP: true,
+    enableQQ: true,
+    boolean: true,
 
         // 设置Bilibili表情包地址
         emojiCDN: 'https://cdn.jsdelivr.net/gh/XXXZhy/Blog_Image/valine_emoticon/', 
@@ -445,7 +460,7 @@ var _hmt = _hmt || [];
         c = (b - B) * 60;
         C = Math.floor((b - B) * 60);
         D = Math.floor((c - C) * 60);
-        runtime_span.innerHTML = "LIEFox逃脱猎人的第: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+        runtime_span.innerHTML = "LIEFox逃脱猎人的第" + A + "天" + B + "小时" + C + "分" + D + "秒"
     }
     show_runtime();
 </script>

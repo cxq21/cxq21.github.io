@@ -68,6 +68,14 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+<!-- 封面标闪烁 -->
+<link rel="stylesheet" href="/css/zhyBlogTitle.css">
+
+<!-- Highlight.js -->
+<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 </html>
@@ -165,8 +173,19 @@ var _hmt = _hmt || [];
 <p><strong><a target="_blank" rel="noopener" href="https://imgchr.com/i/D6nngO"><img src="https://s3.ax1x.com/2020/11/28/D6nngO.md.png" alt="D6nngO.md.png"></a></strong></p>
 <p><strong>src&gt;New&gt;XML File&gt;名为（ApplicationContext.xml)</strong></p>
 <p><strong>4.xml文件里的代码如下</strong></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:context</span>=<span class="string">&quot;http://www.springframework.org/schema/context&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context</span></span></span><br><span class="line"><span class="tag"><span class="string">       http://www.springframework.org/schema/context/spring-context-4.3.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">&quot;Service&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">context:component-scan</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--&lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包</span></span><br><span class="line"><span class="comment">    &lt;context:component-scan&gt;标签：指定扫描某一包下的注解</span></span><br><span class="line"><span class="comment">    base-package:指定需要扫描的包--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="xml">&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
+       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+       xmlns:context=&quot;http://www.springframework.org/schema/context&quot;
+       xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.3.xsd&quot;&gt;
+    &lt;context:component-scan base-package=&quot;Service&quot;&gt;&lt;/context:component-scan&gt;
+    &lt;!--&lt;context:component-scan&gt;标签：指定扫描某一包下的注解
+    base-package:指定需要扫描的包
+    &lt;context:component-scan&gt;标签：指定扫描某一包下的注解
+    base-package:指定需要扫描的包--&gt;
+&lt;/beans&gt;</code></pre>
 <p><strong>5.接下来导jar包</strong></p>
 <p><strong>Flie》Project Structure》Liberals》＋》Java》找到自己放spring jar包的地方》选中》OK》取个名字（Spring_Jars）》OK</strong></p>
 <p><strong><a target="_blank" rel="noopener" href="https://imgchr.com/i/D6u3yF"><img src="https://s3.ax1x.com/2020/11/28/D6u3yF.md.png" alt="D6u3yF.md.png"></a></strong></p>
@@ -177,8 +196,11 @@ var _hmt = _hmt || [];
 <p><strong>到这一步，咱们就算上车了，开始飙车了</strong></p>
 <hr>
 <h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a><strong>第二步</strong></h1><p><strong>安照题目要求</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Dao层：接口文件StudentDao，包含方法selectAll</span><br><span class="line">        实现类StudentDaoImpl,包含selectAll方法的实现（仅写输出语句表示方法调用成功即可）</span><br><span class="line">Service层：接口文件StudentService，包含方法selectAll</span><br><span class="line">            实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)</span><br><span class="line">Web层:类WebMain,主方法中调用Service层的selectAll方法。</span><br></pre></td></tr></table></figure>
-
+<pre><code>Dao层：接口文件StudentDao，包含方法selectAll
+        实现类StudentDaoImpl,包含selectAll方法的实现（仅写输出语句表示方法调用成功即可）
+Service层：接口文件StudentService，包含方法selectAll
+            实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)
+Web层:类WebMain,主方法中调用Service层的selectAll方法。</code></pre>
 <ol>
 <li><p><strong>在Dao包里新建一个接口文件StudentDao</strong></p>
 </li>
@@ -196,22 +218,61 @@ var _hmt = _hmt || [];
 <h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a><strong>第三步</strong></h1><p><strong>骨架欧克了，我们现在去丰满他的细节</strong></p>
 <p><strong>1.</strong></p>
 <p><strong>Dao》StudentDao</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentDao</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="java">public interface StudentDao &#123;
+    void selectAll();
+&#125;</code></pre>
 <p><strong>Dao》StudentDaoImpl</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentDaoImpl</span> <span class="keyword">implements</span> <span class="title">StudentDao</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询所有学生信息！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="java">public class StudentDaoImpl implements StudentDao&#123;
+    @Override
+    public void selectAll() &#123;
+        System.out.println(&quot;查询所有学生信息！&quot;);
+    &#125;
+&#125;</code></pre>
 <p><strong>2.</strong></p>
 <p><strong>Service》StudentService</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">StudentService</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="java">public interface StudentService &#123;
+    void selectAll();
+&#125;</code></pre>
 <p><strong>Service》StudentServiceImpl</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Value;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Repository;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@Repository(value = &quot;StudentService&quot;)</span><span class="comment">//@Repository:用于持久层的注解，作用与Component相同</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentServiceImpl</span> <span class="keyword">implements</span> <span class="title">StudentService</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)*/</span></span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Value(&quot;LIEFox&quot;)</span><span class="comment">//与&lt;property&gt;标签作用一样</span></span><br><span class="line">    <span class="keyword">private</span> String SName;</span><br><span class="line">    <span class="meta">@Value(&quot;https:cxq21.gitee.io&quot;)</span><span class="comment">//偷偷的打个广告嘿嘿</span></span><br><span class="line">    <span class="keyword">private</span> String SId;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;查询到了一个名为&quot;</span>+SName+<span class="string">&quot;网站,网址为&quot;</span>+SId);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="Java">//如果报错的话，记得导包
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Repository;
+//如果idea自动导的话就没事
 
+@Repository(value = &quot;StudentService&quot;)//@Repository:用于持久层的注解，作用与Component相同
+public class StudentServiceImpl implements StudentService&#123;
+
+    /*实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)*/
+
+    @Value(&quot;LIEFox&quot;)//与&lt;property&gt;标签作用一样
+    private String SName;
+    @Value(&quot;https:cxq21.gitee.io&quot;)//偷偷的打个广告嘿嘿
+    private String SId;
+
+    @Override
+    public void selectAll() &#123;
+        System.out.println(&quot;查询到了一个名为&quot;+SName+&quot;网站,网址为&quot;+SId);
+    &#125;
+&#125;</code></pre>
 <p><strong>3.</strong></p>
 <p><strong>Web》WebMain</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//如果报错的话，记得导包</span></span><br><span class="line"><span class="keyword">import</span> Service.StudentService;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"><span class="comment">//如果idea自动导的话就没事</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Web层:类WebMain,主方法中调用Service层的selectAll方法。</span></span><br><span class="line">	</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.容器初始化</span></span><br><span class="line">        ApplicationContext context=<span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">&quot;ApplicationContext.xml&quot;</span>);</span><br><span class="line">        <span class="comment">//2.创建实例</span></span><br><span class="line">        StudentService service=(StudentService) context.getBean(<span class="string">&quot;StudentService&quot;</span>);</span><br><span class="line">        service.selectAll();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="Java">//如果报错的话，记得导包
+import Service.StudentService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+//如果idea自动导的话就没事
 
+//Web层:类WebMain,主方法中调用Service层的selectAll方法。
+
+public class WebMain &#123;
+    public static void main(String[] args) &#123;
+        //1.容器初始化
+        ApplicationContext context=new ClassPathXmlApplicationContext(&quot;ApplicationContext.xml&quot;);
+        //2.创建实例
+        StudentService service=(StudentService) context.getBean(&quot;StudentService&quot;);
+        service.selectAll();
+    &#125;
+&#125;</code></pre>
 <p><strong>这样，我们的一个基于注解的Spring项目是写完了。</strong></p>
 <hr>
 <h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a><strong>第四步</strong></h1><p><strong>运行项目。。。</strong></p>
@@ -317,9 +378,9 @@ var _hmt = _hmt || [];
       </a>
     
     
-      <a href="/posts/57d1587b.html" class="article-nav-link">
+      <a href="/posts/3dc898ff.html" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">友链使用</div>
+        <div class="article-nav-title">加入拾柒工作室</div>
       </a>
     
   </nav>
@@ -331,8 +392,7 @@ var _hmt = _hmt || [];
     </div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<!-- <script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script> -->
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <!-- 评论背景 -->                                                         
 <style>
     #veditor{min-height: 15rem;
@@ -345,16 +405,16 @@ var _hmt = _hmt || [];
 </style>
 <!-- Valine配置 --> 
 <script>
-        new Valine({
-            el: "#vcomments",
-            app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
-            app_key: "VheJztjyMzs24xKQPGGI1bmh",
-            path: window.location.pathname,
-            avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
-            placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
-            recordIP: true,
-            enableQQ: true,
-            boolean: true,
+new Valine({
+    el: "#vcomments",
+    app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
+    app_key: "VheJztjyMzs24xKQPGGI1bmh",
+    path: window.location.pathname,
+    avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
+    placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
+    recordIP: true,
+    enableQQ: true,
+    boolean: true,
 
         // 设置Bilibili表情包地址
         emojiCDN: 'https://cdn.jsdelivr.net/gh/XXXZhy/Blog_Image/valine_emoticon/', 
@@ -433,7 +493,7 @@ var _hmt = _hmt || [];
         c = (b - B) * 60;
         C = Math.floor((b - B) * 60);
         D = Math.floor((c - C) * 60);
-        runtime_span.innerHTML = "LIEFox逃脱猎人的第: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+        runtime_span.innerHTML = "LIEFox逃脱猎人的第" + A + "天" + B + "小时" + C + "分" + D + "秒"
     }
     show_runtime();
 </script>

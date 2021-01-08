@@ -68,6 +68,14 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+<!-- 封面标闪烁 -->
+<link rel="stylesheet" href="/css/zhyBlogTitle.css">
+
+<!-- Highlight.js -->
+<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 </html>
@@ -121,7 +129,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">6 分钟</span>
+            <span class="post-count">5 分钟</span>
         </span>
     </span>
 </div>
@@ -138,8 +146,12 @@ var _hmt = _hmt || [];
        
   <h1 id="HTML高级标签"><a href="#HTML高级标签" class="headerlink" title="HTML高级标签"></a>HTML高级标签</h1><h1 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h1><p>无序列表在网页中运用的最多的就是导航栏</p>
 <p><a target="_blank" rel="noopener" href="https://imgchr.com/i/sFzMN9"><img src="https://s3.ax1x.com/2021/01/05/sFzMN9.md.png" alt="sFzMN9.md.png"></a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul type&#x3D;&quot;circle&quot;&gt;</span><br><span class="line">			&lt;li&gt;1&lt;&#x2F;li&gt;</span><br><span class="line">			&lt;li&gt;2&lt;&#x2F;li&gt;</span><br><span class="line">			&lt;li&gt;3&lt;&#x2F;li&gt;</span><br><span class="line">			&lt;li&gt;4&lt;&#x2F;li&gt;</span><br><span class="line">&lt;&#x2F;ul&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;ul type=&quot;circle&quot;&gt;
+            &lt;li&gt;1&lt;/li&gt;
+            &lt;li&gt;2&lt;/li&gt;
+            &lt;li&gt;3&lt;/li&gt;
+            &lt;li&gt;4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
 <p><code>&lt;ul&gt;</code>可以给他添加属性，常用的是更换前面的空心圆（circle）</p>
 <ul type="circle">
             <li>1</li>
@@ -165,8 +177,10 @@ var _hmt = _hmt || [];
         </ul>
 
 <h1 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h1><p><code>&lt;ol&gt;</code>标签中可以给列表设置type属性，倒序属性等等</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol type &#x3D;&quot;1&quot;&gt;</span><br><span class="line">	&lt;li&gt;Coffee&lt;&#x2F;li&gt;</span><br><span class="line">	&lt;li&gt;Milk&lt;&#x2F;li&gt;</span><br><span class="line">&lt;&#x2F;ol&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;ol type =&quot;1&quot;&gt;
+    &lt;li&gt;Coffee&lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
 <p><code>&lt;ol type =&quot;1&quot;&gt;</code>有序列表排序根据阿拉伯数字</p>
 <p>举个栗子：</p>
 <ol type ="1">
@@ -196,8 +210,7 @@ var _hmt = _hmt || [];
     <li>Spring</li>
 </ol>
 
-<h1 id="lt-img-gt-图片标签"><a href="#lt-img-gt-图片标签" class="headerlink" title="&lt;img&gt;图片标签"></a><code>&lt;img&gt;</code>图片标签</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://s3.ax1x.com/2020/11/27/DDAP1I.png&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LIEFox的LOGO&quot;</span> <span class="attr">title</span>=<span class="string">&quot;XXX&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-
+<h1 id="lt-img-gt-图片标签"><a href="#lt-img-gt-图片标签" class="headerlink" title="&lt;img&gt;图片标签"></a><code>&lt;img&gt;</code>图片标签</h1><pre><code class="html">&lt;img src=&quot;https://s3.ax1x.com/2020/11/27/DDAP1I.png&quot; alt=&quot;LIEFox的LOGO&quot; title=&quot;XXX&quot; /&gt;</code></pre>
 <p>代码的效果：<img src="https://s3.ax1x.com/2020/11/27/DDAP1I.png" alt="这是一张照片"  /></p>
 <p><code>img</code>标签顾名思义用于网页插入图片的标签，其中常用的设置属性值有 </p>
 <p><code>src</code>：图片路径，可以是网上图片的url，比如上面的代码块src引用的照片地址；也可以是本地照片的绝对路径|相对路径。</p>
@@ -209,8 +222,7 @@ var _hmt = _hmt || [];
 <img src="https://s3.ax1x.com/2020/11/27/DDAP1I.png" alt="LIEFox的LOGO" title="LIEFox牛逼" />
 
 <h1 id="lt-a-gt-超链接标签（锚标签）"><a href="#lt-a-gt-超链接标签（锚标签）" class="headerlink" title="&lt;a&gt;超链接标签（锚标签）"></a><code>&lt;a&gt;</code>超链接标签（锚标签）</h1><h2 id="1-超链接作用："><a href="#1-超链接作用：" class="headerlink" title="1.超链接作用："></a>1.超链接作用：</h2><p>源码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;cxq21.gitee.io&quot;&gt;LIEFox网站 点我试试&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;a href=&quot;cxq21.gitee.io&quot;&gt;LIEFox网站 点我试试&lt;/a&gt;</code></pre>
 <h3 id="实例：LIEFox网站-点我试试"><a href="#实例：LIEFox网站-点我试试" class="headerlink" title="实例：LIEFox网站 点我试试"></a>实例：<a href="https://cxq21.gitee.io">LIEFox网站 点我试试</a></h3><p>其中可以设置的属性有：<code>target</code> 可以设置点击超链接时打开的是自身这个页面还是要浏览器新开一个标签页浏览。</p>
 <p><code>target=&quot;_blank&quot;</code>新开一个标签页浏览网页</p>
 <p><a href="https://cxq21.gitee.io" target="_blank">LIEFox网站  点我试试</a></p>
@@ -218,28 +230,31 @@ var _hmt = _hmt || [];
 <p><a href="https://cxq21.gitee.io" target="_self">LIEFox网站  点我试试</a></p>
 <h2 id="2-创建发送邮箱，拨打电话"><a href="#2-创建发送邮箱，拨打电话" class="headerlink" title="2.创建发送邮箱，拨打电话"></a>2.创建发送邮箱，拨打电话</h2><p>如果 <code>href</code>中填的是邮箱，当点击时，电脑端或手机端会自动调用邮件，</p>
 <p>源码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;mailto:2606097218@qq.com&quot; target&#x3D;&quot;_blank&quot;&gt;mail我&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;a href=&quot;mailto:2606097218@qq.com&quot; target=&quot;_blank&quot;&gt;mail我&lt;/a&gt;</code></pre>
 <h3 id="点击试试：mail我"><a href="#点击试试：mail我" class="headerlink" title="点击试试：mail我"></a>点击试试：<a href="mailto:2606097218@qq.com" target="_blank">mail我</a></h3><h3 id="其实a标签在这方面用的最多的也是最常见的是美团外卖，我们点击商家电话时，会自动跳到拨号界面，而且商家的电话号码也会呈现在拨号界面，-仅手机端"><a href="#其实a标签在这方面用的最多的也是最常见的是美团外卖，我们点击商家电话时，会自动跳到拨号界面，而且商家的电话号码也会呈现在拨号界面，-仅手机端" class="headerlink" title="其实a标签在这方面用的最多的也是最常见的是美团外卖，我们点击商家电话时，会自动跳到拨号界面，而且商家的电话号码也会呈现在拨号界面，**(仅手机端)**"></a>其实a标签在这方面用的最多的也是最常见的是美团外卖，我们点击商家电话时，会自动跳到拨号界面，而且商家的电话号码也会呈现在拨号界面，**(仅手机端)**</h3><p>源码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;tel:15270055490&quot; target&#x3D;&quot;_blank&quot;&gt;call me&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;a href=&quot;tel:15270055490&quot; target=&quot;_blank&quot;&gt;call me&lt;/a&gt;</code></pre>
 <h3 id="快用手机点击试一下：call-me"><a href="#快用手机点击试一下：call-me" class="headerlink" title="快用手机点击试一下：call me"></a>快用手机点击试一下：<a href="tel:15270055490" target="_blank">call me</a></h3><h2 id="3-超链接也叫为锚点"><a href="#3-超链接也叫为锚点" class="headerlink" title="3.超链接也叫为锚点"></a>3.超链接也叫为锚点</h2><p>为什么叫锚点呢？一般用于网页的目录，如果你是电脑端访问本站，你应该可以看见LIEFox网页右侧有一个悬浮目录的功能，当你点击了其中一个小标题，你将会跳到文章相应位置。</p>
 <p>源码：</p>
 <p>定义一个 <code>p</code>标签 <code>id</code>设置为”无序列表”,这样相当于给他添加了一个锚点，</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id&#x3D;&quot;无序列表&quot;&gt;无序列表&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;p id=&quot;无序列表&quot;&gt;无序列表&lt;/p&gt;</code></pre>
 <p>当用户点击链接时，就会跳到 “无序列表” 这个标题。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;#无序列表&quot; &gt;无序列表&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;a href=&quot;#无序列表&quot; &gt;无序列表&lt;/a&gt;</code></pre>
 <h3 id="点击超链接试试：无序列表"><a href="#点击超链接试试：无序列表" class="headerlink" title="点击超链接试试：无序列表"></a>点击超链接试试：<a href="#无序列表" >无序列表</a></h3><h2 id="4-补充黑科技"><a href="#4-补充黑科技" class="headerlink" title="4.补充黑科技"></a>4.补充黑科技</h2><p>在 <code>href</code>中可以填入协议限定符，说的可能有点不太好理解，那么，我们将写一个无限弹窗脚本；</p>
 <p>说白了就是这里面herf里面写JavaScript代码。</p>
 <p>源码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;javascript:while(1)&#123;alert(&#39;LIEFox诚邀你加入我们&#39;)&#125;&quot; &gt;恭喜你中了100万现金大奖&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;a href=&quot;javascript:while(1)&#123;alert(&#39;LIEFox诚邀你加入我们&#39;)&#125;&quot; &gt;恭喜你中了100万现金大奖&lt;/a&gt;</code></pre>
 <p>效果：</p>
 <h3 id="恭喜你中了100万现金大奖-不点点！😏？"><a href="#恭喜你中了100万现金大奖-不点点！😏？" class="headerlink" title="恭喜你中了100万现金大奖    不点点！😏？"></a><a href="javascript:while(1){alert('LIEFox诚邀你加入我们')}" >恭喜你中了100万现金大奖 </a>   不点点！😏？</h3><h1 id="lt-form-gt-标签"><a href="#lt-form-gt-标签" class="headerlink" title="&lt;form&gt;标签"></a><code>&lt;form&gt;</code>标签</h1><p>表单标签，是前端与后端交互数据的最常见的方法，比如用户注册，登录，搜索等等。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;form method&#x3D;&quot;get&quot; action&#x3D;&quot;#&quot;&gt;</span><br><span class="line">	&lt;p&gt;</span><br><span class="line">		用户名：&lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;username&quot;&#x2F;&gt;</span><br><span class="line">	&lt;&#x2F;p&gt;</span><br><span class="line">	&lt;p&gt;</span><br><span class="line">		密  码：&lt;input type&#x3D;&quot;password&quot; name&#x3D;&quot;password&quot;&#x2F;&gt;记住密码&lt;input type&#x3D;&quot;radio&quot;&#x2F;&gt;</span><br><span class="line">	&lt;&#x2F;p&gt;</span><br><span class="line">	&lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;登录&quot;&#x2F;&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;form&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>        &lt;form method=&quot;get&quot; action=&quot;#&quot;&gt;
+            &lt;p&gt;
+                用户名：&lt;input type=&quot;text&quot; name=&quot;username&quot;/&gt;
+            &lt;/p&gt;
+            &lt;p&gt;
+                密  码：&lt;input type=&quot;password&quot; name=&quot;password&quot;/&gt;记住密码&lt;input type=&quot;radio&quot;/&gt;
+            &lt;/p&gt;
+            &lt;input type=&quot;submit&quot; value=&quot;登录&quot;/&gt;
 
+        &lt;/form&gt;</code></pre>
 <p>效果：</p>
 <form method="get" action="#">
             <p>
@@ -261,16 +276,22 @@ var _hmt = _hmt || [];
 <p>雪碧<input type="checkbox"/></p>
 <p>牛奶<input type="checkbox"/></p>
 <p>单选、多选按钮中还可以添加默认选择属性：<code>checked=&quot;checked&quot;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">可乐&lt;input type&#x3D;&quot;checkbox&quot; checked&#x3D;&quot;checked&quot; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">雪碧&lt;input type&#x3D;&quot;checkbox&quot;&#x2F;&gt;</span><br><span class="line"></span><br><span class="line">牛奶&lt;input type&#x3D;&quot;checkbox&quot;&#x2F;&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>可乐&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;
 
+雪碧&lt;input type=&quot;checkbox&quot;/&gt;
+
+牛奶&lt;input type=&quot;checkbox&quot;/&gt;</code></pre>
 <p>效果：</p>
 <p>可乐<input type="checkbox" checked="checked" /></p>
 <p>雪碧<input type="checkbox"/></p>
 <p>牛奶<input type="checkbox"/></p>
 <h1 id="select组件"><a href="#select组件" class="headerlink" title="select组件"></a>select组件</h1><p>select被用做于下拉菜单</p>
 <p>代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;select&gt;</span><br><span class="line">	&lt;option&gt;北京&lt;&#x2F;option&gt;</span><br><span class="line">	&lt;option&gt;上海&lt;&#x2F;option&gt;</span><br><span class="line">	&lt;option&gt;江西&lt;&#x2F;option&gt;</span><br><span class="line">&lt;&#x2F;select&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;select&gt;
+    &lt;option&gt;北京&lt;/option&gt;
+    &lt;option&gt;上海&lt;/option&gt;
+    &lt;option&gt;江西&lt;/option&gt;
+&lt;/select&gt;</code></pre>
 <p>效果：</p>
 <select>
                 <option>北京</option>
@@ -387,8 +408,7 @@ var _hmt = _hmt || [];
     </div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<!-- <script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script> -->
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <!-- 评论背景 -->                                                         
 <style>
     #veditor{min-height: 15rem;
@@ -401,16 +421,16 @@ var _hmt = _hmt || [];
 </style>
 <!-- Valine配置 --> 
 <script>
-        new Valine({
-            el: "#vcomments",
-            app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
-            app_key: "VheJztjyMzs24xKQPGGI1bmh",
-            path: window.location.pathname,
-            avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
-            placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
-            recordIP: true,
-            enableQQ: true,
-            boolean: true,
+new Valine({
+    el: "#vcomments",
+    app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
+    app_key: "VheJztjyMzs24xKQPGGI1bmh",
+    path: window.location.pathname,
+    avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
+    placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
+    recordIP: true,
+    enableQQ: true,
+    boolean: true,
 
         // 设置Bilibili表情包地址
         emojiCDN: 'https://cdn.jsdelivr.net/gh/XXXZhy/Blog_Image/valine_emoticon/', 
@@ -489,7 +509,7 @@ var _hmt = _hmt || [];
         c = (b - B) * 60;
         C = Math.floor((b - B) * 60);
         D = Math.floor((c - C) * 60);
-        runtime_span.innerHTML = "LIEFox逃脱猎人的第: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+        runtime_span.innerHTML = "LIEFox逃脱猎人的第" + A + "天" + B + "小时" + C + "分" + D + "秒"
     }
     show_runtime();
 </script>

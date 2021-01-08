@@ -68,6 +68,14 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+<!-- 封面标闪烁 -->
+<link rel="stylesheet" href="/css/zhyBlogTitle.css">
+
+<!-- Highlight.js -->
+<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 </html>
@@ -146,43 +154,375 @@ var _hmt = _hmt || [];
 <h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><h3 id="Dao层"><a href="#Dao层" class="headerlink" title="Dao层"></a>Dao层</h3><ul>
 <li>UserDao</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Dao;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> POJO.User;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by zjh on 2020/12/24 下午 4:29</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserDao</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(User user)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">deleteById</span><span class="params">(Integer id)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">updateById</span><span class="params">(User user)</span></span>;</span><br><span class="line">    <span class="function">List&lt;User&gt; <span class="title">query</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function">User <span class="title">queryById</span><span class="params">(Integer id)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre><code class="java">package Dao;
 
+import POJO.User;
+
+import java.util.List;
+
+/**
+ * Created by zjh on 2020/12/24 下午 4:29
+ */
+public interface UserDao &#123;
+    void add(User user);
+    void deleteById(Integer id);
+    void updateById(User user);
+    List&lt;User&gt; query();
+    User queryById(Integer id);
+&#125;
+</code></pre>
 <ul>
 <li>UserDaoImpl</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Dao;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> POJO.User;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by zjh on 2020/12/24 下午 4:29</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserDaoImpl</span> <span class="keyword">implements</span> <span class="title">UserDao</span> </span>&#123;</span><br><span class="line">    <span class="comment">//定义一个Map集合，作为一个数据库存取数据</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Map&lt;Integer, User&gt; users;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        users = <span class="keyword">new</span> HashMap&lt;Integer, User&gt;();</span><br><span class="line">        users.put(<span class="number">1</span>, <span class="keyword">new</span> User(<span class="number">1</span>, <span class="string">&quot;小明&quot;</span>, <span class="number">20</span>));</span><br><span class="line">        users.put(<span class="number">2</span>, <span class="keyword">new</span> User(<span class="number">2</span>, <span class="string">&quot;小王&quot;</span>, <span class="number">30</span>));</span><br><span class="line">        users.put(<span class="number">3</span>, <span class="keyword">new</span> User(<span class="number">3</span>, <span class="string">&quot;小刚&quot;</span>, <span class="number">18</span>));</span><br><span class="line">        users.put(<span class="number">4</span>, <span class="keyword">new</span> User(<span class="number">4</span>, <span class="string">&quot;小牛&quot;</span>, <span class="number">27</span>));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> Integer initId = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(User user)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (user.getId() == <span class="number">0</span>) &#123;</span><br><span class="line">            user.setId(initId);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (user.getUsername() == <span class="keyword">null</span>) &#123;</span><br><span class="line">                user.setUsername(<span class="string">&quot;请输入姓名&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        users.put(initId, <span class="keyword">new</span> User(user.getId(), user.getUsername(), user.getAge()));</span><br><span class="line">        initId++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deleteById</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line">        users.remove(id);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">updateById</span><span class="params">(User user)</span> </span>&#123;</span><br><span class="line">        users.put(user.getId(), <span class="keyword">new</span> User(user.getId(), user.getUsername(), user.getAge()));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;User&gt; <span class="title">query</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        List&lt;User&gt; user = <span class="keyword">new</span> ArrayList&lt;User&gt;(users.values());</span><br><span class="line">        <span class="keyword">return</span> user;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> User <span class="title">queryById</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line">        User user = users.get(id);</span><br><span class="line">        <span class="keyword">return</span> user;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre><code class="java">package Dao;
 
+import POJO.User;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * Created by zjh on 2020/12/24 下午 4:29
+ */
+public class UserDaoImpl implements UserDao &#123;
+    //定义一个Map集合，作为一个数据库存取数据
+    private static Map&lt;Integer, User&gt; users;
+
+    static &#123;
+        users = new HashMap&lt;Integer, User&gt;();
+        users.put(1, new User(1, &quot;小明&quot;, 20));
+        users.put(2, new User(2, &quot;小王&quot;, 30));
+        users.put(3, new User(3, &quot;小刚&quot;, 18));
+        users.put(4, new User(4, &quot;小牛&quot;, 27));
+    &#125;
+
+    public static Integer initId = 10;
+
+    @Override
+    public void add(User user) &#123;
+        if (user.getId() == 0) &#123;
+            user.setId(initId);
+        &#125;
+        if (user.getUsername() == null) &#123;
+                user.setUsername(&quot;请输入姓名&quot;);
+        &#125;
+        users.put(initId, new User(user.getId(), user.getUsername(), user.getAge()));
+        initId++;
+    &#125;
+
+    @Override
+    public void deleteById(Integer id) &#123;
+        users.remove(id);
+    &#125;
+
+    @Override
+    public void updateById(User user) &#123;
+        users.put(user.getId(), new User(user.getId(), user.getUsername(), user.getAge()));
+    &#125;
+
+    @Override
+    public List&lt;User&gt; query() &#123;
+        List&lt;User&gt; user = new ArrayList&lt;User&gt;(users.values());
+        return user;
+    &#125;
+
+    @Override
+    public User queryById(Integer id) &#123;
+        User user = users.get(id);
+        return user;
+    &#125;
+&#125;
+</code></pre>
 <h3 id="POJO层"><a href="#POJO层" class="headerlink" title="POJO层"></a>POJO层</h3><ul>
 <li>User</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> POJO;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Dao.UserDaoImpl;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by zjh on 2020/12/24 下午 4:29</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String username;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">User</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">User</span><span class="params">(Integer id, String username, Integer age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.id = id;</span><br><span class="line">        <span class="keyword">this</span>.username = username;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Integer <span class="title">getId</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> id;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (id == <span class="number">0</span> )&#123;</span><br><span class="line">            <span class="keyword">this</span>.id = UserDaoImpl.initId;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">this</span>.id = id;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getUsername</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> username;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUsername</span><span class="params">(String username)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (username == <span class="string">&quot;&quot;</span>)&#123;</span><br><span class="line">            <span class="keyword">this</span>.username = <span class="string">&quot;请输入姓名&quot;</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">this</span>.username = username;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Integer <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(Integer age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (age == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">this</span>.age = <span class="number">18</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">this</span>.age = age;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;User&#123;&quot;</span> +</span><br><span class="line">                <span class="string">&quot;id=&quot;</span> + id +</span><br><span class="line">                <span class="string">&quot;, username=&#x27;&quot;</span> + username + <span class="string">&#x27;\&#x27;&#x27;</span> +</span><br><span class="line">                <span class="string">&quot;, age=&quot;</span> + age +</span><br><span class="line">                <span class="string">&#x27;&#125;&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre><code class="java">package POJO;
 
+import Dao.UserDaoImpl;
+
+/**
+ * Created by zjh on 2020/12/24 下午 4:29
+ */
+public class User &#123;
+    private Integer id;
+    private String username;
+    private Integer age;
+
+    public User() &#123;
+    &#125;
+
+    public User(Integer id, String username, Integer age) &#123;
+        this.id = id;
+        this.username = username;
+        this.age = age;
+    &#125;
+    public Integer getId() &#123;
+        return id;
+    &#125;
+
+    public void setId(Integer id) &#123;
+        if (id == 0 )&#123;
+            this.id = UserDaoImpl.initId;
+        &#125;else &#123;
+            this.id = id;
+        &#125;
+    &#125;
+
+    public String getUsername() &#123;
+        return username;
+    &#125;
+
+    public void setUsername(String username) &#123;
+        if (username == &quot;&quot;)&#123;
+            this.username = &quot;请输入姓名&quot;;
+        &#125;else &#123;
+            this.username = username;
+        &#125;
+    &#125;
+
+    public Integer getAge() &#123;
+        return age;
+    &#125;
+
+    public void setAge(Integer age) &#123;
+        if (age == 0)&#123;
+            this.age = 18;
+        &#125;else &#123;
+            this.age = age;
+        &#125;
+
+    &#125;
+
+    @Override
+    public String toString() &#123;
+        return &quot;User&#123;&quot; +
+                &quot;id=&quot; + id +
+                &quot;, username=&#39;&quot; + username + &#39;\&#39;&#39; +
+                &quot;, age=&quot; + age +
+                &#39;&#125;&#39;;
+    &#125;
+&#125;
+</code></pre>
 <h3 id="Service层"><a href="#Service层" class="headerlink" title="Service层"></a>Service层</h3><ul>
 <li>UserService</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Service;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> POJO.User;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by zjh on 2020/12/24 下午 4:30</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserService</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">addUser</span><span class="params">(User user)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">deleteUserById</span><span class="params">(Integer id)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">updateUserById</span><span class="params">(User user)</span></span>;</span><br><span class="line">    <span class="function">List&lt;User&gt; <span class="title">queryUser</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function">User <span class="title">queryUserById</span><span class="params">(Integer id)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre><code class="java">package Service;
 
+import POJO.User;
+
+import java.util.List;
+
+/**
+ * Created by zjh on 2020/12/24 下午 4:30
+ */
+public interface UserService &#123;
+    void addUser(User user);
+    void deleteUserById(Integer id);
+    void updateUserById(User user);
+    List&lt;User&gt; queryUser();
+    User queryUserById(Integer id);
+&#125;
+</code></pre>
 <ul>
 <li>UserServiceImpl</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Service;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Dao.UserDao;</span><br><span class="line"><span class="keyword">import</span> Dao.UserDaoImpl;</span><br><span class="line"><span class="keyword">import</span> POJO.User;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by zjh on 2020/12/24 下午 4:30</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceImpl</span> <span class="keyword">implements</span> <span class="title">UserService</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> UserDao userDao = <span class="keyword">new</span> UserDaoImpl();</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addUser</span><span class="params">(User user)</span> </span>&#123;</span><br><span class="line">        userDao.add(user);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deleteUserById</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line">        userDao.deleteById(id);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">updateUserById</span><span class="params">(User user)</span> </span>&#123;</span><br><span class="line">        userDao.updateById(user);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;User&gt; <span class="title">queryUser</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        List&lt;User&gt; users = userDao.query();</span><br><span class="line">        <span class="keyword">return</span> users;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> User <span class="title">queryUserById</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line">        User user = userDao.queryById(id);</span><br><span class="line">        <span class="keyword">return</span> user;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre><code class="java">package Service;
 
+import Dao.UserDao;
+import Dao.UserDaoImpl;
+import POJO.User;
+
+import java.util.List;
+
+/**
+ * Created by zjh on 2020/12/24 下午 4:30
+ */
+public class UserServiceImpl implements UserService &#123;
+    private UserDao userDao = new UserDaoImpl();
+
+    @Override
+    public void addUser(User user) &#123;
+        userDao.add(user);
+    &#125;
+
+    @Override
+    public void deleteUserById(Integer id) &#123;
+        userDao.deleteById(id);
+    &#125;
+
+    @Override
+    public void updateUserById(User user) &#123;
+        userDao.updateById(user);
+    &#125;
+
+    @Override
+    public List&lt;User&gt; queryUser() &#123;
+        List&lt;User&gt; users = userDao.query();
+        return users;
+    &#125;
+
+    @Override
+    public User queryUserById(Integer id) &#123;
+        User user = userDao.queryById(id);
+        return user;
+    &#125;
+&#125;
+</code></pre>
 <h3 id="Util包"><a href="#Util包" class="headerlink" title="Util包"></a>Util包</h3><ul>
 <li>WebUtils</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Util;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.apache.commons.beanutils.BeanUtils;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by zjh on 2020/12/24 下午 4:30</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebUtils</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把 Map 中的值注入到对应的javabean属性中</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> value</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> bean</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; <span class="function">T <span class="title">copyParamentBean</span><span class="params">(Map value, T bean)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;注入之前 ：&quot;</span> + bean);</span><br><span class="line">            <span class="comment">/**</span></span><br><span class="line"><span class="comment">             * 把所有的参数都注入 user 对象中</span></span><br><span class="line"><span class="comment">             */</span></span><br><span class="line">            BeanUtils.populate(bean, value);</span><br><span class="line">            System.out.println(<span class="string">&quot;注入之后&quot;</span> + bean);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> bean;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 将字符串转换为 int类型</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> string</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> defaultValue</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">parseInt</span><span class="params">(String string, <span class="keyword">int</span> defaultValue)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> Integer.parseInt(string);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line"><span class="comment">//            e.printStackTrace();</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> defaultValue;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre><code class="Java">package Util;
 
+import org.apache.commons.beanutils.BeanUtils;
+
+import java.util.Map;
+
+/**
+ * Created by zjh on 2020/12/24 下午 4:30
+ */
+
+public class WebUtils &#123;
+    /**
+     * 把 Map 中的值注入到对应的javabean属性中
+     * @param value
+     * @param bean
+     */
+    public static &lt;T&gt; T copyParamentBean(Map value, T bean) &#123;
+        try &#123;
+            System.out.println(&quot;注入之前 ：&quot; + bean);
+            /**
+             * 把所有的参数都注入 user 对象中
+             */
+            BeanUtils.populate(bean, value);
+            System.out.println(&quot;注入之后&quot; + bean);
+        &#125; catch (Exception e) &#123;
+            e.printStackTrace();
+        &#125; finally &#123;
+        &#125;
+        return bean;
+    &#125;
+
+    /**
+     * 将字符串转换为 int类型
+     *
+     * @param string
+     * @param defaultValue
+     * @return
+     */
+    public static int parseInt(String string, int defaultValue) &#123;
+        try &#123;
+            return Integer.parseInt(string);
+        &#125; catch (Exception e) &#123;
+//            e.printStackTrace();
+        &#125;
+        return defaultValue;
+    &#125;
+&#125;
+</code></pre>
 <h3 id="Web层"><a href="#Web层" class="headerlink" title="Web层"></a>Web层</h3><ul>
 <li>BaseServlet</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Web;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.servlet.Servlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.annotation.WebServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Method;</span><br><span class="line"><span class="keyword">import</span> java.util.Base64;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by zjh on 2020/12/24 下午 5:08</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@WebServlet(name = &quot;BaseServlet&quot;, urlPatterns = &quot;/baseServlet&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BaseServlet</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        <span class="comment">//解决 post 请求中乱码的问题</span></span><br><span class="line">        response.setCharacterEncoding(<span class="string">&quot;UTF-8&quot;</span>);</span><br><span class="line">        <span class="comment">//解决浏览器乱码问题</span></span><br><span class="line">        response.setContentType(<span class="string">&quot;text/html;charset=UTF-8&quot;</span>);</span><br><span class="line">        String action = request.getParameter(<span class="string">&quot;action&quot;</span>);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 获取action业务鉴别字符串，获取相应的业务 方法反射对象</span></span><br><span class="line">            Method method = <span class="keyword">this</span>.getClass().getDeclaredMethod(action, HttpServletRequest.class, HttpServletResponse.class);</span><br><span class="line">            System.out.println(method);</span><br><span class="line">            <span class="comment">// 调用目标业务 方法</span></span><br><span class="line">            method.invoke(<span class="keyword">this</span>, request, response);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        doPost(request, response);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre><code class="java">package Web;
 
+import javax.servlet.Servlet;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.Base64;
+
+/**
+ * Created by zjh on 2020/12/24 下午 5:08
+ */
+@WebServlet(name = &quot;BaseServlet&quot;, urlPatterns = &quot;/baseServlet&quot;)
+public class BaseServlet extends HttpServlet &#123;
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException &#123;
+        //解决 post 请求中乱码的问题
+        response.setCharacterEncoding(&quot;UTF-8&quot;);
+        //解决浏览器乱码问题
+        response.setContentType(&quot;text/html;charset=UTF-8&quot;);
+        String action = request.getParameter(&quot;action&quot;);
+        try &#123;
+            // 获取action业务鉴别字符串，获取相应的业务 方法反射对象
+            Method method = this.getClass().getDeclaredMethod(action, HttpServletRequest.class, HttpServletResponse.class);
+            System.out.println(method);
+            // 调用目标业务 方法
+            method.invoke(this, request, response);
+        &#125; catch (Exception e) &#123;
+            e.printStackTrace();
+        &#125; finally &#123;
+        &#125;
+    &#125;
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException &#123;
+        doPost(request, response);
+    &#125;
+&#125;
+</code></pre>
 <ul>
 <li>UserServlet</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Web;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> POJO.User;</span><br><span class="line"><span class="keyword">import</span> Service.UserService;</span><br><span class="line"><span class="keyword">import</span> Service.UserServiceImpl;</span><br><span class="line"><span class="keyword">import</span> Util.WebUtils;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.annotation.WebServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by zjh on 2020/12/24 下午 5:08</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@WebServlet(name = &quot;UserServlet&quot;, urlPatterns = &quot;/userServlet&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServlet</span> <span class="keyword">extends</span> <span class="title">BaseServlet</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> UserService userService = <span class="keyword">new</span> UserServiceImpl();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">addUser</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        User user = WebUtils.copyParamentBean(req.getParameterMap(), <span class="keyword">new</span> User());</span><br><span class="line">        userService.addUser(user);</span><br><span class="line">        resp.sendRedirect(req.getContextPath()+<span class="string">&quot;/userServlet?action=page&quot;</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">deleteUserById</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> id = WebUtils.parseInt(req.getParameter(<span class="string">&quot;id&quot;</span>), <span class="number">0</span>);</span><br><span class="line">        userService.deleteUserById(id);</span><br><span class="line">        req.getRequestDispatcher(<span class="string">&quot;/userServlet?action=page&quot;</span>).forward(req,resp);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">updateUserById</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        User user = WebUtils.copyParamentBean(req.getParameterMap(), <span class="keyword">new</span> User());</span><br><span class="line">        userService.updateUserById(user);</span><br><span class="line">        req.getRequestDispatcher(<span class="string">&quot;/userServlet?action=page&quot;</span>).forward(req,resp);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">queryUserById</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> id = WebUtils.parseInt(req.getParameter(<span class="string">&quot;id&quot;</span>), <span class="number">0</span>);</span><br><span class="line">        User user = userService.queryUserById(id);</span><br><span class="line">        req.setAttribute(<span class="string">&quot;user&quot;</span> , user );</span><br><span class="line">        req.getRequestDispatcher(<span class="string">&quot;/pages/user/userAdd.jsp&quot;</span>).forward(req,resp);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">page</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        List&lt;User&gt; users = userService.queryUser();</span><br><span class="line">        req.setAttribute(<span class="string">&quot;user&quot;</span> , users );</span><br><span class="line">        req.getRequestDispatcher(<span class="string">&quot;/pages/user/userList.jsp&quot;</span>).forward(req,resp);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre><code class="java">package Web;
 
+import POJO.User;
+import Service.UserService;
+import Service.UserServiceImpl;
+import Util.WebUtils;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.List;
+
+/**
+ * Created by zjh on 2020/12/24 下午 5:08
+ */
+@WebServlet(name = &quot;UserServlet&quot;, urlPatterns = &quot;/userServlet&quot;)
+public class UserServlet extends BaseServlet &#123;
+    private UserService userService = new UserServiceImpl();
+
+    protected void addUser(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+        User user = WebUtils.copyParamentBean(req.getParameterMap(), new User());
+        userService.addUser(user);
+        resp.sendRedirect(req.getContextPath()+&quot;/userServlet?action=page&quot;);
+
+    &#125;
+
+    protected void deleteUserById(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+        int id = WebUtils.parseInt(req.getParameter(&quot;id&quot;), 0);
+        userService.deleteUserById(id);
+        req.getRequestDispatcher(&quot;/userServlet?action=page&quot;).forward(req,resp);
+    &#125;
+
+    protected void updateUserById(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+        User user = WebUtils.copyParamentBean(req.getParameterMap(), new User());
+        userService.updateUserById(user);
+        req.getRequestDispatcher(&quot;/userServlet?action=page&quot;).forward(req,resp);
+    &#125;
+
+    protected void queryUserById(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+        int id = WebUtils.parseInt(req.getParameter(&quot;id&quot;), 0);
+        User user = userService.queryUserById(id);
+        req.setAttribute(&quot;user&quot; , user );
+        req.getRequestDispatcher(&quot;/pages/user/userAdd.jsp&quot;).forward(req,resp);
+
+    &#125;
+
+    protected void page(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+        List&lt;User&gt; users = userService.queryUser();
+        req.setAttribute(&quot;user&quot; , users );
+        req.getRequestDispatcher(&quot;/pages/user/userList.jsp&quot;).forward(req,resp);
+    &#125;
+&#125;
+</code></pre>
 <h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1><h3 id="web目录下的代码"><a href="#web目录下的代码" class="headerlink" title="web目录下的代码"></a>web目录下的代码</h3><ul>
 <li><p>page</p>
 <ul>
@@ -190,19 +530,107 @@ var _hmt = _hmt || [];
 <ul>
 <li>userAdd.jsp</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;%--</span><br><span class="line">  Created by IntelliJ IDEA.</span><br><span class="line">  User: 小青男朋友</span><br><span class="line">  <span class="built_in">Date</span>: <span class="number">2020</span>/<span class="number">12</span>/<span class="number">24</span></span><br><span class="line">  Time: 下午 <span class="number">4</span>:<span class="number">42</span></span><br><span class="line">  To change <span class="built_in">this</span> template use File | Settings | File Templates.</span><br><span class="line">--%&gt;</span><br><span class="line">&lt;%@ page contentType=<span class="string">&quot;text/html;charset=UTF-8&quot;</span> language=<span class="string">&quot;java&quot;</span> %&gt;</span><br><span class="line">&lt;%@ taglib prefix=<span class="string">&quot;c&quot;</span> uri=<span class="string">&quot;http://java.sun.com/jsp/jstl/core&quot;</span> %&gt;</span><br><span class="line"></span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;Title&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;form action=<span class="string">&quot;userServlet&quot;</span> method=<span class="string">&quot;get&quot;</span>&gt;</span><br><span class="line">    &lt;input type=<span class="string">&quot;hidden&quot;</span> name=<span class="string">&quot;action&quot;</span> value=<span class="string">&quot;$&#123;param.method&#125;&quot;</span>&gt;</span><br><span class="line">    &lt;label&gt;用户名&lt;input type=<span class="string">&quot;text&quot;</span> name=<span class="string">&quot;id&quot;</span> value=<span class="string">&quot;$&#123;requestScope.user.id&#125;&quot;</span>&gt;&lt;<span class="regexp">/label&gt;&lt;br/</span>&gt;</span><br><span class="line">    &lt;label&gt;姓名&lt;input type=<span class="string">&quot;text&quot;</span> name=<span class="string">&quot;username&quot;</span> value=<span class="string">&quot;$&#123;requestScope.user.username&#125;&quot;</span>&gt;&lt;<span class="regexp">/label&gt;&lt;br/</span>&gt;</span><br><span class="line">    &lt;label&gt;年龄&lt;input type=<span class="string">&quot;text&quot;</span> name=<span class="string">&quot;age&quot;</span> value=<span class="string">&quot;$&#123;requestScope.user.age&#125;&quot;</span>&gt;&lt;/label&gt;</span><br><span class="line">    &lt;input type=<span class="string">&quot;submit&quot;</span> value=<span class="string">&quot;保存&quot;</span>&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre><code class="javascript">&lt;%--
+  Created by IntelliJ IDEA.
+  User: 小青男朋友
+  Date: 2020/12/24
+  Time: 下午 4:42
+  To change this template use File | Settings | File Templates.
+--%&gt;
+&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;
 
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form action=&quot;userServlet&quot; method=&quot;get&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;action&quot; value=&quot;$&#123;param.method&#125;&quot;&gt;
+    &lt;label&gt;用户名&lt;input type=&quot;text&quot; name=&quot;id&quot; value=&quot;$&#123;requestScope.user.id&#125;&quot;&gt;&lt;/label&gt;&lt;br/&gt;
+    &lt;label&gt;姓名&lt;input type=&quot;text&quot; name=&quot;username&quot; value=&quot;$&#123;requestScope.user.username&#125;&quot;&gt;&lt;/label&gt;&lt;br/&gt;
+    &lt;label&gt;年龄&lt;input type=&quot;text&quot; name=&quot;age&quot; value=&quot;$&#123;requestScope.user.age&#125;&quot;&gt;&lt;/label&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;保存&quot;&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 <ul>
 <li>userList.jsp</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">&lt;%--</span><br><span class="line">  Created by IntelliJ IDEA.</span><br><span class="line">  User: 小青男朋友</span><br><span class="line">  <span class="built_in">Date</span>: <span class="number">2020</span>/<span class="number">12</span>/<span class="number">24</span></span><br><span class="line">  Time: 下午 <span class="number">4</span>:<span class="number">42</span></span><br><span class="line">  To change <span class="built_in">this</span> template use File | Settings | File Templates.</span><br><span class="line">--%&gt;</span><br><span class="line">&lt;%@ page contentType=<span class="string">&quot;text/html;charset=UTF-8&quot;</span> language=<span class="string">&quot;java&quot;</span> %&gt;</span><br><span class="line">&lt;%@ taglib prefix=<span class="string">&quot;c&quot;</span> uri=<span class="string">&quot;http://java.sun.com/jsp/jstl/core&quot;</span> %&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;Title&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><br><span class="line">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> deleteA = <span class="built_in">document</span>.getElementsByClassName(<span class="string">&quot;delete&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; deleteA.length; i++) &#123;</span><br><span class="line">            deleteA[i].onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">                <span class="built_in">this</span>.parentNode.parentNode</span><br><span class="line">                <span class="keyword">return</span> confirm(<span class="string">&quot;确认删除【&quot;</span> + <span class="built_in">this</span>.parentNode.parentNode.children[<span class="number">1</span>].innerHTML + <span class="string">&quot;】吗？&quot;</span>)</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;table border=<span class="string">&quot;1&quot;</span> cellspacing=<span class="string">&quot;0&quot;</span> cellpadding=<span class="string">&quot;0&quot;</span> width=<span class="string">&quot;400px&quot;</span>&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;th&gt;id&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;姓名&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;年龄&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;操作&lt;/th&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;c:forEach items=<span class="string">&quot;$&#123;requestScope.user&#125;&quot;</span> <span class="keyword">var</span>=<span class="string">&quot;user&quot;</span>&gt;</span><br><span class="line">        &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;$&#123;user.id&#125;&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;$&#123;user.username&#125;&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;$&#123;user.age&#125;&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;</span><br><span class="line">                &lt;a href=<span class="string">&quot;userServlet?action=queryUserById&amp;id=$&#123;user.id&#125;&amp;method=updateUserById&quot;</span>&gt;<span class="xml"><span class="tag">&lt;<span class="name">span</span>&gt;</span>编辑<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span>&lt;/a&gt;&amp;nbsp;</span><br><span class="line">                &lt;a <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;delete&quot;</span> href=<span class="string">&quot;userServlet?action=deleteUserById&amp;id=$&#123;user.id&#125;&quot;</span>&gt;<span class="xml"><span class="tag">&lt;<span class="name">span</span>&gt;</span>删除<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span>&lt;/a&gt;</span><br><span class="line">            &lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">    &lt;/c:forEach&gt;</span><br><span class="line">    &lt;td&gt;&lt;/td&gt;</span><br><span class="line">    &lt;td&gt;&lt;/td&gt;</span><br><span class="line">    &lt;td&gt;&lt;/td&gt;</span><br><span class="line">    &lt;td&gt;<span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;userServlet?action=queryUserById&amp;method=addUser&quot;</span>&gt;</span>增加<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span>&lt;/td&gt;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">&lt;%--
+  Created by IntelliJ IDEA.
+  User: 小青男朋友
+  Date: 2020/12/24
+  Time: 下午 4:42
+  To change this template use File | Settings | File Templates.
+--%&gt;
+&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    window.onload = function () &#123;
+        var deleteA = document.getElementsByClassName(&quot;delete&quot;);
+        for (var i = 0; i &lt; deleteA.length; i++) &#123;
+            deleteA[i].onclick = function () &#123;
+                this.parentNode.parentNode
+                return confirm(&quot;确认删除【&quot; + this.parentNode.parentNode.children[1].innerHTML + &quot;】吗？&quot;)
+                return false;
+            &#125;
+        &#125;
+    &#125;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;400px&quot;&gt;
+    &lt;tr&gt;
+        &lt;th&gt;id&lt;/th&gt;
+        &lt;th&gt;姓名&lt;/th&gt;
+        &lt;th&gt;年龄&lt;/th&gt;
+        &lt;th&gt;操作&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;c:forEach items=&quot;$&#123;requestScope.user&#125;&quot; var=&quot;user&quot;&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$&#123;user.id&#125;&lt;/td&gt;
+            &lt;td&gt;$&#123;user.username&#125;&lt;/td&gt;
+            &lt;td&gt;$&#123;user.age&#125;&lt;/td&gt;
+            &lt;td&gt;
+                &lt;a href=&quot;userServlet?action=queryUserById&amp;id=$&#123;user.id&#125;&amp;method=updateUserById&quot;&gt;&lt;span&gt;编辑&lt;/span&gt;&lt;/a&gt;&amp;nbsp;
+                &lt;a class=&quot;delete&quot; href=&quot;userServlet?action=deleteUserById&amp;id=$&#123;user.id&#125;&quot;&gt;&lt;span&gt;删除&lt;/span&gt;&lt;/a&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/c:forEach&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&quot;userServlet?action=queryUserById&amp;method=addUser&quot;&gt;增加&lt;/a&gt;&lt;/td&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 </li>
 </ul>
 </li>
 </ul>
-<h3 id="index-html"><a href="#index-html" class="headerlink" title="index.html"></a>index.html</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;%--</span><br><span class="line">  Created by IntelliJ IDEA.</span><br><span class="line">  User: 小青男朋友</span><br><span class="line">  <span class="built_in">Date</span>: <span class="number">2020</span>/<span class="number">12</span>/<span class="number">24</span></span><br><span class="line">  Time: 下午 <span class="number">4</span>:<span class="number">47</span></span><br><span class="line">  To change <span class="built_in">this</span> template use File | Settings | File Templates.</span><br><span class="line">--%&gt;</span><br><span class="line">&lt;%@ page contentType=<span class="string">&quot;text/html;charset=UTF-8&quot;</span> language=<span class="string">&quot;java&quot;</span> %&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;$Title$&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;jsp:forward page=<span class="string">&quot;userServlet?action=page&quot;</span>&gt;&lt;/jsp:forward&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
+<h3 id="index-html"><a href="#index-html" class="headerlink" title="index.html"></a>index.html</h3><pre><code class="javascript">&lt;%--
+  Created by IntelliJ IDEA.
+  User: 小青男朋友
+  Date: 2020/12/24
+  Time: 下午 4:47
+  To change this template use File | Settings | File Templates.
+--%&gt;
+&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;$Title$&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;jsp:forward page=&quot;userServlet?action=page&quot;&gt;&lt;/jsp:forward&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 <h1 id="马上就大功告成了，就差，导JAR包了"><a href="#马上就大功告成了，就差，导JAR包了" class="headerlink" title="马上就大功告成了，就差，导JAR包了"></a>马上就大功告成了，就差，导JAR包了</h1><p>步骤：</p>
 <p><strong>Flie》Project Structure》Liberals》＋》Java》找到自己放jar包的地方》选中》OK》取个名字》OK</strong></p>
 <p>这个是需要的Jar包，我的gitee仓库也里有Jar包。</p>
@@ -317,8 +745,7 @@ var _hmt = _hmt || [];
     </div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<!-- <script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script> -->
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <!-- 评论背景 -->                                                         
 <style>
     #veditor{min-height: 15rem;
@@ -331,16 +758,16 @@ var _hmt = _hmt || [];
 </style>
 <!-- Valine配置 --> 
 <script>
-        new Valine({
-            el: "#vcomments",
-            app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
-            app_key: "VheJztjyMzs24xKQPGGI1bmh",
-            path: window.location.pathname,
-            avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
-            placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
-            recordIP: true,
-            enableQQ: true,
-            boolean: true,
+new Valine({
+    el: "#vcomments",
+    app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
+    app_key: "VheJztjyMzs24xKQPGGI1bmh",
+    path: window.location.pathname,
+    avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
+    placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
+    recordIP: true,
+    enableQQ: true,
+    boolean: true,
 
         // 设置Bilibili表情包地址
         emojiCDN: 'https://cdn.jsdelivr.net/gh/XXXZhy/Blog_Image/valine_emoticon/', 
@@ -419,7 +846,7 @@ var _hmt = _hmt || [];
         c = (b - B) * 60;
         C = Math.floor((b - B) * 60);
         D = Math.floor((c - C) * 60);
-        runtime_span.innerHTML = "LIEFox逃脱猎人的第: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+        runtime_span.innerHTML = "LIEFox逃脱猎人的第" + A + "天" + B + "小时" + C + "分" + D + "秒"
     }
     show_runtime();
 </script>

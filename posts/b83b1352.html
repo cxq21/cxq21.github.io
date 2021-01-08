@@ -68,6 +68,14 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+<!-- 封面标闪烁 -->
+<link rel="stylesheet" href="/css/zhyBlogTitle.css">
+
+<!-- Highlight.js -->
+<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 </html>
@@ -112,7 +120,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">474</span>
+            <span class="post-count">470</span>
         </span>
     </span>
 
@@ -136,8 +144,11 @@ var _hmt = _hmt || [];
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="CSS基础属性"><a href="#CSS基础属性" class="headerlink" title="CSS基础属性"></a>CSS基础属性</h1><h2 id="字体修饰"><a href="#字体修饰" class="headerlink" title="字体修饰"></a>字体修饰</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">font-size: 30px;</span><br><span class="line">font-weight: normal;</span><br><span class="line">font-style: normal;</span><br><span class="line">font-family: arial;</span><br><span class="line">color: #f40;</span><br></pre></td></tr></table></figure>
-
+  <h1 id="CSS基础属性"><a href="#CSS基础属性" class="headerlink" title="CSS基础属性"></a>CSS基础属性</h1><h2 id="字体修饰"><a href="#字体修饰" class="headerlink" title="字体修饰"></a>字体修饰</h2><pre><code>font-size: 30px;
+font-weight: normal;
+font-style: normal;
+font-family: arial;
+color: #f40;</code></pre>
 <p><code>font-size</code>设置字号，设置字体大小 默认16 一般用12/14，<strong>设置字体的时候实际上就是设置字体的高</strong>；</p>
 <p><code>font-weight</code>设置字体粗细，可设置的加粗属性：</p>
 <table>
@@ -169,8 +180,8 @@ var _hmt = _hmt || [];
 <p><code>font-family</code>设置字体，补充：最常用字体 arial -乔布斯发明</p>
 <p><code>color</code>设置字体颜色，有三种设置方法：</p>
 <p>1.土鳖式 纯英文单词 red green blue。。<br>2.颜色代码：#ff00ff<br>3.颜色函数：rgb（255，255,0）</p>
-<h2 id="边框修饰"><a href="#边框修饰" class="headerlink" title="边框修饰"></a>边框修饰</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">	   边框宽度 边框类型 边框颜色</span><br><span class="line">border:  10px    solid   red;可以拆解开</span><br></pre></td></tr></table></figure>
-
+<h2 id="边框修饰"><a href="#边框修饰" class="headerlink" title="边框修饰"></a>边框修饰</h2><pre><code>       边框宽度 边框类型 边框颜色
+border:  10px    solid   red;可以拆解开</code></pre>
 <p>10px是设置边框的粗细</p>
 <p>solid是设置边框的类型，有三种：</p>
 <pre><code>solid 线性
@@ -178,20 +189,37 @@ dotted 虚线-点型
 dashed 虚线-条型</code></pre>
 <p>red边框颜色</p>
 <p><code>border</code>复合属性</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">width: 10px;</span><br><span class="line">height: 10px;</span><br><span class="line">border-left-color: red;</span><br><span class="line">border-top-color: blue;</span><br><span class="line">border-right-color: green;</span><br><span class="line">border-bottom-color: transparent;</span><br></pre></td></tr></table></figure>
-
+<pre><code>    width: 10px;
+    height: 10px;
+    border-left-color: red;
+    border-top-color: blue;
+    border-right-color: green;
+    border-bottom-color: transparent;</code></pre>
 <p><strong>补充：transparent：透明色</strong></p>
-<h2 id="文本修饰"><a href="#文本修饰" class="headerlink" title="文本修饰"></a>文本修饰</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.demo&#123;</span><br><span class="line">	line-height: 20px;</span><br><span class="line">	text-indent: 2em;</span><br><span class="line">	text-decoration:underline;</span><br><span class="line">	cursor: copy;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<h2 id="文本修饰"><a href="#文本修饰" class="headerlink" title="文本修饰"></a>文本修饰</h2><pre><code>.demo&#123;
+    line-height: 20px;
+    text-indent: 2em;
+    text-decoration:underline;
+    cursor: copy;
+&#125;</code></pre>
 <p><code>line-height</code>是行高（行间距）</p>
 <p><code>text-indent</code>是文本缩进，解决首行缩进2个字符，而属性值的单位 <code>em</code>是 1<code>font-size</code>，也就是说，字号是16px，那么，1 <code>em</code>=16 <code>px</code>，这样的话，以后需要改字号大小，就不需要修改缩进的值了</p>
 <p><code>text-decoration</code> 是文本修饰，常设置的属性是 <code>underline</code>（下划线）</p>
 <p><code>cursor</code>是鼠标修饰，可以设置光标移动到文字上，会出现特定的效果</p>
 <h2 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h2><p>格式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">选择器 ：hover&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>选择器 ：hover&#123;
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.demo:hover&#123;</span><br><span class="line">	height: 200px;</span><br><span class="line">	width: 400px;</span><br><span class="line">	line-height: 100px;</span><br><span class="line">	text-indent: 2em;</span><br><span class="line">	background-color: #f40;</span><br><span class="line">	border-radius: 50px;  设置圆角</span><br><span class="line">	text-decoration:underline;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+&#125;</code></pre>
+<pre><code>.demo:hover&#123;
+    height: 200px;
+    width: 400px;
+    line-height: 100px;
+    text-indent: 2em;
+    background-color: #f40;
+    border-radius: 50px;  设置圆角
+    text-decoration:underline;
 
+&#125;</code></pre>
 <p>当鼠标移动到修饰的文字上，就会有伪类效果</p>
 <p><a target="_blank" rel="noopener" href="https://imgchr.com/i/smYdDH"><img src="https://s3.ax1x.com/2021/01/07/smYdDH.gif" alt="smYdDH.gif" style="zoom:50%;" /></a></p>
 <hr>
@@ -303,8 +331,7 @@ dashed 虚线-条型</code></pre>
     </div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<!-- <script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script> -->
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <!-- 评论背景 -->                                                         
 <style>
     #veditor{min-height: 15rem;
@@ -317,16 +344,16 @@ dashed 虚线-条型</code></pre>
 </style>
 <!-- Valine配置 --> 
 <script>
-        new Valine({
-            el: "#vcomments",
-            app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
-            app_key: "VheJztjyMzs24xKQPGGI1bmh",
-            path: window.location.pathname,
-            avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
-            placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
-            recordIP: true,
-            enableQQ: true,
-            boolean: true,
+new Valine({
+    el: "#vcomments",
+    app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
+    app_key: "VheJztjyMzs24xKQPGGI1bmh",
+    path: window.location.pathname,
+    avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
+    placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
+    recordIP: true,
+    enableQQ: true,
+    boolean: true,
 
         // 设置Bilibili表情包地址
         emojiCDN: 'https://cdn.jsdelivr.net/gh/XXXZhy/Blog_Image/valine_emoticon/', 
@@ -405,7 +432,7 @@ dashed 虚线-条型</code></pre>
         c = (b - B) * 60;
         C = Math.floor((b - B) * 60);
         D = Math.floor((c - C) * 60);
-        runtime_span.innerHTML = "LIEFox逃脱猎人的第: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+        runtime_span.innerHTML = "LIEFox逃脱猎人的第" + A + "天" + B + "小时" + C + "分" + D + "秒"
     }
     show_runtime();
 </script>
