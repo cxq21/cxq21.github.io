@@ -53,6 +53,20 @@ var _hmt = _hmt || [];
 
 
 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 
 </head>
 
@@ -441,6 +455,7 @@ var _hmt = _hmt || [];
     </div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!-- <script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script> -->
 <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 <!-- 评论背景 -->                                                         
 <style>
@@ -454,18 +469,16 @@ var _hmt = _hmt || [];
 </style>
 <!-- Valine配置 --> 
 <script>
-    new Valine({
-        el: '#vcomments',
-        enableQQ: true,
-        app_id: 'lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz',
-        app_key: 'VheJztjyMzs24xKQPGGI1bmh',
-        path: window.location.pathname,
-        //notify: '',
-        //verify: '',
-        avatar: 'monsterid# 头像样式(https://valine.js.org/avatar.html)',
-        placeholder: '吐槽一下作者(在昵称上填QQ号自动显示头像喔)',
-        recordIP: true,
-        
+new Valine({
+    el: "#vcomments",
+    app_id: "lGCocPMCSUz2tL4FcKDvFCG3-gzGzoHsz",
+    app_key: "VheJztjyMzs24xKQPGGI1bmh",
+    path: window.location.pathname,
+    avatar: "monsterid# 头像样式(https://valine.js.org/avatar.html)",
+    placeholder: "吐槽一下作者(在昵称上填QQ号自动显示头像喔)",
+    recordIP: true,
+    enableQQ: true,
+    boolean: true,
 
         // 设置Bilibili表情包地址
         emojiCDN: 'https://cdn.jsdelivr.net/gh/XXXZhy/Blog_Image/valine_emoticon/', 
@@ -525,6 +538,30 @@ var _hmt = _hmt || [];
 </section>
       <footer class="footer">
   <div class="outer">
+<!-- 运行天数 -->
+    <ul>
+        <li><span id="runtime_span"></span></li>
+    </ul>
+
+<script type="text/javascript">            
+    function show_runtime() {
+        window.setTimeout("show_runtime()", 1000);
+        X = new Date("11/27/2020 17:17:17");
+        Y = new Date();
+        T = (Y.getTime() - X.getTime());
+        M = 24 * 60 * 60 * 1000;
+        a = T / M;
+        A = Math.floor(a);
+        b = (a - A) * 24;
+        B = Math.floor(b);
+        c = (b - B) * 60;
+        C = Math.floor((b - B) * 60);
+        D = Math.floor((c - C) * 60);
+        runtime_span.innerHTML = "LIEFox逃脱猎人的第: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+    }
+    show_runtime();
+</script>
+
     <ul>
       <li>
         Copyrights &copy;
