@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>JAVA目录</title>
+    <url>/posts/fdedec16.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/fdedec16.html"><img src="https://s3.ax1x.com/2021/01/09/sM0jn1.png" alt="sM0jn1.png" style="zoom:25%;" /></a></p>
+<a id="more"></a>
+
+<h1 id="今天开始正式写Java笔记"><a href="#今天开始正式写Java笔记" class="headerlink" title="今天开始正式写Java笔记"></a>今天开始正式写Java笔记</h1><h2 id="为什么要写Java笔记？"><a href="#为什么要写Java笔记？" class="headerlink" title="为什么要写Java笔记？"></a>为什么要写Java笔记？</h2><p>作为一个学习技术的的小站</p>
+<p>LIEFox已经磨刀了许久，终于要正式推出Java菜鸟笔记了。在这里我要立个Flag，从入门到入坟一定要坚持写完。顺便巩固一下自己的基础（就是因为鄙人太弱了，哎~），以免面试的时候被问到自闭！！！</p>
+<h3 id="最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！"><a href="#最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！" class="headerlink" title="最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！"></a>最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！</h3><hr>
+<h4 id="JAVA笔记将会分为以下几个阶段"><a href="#JAVA笔记将会分为以下几个阶段" class="headerlink" title="JAVA笔记将会分为以下几个阶段"></a>JAVA笔记将会分为以下几个阶段</h4><h1 id="（目录）"><a href="#（目录）" class="headerlink" title="（目录）"></a><strong>（目录）</strong></h1><h2 id="一、JAVA入门"><a href="#一、JAVA入门" class="headerlink" title="一、JAVA入门"></a>一、JAVA入门</h2><ul>
+<li>Java快速入门<ol>
+<li><a href="https://cxq21.gitee.io/posts/98ac5948.html" target="_blank">JAVA简介</a></li>
+<li><a href="https://cxq21.gitee.io/posts/bdfde94f.html" target="_blank">JAVA程序基础</a></li>
+<li><a href="https://cxq21.gitee.io/posts/368ebfeb.html" target="_blank">流程控制</a></li>
+<li><a href="https://cxq21.gitee.io/posts/335f9f1b.html" target="_blank">数组控制</a></li>
+</ol>
+</li>
+<li>面向对象编程<ol>
+<li><a href="https://cxq21.gitee.io/posts/9d9ad23f.html" target="_blank">面向对象基础</a></li>
+<li>Java核心类</li>
+</ol>
+</li>
+<li>异常处理</li>
+<li>反射</li>
+<li>注解</li>
+<li>泛型</li>
+<li>集合</li>
+<li>IO</li>
+<li>日期与时间</li>
+<li>单元测试</li>
+<li>正则表达式</li>
+</ul>
+<h2 id="二、JAVA进阶"><a href="#二、JAVA进阶" class="headerlink" title="二、JAVA进阶"></a>二、JAVA进阶</h2><ul>
+<li>加密与安全</li>
+<li>多线程</li>
+<li>Maven基础</li>
+<li>网络编程</li>
+<li>XML与JSON</li>
+<li>JDBC编程</li>
+<li>Mybaits技术</li>
+<li>函数式编程</li>
+<li>设计模式</li>
+<li>Web开发</li>
+<li>Spring开发</li>
+<li>SpringMVC开发</li>
+</ul>
+]]></content>
+      <categories>
+        <category>JAVA笔记</category>
+      </categories>
+      <tags>
+        <tag>JAVA笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>前端笔记目录</title>
     <url>/posts/894d484f.html</url>
     <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/894d484f.html"><img src="https://s3.ax1x.com/2021/01/09/sM0okT.png" alt="sM0okT.png" style="zoom:25%;" /></a></p>
@@ -16,6 +70,29 @@
       </categories>
       <tags>
         <tag>前端笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>加入拾柒工作室</title>
+    <url>/posts/3dc898ff.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/3dc898ff.html"><img src="https://s3.ax1x.com/2021/01/09/sM0R6s.png" alt="sM0R6s.png" style="zoom: 50%;" /></a></p>
+<a id="more"></a>
+
+<h1 id="关于拾柒工作室"><a href="#关于拾柒工作室" class="headerlink" title="关于拾柒工作室"></a>关于拾柒工作室</h1><p>拾柒工作室是由三个在校大学生创建的一个小工作室。为何取名为“拾柒”，是因为我们三个人都来自17寝室，然后取名为拾柒，然后偷偷告诉你们，还有一个含义，大家可以在评论区留言，来揣测一下。</p>
+<h2 id="拾柒工作室成员"><a href="#拾柒工作室成员" class="headerlink" title="拾柒工作室成员"></a>拾柒工作室成员</h2><h3 id="佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。"><a href="#佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。" class="headerlink" title="佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。"></a>佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。</h3><h3 id="万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。"><a href="#万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。" class="headerlink" title="万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。"></a>万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。</h3><h3 id="李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。"><a href="#李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。" class="headerlink" title="李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。"></a>李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。</h3><hr>
+<h1 id="欢迎加入我们"><a href="#欢迎加入我们" class="headerlink" title="欢迎加入我们"></a>欢迎加入我们</h1><h5 id="要求："><a href="#要求：" class="headerlink" title="要求："></a>要求：</h5><p>​    对网页搭建感兴趣，肯学习钻研（必）</p>
+<p>​    具有创新精神（必）</p>
+<p>​    具有团队合作精神（必）</p>
+<p>​    具有过硬的前端语言（HTML+CSS+JS)等等（选）</p>
+<p>​    具有审美高的UI设计（PS+AI+会使用图床）等等（选）</p>
+<p>​    具有JAVA,JAVAScript,Python等等清晰过硬的理论（选）</p>
+<h1 id="加入邮箱（-50-54-48-54-48-x39-55-x32-x31-56-x40-x71-x71-46-99-111-x6d"><a href="#加入邮箱（-50-54-48-54-48-x39-55-x32-x31-56-x40-x71-x71-46-99-111-x6d" class="headerlink" title="加入邮箱（&#50;&#54;&#48;&#54;&#48;&#x39;&#55;&#x32;&#x31;&#56;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;)"></a>加入邮箱（<a href="mailto:&#50;&#54;&#48;&#54;&#48;&#x39;&#55;&#x32;&#x31;&#56;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;">&#50;&#54;&#48;&#54;&#48;&#x39;&#55;&#x32;&#x31;&#56;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;</a>)</h1><h1 id="联系电话（-15270055490佐佳豪）"><a href="#联系电话（-15270055490佐佳豪）" class="headerlink" title="联系电话（ 15270055490佐佳豪）"></a>联系电话（<a herf="tel:15270055490" target="_blank"> 15270055490佐佳豪</a>）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>关于本站</category>
+      </categories>
+      <tags>
+        <tag>关于我们</tag>
       </tags>
   </entry>
   <entry>
@@ -102,693 +179,6 @@ git push -u origin master
       </categories>
       <tags>
         <tag>案例记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JAVA目录</title>
-    <url>/posts/fdedec16.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/fdedec16.html"><img src="https://s3.ax1x.com/2021/01/09/sM0jn1.png" alt="sM0jn1.png" style="zoom:25%;" /></a></p>
-<a id="more"></a>
-
-<h1 id="今天开始正式写Java笔记"><a href="#今天开始正式写Java笔记" class="headerlink" title="今天开始正式写Java笔记"></a>今天开始正式写Java笔记</h1><h2 id="为什么要写Java笔记？"><a href="#为什么要写Java笔记？" class="headerlink" title="为什么要写Java笔记？"></a>为什么要写Java笔记？</h2><p>作为一个学习技术的的小站</p>
-<p>LIEFox已经磨刀了许久，终于要正式推出Java菜鸟笔记了。在这里我要立个Flag，从入门到入坟一定要坚持写完。顺便巩固一下自己的基础（就是因为鄙人太弱了，哎~），以免面试的时候被问到自闭！！！</p>
-<h3 id="最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！"><a href="#最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！" class="headerlink" title="最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！"></a>最主要的是我觉的基础真的真的真的是超级重要，只有你基础牢，才可以把后面的框架学好，理解清楚！！！</h3><hr>
-<h4 id="JAVA笔记将会分为以下几个阶段"><a href="#JAVA笔记将会分为以下几个阶段" class="headerlink" title="JAVA笔记将会分为以下几个阶段"></a>JAVA笔记将会分为以下几个阶段</h4><h1 id="（目录）"><a href="#（目录）" class="headerlink" title="（目录）"></a><strong>（目录）</strong></h1><h2 id="一、JAVA入门"><a href="#一、JAVA入门" class="headerlink" title="一、JAVA入门"></a>一、JAVA入门</h2><ul>
-<li>Java快速入门<ol>
-<li><a href="https://cxq21.gitee.io/posts/98ac5948.html" target="_blank">JAVA简介</a></li>
-<li><a href="https://cxq21.gitee.io/posts/bdfde94f.html" target="_blank">JAVA程序基础</a></li>
-<li><a href="https://cxq21.gitee.io/posts/368ebfeb.html" target="_blank">流程控制</a></li>
-<li><a href="https://cxq21.gitee.io/posts/335f9f1b.html" target="_blank">数组控制</a></li>
-</ol>
-</li>
-<li>面向对象编程<ol>
-<li><a href="https://cxq21.gitee.io/posts/9d9ad23f.html" target="_blank">面向对象基础</a></li>
-<li>Java核心类</li>
-</ol>
-</li>
-<li>异常处理</li>
-<li>反射</li>
-<li>注解</li>
-<li>泛型</li>
-<li>集合</li>
-<li>IO</li>
-<li>日期与时间</li>
-<li>单元测试</li>
-<li>正则表达式</li>
-</ul>
-<h2 id="二、JAVA进阶"><a href="#二、JAVA进阶" class="headerlink" title="二、JAVA进阶"></a>二、JAVA进阶</h2><ul>
-<li>加密与安全</li>
-<li>多线程</li>
-<li>Maven基础</li>
-<li>网络编程</li>
-<li>XML与JSON</li>
-<li>JDBC编程</li>
-<li>Mybaits技术</li>
-<li>函数式编程</li>
-<li>设计模式</li>
-<li>Web开发</li>
-<li>Spring开发</li>
-<li>SpringMVC开发</li>
-</ul>
-]]></content>
-      <categories>
-        <category>JAVA笔记</category>
-      </categories>
-      <tags>
-        <tag>JAVA笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>加入拾柒工作室</title>
-    <url>/posts/3dc898ff.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/3dc898ff.html"><img src="https://s3.ax1x.com/2021/01/09/sM0R6s.png" alt="sM0R6s.png" style="zoom: 50%;" /></a></p>
-<a id="more"></a>
-
-<h1 id="关于拾柒工作室"><a href="#关于拾柒工作室" class="headerlink" title="关于拾柒工作室"></a>关于拾柒工作室</h1><p>拾柒工作室是由三个在校大学生创建的一个小工作室。为何取名为“拾柒”，是因为我们三个人都来自17寝室，然后取名为拾柒，然后偷偷告诉你们，还有一个含义，大家可以在评论区留言，来揣测一下。</p>
-<h2 id="拾柒工作室成员"><a href="#拾柒工作室成员" class="headerlink" title="拾柒工作室成员"></a>拾柒工作室成员</h2><h3 id="佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。"><a href="#佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。" class="headerlink" title="佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。"></a>佐佳豪：担任拾柒工作室成员之一，是LIEFox网站的搭建的一名小码蚁。</h3><h3 id="万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。"><a href="#万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。" class="headerlink" title="万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。"></a>万津津：担任拾柒工作室成员之一，是LIEFox网站的前端设计的一名攻城狮。</h3><h3 id="李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。"><a href="#李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。" class="headerlink" title="李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。"></a>李玮峰：担任拾柒工作室成员之一，是LIEFox网站的UI设计的一名射击狮。</h3><hr>
-<h1 id="欢迎加入我们"><a href="#欢迎加入我们" class="headerlink" title="欢迎加入我们"></a>欢迎加入我们</h1><h5 id="要求："><a href="#要求：" class="headerlink" title="要求："></a>要求：</h5><p>​    对网页搭建感兴趣，肯学习钻研（必）</p>
-<p>​    具有创新精神（必）</p>
-<p>​    具有团队合作精神（必）</p>
-<p>​    具有过硬的前端语言（HTML+CSS+JS)等等（选）</p>
-<p>​    具有审美高的UI设计（PS+AI+会使用图床）等等（选）</p>
-<p>​    具有JAVA,JAVAScript,Python等等清晰过硬的理论（选）</p>
-<h1 id="加入邮箱（-x32-x36-x30-x36-48-x39-x37-x32-x31-x38-x40-x71-113-46-99-111-x6d"><a href="#加入邮箱（-x32-x36-x30-x36-48-x39-x37-x32-x31-x38-x40-x71-113-46-99-111-x6d" class="headerlink" title="加入邮箱（&#x32;&#x36;&#x30;&#x36;&#48;&#x39;&#x37;&#x32;&#x31;&#x38;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;)"></a>加入邮箱（<a href="mailto:&#x32;&#x36;&#x30;&#x36;&#48;&#x39;&#x37;&#x32;&#x31;&#x38;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;">&#x32;&#x36;&#x30;&#x36;&#48;&#x39;&#x37;&#x32;&#x31;&#x38;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;</a>)</h1><h1 id="联系电话（-15270055490佐佳豪）"><a href="#联系电话（-15270055490佐佳豪）" class="headerlink" title="联系电话（ 15270055490佐佳豪）"></a>联系电话（<a herf="tel:15270055490" target="_blank"> 15270055490佐佳豪</a>）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
-]]></content>
-      <categories>
-        <category>关于本站</category>
-      </categories>
-      <tags>
-        <tag>关于我们</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS盒子模型</title>
-    <url>/posts/1279ea3.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/1279ea3.html"><img src="https://s3.ax1x.com/2021/01/09/sM0bp4.png" alt="sM0bp4.png" style="zoom:20%;" /></a></p>
-<a id="more"></a>
-
-<h1 id="CSS盒子模型"><a href="#CSS盒子模型" class="headerlink" title="CSS盒子模型"></a>CSS盒子模型</h1><p>在讲盒子模型前，我们先来了解一下三元素</p>
-<h2 id="标签分类"><a href="#标签分类" class="headerlink" title="标签分类"></a>标签分类</h2><ul>
-<li><h3 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h3></li>
-</ul>
-<p>feature（特征）：<strong>独占一行，可以通过css改变宽高</strong><br>例如：<code>div</code>  <code>p</code>   <code>ul</code>  <code>li</code>   <code>ol</code>    <code>form</code>   <code>address</code>。。。</p>
-<ul>
-<li><h3 id="行元素"><a href="#行元素" class="headerlink" title="行元素"></a>行元素</h3></li>
-</ul>
-<p>feature：<strong>内容决定元素所占位置，不可以通过css改变宽高</strong><br>例如：<code>span</code>    <code>strong</code>   <code>em</code>    <code>a</code>     <code>del</code>。。。</p>
-<ul>
-<li><h3 id="行块元素（特殊）"><a href="#行块元素（特殊）" class="headerlink" title="行块元素（特殊）"></a>行块元素（特殊）</h3></li>
-</ul>
-<p>feature：内容决定大小，可以改宽高<br><code>img</code></p>
-<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p>以块元素标签为例：</p>
-<p>html：</p>
-<pre><code class="jsp">&lt;div class=&quot;demo&quot;&gt;
-            LIEFoxLIEFoxLIEFoxLIEFox&lt;br&gt;
-            LIEFoxLIEFoxLIEFox
-&lt;/div&gt;</code></pre>
-<p>css样式：</p>
-<pre><code class="css">.demo&#123;
-    width: 200px;
-    height: 100px;
-    padding: 10px;
-    border: 2px solid red;
-    margin: 20px;
-&#125;</code></pre>
-<p>效果：</p>
-<p><a href="https://imgchr.com/i/sm6KW4"><img src="https://s3.ax1x.com/2021/01/07/sm6KW4.gif" alt="sm6KW4.gif" style="zoom: 50%;" /></a></p>
-<p>这就是一个盒子模型，一般由center（height，width），padding，border，margin组成。右下角的盒子模型，是控制台的调试，可以让我们视图化的检查盒子的大小。</p>
-<p><code>注意</code>：<code>margin</code>不属于盒子里的，所以计算时不用。</p>
-<h3 id="复合属性值"><a href="#复合属性值" class="headerlink" title="复合属性值"></a>复合属性值</h3><ul>
-<li>一个值代表4个方向</li>
-</ul>
-<pre><code>padding: 10px;</code></pre>
-<ul>
-<li>4个值  上    右    下      左</li>
-</ul>
-<pre><code>padding: 10px 10px 20px 10px;</code></pre>
-<ul>
-<li>3个值  上      左右        下</li>
-</ul>
-<pre><code>padding: 10px 20px 10px;</code></pre>
-<ul>
-<li>2个值      上下    左右</li>
-</ul>
-<pre><code>padding: 10px 40px;</code></pre>
-<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3><pre><code>position: absolute;</code></pre>
-<h4 id="absolute：绝对定位，脱离原来位置进行定位，最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位。"><a href="#absolute：绝对定位，脱离原来位置进行定位，最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位。" class="headerlink" title="absolute：绝对定位，脱离原来位置进行定位，最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位。"></a>absolute：绝对定位，脱离原来位置进行定位，最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位。</h4><pre><code>position: relative;</code></pre>
-<h4 id="relative：相对定位，保留原来位置进行定位，相对自己原来的位置进行定位。"><a href="#relative：相对定位，保留原来位置进行定位，相对自己原来的位置进行定位。" class="headerlink" title="relative：相对定位，保留原来位置进行定位，相对自己原来的位置进行定位。"></a>relative：相对定位，保留原来位置进行定位，相对自己原来的位置进行定位。</h4><p><strong><code>定位口诀</code>：用relative作为参照物，用absolute进行定位</strong></p>
-<p>在平常浏览网页时，有些广告不管你怎么滚动滚动条，都是在规定的位置，是利用广告定位来做到的。</p>
-<p><a href="https://imgchr.com/i/su1jOJ"><img src="https://s3.ax1x.com/2021/01/08/su1jOJ.gif" alt="su1jOJ.gif" style="zoom:50%;" /></a></p>
-<pre><code>position: fixed;</code></pre>
-<h4 id="广告定位，可视区窗口定位，无论屏幕如何滚动都固定不动"><a href="#广告定位，可视区窗口定位，无论屏幕如何滚动都固定不动" class="headerlink" title="广告定位，可视区窗口定位，无论屏幕如何滚动都固定不动"></a>广告定位，可视区窗口定位，无论屏幕如何滚动都固定不动</h4><p>我们自己来实现一下这个功能</p>
-<pre><code class="css">.demo1&#123;
-    position: fixed;
-    left: 50%;
-    top:50%;
-    width: 100px;
-    height: 100px;
-    background-color: #f40;
-    margin-top: -50px;
-    margin-left: -50px;
-&#125;</code></pre>
-<p><a href="https://imgchr.com/i/suG7FI"><img src="https://s3.ax1x.com/2021/01/08/suG7FI.gif" alt="suG7FI.gif"></a></p>
-<h4 id="注意："><a href="#注意：" class="headerlink" title="注意："></a><code>注意</code>：</h4><ul>
-<li>left、top设置成50%的作用是为了，当用户改变的浏览器的大小时，永远在固定位置（最中间）</li>
-<li>margin-top、margin-left设置成-50，是因为计算机定位是在方块的左上角，所以要减掉相应的</li>
-</ul>
-<h2 id="奥运五环案例"><a href="#奥运五环案例" class="headerlink" title="奥运五环案例"></a>奥运五环案例</h2><p>做一个奥运五环，永远在最中间</p>
-<p><a href="https://imgchr.com/i/suwZ2n"><img src="https://s3.ax1x.com/2021/01/08/suwZ2n.gif" alt="suwZ2n.gif" style="zoom:50%;" /></a></p>
-<p>HTML：</p>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;标题&lt;/title&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;lessn1.css&quot;&gt;
-    &lt;/head&gt;
-
-    &lt;body&gt;
-        &lt;div class=&quot;five&quot;&gt;
-            &lt;div class=&quot;blue&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;yellow&quot;&gt;&lt;/div&gt;    
-            &lt;div class=&quot;red&quot;&gt;&lt;/div&gt;    
-            &lt;div class=&quot;black&quot;&gt;&lt;/div&gt;    
-            &lt;div class=&quot;green&quot;&gt;&lt;/div&gt;
-            &lt;/div&gt;
-                &lt;br&gt;*100
-    &lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre>
-<p>css：</p>
-<pre><code class="css">.five&#123;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    width: 500px;
-    height: 250px;
-    background-color: transparent;
-
-    margin-left: -250px;
-
-    margin-top: -125px;
-&#125;
-.blue&#123;
-
-position: absolute;
-
-left:65px;
-
-top:30px;
-
-width: 100px;
-
-height:100px;
-
-border: 10px solid blue;
-
-border-radius: 50%;
-
-z-index: 1;
-
-&#125;
-
-.yellow&#123;
-
-position: absolute;
-
-left:190px;
-
-top:30px;
-
-width: 100px;
-
-height:100px;
-
-border: 10px solid #FFFF00;
-
-border-radius: 50%;
-
-z-index: 3;
-
-&#125;
-
-.black&#123;
-
-position: absolute;
-
-right:65px;
-
-top:30px;
-
-width: 100px;
-
-height:100px;
-
-border: 10px solid black;
-
-border-radius: 50%;
-
-z-index: 5;
-
-&#125;
-
-.green&#123;
-
-position: absolute;
-
-left:127px;
-
-top:100px;
-
-width: 100px;
-
-height:100px;
-
-border: 10px solid green;
-
-border-radius: 50%;
-
-z-index: 2;
-
-&#125;
-
-.red&#123;
-
-position: absolute;
-
-right:127px;
-
-top:100px;
-
-width: 100px;
-
-height:100px;
-
-border: 10px solid red;
-
-border-radius: 50%;
-
-    z-index: 4;
-
-&#125;
-</code></pre>
-<hr>
-<p>作者：<em>zjh</em></p>
-]]></content>
-      <categories>
-        <category>前端笔记</category>
-      </categories>
-      <tags>
-        <tag>前端笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS基础属性</title>
-    <url>/posts/b83b1352.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/b83b1352.html"><img src="https://s3.ax1x.com/2021/01/09/sM0400.png" alt="sM0400.png" style="zoom:25%;" /></a></p>
-<a id="more"></a>
-
-<h1 id="CSS基础属性"><a href="#CSS基础属性" class="headerlink" title="CSS基础属性"></a>CSS基础属性</h1><h2 id="字体修饰"><a href="#字体修饰" class="headerlink" title="字体修饰"></a>字体修饰</h2><pre><code>font-size: 30px;
-font-weight: normal;
-font-style: normal;
-font-family: arial;
-color: #f40;</code></pre>
-<p><code>font-size</code>设置字号，设置字体大小 默认16 一般用12/14，<strong>设置字体的时候实际上就是设置字体的高</strong>；</p>
-<p><code>font-weight</code>设置字体粗细，可设置的加粗属性：</p>
-<table>
-<thead>
-<tr>
-<th align="center">bold</th>
-<th align="center">加粗</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">lighter</td>
-<td align="center">最细</td>
-</tr>
-<tr>
-<td align="center">normal</td>
-<td align="center">正常</td>
-</tr>
-<tr>
-<td align="center">bolder</td>
-<td align="center">特别粗</td>
-</tr>
-<tr>
-<td align="center">100-900（也是设置粗细）</td>
-<td align="center">数值型设置</td>
-</tr>
-</tbody></table>
-<p><code>font-style</code>可以设置字体斜体</p>
-<p><code>italic</code>斜体 等同<code>em</code></p>
-<p><code>font-family</code>设置字体，补充：最常用字体 arial -乔布斯发明</p>
-<p><code>color</code>设置字体颜色，有三种设置方法：</p>
-<p>1.土鳖式 纯英文单词 red green blue。。<br>2.颜色代码：#ff00ff<br>3.颜色函数：rgb（255，255,0）</p>
-<h2 id="边框修饰"><a href="#边框修饰" class="headerlink" title="边框修饰"></a>边框修饰</h2><pre><code>       边框宽度 边框类型 边框颜色
-border:  10px    solid   red;可以拆解开</code></pre>
-<p>10px是设置边框的粗细</p>
-<p>solid是设置边框的类型，有三种：</p>
-<pre><code>solid 线性
-dotted 虚线-点型
-dashed 虚线-条型</code></pre>
-<p>red边框颜色</p>
-<p><code>border</code>复合属性</p>
-<pre><code>    width: 10px;
-    height: 10px;
-    border-left-color: red;
-    border-top-color: blue;
-    border-right-color: green;
-    border-bottom-color: transparent;</code></pre>
-<p><strong>补充：transparent：透明色</strong></p>
-<h2 id="文本修饰"><a href="#文本修饰" class="headerlink" title="文本修饰"></a>文本修饰</h2><pre><code>.demo&#123;
-    line-height: 20px;
-    text-indent: 2em;
-    text-decoration:underline;
-    cursor: copy;
-&#125;</code></pre>
-<p><code>line-height</code>是行高（行间距）</p>
-<p><code>text-indent</code>是文本缩进，解决首行缩进2个字符，而属性值的单位 <code>em</code>是 1<code>font-size</code>，也就是说，字号是16px，那么，1 <code>em</code>=16 <code>px</code>，这样的话，以后需要改字号大小，就不需要修改缩进的值了</p>
-<p><code>text-decoration</code> 是文本修饰，常设置的属性是 <code>underline</code>（下划线）</p>
-<p><code>cursor</code>是鼠标修饰，可以设置光标移动到文字上，会出现特定的效果</p>
-<h2 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h2><p>格式：</p>
-<pre><code>选择器 ：hover&#123;
-
-&#125;</code></pre>
-<pre><code>.demo:hover&#123;
-    height: 200px;
-    width: 400px;
-    line-height: 100px;
-    text-indent: 2em;
-    background-color: #f40;
-    border-radius: 50px;  设置圆角
-    text-decoration:underline;
-
-&#125;</code></pre>
-<p>当鼠标移动到修饰的文字上，就会有伪类效果</p>
-<p><a href="https://imgchr.com/i/smYdDH"><img src="https://s3.ax1x.com/2021/01/07/smYdDH.gif" alt="smYdDH.gif" style="zoom:50%;" /></a></p>
-<hr>
-<p>作者：<em>zjh</em></p>
-]]></content>
-      <categories>
-        <category>前端笔记</category>
-      </categories>
-      <tags>
-        <tag>前端笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS初级</title>
-    <url>/posts/ba82d224.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/b83b1352.html"><img src="https://s3.ax1x.com/2021/01/09/sM0bp4.png" alt="sM0bp4.png" style="zoom:20%;" /></a></p>
-<a id="more"></a>
-
-<h1 id="CSS初级"><a href="#CSS初级" class="headerlink" title="CSS初级"></a>CSS初级</h1><p>HTML在平常开发的时候用作于网页的框架搭建，相当于大楼的框架，而CSS是大楼的装修。</p>
-<h2 id="引入CSS"><a href="#引入CSS" class="headerlink" title="引入CSS"></a>引入CSS</h2><h3 id="1-行间样式"><a href="#1-行间样式" class="headerlink" title="1.行间样式"></a>1.行间样式</h3><pre><code class="HTML">&lt;div style=&quot;width: 1000px; background-color: aqua;height: 20px;&quot;&gt;234&lt;/div&gt;</code></pre>
-<p>在标签中写入 <code>style</code> 并设置对应css样式。</p>
-<h3 id="2-页面级CSS"><a href="#2-页面级CSS" class="headerlink" title="2.页面级CSS"></a>2.页面级CSS</h3><p>在 <code>&lt;herd&gt;</code>里写一对 <code>&lt;style&gt;</code>标签，<code>type=&quot;text/css&quot;</code>告诉浏览器是css样式，但可写可不写。</p>
-<pre><code class="html">&lt;style type=&quot;text/css&quot;&gt;
-            div&#123;
-                background-color: burlywood;
-            &#125;
-&lt;/style&gt;</code></pre>
-<h3 id="3-外部CSS文件"><a href="#3-外部CSS文件" class="headerlink" title="3.外部CSS文件"></a>3.外部CSS文件</h3><p>在<code>&lt;herd&gt;</code>里写上 <code>&lt;link&gt;</code>标签，在 <code>href</code>里填入css文件路径</p>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;lessn1.css&quot;&gt;</code></pre>
-<hr>
-<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><p>以在css外链式操作</p>
-<h3 id="1-id选择器"><a href="#1-id选择器" class="headerlink" title="1.id选择器"></a>1.id选择器</h3><p>其特点是一对一。</p>
-<p>.html文件</p>
-<pre><code>&lt;div id=&quot;only&quot;&gt;234&lt;/div&gt;</code></pre>
-<p>.css文件</p>
-<p><code>#</code>开头加上<code>id</code></p>
-<pre><code>#only&#123;
-    background-color: aqua;
-&#125;</code></pre>
-<h3 id="2-类选择器"><a href="#2-类选择器" class="headerlink" title="2.类选择器"></a>2.类选择器</h3><p>类选择器特点是多对多</p>
-<p>class选择器可以拥有一个或多个类选择器，类选择器中空格隔开，</p>
-<p>.html文件</p>
-<pre><code>&lt;div class=&quot;demo demo1&quot;&gt;234&lt;/div&gt;</code></pre>
-<p>.css文件</p>
-<p><code>.</code>开头</p>
-<pre><code class="html">.demo&#123;
-    background-color: aqua
-&#125;
-.demo1&#123;
-    width: 100px;
-&#125;</code></pre>
-<h3 id="3-标签选择器"><a href="#3-标签选择器" class="headerlink" title="3.标签选择器"></a>3.标签选择器</h3><p>可以直接用标签选择,HTML文件中全部div表签都可生效</p>
-<p>.html文件</p>
-<pre><code>&lt;div&gt;234&lt;/div&gt;</code></pre>
-<p>.css文件</p>
-<pre><code>div&#123;
-    background-color: blue;
-&#125;</code></pre>
-<h3 id="4-通配符选择器"><a href="#4-通配符选择器" class="headerlink" title="4.通配符选择器"></a>4.通配符选择器</h3><p>以 <code>*</code>来选择，可以选择全部</p>
-<p><code>补充</code>：<strong>通配符的应用是初始化所有标签最好的一种方式</strong></p>
-<pre><code>*&#123;
-    background-color: blue;
-&#125;</code></pre>
-<h3 id="5-选择器的优先级"><a href="#5-选择器的优先级" class="headerlink" title="5.选择器的优先级"></a>5.选择器的优先级</h3><h4 id="important-gt-行间样式-gt-id-gt-class-属性-gt-标签选择器-gt-通配符"><a href="#important-gt-行间样式-gt-id-gt-class-属性-gt-标签选择器-gt-通配符" class="headerlink" title="important &gt; 行间样式 &gt; id &gt; class|属性 &gt; 标签选择器 &gt; 通配符"></a><code>important</code> &gt; 行间样式 &gt; id &gt; class|属性 &gt; 标签选择器 &gt; 通配符</h4><h3 id="6-CSS权重"><a href="#6-CSS权重" class="headerlink" title="6.CSS权重"></a>6.CSS权重</h3><table>
-<thead>
-<tr>
-<th align="center">！important</th>
-<th align="center">Infinity（正无穷大）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">行间样式</td>
-<td align="center">1000</td>
-</tr>
-<tr>
-<td align="center">id</td>
-<td align="center">100</td>
-</tr>
-<tr>
-<td align="center">class|属性|伪类</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="center">标签|伪元素</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">通配符</td>
-<td align="center">0</td>
-</tr>
-</tbody></table>
-<p><strong><code>注意：</code>css权重是以256进制进行计算的</strong></p>
-<h2 id="CSS复杂选择器"><a href="#CSS复杂选择器" class="headerlink" title="CSS复杂选择器"></a>CSS复杂选择器</h2><h3 id="父类选择器"><a href="#父类选择器" class="headerlink" title="父类选择器"></a>父类选择器</h3><p>选择标签可以加很多修饰条件，但是只能修饰父子条件，父子选择器的每一个层级都不需要必须是标签，<br>可以用类标签</p>
-<p>举个栗子：</p>
-<p>.html</p>
-<pre><code>&lt;div class=&quot;demo&quot;&gt;
-            &lt;span&gt;234&lt;/span&gt;
-&lt;/div&gt;</code></pre>
-<p>.css</p>
-<pre><code>div span&#123;
-    background-color: blue;
-&#125;</code></pre>
-<p>也可</p>
-<pre><code>.demo span&#123;
-    background-color: blue;
-&#125;</code></pre>
-<h3 id="子元素选择器"><a href="#子元素选择器" class="headerlink" title="子元素选择器"></a>子元素选择器</h3><pre><code>div &gt; span &#123;
-    background-color: red;
-&#125;</code></pre>
-<h3 id="并列选择器"><a href="#并列选择器" class="headerlink" title="并列选择器"></a>并列选择器</h3><p>用多个限制条件选择一个选择器并且不加空格</p>
-<pre><code>div.demo&#123;
-    background-color: red;
-&#125;</code></pre>
-<h3 id="分组选择器"><a href="#分组选择器" class="headerlink" title="分组选择器"></a>分组选择器</h3><p>.html</p>
-<pre><code>&lt;div class=&quot;demo&quot;&gt;
-    &lt;strong&gt;
-            &lt;span&gt;234&lt;/span&gt;
-    &lt;/strong&gt;
-&lt;/div&gt;</code></pre>
-<p>.css</p>
-<pre><code>div,
-strong,
-span&#123;
-    background-color: red;
-&#125;</code></pre>
-<p>作者：<em>zjh</em></p>
-]]></content>
-      <categories>
-        <category>前端笔记</category>
-      </categories>
-      <tags>
-        <tag>前端笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML高级标签</title>
-    <url>/posts/715f780f.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/715f780f.html"><img src="https://s3.ax1x.com/2021/01/09/sM0OXR.png" alt="sM0OXR.png" style="zoom:25%;" /></a></p>
-<a id="more"></a>
-
-<h1 id="HTML高级标签"><a href="#HTML高级标签" class="headerlink" title="HTML高级标签"></a>HTML高级标签</h1><h1 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h1><p>无序列表在网页中运用的最多的就是导航栏</p>
-<p><a href="https://imgchr.com/i/sFzMN9"><img src="https://s3.ax1x.com/2021/01/05/sFzMN9.md.png" alt="sFzMN9.md.png"></a></p>
-<pre><code>&lt;ul type=&quot;circle&quot;&gt;
-            &lt;li&gt;1&lt;/li&gt;
-            &lt;li&gt;2&lt;/li&gt;
-            &lt;li&gt;3&lt;/li&gt;
-            &lt;li&gt;4&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-<p><code>&lt;ul&gt;</code>可以给他添加属性，常用的是更换前面的空心圆（circle）</p>
-<ul type="circle">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-</ul>
-
-<p>实心圆：</p>
-<ul type="disc">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-</ul>
-
-<p>方块：</p>
-<ul type="square">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-        </ul>
-
-<h1 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h1><p><code>&lt;ol&gt;</code>标签中可以给列表设置type属性，倒序属性等等</p>
-<pre><code>&lt;ol type =&quot;1&quot;&gt;
-    &lt;li&gt;Coffee&lt;/li&gt;
-    &lt;li&gt;Milk&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-<p><code>&lt;ol type =&quot;1&quot;&gt;</code>有序列表排序根据阿拉伯数字</p>
-<p>举个栗子：</p>
-<ol type ="1">
-    <li>Coffee</li>
-    <li>Milk</li>
-</ol>
-
-<p>也可以设置成大小写英文字母A/a</p>
-<ol type ="a">
-    <li>Coffee</li>
-    <li>Milk</li>
-</ol>
-
-<p>也可罗马数字 i</p>
-<ol type ="i">
-    <li>Coffee</li>
-    <li>Milk</li>
-    <li>Spring</li>
-</ol>
-
-<p>倒序属性：</p>
-<p><code>&lt;ol type =&quot;1&quot; reversed=&quot;reversed&quot;&gt;</code>type属性都可，就举阿拉伯数字为例。</p>
-<p>效果：</p>
-<ol type ="1" reversed="reversed">
-    <li>Coffee</li>
-    <li>Milk</li>
-    <li>Spring</li>
-</ol>
-
-<h1 id="lt-img-gt-图片标签"><a href="#lt-img-gt-图片标签" class="headerlink" title="&lt;img&gt;图片标签"></a><code>&lt;img&gt;</code>图片标签</h1><pre><code class="html">&lt;img src=&quot;https://s3.ax1x.com/2020/11/27/DDAP1I.png&quot; alt=&quot;LIEFox的LOGO&quot; title=&quot;XXX&quot; /&gt;</code></pre>
-<p>代码的效果：<img src="https://s3.ax1x.com/2020/11/27/DDAP1I.png" alt="这是一张照片"  /></p>
-<p><code>img</code>标签顾名思义用于网页插入图片的标签，其中常用的设置属性值有 </p>
-<p><code>src</code>：图片路径，可以是网上图片的url，比如上面的代码块src引用的照片地址；也可以是本地照片的绝对路径|相对路径。</p>
-<p><code>alt</code>：他的作用是用于当图片出错时，展现给用户的一个图片的描述信息，</p>
-<p>​        举个栗子：</p>
-<img src="DDAP1I.png" alt="LIEFox的LOGO" />
-
-<p><code>title</code>可以当用户鼠标悬停在照片上时，会显示图片信息（彩蛋），你可以尝试一下，鼠标悬停在图片上。</p>
-<img src="https://s3.ax1x.com/2020/11/27/DDAP1I.png" alt="LIEFox的LOGO" title="LIEFox牛逼" />
-
-<h1 id="lt-a-gt-超链接标签（锚标签）"><a href="#lt-a-gt-超链接标签（锚标签）" class="headerlink" title="&lt;a&gt;超链接标签（锚标签）"></a><code>&lt;a&gt;</code>超链接标签（锚标签）</h1><h2 id="1-超链接作用："><a href="#1-超链接作用：" class="headerlink" title="1.超链接作用："></a>1.超链接作用：</h2><p>源码：</p>
-<pre><code>&lt;a href=&quot;cxq21.gitee.io&quot;&gt;LIEFox网站 点我试试&lt;/a&gt;</code></pre>
-<h3 id="实例：LIEFox网站-点我试试"><a href="#实例：LIEFox网站-点我试试" class="headerlink" title="实例：LIEFox网站 点我试试"></a>实例：<a href="https://cxq21.gitee.io">LIEFox网站 点我试试</a></h3><p>其中可以设置的属性有：<code>target</code> 可以设置点击超链接时打开的是自身这个页面还是要浏览器新开一个标签页浏览。</p>
-<p><code>target=&quot;_blank&quot;</code>新开一个标签页浏览网页</p>
-<p><a href="https://cxq21.gitee.io" target="_blank">LIEFox网站  点我试试</a></p>
-<p><code>target=&quot;_self&quot;</code>在本身的标签页浏览网页</p>
-<p><a href="https://cxq21.gitee.io" target="_self">LIEFox网站  点我试试</a></p>
-<h2 id="2-创建发送邮箱，拨打电话"><a href="#2-创建发送邮箱，拨打电话" class="headerlink" title="2.创建发送邮箱，拨打电话"></a>2.创建发送邮箱，拨打电话</h2><p>如果 <code>href</code>中填的是邮箱，当点击时，电脑端或手机端会自动调用邮件，</p>
-<p>源码：</p>
-<pre><code>&lt;a href=&quot;mailto:2606097218@qq.com&quot; target=&quot;_blank&quot;&gt;mail我&lt;/a&gt;</code></pre>
-<h3 id="点击试试：mail我"><a href="#点击试试：mail我" class="headerlink" title="点击试试：mail我"></a>点击试试：<a href="mailto:2606097218@qq.com" target="_blank">mail我</a></h3><h3 id="其实a标签在这方面用的最多的也是最常见的是美团外卖，我们点击商家电话时，会自动跳到拨号界面，而且商家的电话号码也会呈现在拨号界面，-仅手机端"><a href="#其实a标签在这方面用的最多的也是最常见的是美团外卖，我们点击商家电话时，会自动跳到拨号界面，而且商家的电话号码也会呈现在拨号界面，-仅手机端" class="headerlink" title="其实a标签在这方面用的最多的也是最常见的是美团外卖，我们点击商家电话时，会自动跳到拨号界面，而且商家的电话号码也会呈现在拨号界面，**(仅手机端)**"></a>其实a标签在这方面用的最多的也是最常见的是美团外卖，我们点击商家电话时，会自动跳到拨号界面，而且商家的电话号码也会呈现在拨号界面，**(仅手机端)**</h3><p>源码：</p>
-<pre><code>&lt;a href=&quot;tel:15270055490&quot; target=&quot;_blank&quot;&gt;call me&lt;/a&gt;</code></pre>
-<h3 id="快用手机点击试一下：call-me"><a href="#快用手机点击试一下：call-me" class="headerlink" title="快用手机点击试一下：call me"></a>快用手机点击试一下：<a href="tel:15270055490" target="_blank">call me</a></h3><h2 id="3-超链接也叫为锚点"><a href="#3-超链接也叫为锚点" class="headerlink" title="3.超链接也叫为锚点"></a>3.超链接也叫为锚点</h2><p>为什么叫锚点呢？一般用于网页的目录，如果你是电脑端访问本站，你应该可以看见LIEFox网页右侧有一个悬浮目录的功能，当你点击了其中一个小标题，你将会跳到文章相应位置。</p>
-<p>源码：</p>
-<p>定义一个 <code>p</code>标签 <code>id</code>设置为”无序列表”,这样相当于给他添加了一个锚点，</p>
-<pre><code>&lt;p id=&quot;无序列表&quot;&gt;无序列表&lt;/p&gt;</code></pre>
-<p>当用户点击链接时，就会跳到 “无序列表” 这个标题。</p>
-<pre><code>&lt;a href=&quot;#无序列表&quot; &gt;无序列表&lt;/a&gt;</code></pre>
-<h3 id="点击超链接试试：无序列表"><a href="#点击超链接试试：无序列表" class="headerlink" title="点击超链接试试：无序列表"></a>点击超链接试试：<a href="#无序列表" >无序列表</a></h3><h2 id="4-补充黑科技"><a href="#4-补充黑科技" class="headerlink" title="4.补充黑科技"></a>4.补充黑科技</h2><p>在 <code>href</code>中可以填入协议限定符，说的可能有点不太好理解，那么，我们将写一个无限弹窗脚本；</p>
-<p>说白了就是这里面herf里面写JavaScript代码。</p>
-<p>源码：</p>
-<pre><code>&lt;a href=&quot;javascript:while(1)&#123;alert(&#39;LIEFox诚邀你加入我们&#39;)&#125;&quot; &gt;恭喜你中了100万现金大奖&lt;/a&gt;</code></pre>
-<p>效果：</p>
-<h3 id="恭喜你中了100万现金大奖-不点点！😏？"><a href="#恭喜你中了100万现金大奖-不点点！😏？" class="headerlink" title="恭喜你中了100万现金大奖    不点点！😏？"></a><a href="javascript:while(1){alert('LIEFox诚邀你加入我们')}" >恭喜你中了100万现金大奖 </a>   不点点！😏？</h3><h1 id="lt-form-gt-标签"><a href="#lt-form-gt-标签" class="headerlink" title="&lt;form&gt;标签"></a><code>&lt;form&gt;</code>标签</h1><p>表单标签，是前端与后端交互数据的最常见的方法，比如用户注册，登录，搜索等等。</p>
-<pre><code>        &lt;form method=&quot;get&quot; action=&quot;#&quot;&gt;
-            &lt;p&gt;
-                用户名：&lt;input type=&quot;text&quot; name=&quot;username&quot;/&gt;
-            &lt;/p&gt;
-            &lt;p&gt;
-                密  码：&lt;input type=&quot;password&quot; name=&quot;password&quot;/&gt;记住密码&lt;input type=&quot;radio&quot;/&gt;
-            &lt;/p&gt;
-            &lt;input type=&quot;submit&quot; value=&quot;登录&quot;/&gt;
-
-        &lt;/form&gt;</code></pre>
-<p>效果：</p>
-<form method="get" action="#">
-            <p>
-                用户名：<input type="text" name="username"/>
-            </p>
-            <p>
-                密  码：<input type="password" name="password"/>记住密码<input type="radio"/>
-            </p>
-            <input type="submit" value="登录"/>
-</form>
-
-<p><code>&lt;form&gt;</code>标签内可以填的属性有<code>method</code>里面的属性有 get、post。是发送数据的方式。</p>
-<p>一对form标签中可以填<code>&lt;input type=&quot;text&quot;/&gt;</code>type中可以填 text、password、radio、checkbox等等。</p>
-<p><code>text</code>：是文本域标签，明文，用户填入可以看见内容。效果：用户名：<input type="text" name="username"/></p>
-<p><code>password</code>：是密码标签，密文，用户填入不可以看见内容。效果：密码：<input type="password" name="password"/></p>
-<p><code>radio</code>：单选按钮，效果：记住密码<input type="radio"/></p>
-<p><code>checkbox</code>：多选按钮，效果：</p>
-<p>可乐<input type="checkbox"/></p>
-<p>雪碧<input type="checkbox"/></p>
-<p>牛奶<input type="checkbox"/></p>
-<p>单选、多选按钮中还可以添加默认选择属性：<code>checked=&quot;checked&quot;</code></p>
-<pre><code>可乐&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;
-
-雪碧&lt;input type=&quot;checkbox&quot;/&gt;
-
-牛奶&lt;input type=&quot;checkbox&quot;/&gt;</code></pre>
-<p>效果：</p>
-<p>可乐<input type="checkbox" checked="checked" /></p>
-<p>雪碧<input type="checkbox"/></p>
-<p>牛奶<input type="checkbox"/></p>
-<h1 id="select组件"><a href="#select组件" class="headerlink" title="select组件"></a>select组件</h1><p>select被用做于下拉菜单</p>
-<p>代码：</p>
-<pre><code>&lt;select&gt;
-    &lt;option&gt;北京&lt;/option&gt;
-    &lt;option&gt;上海&lt;/option&gt;
-    &lt;option&gt;江西&lt;/option&gt;
-&lt;/select&gt;</code></pre>
-<p>效果：</p>
-<select>
-                <option>北京</option>
-                <option>上海</option>
-                <option>江西</option>
-            </select>
-
-<hr>
-<p>作者：<em>zjh</em></p>
-]]></content>
-      <categories>
-        <category>前端笔记</category>
-      </categories>
-      <tags>
-        <tag>前端笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -889,6 +279,189 @@ span&#123;
       </categories>
       <tags>
         <tag>前端笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JS期末网站</title>
+    <url>/posts/48b82e1f.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/48b82e1f.html"><img src="https://s3.ax1x.com/2021/01/09/sM02lj.png" alt="sMaPL6.png" style="zoom: 33%;" /></a></p>
+<a id="more"></a>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h2 id="感谢支持LIEFox的小伙伴们，前些天都在忙考证，没时间更新文章，昨天被小伙伴催更了，所以今天站长把这次JS的期末测试的项目分享给大家，顺便水一篇文章。"><a href="#感谢支持LIEFox的小伙伴们，前些天都在忙考证，没时间更新文章，昨天被小伙伴催更了，所以今天站长把这次JS的期末测试的项目分享给大家，顺便水一篇文章。" class="headerlink" title="感谢支持LIEFox的小伙伴们，前些天都在忙考证，没时间更新文章，昨天被小伙伴催更了，所以今天站长把这次JS的期末测试的项目分享给大家，顺便水一篇文章。"></a>感谢支持LIEFox的小伙伴们，前些天都在忙考证，没时间更新文章，昨天被小伙伴催更了，所以今天站长把这次JS的期末测试的项目分享给大家，顺便水一篇文章。</h2><p>偷偷告诉你们，LIEFox已经破2000访客了。加油</p>
+<h1 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h1><ul>
+<li>项目名：LIEFoxmini</li>
+<li>运用技术：Html+css+jss</li>
+<li>运用框架：Layui</li>
+<li>花费时间：4小时</li>
+</ul>
+<p>咱们先来看看index效果图<strong>（还不兼容手机端这个网页，建议电脑端打开，或者手机浏览器访问电脑版）</strong></p>
+<p><a href="https://imgchr.com/i/r8Rrr9"><img src="https://s3.ax1x.com/2020/12/17/r8Rrr9.md.png" alt="r8Rrr9.md.png"></a></p>
+<p>这个mini网站，动态效果还是很足的。由一个导航栏，轮播图，视频播放器，还有一个相册。</p>
+<p><a href="http://cxq21.gitee.io/liefoxmini/"><img src="https://s3.ax1x.com/2020/12/17/r84SqH.png" alt="r84SqH.png" style="zoom:50%;" /></a></p>
+<h2 id="点上面这个图标就可以在线预览网站喔，没错，就是上面这个眼睛！"><a href="#点上面这个图标就可以在线预览网站喔，没错，就是上面这个眼睛！" class="headerlink" title="点上面这个图标就可以在线预览网站喔，没错，就是上面这个眼睛！"></a>点上面这个图标就可以在线预览网站喔，没错，就是上面这个眼睛！</h2><p>由于涉及内容及知识面较广，所以我将直接发源码下载地址分享给大家，感兴趣的伙伴可以去下载地址下载下来，进行学习研究。</p>
+<p><a href="https://gitee.com/cxq21/liefoxmini/repository/archive/master.zip" target="_blank">源码下载地址</a>点击链接进行人机判断就可以下载了。</p>
+<p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>JS案例</category>
+      </categories>
+      <tags>
+        <tag>案例记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring-ioc基于注解</title>
+    <url>/posts/693b31a5.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/693b31a5.html"><img src="https://s3.ax1x.com/2021/01/09/sM0TtU.png" alt="sM0TtU.png" style="zoom:25%;" /></a></p>
+<a id="more"></a>
+
+<h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a><strong>要求</strong></h2><p>使用Spring的IoC容器，实际上就是通过类似XML这样的配置文件，把我们自己的Bean的依赖关系描述出来，然后让容器来创建并装配Bean。一旦容器初始化完毕，我们就直接从容器中获取Bean使用它们。</p>
+<p>使用XML配置的优点是所有的Bean都能一目了然地列出来，并通过配置注入能直观地看到每个Bean的依赖。它的缺点是写起来非常繁琐，每增加一个组件，就必须把新的Bean配置到XML中。</p>
+<p>有没有其他更简单的配置方式呢？</p>
+<p>有！我们可以使用Annotation配置，可以完全不需要XML，让Spring自动扫描Bean并组装它们。</p>
+<h3 id="所以今天我们用注解来写一个基于注解的Spring"><a href="#所以今天我们用注解来写一个基于注解的Spring" class="headerlink" title="所以今天我们用注解来写一个基于注解的Spring"></a>所以今天我们用注解来写一个基于注解的Spring</h3><p><strong><a href="https://imgchr.com/i/D6E1Mj"><img src="https://s3.ax1x.com/2020/11/28/D6E1Mj.md.png" alt="D6E1Mj.md.png"></a></strong></p>
+<hr>
+<p><strong><!--more--></strong></p>
+<p><strong>由于是基于注解的IoC的Spring开发，所以我们要导入一个关键的jar包</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Z7Pf"><img src="https://s3.ax1x.com/2020/11/28/D6Z7Pf.png" alt="D6Z7Pf.png"></a></strong></p>
+<hr>
+<h4 id="好啦，正题开始"><a href="#好啦，正题开始" class="headerlink" title="好啦，正题开始"></a><strong>好啦，正题开始</strong></h4><h1 id="第一步，万恶之源，打开我们的idea"><a href="#第一步，万恶之源，打开我们的idea" class="headerlink" title="第一步，万恶之源，打开我们的idea"></a><strong>第一步，万恶之源，打开我们的idea</strong></h1><ol>
+<li><p><strong>创建一个java项目</strong></p>
+</li>
+<li><p><strong>在src里创建如下3个包</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6mV1S"><img src="https://s3.ax1x.com/2020/11/28/D6mV1S.png" alt="D6mV1S.png"></a></strong></p>
+<ul>
+<li><p><strong>Dao包（数据持久层）</strong></p>
+</li>
+<li><p><strong>Service包（业务逻辑层）</strong>    </p>
+</li>
+<li><p><strong>Web包（显示层）</strong></p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>3.接着在src下创建一个xml文件，名为（ApplicationContext.xml)</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6nngO"><img src="https://s3.ax1x.com/2020/11/28/D6nngO.md.png" alt="D6nngO.md.png"></a></strong></p>
+<p><strong>src&gt;New&gt;XML File&gt;名为（ApplicationContext.xml)</strong></p>
+<p><strong>4.xml文件里的代码如下</strong></p>
+<pre><code class="xml">&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
+       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+       xmlns:context=&quot;http://www.springframework.org/schema/context&quot;
+       xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.3.xsd&quot;&gt;
+    &lt;context:component-scan base-package=&quot;Service&quot;&gt;&lt;/context:component-scan&gt;
+    &lt;!--&lt;context:component-scan&gt;标签：指定扫描某一包下的注解
+    base-package:指定需要扫描的包
+    &lt;context:component-scan&gt;标签：指定扫描某一包下的注解
+    base-package:指定需要扫描的包--&gt;
+&lt;/beans&gt;</code></pre>
+<p><strong>5.接下来导jar包</strong></p>
+<p><strong>Flie》Project Structure》Liberals》＋》Java》找到自己放spring jar包的地方》选中》OK》取个名字（Spring_Jars）》OK</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6u3yF"><img src="https://s3.ax1x.com/2020/11/28/D6u3yF.md.png" alt="D6u3yF.md.png"></a></strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Ku0H"><img src="https://s3.ax1x.com/2020/11/28/D6Ku0H.md.png" alt="D6Ku0H.md.png"></a></strong></p>
+<p><strong>看一下加成功了没有</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Mlb4"><img src="https://s3.ax1x.com/2020/11/28/D6Mlb4.png" alt="D6Mlb4.png"></a></strong></p>
+<p><strong>好的，有Spring_Jars包了</strong></p>
+<p><strong>到这一步，咱们就算上车了，开始飙车了</strong></p>
+<hr>
+<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a><strong>第二步</strong></h1><p><strong>安照题目要求</strong></p>
+<pre><code>Dao层：接口文件StudentDao，包含方法selectAll
+        实现类StudentDaoImpl,包含selectAll方法的实现（仅写输出语句表示方法调用成功即可）
+Service层：接口文件StudentService，包含方法selectAll
+            实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)
+Web层:类WebMain,主方法中调用Service层的selectAll方法。</code></pre>
+<ol>
+<li><p><strong>在Dao包里新建一个接口文件StudentDao</strong></p>
+</li>
+<li><p><strong>在Dao包里新建一个java文件StudentDaoImpl</strong></p>
+</li>
+<li><p><strong>Service。。。</strong></p>
+</li>
+<li><p><strong>Web。。。</strong></p>
+</li>
+<li><p><strong>以下面这个结构来建，咱们把框架给搭起来，就快了！！</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6QlSP"><img src="https://s3.ax1x.com/2020/11/28/D6QlSP.png" alt="D6QlSP.png"></a></strong></p>
+<hr>
+</li>
+</ol>
+<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a><strong>第三步</strong></h1><p><strong>骨架欧克了，我们现在去丰满他的细节</strong></p>
+<p><strong>1.</strong></p>
+<p><strong>Dao》StudentDao</strong></p>
+<pre><code class="java">public interface StudentDao &#123;
+    void selectAll();
+&#125;</code></pre>
+<p><strong>Dao》StudentDaoImpl</strong></p>
+<pre><code class="java">public class StudentDaoImpl implements StudentDao&#123;
+    @Override
+    public void selectAll() &#123;
+        System.out.println(&quot;查询所有学生信息！&quot;);
+    &#125;
+&#125;</code></pre>
+<p><strong>2.</strong></p>
+<p><strong>Service》StudentService</strong></p>
+<pre><code class="java">public interface StudentService &#123;
+    void selectAll();
+&#125;</code></pre>
+<p><strong>Service》StudentServiceImpl</strong></p>
+<pre><code class="Java">//如果报错的话，记得导包
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Repository;
+//如果idea自动导的话就没事
+
+@Repository(value = &quot;StudentService&quot;)//@Repository:用于持久层的注解，作用与Component相同
+public class StudentServiceImpl implements StudentService&#123;
+
+    /*实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)*/
+
+    @Value(&quot;LIEFox&quot;)//与&lt;property&gt;标签作用一样
+    private String SName;
+    @Value(&quot;https:cxq21.gitee.io&quot;)//偷偷的打个广告嘿嘿
+    private String SId;
+
+    @Override
+    public void selectAll() &#123;
+        System.out.println(&quot;查询到了一个名为&quot;+SName+&quot;网站,网址为&quot;+SId);
+    &#125;
+&#125;</code></pre>
+<p><strong>3.</strong></p>
+<p><strong>Web》WebMain</strong></p>
+<pre><code class="Java">//如果报错的话，记得导包
+import Service.StudentService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+//如果idea自动导的话就没事
+
+//Web层:类WebMain,主方法中调用Service层的selectAll方法。
+
+public class WebMain &#123;
+    public static void main(String[] args) &#123;
+        //1.容器初始化
+        ApplicationContext context=new ClassPathXmlApplicationContext(&quot;ApplicationContext.xml&quot;);
+        //2.创建实例
+        StudentService service=(StudentService) context.getBean(&quot;StudentService&quot;);
+        service.selectAll();
+    &#125;
+&#125;</code></pre>
+<p><strong>这样，我们的一个基于注解的Spring项目是写完了。</strong></p>
+<hr>
+<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a><strong>第四步</strong></h1><p><strong>运行项目。。。</strong></p>
+<p><strong>结果出来了</strong></p>
+<p><strong><a href="https://imgchr.com/i/D68G3n"><img src="https://s3.ax1x.com/2020/11/28/D68G3n.md.png" alt="D68G3n.md.png"></a></strong></p>
+<hr>
+<h2 id="原项目"><a href="#原项目" class="headerlink" title="原项目"></a>原项目</h2><p><strong>最后，附上，我的gitee原项目，地址：<a href="https://gitee.com/cxq21/spring_-ioc">https://gitee.com/cxq21/spring_-ioc</a></strong></p>
+<p><strong>下载zip，然后解压就欧克了</strong></p>
+<p><strong><a href="https://imgchr.com/i/D6Gfs0"><img src="https://s3.ax1x.com/2020/11/28/D6Gfs0.md.png" alt="D6Gfs0.md.png"></a></strong></p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a><strong>小结</strong></h1><p><strong>使用Annotation可以大幅简化配置，每个Bean通过<code>@Component</code>和<code>@Autowired</code>注入；</strong></p>
+<p><strong>必须合理设计包的层次结构，才能发挥<code>@ComponentScan</code>的威力。</strong></p>
+<p><strong><em>作者：zjh</em></strong></p>
+<h2 id="码字不易，留下你的评论吧"><a href="#码字不易，留下你的评论吧" class="headerlink" title="码字不易，留下你的评论吧"></a>码字不易，留下你的评论吧</h2>]]></content>
+      <categories>
+        <category>JAVA案例</category>
+      </categories>
+      <tags>
+        <tag>案例记录</tag>
       </tags>
   </entry>
   <entry>
@@ -1400,516 +973,280 @@ public class UserServlet extends BaseServlet &#123;
       </tags>
   </entry>
   <entry>
-    <title>解压开车</title>
-    <url>/posts/a4acce0b.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/a4acce0b.html"><img src="https://s3.ax1x.com/2021/01/09/sMaNSs.png" alt="sMaNSs.png" style="zoom: 80%;" /></a></p>
+    <title>JAVA简介</title>
+    <url>/posts/98ac5948.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/98ac5948.html"><img src="https://s3.ax1x.com/2021/01/09/sM07hF.png" alt="sM07hF.png" style="zoom:25%;" /></a></p>
 <a id="more"></a>
 
-<h2 id="等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。"><a href="#等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。" class="headerlink" title="等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。"></a>等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。</h2></iframe><div style="position: relative; width: 100%; height: 90%; padding-bottom: 100%;"><iframe 
-src="https://bruno-simon.com/" scrolling="yes" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>
-
-<h4 id="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"><a href="#LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈" class="headerlink" title="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"></a>LIEFox加入了很多实用有趣的小工具，链接在这👉<a href="https://cxq21.gitee.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" target="_blank">实用工具传送门</a>👈</h4><p><em>作者：zjh</em></p>
-]]></content>
-      <categories>
-        <category>实用工具</category>
-      </categories>
-      <tags>
-        <tag>实用工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WebGL流体效果</title>
-    <url>/posts/3731d3f9.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/3731d3f9.html"><img src="https://s3.ax1x.com/2021/01/09/sM69lF.png" alt="sM69lF.png"></a></p>
-<a id="more"></a>
-
-<h1 id="WebGL流体效果"><a href="#WebGL流体效果" class="headerlink" title="WebGL流体效果"></a>WebGL流体效果</h1><p>WebGL流体效果，拖动鼠标即可展现炫酷的流体动画，可以截图用来做背景，发挥自己的创造力。。。《Close Controls》可以关闭菜单，自己研究英语。<strong>（显示不出的话，就刷新一下）</strong></p>
-<div style="position: relative; width: 100%; height: 100%; padding-bottom: 100%;"><iframe 
-src="https://paveldogreat.github.io/WebGL-Fluid-Simulation/" scrolling="yes" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>
-
-<h4 id="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"><a href="#LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈" class="headerlink" title="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"></a>LIEFox加入了很多实用有趣的小工具，链接在这👉<a href="https://cxq21.gitee.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" target="_blank">实用工具传送门</a>👈</h4><p><em>作者：zjh</em></p>
-]]></content>
-      <categories>
-        <category>实用工具</category>
-      </categories>
-      <tags>
-        <tag>实用工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VIP电影</title>
-    <url>/posts/78a19d7.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/78a19d7.html"><img src="https://s3.ax1x.com/2021/01/09/sM67h6.png" alt="sM67h6.png" style="zoom:25%;" /></a></p>
-<a id="more"></a>
-
-<h1 id="高清电影在线观看"><a href="#高清电影在线观看" class="headerlink" title="高清电影在线观看"></a>高清电影在线观看</h1><div style="position: relative; width: 100%; height: 100%; padding-bottom: 100%;"><iframe 
-src="https://www.o8tv.com/" scrolling="yes" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>
-#### LIEFox加入了很多实用有趣的小工具，链接在这👉<a href="https://cxq21.gitee.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" target="_blank">实用工具传送门</a>👈
-
-<p><em>作者：zjh</em></p>
-]]></content>
-      <categories>
-        <category>实用工具</category>
-      </categories>
-      <tags>
-        <tag>实用工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JS期末网站</title>
-    <url>/posts/48b82e1f.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/48b82e1f.html"><img src="https://s3.ax1x.com/2021/01/09/sM02lj.png" alt="sMaPL6.png" style="zoom: 33%;" /></a></p>
-<a id="more"></a>
-
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h2 id="感谢支持LIEFox的小伙伴们，前些天都在忙考证，没时间更新文章，昨天被小伙伴催更了，所以今天站长把这次JS的期末测试的项目分享给大家，顺便水一篇文章。"><a href="#感谢支持LIEFox的小伙伴们，前些天都在忙考证，没时间更新文章，昨天被小伙伴催更了，所以今天站长把这次JS的期末测试的项目分享给大家，顺便水一篇文章。" class="headerlink" title="感谢支持LIEFox的小伙伴们，前些天都在忙考证，没时间更新文章，昨天被小伙伴催更了，所以今天站长把这次JS的期末测试的项目分享给大家，顺便水一篇文章。"></a>感谢支持LIEFox的小伙伴们，前些天都在忙考证，没时间更新文章，昨天被小伙伴催更了，所以今天站长把这次JS的期末测试的项目分享给大家，顺便水一篇文章。</h2><p>偷偷告诉你们，LIEFox已经破2000访客了。加油</p>
-<h1 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h1><ul>
-<li>项目名：LIEFoxmini</li>
-<li>运用技术：Html+css+jss</li>
-<li>运用框架：Layui</li>
-<li>花费时间：4小时</li>
-</ul>
-<p>咱们先来看看index效果图<strong>（还不兼容手机端这个网页，建议电脑端打开，或者手机浏览器访问电脑版）</strong></p>
-<p><a href="https://imgchr.com/i/r8Rrr9"><img src="https://s3.ax1x.com/2020/12/17/r8Rrr9.md.png" alt="r8Rrr9.md.png"></a></p>
-<p>这个mini网站，动态效果还是很足的。由一个导航栏，轮播图，视频播放器，还有一个相册。</p>
-<p><a href="http://cxq21.gitee.io/liefoxmini/"><img src="https://s3.ax1x.com/2020/12/17/r84SqH.png" alt="r84SqH.png" style="zoom:50%;" /></a></p>
-<h2 id="点上面这个图标就可以在线预览网站喔，没错，就是上面这个眼睛！"><a href="#点上面这个图标就可以在线预览网站喔，没错，就是上面这个眼睛！" class="headerlink" title="点上面这个图标就可以在线预览网站喔，没错，就是上面这个眼睛！"></a>点上面这个图标就可以在线预览网站喔，没错，就是上面这个眼睛！</h2><p>由于涉及内容及知识面较广，所以我将直接发源码下载地址分享给大家，感兴趣的伙伴可以去下载地址下载下来，进行学习研究。</p>
-<p><a href="https://gitee.com/cxq21/liefoxmini/repository/archive/master.zip" target="_blank">源码下载地址</a>点击链接进行人机判断就可以下载了。</p>
-<p><em>作者：zjh</em></p>
-]]></content>
-      <categories>
-        <category>JS案例</category>
-      </categories>
-      <tags>
-        <tag>案例记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面向对象基础</title>
-    <url>/posts/9d9ad23f.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/9d9ad23f.html"><img src="https://s3.ax1x.com/2021/01/09/sM0Lc9.png" alt="sM0Lc9.png" style="zoom: 25%;" /></a></p>
-<a id="more"></a>
-
-<h1 id="（1）面向对象的概念"><a href="#（1）面向对象的概念" class="headerlink" title="（1）面向对象的概念"></a>（1）面向对象的概念</h1><p>面向对象是一种符合人类思维的编程思想，将万物比作对象，说一个栗子：</p>
-<p><strong>把大象装进冰箱需要几步</strong></p>
-<p>三步</p>
-<ol>
-<li>打开冰箱</li>
-<li>装进大象</li>
-<li>关上冰箱门</li>
-</ol>
-<p><strong>这个是一个典型的面向过程的编程思想，把这个事情，像成敲java代码，如果换成装狐狸，那也要重新写一遍代码，将狐狸放进冰箱，执行三步，如果又换把狐狸放进笼子里呢，又要重新写一遍。所以为了解决事情的重复性，就有了面向对象思想。</strong></p>
-<p>就可以将装进某件事物封装成一个对象，只需要改动一点点，就可以实现这个功能。。。。</p>
-<p>而面向对象有三个特点：</p>
-<p>1.封装性</p>
-<p>封装性是将对象的属性和行为封装起来，然后不需要让用户知道他是怎么执行的，只需要改变对应的参数，就可以实现用户想要达到的功能。</p>
-<p>2.继承性</p>
-<p>继承性主要讲的是类与类之间的关系，可以通过继承将代码的冗余降低。用最少的代码，做更多的功能。</p>
-<p>3.多态性</p>
-<p>多态性是指程序之间允许出现重名的现象。在继承关系中，子类如果定义了一个与父类方法签名完全相同的方法，被称为覆写（Override）。</p>
-]]></content>
-      <categories>
-        <category>JAVA笔记</category>
-      </categories>
-      <tags>
-        <tag>JAVA笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数组控制</title>
-    <url>/posts/335f9f1b.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/335f9f1b.html"><img src="https://s3.ax1x.com/2021/01/09/sM0jn1.png" alt="sM0jn1.png" style="zoom:25%;" /></a></p>
-<a id="more"></a>
-
-<p>本节我们将讲解对数组的操作，包括：</p>
+<h1 id="（1）JAVA简介"><a href="#（1）JAVA简介" class="headerlink" title="（1）JAVA简介"></a>（1）JAVA简介</h1><p>Java最早是由SUN公司（已被Oracle收购）的<a href="https://en.wikipedia.org/wiki/James_Gosling">詹姆斯·高斯林</a>（高斯林，人称Java之父）在上个世纪90年代初开发的一种编程语言，最初被命名为Oak，目标是针对小型家电设备的嵌入式应用，结果市场没啥反响。谁料到互联网的崛起，让Oak重新焕发了生机，于是SUN公司改造了Oak，在1995年以Java的名称正式发布，原因是Oak已经被人注册了，因此SUN注册了Java这个商标。随着互联网的高速发展，Java逐渐成为最重要的网络编程语言。</p>
+<p>Java介于编译型语言和解释型语言之间。编译型语言如C、C++，代码是直接编译成机器码执行，但是不同的平台（x86、ARM等）CPU的指令集不同，因此，需要编译出每一种平台的对应机器码。解释型语言如Python、Ruby没有这个问题，可以由解释器直接加载源码然后运行，代价是运行效率太低。而Java是将代码编译成一种“字节码”，它类似于抽象的CPU指令，然后，针对不同平台编写虚拟机，不同平台的虚拟机负责加载字节码并执行，这样就实现了“一次编写，到处运行”的效果。当然，这是针对Java开发者而言。对于虚拟机，需要为每个平台分别开发。为了保证不同平台、不同公司开发的虚拟机都能正确执行Java字节码，SUN公司制定了一系列的Java虚拟机规范。从实践的角度看，JVM的兼容性做得非常好，低版本的Java字节码完全可以正常运行在高版本的JVM上。</p>
+<p>随着Java的发展，SUN给Java又分出了三个不同版本：</p>
 <ul>
-<li>遍历；</li>
-<li>排序。</li>
+<li>Java SE：Standard Edition</li>
+<li>Java EE：Enterprise Edition</li>
+<li>Java ME：Micro Edition</li>
 </ul>
-<p>以及多维数组的概念。</p>
+<p>这三者之间有啥关系呢？</p>
+<pre><code class="ascii">┌───────────────────────────┐
+│Java EE                    │
+│    ┌────────────────────┐ │
+│    │Java SE             │ │
+│    │    ┌─────────────┐ │ │
+│    │    │   Java ME   │ │ │
+│    │    └─────────────┘ │ │
+│    └────────────────────┘ │
+└───────────────────────────┘</code></pre>
+<p>简单来说，Java SE就是标准版，包含标准的JVM和标准库，而Java EE是企业版，它只是在Java SE的基础上加上了大量的API和库，以便方便开发Web应用、数据库、消息服务等，Java EE的应用使用的虚拟机和Java SE完全相同。</p>
+<p>Java ME就和Java SE不同，它是一个针对嵌入式设备的“瘦身版”，Java SE的标准库无法在Java ME上使用，Java ME的虚拟机也是“瘦身版”。</p>
+<p>毫无疑问，Java SE是整个Java平台的核心，而Java EE是进一步学习Web应用所必须的。我们熟悉的Spring等框架都是Java EE开源生态系统的一部分。不幸的是，Java ME从来没有真正流行起来，反而是Android开发成为了移动平台的标准之一，因此，没有特殊需求，不建议学习Java ME。</p>
+<p>因此我们推荐的Java学习路线图如下：</p>
+<ol>
+<li>首先要学习Java SE，掌握Java语言本身、Java核心开发技术以及Java标准库的使用；</li>
+<li>如果继续学习Java EE，那么Spring框架、数据库开发、分布式架构就是需要学习的；</li>
+<li>如果要学习大数据开发，那么Hadoop、Spark、Flink这些大数据平台就是需要学习的，他们都基于Java或Scala开发；</li>
+<li>如果想要学习移动开发，那么就深入Android平台，掌握Android App开发。</li>
+</ol>
+<p>无论怎么选择，Java SE的核心技术是基础，这个教程的目的就是让你完全精通Java SE！</p>
+<h3 id="Java版本"><a href="#Java版本" class="headerlink" title="Java版本"></a>Java版本</h3><p>从1995年发布1.0版本开始，到目前为止，最新的Java版本是Java 15：</p>
+<table>
+<thead>
+<tr>
+<th align="left">时间</th>
+<th align="left">版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1995</td>
+<td align="left">1.0</td>
+</tr>
+<tr>
+<td align="left">1998</td>
+<td align="left">1.2</td>
+</tr>
+<tr>
+<td align="left">2000</td>
+<td align="left">1.3</td>
+</tr>
+<tr>
+<td align="left">2002</td>
+<td align="left">1.4</td>
+</tr>
+<tr>
+<td align="left">2004</td>
+<td align="left">1.5 / 5.0</td>
+</tr>
+<tr>
+<td align="left">2005</td>
+<td align="left">1.6 / 6.0</td>
+</tr>
+<tr>
+<td align="left">2011</td>
+<td align="left">1.7 / 7.0</td>
+</tr>
+<tr>
+<td align="left">2014</td>
+<td align="left">1.8 / 8.0</td>
+</tr>
+<tr>
+<td align="left">2017/9</td>
+<td align="left">1.9 / 9.0</td>
+</tr>
+<tr>
+<td align="left">2018/3</td>
+<td align="left">10</td>
+</tr>
+<tr>
+<td align="left">2018/9</td>
+<td align="left">11</td>
+</tr>
+<tr>
+<td align="left">2019/3</td>
+<td align="left">12</td>
+</tr>
+<tr>
+<td align="left">2019/9</td>
+<td align="left">13</td>
+</tr>
+<tr>
+<td align="left">2020/3</td>
+<td align="left">14</td>
+</tr>
+<tr>
+<td align="left">2020/9</td>
+<td align="left">15</td>
+</tr>
+</tbody></table>
+<p>本教程使用的Java版本是最新版的<strong>Java 8</strong>。</p>
+<h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><p>初学者学Java，经常听到JDK、JRE这些名词，它们到底是啥？</p>
+<ul>
+<li>JDK：Java Development Kit</li>
+<li>JRE：Java Runtime Environment</li>
+</ul>
+<p>简单地说，JRE就是运行Java字节码的虚拟机。但是，如果只有Java源码，要编译成Java字节码，就需要JDK，因为JDK除了包含JRE，还提供了编译器、调试器等开发工具。</p>
+<p>二者关系如下：</p>
+<pre><code class="ascii">  ┌─    ┌──────────────────────────────────┐
+  │     │     Compiler, debugger, etc.     │
+  │     └──────────────────────────────────┘
+ JDK ┌─ ┌──────────────────────────────────┐
+  │  │  │                                  │
+  │ JRE │      JVM + Runtime Library       │
+  │  │  │                                  │
+  └─ └─ └──────────────────────────────────┘
+        ┌───────┐┌───────┐┌───────┐┌───────┐
+        │Windows││ Linux ││ macOS ││others │
+        └───────┘└───────┘└───────┘└───────┘</code></pre>
+<p>要学习Java开发，当然需要安装JDK了。</p>
+<p>那JSR、JCP……又是啥？</p>
+<ul>
+<li>JSR规范：Java Specification Request</li>
+<li>JCP组织：Java Community Process</li>
+</ul>
+<p>为了保证Java语言的规范性，SUN公司搞了一个JSR规范，凡是想给Java平台加一个功能，比如说访问数据库的功能，大家要先创建一个JSR规范，定义好接口，这样，各个数据库厂商都按照规范写出Java驱动程序，开发者就不用担心自己写的数据库代码在MySQL上能跑，却不能跑在PostgreSQL上。</p>
+<p>所以JSR是一系列的规范，从JVM的内存模型到Web程序接口，全部都标准化了。而负责审核JSR的组织就是JCP。</p>
+<p>一个JSR规范发布时，为了让大家有个参考，还要同时发布一个“参考实现”，以及一个“兼容性测试套件”：</p>
+<ul>
+<li>RI：Reference Implementation</li>
+<li>TCK：Technology Compatibility Kit</li>
+</ul>
+<p>比如有人提议要搞一个基于Java开发的消息服务器，这个提议很好啊，但是光有提议还不行，得贴出真正能跑的代码，这就是RI。如果有其他人也想开发这样一个消息服务器，如何保证这些消息服务器对开发者来说接口、功能都是相同的？所以还得提供TCK。</p>
+<p>通常来说，RI只是一个“能跑”的正确的代码，它不追求速度，所以，如果真正要选择一个Java的消息服务器，一般是没人用RI的，大家都会选择一个有竞争力的商用或开源产品。</p>
 <hr>
 <p>[TOC]</p>
-<h1 id="（1）数组遍历"><a href="#（1）数组遍历" class="headerlink" title="（1）数组遍历"></a>（1）数组遍历</h1><p>数组遍历有两种方法：</p>
-<p>1、for循环</p>
-<p>2、for each循环</p>
-<p>一一道来；</p>
-<p>for循环来遍历数组</p>
-<pre><code class="java">        int[]num =&#123;1,2,23,42,11,90&#125;;
-        for (int i=0;i&lt;num.length;i++)&#123;
-            System.out.print(num[i]+&quot; &quot;);
-        &#125;//打印 1 2 23 42 11 90</code></pre>
-<p>注意：</p>
-<p>如果循环索引超过数组的长度会报空指针异常（ArrayIndexOutOfBoundsException）。为了避免，我们应该注意索引不要超过数组长度，举个栗子：</p>
-<pre><code class="java">int[]num =&#123;1,2,23,42,11,90&#125;; //num.length=6,不可超过6，所以一般遍历的时候，循环条件都会是i&lt;num.length</code></pre>
-<p>for each 遍历</p>
-<p>for each 是一种循环数组更简单一点的方法，只不过他只可以读取数据，不可以像for遍历改变或写入数组里的数据。但只是遍历数组的数据的时候，却很好用。上才艺：</p>
-<pre><code class="java">int[]num =&#123;1,2,23,42,11,90&#125;;
-for (int n:num)&#123;
-    sout(n);
-&#125;//打印 1 2 23 42 11 90</code></pre>
-<h1 id="（2）排序"><a href="#（2）排序" class="headerlink" title="（2）排序"></a>（2）排序</h1><p>讲到排序，比较经典的是冒泡排序了，就是将数组里的数值像水里的气泡一样，从下往上冒</p>
-<pre><code class="java">import java.util.Arrays;
-
-public class Main &#123;
+<h1 id="（2）安装JDK"><a href="#（2）安装JDK" class="headerlink" title="（2）安装JDK"></a>（2）安装JDK</h1><p>因为Java程序必须运行在JVM之上，所以，我们第一件事情就是安装JDK。</p>
+<p>搜索JDK 15，确保从<a href="https://www.oracle.com/java/technologies/javase-downloads.html">Oracle的官网</a>下载最新的稳定版JDK：</p>
+<p><a href="https://imgchr.com/i/DjuG4g"><img src="https://s3.ax1x.com/2020/12/06/DjuG4g.md.png" alt="DjuG4g.md.png"></a></p>
+<p>找到Java SE 8的下载链接，下载安装即可。</p>
+<h3 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h3><p>安装完JDK后，需要设置一个<code>JAVA_HOME</code>的环境变量，它指向JDK的安装目录。在Windows下，它是安装目录，类似：</p>
+<pre><code>C:\Program Files\Java\jdk-8</code></pre>
+<p>在Mac下，它在<code>~/.bash_profile</code>或<code>~/.zprofile</code>里，它是：</p>
+<pre><code>export JAVA_HOME=`/usr/libexec/java_home -v 8`</code></pre>
+<p>然后，把<code>JAVA_HOME</code>的<code>bin</code>目录附加到系统环境变量<code>PATH</code>上。在Windows下，它长这样：</p>
+<pre><code>Path=%JAVA_HOME%\bin;&lt;现有的其他路径&gt;</code></pre>
+<p>在Mac下，它在<code>~/.bash_profile</code>或<code>~/.zprofile</code>里，长这样：</p>
+<pre><code>export PATH=$JAVA_HOME/bin:$PATH</code></pre>
+<p>把<code>JAVA_HOME</code>的<code>bin</code>目录添加到<code>PATH</code>中是为了在任意文件夹下都可以运行<code>java</code>。打开命令提示符窗口，输入命令<code>java -version</code>，如果一切正常，你会看到如下输出：</p>
+<pre><code class="ascii">┌────────────────────────────────────────────────────────┐
+│Command Prompt                                    - □ x │
+├────────────────────────────────────────────────────────┤
+│Microsoft Windows [Version 10.0.0]                      │
+│(c) 2015 Microsoft Corporation. All rights reserved.    │
+│                                                        │
+│C:\&gt; java -version                                      │
+│java version &quot;8&quot; ...                                   │
+│Java(TM) SE Runtime Environment                         │
+│Java HotSpot(TM) 64-Bit Server VM                       │
+│                                                        │
+│C:\&gt;                                                    │
+│                                                        │
+│                                                        │
+└────────────────────────────────────────────────────────┘</code></pre>
+<p>如果你看到的版本号不是<code>8</code>，而是<code>14</code>、<code>1.4</code>之类，说明系统存在多个JDK，且默认JDK不是JDK 15，需要把JDK 8提到<code>PATH</code>前面。</p>
+<p>如果你得到一个错误输出：</p>
+<pre><code class="ascii">┌────────────────────────────────────────────────────────┐
+│Command Prompt                                    - □ x │
+├────────────────────────────────────────────────────────┤
+│Microsoft Windows [Version 10.0.0]                      │
+│(c) 2015 Microsoft Corporation. All rights reserved.    │
+│                                                        │
+│C:\&gt; java -version                                      │
+│&#39;java&#39; is not recognized as an internal or external comm│
+│and, operable program or batch file.                    │
+│                                                        │
+│C:\&gt;                                                    │
+│                                                        │
+│                                                        │
+│                                                        │
+└────────────────────────────────────────────────────────┘</code></pre>
+<p>这是因为系统无法找到Java虚拟机的程序<code>java.exe</code>，需要检查JAVA_HOME和PATH的配置。</p>
+<p>可以参考<a href="https://www.java.com/zh_CN/download/help/path.xml">如何设置或更改PATH系统变量</a>。</p>
+<h3 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h3><p>细心的童鞋还可以在<code>JAVA_HOME</code>的<code>bin</code>目录下找到很多可执行文件：</p>
+<ul>
+<li><p>java：这个可执行程序其实就是JVM，运行Java程序，就是启动JVM，然后让JVM执行指定的编译后的代码；</p>
+</li>
+<li><p>javac：这是Java的编译器，它用于把Java源码文件（以<code>.java</code>后缀结尾）编译为Java字节码文件（以<code>.class</code>后缀结尾）；</p>
+</li>
+<li><p>jar：用于把一组<code>.class</code>文件打包成一个<code>.jar</code>文件，便于发布；</p>
+</li>
+<li><p>javadoc：用于从Java源码中自动提取注释并生成文档；</p>
+</li>
+<li><p>jdb：Java调试器，用于开发阶段的运行调试。</p>
+<hr>
+<p>[TOC]</p>
+</li>
+</ul>
+<h1 id="（3）第一个Java程序"><a href="#（3）第一个Java程序" class="headerlink" title="（3）第一个Java程序"></a>（3）第一个Java程序</h1><p>我们来编写第一个Java程序。</p>
+<p>打开文本编辑器，输入以下代码：</p>
+<pre><code class="java">public class Hello &#123;
     public static void main(String[] args) &#123;
-        int[] ns = &#123; 28, 12, 89, 73, 65, 18, 96, 50, 8, 36 &#125;;
-        // 排序前:
-        System.out.println(Arrays.toString(ns));
-        for (int i = 0; i &lt; ns.length - 1; i++) &#123;
-            for (int j = 0; j &lt; ns.length - i - 1; j++) &#123;
-                if (ns[j] &gt; ns[j+1]) &#123;
-                    // 交换ns[j]和ns[j+1]:
-                    int tmp = ns[j];
-                    ns[j] = ns[j+1];
-                    ns[j+1] = tmp;
-                &#125;
-            &#125;
-        &#125;
-        // 排序后:
-        System.out.println(Arrays.toString(ns));
-    &#125;//[28, 12, 89, 73, 65, 18, 96, 50, 8, 36]
-    //[8, 12, 18, 28, 36, 50, 65, 73, 89, 96]    
+        System.out.println(&quot;Hello, LIEFox!&quot;);
+    &#125;
 &#125;</code></pre>
-<p>冒泡排序的特点是，每一轮循环后，最大的一个数被交换到末尾，因此，下一轮循环就可以“刨除”最后的数，每一轮循环都比上一轮循环的结束位置靠前一位。</p>
-<p>另外，注意到交换两个变量的值必须借助一个临时变量。</p>
-<p>正确的写法是：</p>
-<pre><code>int x = 1;
-int y = 2;
-
-int t = x; // 把x的值保存在临时变量t中, t现在是1
-x = y; // x现在是2
-y = t; // y现在是t的值1</code></pre>
-<p>实际上，Java的标准库已经内置了排序功能，我们只需要调用JDK提供的<code>Arrays.sort()</code>就可以排序：</p>
+<p>在一个Java程序中，你总能找到一个类似：</p>
+<pre><code class="java">public class Hello &#123;
+    ...
+&#125;</code></pre>
+<p>的定义，这个定义被称为class（类），这里的类名是<code>Hello</code>，大小写敏感，<code>class</code>用来定义一个类，<code>public</code>表示这个类是公开的，<code>public</code>、<code>class</code>都是Java的关键字，必须小写，<code>Hello</code>是类的名字，按照习惯，首字母<code>H</code>要大写。而花括号<code>&#123;&#125;</code>中间则是类的定义。</p>
+<p>注意到类的定义中，我们定义了一个名为<code>main</code>的方法：</p>
 <pre><code class="java">    public static void main(String[] args) &#123;
-        int[] ns = &#123; 28, 12, 89, 73, 65, 18, 96, 50, 8, 36 &#125;;
-        Arrays.sort(ns);
-        System.out.println(Arrays.toString(ns));
+        ...
     &#125;</code></pre>
-<p>必须注意，对数组排序实际上修改了数组本身。例如，排序前的数组是：</p>
-<pre><code class="java">int[] ns = &#123; 9, 3, 6, 5 &#125;;</code></pre>
-<p>在内存中，这个整型数组表示如下：</p>
-<pre><code class="ascii">      ┌───┬───┬───┬───┐
-ns───&gt;│ 9 │ 3 │ 6 │ 5 │
-      └───┴───┴───┴───┘</code></pre>
-<p>当我们调用<code>Arrays.sort(ns);</code>后，这个整型数组在内存中变为：</p>
-<pre><code class="ascii">      ┌───┬───┬───┬───┐
-ns───&gt;│ 3 │ 5 │ 6 │ 9 │
-      └───┴───┴───┴───┘</code></pre>
-<p>即变量<code>ns</code>指向的数组内容已经被改变了。</p>
-<p>如果对一个字符串数组进行排序，例如：</p>
-<pre><code class="java">String[] ns = &#123; &quot;banana&quot;, &quot;apple&quot;, &quot;pear&quot; &#125;;</code></pre>
-<p>排序前，这个数组在内存中表示如下：</p>
-<pre><code class="ascii">                   ┌──────────────────────────────────┐
-               ┌───┼──────────────────────┐           │
-               │   │                      ▼           ▼
-         ┌───┬─┴─┬─┴─┬───┬────────┬───┬───────┬───┬──────┬───┐
-ns ─────&gt;│░░░│░░░│░░░│   │&quot;banana&quot;│   │&quot;apple&quot;│   │&quot;pear&quot;│   │
-         └─┬─┴───┴───┴───┴────────┴───┴───────┴───┴──────┴───┘
-           │                 ▲
-           └─────────────────┘</code></pre>
-<p>调用<code>Arrays.sort(ns);</code>排序后，这个数组在内存中表示如下：</p>
-<pre><code class="ascii">                   ┌──────────────────────────────────┐
-               ┌───┼──────────┐                       │
-               │   │          ▼                       ▼
-         ┌───┬─┴─┬─┴─┬───┬────────┬───┬───────┬───┬──────┬───┐
-ns ─────&gt;│░░░│░░░│░░░│   │&quot;banana&quot;│   │&quot;apple&quot;│   │&quot;pear&quot;│   │
-         └─┬─┴───┴───┴───┴────────┴───┴───────┴───┴──────┴───┘
-           │                              ▲
-           └──────────────────────────────┘</code></pre>
-<p>原来的3个字符串在内存中均没有任何变化，但是<code>ns</code>数组的每个元素指向变化了。</p>
+<p>方法是可执行的代码块，一个方法除了方法名<code>main</code>，还有用<code>()</code>括起来的方法参数，这里的<code>main</code>方法有一个参数，参数类型是<code>String[]</code>，参数名是<code>args</code>，<code>public</code>、<code>static</code>用来修饰方法，这里表示它是一个公开的静态方法，<code>void</code>是方法的返回类型，而花括号<code>&#123;&#125;</code>中间的就是方法的代码。</p>
+<p>方法的代码每一行用<code>;</code>结束，这里只有一行代码，就是：</p>
+<pre><code class="java">        System.out.println(&quot;Hello, LIEFox!&quot;);</code></pre>
+<p>它用来打印一个字符串到屏幕上。</p>
+<p>Java规定，某个类定义的<code>public static void main(String[] args)</code>是Java程序的固定入口方法，因此，Java程序总是从<code>main</code>方法开始执行。</p>
+<p>注意到Java源码的缩进不是必须的，但是用缩进后，格式好看，很容易看出代码块的开始和结束，缩进一般是4个空格或者一个tab。</p>
+<p>最后，当我们把代码保存为文件时，文件名必须是<code>Hello.java</code>，而且文件名也要注意大小写，因为要和我们定义的类名<code>Hello</code>完全保持一致。</p>
+<h3 id="如何运行Java程序"><a href="#如何运行Java程序" class="headerlink" title="如何运行Java程序"></a>如何运行Java程序</h3><p>Java源码本质上是一个文本文件，我们需要先用<code>javac</code>把<code>Hello.java</code>编译成字节码文件<code>Hello.class</code>，然后，用<code>java</code>命令执行这个字节码文件：</p>
+<pre><code class="ascii">┌──────────────────┐
+│    Hello.java    │&lt;─── source code
+└──────────────────┘
+          │ compile
+          ▼
+┌──────────────────┐
+│   Hello.class    │&lt;─── byte code
+└──────────────────┘
+          │ execute
+          ▼
+┌──────────────────┐
+│    Run on JVM    │
+└──────────────────┘</code></pre>
+<p>因此，可执行文件<code>javac</code>是编译器，而可执行文件<code>java</code>就是虚拟机。</p>
+<p>第一步，在保存<code>Hello.java</code>的目录下执行命令<code>javac Hello.java</code>：</p>
+<pre><code>$ javac Hello.java</code></pre>
+<p>如果源代码无误，上述命令不会有任何输出，而当前目录下会产生一个<code>Hello.class</code>文件：</p>
+<pre><code>$ ls
+Hello.class    Hello.java</code></pre>
+<p>第二步，执行<code>Hello.class</code>，使用命令<code>java Hello</code>：</p>
+<pre><code>$ java Hello
+Hello, LIEFox!</code></pre>
+<p>注意：给虚拟机传递的参数<code>Hello</code>是我们定义的类名，虚拟机自动查找对应的class文件并执行。</p>
+<p>有一些童鞋可能知道，直接运行<code>java Hello.java</code>也是可以的：</p>
+<pre><code>$ java Hello.java 
+Hello, LIEFox!</code></pre>
+<p>这是Java 11新增的一个功能，它可以直接运行一个单文件源码！</p>
+<p>需要注意的是，在实际项目中，单个不依赖第三方库的Java源码是非常罕见的，所以，绝大多数情况下，我们无法直接运行一个Java源码文件，原因是它需要依赖其他的库。</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>一个Java源码只能定义一个<code>public</code>类型的class，并且class名称和文件名要完全一致；</p>
+<p>使用<code>javac</code>可以将<code>.java</code>源码编译成<code>.class</code>字节码；</p>
+<p>使用<code>java</code>可以运行一个已编译的Java程序，参数是类名。</p>
 <p>[TOC]</p>
-<h1 id="（3）多维数组"><a href="#（3）多维数组" class="headerlink" title="（3）多维数组"></a>（3）多维数组</h1><h3 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h3><p>二维数组就是数组的数组。定义一个二维数组如下：</p>
-<h4 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h4><pre><code class="java">public class Main &#123;
-    public static void main(String[] args) &#123;
-        int[][] ns = &#123;
-            &#123; 1, 2, 3, 4 &#125;,
-            &#123; 5, 6, 7, 8 &#125;,
-            &#123; 9, 10, 11, 12 &#125;
-        &#125;;
-        System.out.println(ns.length); // 3
-    &#125;
-&#125;</code></pre>
-<h4 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h4><pre><code class="java">int [] [] arr = new int [3] [4];
-int [0] [] =&#123; 1, 2, 3, 4 &#125;;
-int [1] [] =&#123; 5, 6, 7, 8  &#125;;
-int [2] [] =&#123; 9, 10, 11, 12 &#125;;</code></pre>
-<h4 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h4><pre><code class="java">int [] [] arr = new int [3] [];
-int [0] [] =&#123; 1, 2, 3, 4 &#125;;
-int [1] [] =&#123; 1, 2, 3, 4 &#125;;
-int [2] [] =&#123; 9, 10, 11, 12 &#125;;</code></pre>
-<p>因为<code>ns</code>包含3个数组，因此，<code>ns.length</code>为<code>3</code>。实际上<code>ns</code>在内存中的结构如下：</p>
-<pre><code class="ascii">                    ┌───┬───┬───┬───┐
-         ┌───┐  ┌──&gt;│ 1 │ 2 │ 3 │ 4 │
-ns ─────&gt;│░░░│──┘   └───┴───┴───┴───┘
-         ├───┤      ┌───┬───┬───┬───┐
-         │░░░│─────&gt;│ 5 │ 6 │ 7 │ 8 │
-         ├───┤      └───┴───┴───┴───┘
-         │░░░│──┐   ┌───┬───┬───┬───┐
-         └───┘  └──&gt;│ 9 │10 │11 │12 │
-                    └───┴───┴───┴───┘</code></pre>
-<p>要打印一个二维数组，可以使用两层嵌套的for循环：</p>
-<pre><code class="java">for (int[] arr : ns) &#123;
-    for (int n : arr) &#123;
-        System.out.print(n);
-        System.out.print(&#39;, &#39;);
-    &#125;
-    System.out.println();
-&#125;</code></pre>
-<h3 id="三维数组"><a href="#三维数组" class="headerlink" title="三维数组"></a>三维数组</h3><p>三维数组就是二维数组的数组。可以这么定义一个三维数组：</p>
-<pre><code>int[][][] ns = &#123;
-    &#123;
-        &#123;1, 2, 3&#125;,
-        &#123;4, 5, 6&#125;,
-        &#123;7, 8, 9&#125;
-    &#125;,
-    &#123;
-        &#123;10, 11&#125;,
-        &#123;12, 13&#125;
-    &#125;,
-    &#123;
-        &#123;14, 15, 16&#125;,
-        &#123;17, 18&#125;
-    &#125;
-&#125;;</code></pre>
-<p>它在内存中的结构如下：</p>
-<pre><code class="ascii">                              ┌───┬───┬───┐
-                   ┌───┐  ┌──&gt;│ 1 │ 2 │ 3 │
-               ┌──&gt;│░░░│──┘   └───┴───┴───┘
-               │   ├───┤      ┌───┬───┬───┐
-               │   │░░░│─────&gt;│ 4 │ 5 │ 6 │
-               │   ├───┤      └───┴───┴───┘
-               │   │░░░│──┐   ┌───┬───┬───┐
-        ┌───┐  │   └───┘  └──&gt;│ 7 │ 8 │ 9 │
-ns ────&gt;│░░░│──┘              └───┴───┴───┘
-        ├───┤      ┌───┐      ┌───┬───┐
-        │░░░│─────&gt;│░░░│─────&gt;│10 │11 │
-        ├───┤      ├───┤      └───┴───┘
-        │░░░│──┐   │░░░│──┐   ┌───┬───┐
-        └───┘  │   └───┘  └──&gt;│12 │13 │
-               │              └───┴───┘
-               │   ┌───┐      ┌───┬───┬───┐
-               └──&gt;│░░░│─────&gt;│14 │15 │16 │
-                   ├───┤      └───┴───┴───┘
-                   │░░░│──┐   ┌───┬───┐
-                   └───┘  └──&gt;│17 │18 │
-                              └───┴───┘</code></pre>
-<p>如果我们要访问三维数组的某个元素，例如，<code>ns[2][0][1]</code>，只需要顺着定位找到对应的最终元素<code>15</code>即可。</p>
-<p>理论上，我们可以定义任意的N维数组。但在实际应用中，除了二维数组在某些时候还能用得上，更高维度的数组很少使用。</p>
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>二维数组就是数组的数组，三维数组就是二维数组的数组；</p>
-<p>多维数组的每个数组元素长度都不要求相同；</p>
-<p>最常见的多维数组是二维数组，访问二维数组的一个元素使用<code>array[row][col]</code>。</p>
-<p>[TOC]</p>
-<p>。。。。。。。。。。</p>
-<p><em>作者：zjh</em></p>
-]]></content>
-      <categories>
-        <category>JAVA笔记</category>
-      </categories>
-      <tags>
-        <tag>JAVA笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>流程控制</title>
-    <url>/posts/368ebfeb.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/368ebfeb.html"><img src="https://s3.ax1x.com/2021/01/09/sM0q1J.png" alt="sMa5TO.png" style="zoom:25%;" /></a></p>
-<a id="more"></a>
-
-<h1 id="（1）选择结构语句"><a href="#（1）选择结构语句" class="headerlink" title="（1）选择结构语句"></a>（1）选择结构语句</h1><h2 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h2><p>if语句格式是</p>
-<pre><code class="java">if(条件语句)&#123;
-    代码块
-&#125;</code></pre>
-<p>条件语句里是只可以放布尔值，当为true是，执行代码块里的，反之。举个栗子：</p>
-<pre><code class="java"> int i=1;
-        if(i&gt;0)&#123;
-            i++;
-        &#125;
-        System.out.println(i);//2</code></pre>
-<h2 id="if…else语句"><a href="#if…else语句" class="headerlink" title="if…else语句"></a>if…else语句</h2><p>当判断条件为true时，执行if语句的。如果为false执行else里的。</p>
-<p>语法格式</p>
-<pre><code class="java">if(判断条件)&#123;
-    执行语句
-&#125;else&#123;
-    执行语句
-&#125;</code></pre>
-<p>举个栗子</p>
-<pre><code class="java"> int i=1;
-        if(i&gt;2)&#123;//false
-            System.out.println(i);
-        &#125;else &#123;
-            System.out.println(&quot;执行else&quot;);//打印执行else
-        &#125;</code></pre>
-<p>还有一种三元运算，类似if…else：</p>
-<pre><code>判断条件？表达式1：表达式2</code></pre>
-<p>当判断条件为true时，执行冒号前面的，反之，执行冒号后面的。</p>
-<h2 id="if…else-if…else语句"><a href="#if…else-if…else语句" class="headerlink" title="if…else if…else语句"></a>if…else if…else语句</h2><p>该语句根据多种判断结果，执行相应结果。</p>
-<p>语法格式</p>
-<pre><code class="java">if(判断条件)&#123;
-    执行语句
-&#125;else if(判断条件)&#123;
-    执行语句
-&#125;else&#123;
-    执行语句。。。
-&#125;</code></pre>
-<p>举个栗子</p>
-<pre><code class="java">int i = 10;
-if(i&gt;11)&#123;
-    sout(&quot;执行语句&quot;);
-&#125;else if(true)&#123;
-    sout(&quot;LIEFox&quot;);//最后打印出来的结果是LIEFox
-&#125;else&#123;
-    sout(&quot;FOX&quot;);
-&#125;</code></pre>
-<h2 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h2><p>语法格式</p>
-<pre><code class="java">switch (表达式)&#123;
-           case 1:
-               执行语句1;
-               break;
-           case 2:
-               执行语句2;
-               break;
-           case 3:
-               执行语句3;
-               break;
-           default:
-               执行语句4;
-               break;
-       &#125;</code></pre>
-<p>如果不break，将不会结束语句，会执行下一个语句。举个栗子</p>
-<pre><code class="java">switch (2)&#123;
-           case 1:
-               sout(1);
-               break;
-           case 2:
-               sout(2);
-           case 3:
-               sout(3);
-               break;
-           default:
-               sout(4);
-               break;
-       &#125;
-/*结果为23。因为表达式为2，就从case 2 开始执行，
-打印2、又因为没有break，不会跳出循环，就会继续执
-行case 3 里的语句，直到break跳出语句。*/</code></pre>
-<p>switch在JDK7.0的时候，加入了可以判断String类型。</p>
-<p>switch中还加入了简单的写法，因为有些情况，case1、2、3都有可能结果相同，所以可以这样：</p>
-<pre><code class="java">switch (2)&#123;
-           case 1:
-           case 2:
-           case 3:
-               sout(3);
-               break;
-           default:
-               sout(4);
-               break;
-       &#125;//结果为3</code></pre>
+<hr>
+<h1 id="（4）使用IDE"><a href="#（4）使用IDE" class="headerlink" title="（4）使用IDE"></a>（4）使用IDE</h1><p>IDE是集成开发环境：Integrated Development Environment的缩写。</p>
+<p>使用IDE的好处在于，可以把编写代码、组织项目、编译、运行、调试等放到一个环境中运行，能极大地提高开发效率。</p>
+<p>IDE提升开发效率主要靠以下几点：</p>
+<ul>
+<li>编辑器的自动提示，可以大大提高敲代码的速度；</li>
+<li>代码修改后可以自动重新编译，并直接运行；</li>
+<li>可以方便地进行断点调试。</li>
+</ul>
+<p>目前，流行的用于Java开发的IDE有：</p>
+<h3 id="Eclipse"><a href="#Eclipse" class="headerlink" title="Eclipse"></a>Eclipse</h3><p><a href="https://www.eclipse.org/">Eclipse</a>是由IBM开发并捐赠给开源社区的一个IDE，也是目前应用最广泛的IDE。Eclipse的特点是它本身是Java开发的，并且基于插件结构，即使是对Java开发的支持也是通过插件JDT实现的。</p>
+<p>除了用于Java开发，Eclipse配合插件也可以作为C/C++开发环境、PHP开发环境、Rust开发环境等。</p>
+<h3 id="IntelliJ-Idea"><a href="#IntelliJ-Idea" class="headerlink" title="IntelliJ Idea"></a>IntelliJ Idea</h3><p><a href="https://www.jetbrains.com/idea/">IntelliJ Idea</a>是由JetBrains公司开发的一个功能强大的IDE，分为免费版和商用付费版。JetBrains公司的IDE平台也是基于IDE平台+语言插件的模式，支持Python开发环境、Ruby开发环境、PHP开发环境等，这些开发环境也分为免费版和付费版。</p>
 <hr>
 <p>[TOC]</p>
-<h1 id="（2）循环结构语句"><a href="#（2）循环结构语句" class="headerlink" title="（2）循环结构语句"></a>（2）循环结构语句</h1><h2 id="while语句"><a href="#while语句" class="headerlink" title="while语句"></a>while语句</h2><p>语法格式</p>
-<pre><code class="java">while (循环条件)&#123;
-    执行语句
-&#125;</code></pre>
-<p>循环条件里依旧，true就执行，false就停止。</p>
-<p>举个栗子</p>
-<pre><code class="java">int i =1;
-       while (i&lt;=5)&#123;
-           System.out.println(&quot;i=&quot;+i);
-           i++;
-       &#125;
-       结果/*i=1
-            i=2
-            i=3
-            i=4
-            i=5*/</code></pre>
-<h2 id="do…while循环语句"><a href="#do…while循环语句" class="headerlink" title="do…while循环语句"></a>do…while循环语句</h2><p>语法格式</p>
-<pre><code class="java">do&#123;
-    执行语句
-&#125;while(循环条件)</code></pre>
-<p>可见，<code>do while</code>循环会至少循环一次。</p>
-<p>我们把对1到100的求和用<code>do while</code>循环改写一下：</p>
-<pre><code class="java">int sum = 0;
-        int n = 1;
-        do &#123;
-            sum = sum + n;
-            n ++;
-        &#125; while (n &lt;= 100);
-        System.out.println(sum);//结果为5050</code></pre>
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p><code>do while</code>循环先执行循环，再判断条件；</p>
-<p><code>do while</code>循环会至少执行一次。</p>
-<h2 id="for语句"><a href="#for语句" class="headerlink" title="for语句"></a>for语句</h2><p>语法格式</p>
-<pre><code class="java">for (初始化表达式;循环条件;操作表达式)&#123;
-    执行语句
-&#125;</code></pre>
-<p>举个栗子</p>
-<pre><code class="java">for (int i =0;i&lt;=7;i++)&#123;
-      System.out.println(&quot;LIEFox&quot;);
-&#125;//将会打印7次LIEFox</code></pre>
-<p>执行顺序是这样的》</p>
-<pre><code>1.起始位置从i=0开始，“0&lt;=7”为true，打印LIEFox，回到i++,i=1。
-2.i=1,&quot;1&lt;=7&quot;为true，打印LIEFox，回到i++,i=2。
-。。。。。
-7.i=7,&quot;7&lt;=7&quot;为true，打印LIEFox，回到i++,i=8。
-8.i=8,&quot;8&lt;=7&quot;为false，循环结束。</code></pre>
-<h2 id="循环嵌套"><a href="#循环嵌套" class="headerlink" title="循环嵌套"></a>循环嵌套</h2><p>所谓循环嵌套，指的是多种控制语句相组合，实现自己想要的功能。</p>
-<p>就简单的两层for循环，就可以实现一个美妙的形状组成的实现。</p>
-<pre><code class="java">        for (int i =0;i&lt;=10;i++)&#123;
-            for (int x =i;x&lt;=5;x++)&#123;
-                 System.out.print(&quot;*&quot;);
-            &#125;
-            System.out.println();
-        &#125;
-******
-*****
-****
-***
-**
-*</code></pre>
-<p>运行到第二层的for循环，因为最后i=x=6；6&lt;=5=false,就停止打印*</p>
-<p><a href="https://imgchr.com/i/rpcv5R"><img src="https://s3.ax1x.com/2020/12/08/rpcv5R.png" alt="rpcv5R.png"></a></p>
-<h2 id="跳转语句"><a href="#跳转语句" class="headerlink" title="跳转语句"></a>跳转语句</h2><p>break和continue</p>
-<p>break：在之前的switch控制语句就用到了，执行到break，就结束循环。</p>
-<p>continue：是跳出本次循环。</p>
-<p>举个continue的栗子</p>
-<pre><code class="java">public class Main &#123;
-    public static void main(String[] args) &#123;
-        int sum = 0;
-        for (int i=1; i&lt;=5; i++) &#123;
-            System.out.println(&quot;begin i = &quot; + i);
-            if (i % 2 == 0) &#123;
-                continue; // continue语句会结束本次循环
-            &#125;
-            sum = sum + i;
-            System.out.println(&quot;end i = &quot; + i);
-        &#125;
-        System.out.println(sum); // 9
-    &#125;
-&#125;
-//结果
-begin i = 1
-end i = 1
-begin i = 2
-begin i = 3
-end i = 3
-begin i = 4
-begin i = 5
-end i = 5
-9</code></pre>
-<p>注意观察<code>continue</code>语句的效果。当<code>i</code>为奇数时，完整地执行了整个循环，因此，会打印<code>begin i=1</code>和<code>end i=1</code>。在i为偶数时，<code>continue</code>语句会提前结束本次循环，因此，会打印<code>begin i=2</code>但不会打印<code>end i = 2</code>。</p>
-<p>在多层嵌套的循环中，<code>continue</code>语句同样是结束本次自己所在的循环。</p>
-<h3 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h3><p><code>break</code>语句可以跳出当前循环；</p>
-<p><code>break</code>语句通常配合<code>if</code>，在满足条件时提前结束整个循环；</p>
-<p><code>break</code>语句总是跳出最近的一层循环；</p>
-<p><code>continue</code>语句可以提前结束本次循环；</p>
-<p><code>continue</code>语句通常配合<code>if</code>，在满足条件时提前结束本次循环。</p>
-<hr>
-<p>。。。。。。。</p>
-<p><em>作者：zjh</em></p>
+<p>。。。。。。。。。。。。。。</p>
+<p><strong><em>作者：zjh</em></strong></p>
 ]]></content>
       <categories>
         <category>JAVA笔记</category>
@@ -2549,158 +1886,634 @@ String s4 = &quot;&quot;; // s4指向空字符串，不是null</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Spring-ioc基于注解</title>
-    <url>/posts/693b31a5.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/693b31a5.html"><img src="https://s3.ax1x.com/2021/01/09/sM0TtU.png" alt="sM0TtU.png" style="zoom:25%;" /></a></p>
+    <title>HTML高级标签</title>
+    <url>/posts/715f780f.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/715f780f.html"><img src="https://s3.ax1x.com/2021/01/09/sM0OXR.png" alt="sM0OXR.png" style="zoom:25%;" /></a></p>
 <a id="more"></a>
 
-<h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a><strong>要求</strong></h2><p>使用Spring的IoC容器，实际上就是通过类似XML这样的配置文件，把我们自己的Bean的依赖关系描述出来，然后让容器来创建并装配Bean。一旦容器初始化完毕，我们就直接从容器中获取Bean使用它们。</p>
-<p>使用XML配置的优点是所有的Bean都能一目了然地列出来，并通过配置注入能直观地看到每个Bean的依赖。它的缺点是写起来非常繁琐，每增加一个组件，就必须把新的Bean配置到XML中。</p>
-<p>有没有其他更简单的配置方式呢？</p>
-<p>有！我们可以使用Annotation配置，可以完全不需要XML，让Spring自动扫描Bean并组装它们。</p>
-<h3 id="所以今天我们用注解来写一个基于注解的Spring"><a href="#所以今天我们用注解来写一个基于注解的Spring" class="headerlink" title="所以今天我们用注解来写一个基于注解的Spring"></a>所以今天我们用注解来写一个基于注解的Spring</h3><p><strong><a href="https://imgchr.com/i/D6E1Mj"><img src="https://s3.ax1x.com/2020/11/28/D6E1Mj.md.png" alt="D6E1Mj.md.png"></a></strong></p>
-<hr>
-<p><strong><!--more--></strong></p>
-<p><strong>由于是基于注解的IoC的Spring开发，所以我们要导入一个关键的jar包</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6Z7Pf"><img src="https://s3.ax1x.com/2020/11/28/D6Z7Pf.png" alt="D6Z7Pf.png"></a></strong></p>
-<hr>
-<h4 id="好啦，正题开始"><a href="#好啦，正题开始" class="headerlink" title="好啦，正题开始"></a><strong>好啦，正题开始</strong></h4><h1 id="第一步，万恶之源，打开我们的idea"><a href="#第一步，万恶之源，打开我们的idea" class="headerlink" title="第一步，万恶之源，打开我们的idea"></a><strong>第一步，万恶之源，打开我们的idea</strong></h1><ol>
-<li><p><strong>创建一个java项目</strong></p>
-</li>
-<li><p><strong>在src里创建如下3个包</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6mV1S"><img src="https://s3.ax1x.com/2020/11/28/D6mV1S.png" alt="D6mV1S.png"></a></strong></p>
-<ul>
-<li><p><strong>Dao包（数据持久层）</strong></p>
-</li>
-<li><p><strong>Service包（业务逻辑层）</strong>    </p>
-</li>
-<li><p><strong>Web包（显示层）</strong></p>
-</li>
+<h1 id="HTML高级标签"><a href="#HTML高级标签" class="headerlink" title="HTML高级标签"></a>HTML高级标签</h1><h1 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h1><p>无序列表在网页中运用的最多的就是导航栏</p>
+<p><a href="https://imgchr.com/i/sFzMN9"><img src="https://s3.ax1x.com/2021/01/05/sFzMN9.md.png" alt="sFzMN9.md.png"></a></p>
+<pre><code>&lt;ul type=&quot;circle&quot;&gt;
+            &lt;li&gt;1&lt;/li&gt;
+            &lt;li&gt;2&lt;/li&gt;
+            &lt;li&gt;3&lt;/li&gt;
+            &lt;li&gt;4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<p><code>&lt;ul&gt;</code>可以给他添加属性，常用的是更换前面的空心圆（circle）</p>
+<ul type="circle">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
 </ul>
-</li>
+
+<p>实心圆：</p>
+<ul type="disc">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+</ul>
+
+<p>方块：</p>
+<ul type="square">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+<h1 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h1><p><code>&lt;ol&gt;</code>标签中可以给列表设置type属性，倒序属性等等</p>
+<pre><code>&lt;ol type =&quot;1&quot;&gt;
+    &lt;li&gt;Coffee&lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+<p><code>&lt;ol type =&quot;1&quot;&gt;</code>有序列表排序根据阿拉伯数字</p>
+<p>举个栗子：</p>
+<ol type ="1">
+    <li>Coffee</li>
+    <li>Milk</li>
 </ol>
-<p><strong>3.接着在src下创建一个xml文件，名为（ApplicationContext.xml)</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6nngO"><img src="https://s3.ax1x.com/2020/11/28/D6nngO.md.png" alt="D6nngO.md.png"></a></strong></p>
-<p><strong>src&gt;New&gt;XML File&gt;名为（ApplicationContext.xml)</strong></p>
-<p><strong>4.xml文件里的代码如下</strong></p>
-<pre><code class="xml">&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
-       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-       xmlns:context=&quot;http://www.springframework.org/schema/context&quot;
-       xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
-       http://www.springframework.org/schema/context
-       http://www.springframework.org/schema/context/spring-context-4.3.xsd&quot;&gt;
-    &lt;context:component-scan base-package=&quot;Service&quot;&gt;&lt;/context:component-scan&gt;
-    &lt;!--&lt;context:component-scan&gt;标签：指定扫描某一包下的注解
-    base-package:指定需要扫描的包
-    &lt;context:component-scan&gt;标签：指定扫描某一包下的注解
-    base-package:指定需要扫描的包--&gt;
-&lt;/beans&gt;</code></pre>
-<p><strong>5.接下来导jar包</strong></p>
-<p><strong>Flie》Project Structure》Liberals》＋》Java》找到自己放spring jar包的地方》选中》OK》取个名字（Spring_Jars）》OK</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6u3yF"><img src="https://s3.ax1x.com/2020/11/28/D6u3yF.md.png" alt="D6u3yF.md.png"></a></strong></p>
-<p><strong><a href="https://imgchr.com/i/D6Ku0H"><img src="https://s3.ax1x.com/2020/11/28/D6Ku0H.md.png" alt="D6Ku0H.md.png"></a></strong></p>
-<p><strong>看一下加成功了没有</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6Mlb4"><img src="https://s3.ax1x.com/2020/11/28/D6Mlb4.png" alt="D6Mlb4.png"></a></strong></p>
-<p><strong>好的，有Spring_Jars包了</strong></p>
-<p><strong>到这一步，咱们就算上车了，开始飙车了</strong></p>
-<hr>
-<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a><strong>第二步</strong></h1><p><strong>安照题目要求</strong></p>
-<pre><code>Dao层：接口文件StudentDao，包含方法selectAll
-        实现类StudentDaoImpl,包含selectAll方法的实现（仅写输出语句表示方法调用成功即可）
-Service层：接口文件StudentService，包含方法selectAll
-            实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)
-Web层:类WebMain,主方法中调用Service层的selectAll方法。</code></pre>
-<ol>
-<li><p><strong>在Dao包里新建一个接口文件StudentDao</strong></p>
-</li>
-<li><p><strong>在Dao包里新建一个java文件StudentDaoImpl</strong></p>
-</li>
-<li><p><strong>Service。。。</strong></p>
-</li>
-<li><p><strong>Web。。。</strong></p>
-</li>
-<li><p><strong>以下面这个结构来建，咱们把框架给搭起来，就快了！！</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6QlSP"><img src="https://s3.ax1x.com/2020/11/28/D6QlSP.png" alt="D6QlSP.png"></a></strong></p>
-<hr>
-</li>
+
+<p>也可以设置成大小写英文字母A/a</p>
+<ol type ="a">
+    <li>Coffee</li>
+    <li>Milk</li>
 </ol>
-<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a><strong>第三步</strong></h1><p><strong>骨架欧克了，我们现在去丰满他的细节</strong></p>
-<p><strong>1.</strong></p>
-<p><strong>Dao》StudentDao</strong></p>
-<pre><code class="java">public interface StudentDao &#123;
-    void selectAll();
-&#125;</code></pre>
-<p><strong>Dao》StudentDaoImpl</strong></p>
-<pre><code class="java">public class StudentDaoImpl implements StudentDao&#123;
-    @Override
-    public void selectAll() &#123;
-        System.out.println(&quot;查询所有学生信息！&quot;);
-    &#125;
-&#125;</code></pre>
-<p><strong>2.</strong></p>
-<p><strong>Service》StudentService</strong></p>
-<pre><code class="java">public interface StudentService &#123;
-    void selectAll();
-&#125;</code></pre>
-<p><strong>Service》StudentServiceImpl</strong></p>
-<pre><code class="Java">//如果报错的话，记得导包
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Repository;
-//如果idea自动导的话就没事
 
-@Repository(value = &quot;StudentService&quot;)//@Repository:用于持久层的注解，作用与Component相同
-public class StudentServiceImpl implements StudentService&#123;
+<p>也可罗马数字 i</p>
+<ol type ="i">
+    <li>Coffee</li>
+    <li>Milk</li>
+    <li>Spring</li>
+</ol>
 
-    /*实现类StudentServiceImpl,包含selectAll方法的实现、属性SName(String)、属性SId(String)*/
+<p>倒序属性：</p>
+<p><code>&lt;ol type =&quot;1&quot; reversed=&quot;reversed&quot;&gt;</code>type属性都可，就举阿拉伯数字为例。</p>
+<p>效果：</p>
+<ol type ="1" reversed="reversed">
+    <li>Coffee</li>
+    <li>Milk</li>
+    <li>Spring</li>
+</ol>
 
-    @Value(&quot;LIEFox&quot;)//与&lt;property&gt;标签作用一样
-    private String SName;
-    @Value(&quot;https:cxq21.gitee.io&quot;)//偷偷的打个广告嘿嘿
-    private String SId;
+<h1 id="lt-img-gt-图片标签"><a href="#lt-img-gt-图片标签" class="headerlink" title="&lt;img&gt;图片标签"></a><code>&lt;img&gt;</code>图片标签</h1><pre><code class="html">&lt;img src=&quot;https://s3.ax1x.com/2020/11/27/DDAP1I.png&quot; alt=&quot;LIEFox的LOGO&quot; title=&quot;XXX&quot; /&gt;</code></pre>
+<p>代码的效果：<img src="https://s3.ax1x.com/2020/11/27/DDAP1I.png" alt="这是一张照片"  /></p>
+<p><code>img</code>标签顾名思义用于网页插入图片的标签，其中常用的设置属性值有 </p>
+<p><code>src</code>：图片路径，可以是网上图片的url，比如上面的代码块src引用的照片地址；也可以是本地照片的绝对路径|相对路径。</p>
+<p><code>alt</code>：他的作用是用于当图片出错时，展现给用户的一个图片的描述信息，</p>
+<p>​        举个栗子：</p>
+<img src="DDAP1I.png" alt="LIEFox的LOGO" />
 
-    @Override
-    public void selectAll() &#123;
-        System.out.println(&quot;查询到了一个名为&quot;+SName+&quot;网站,网址为&quot;+SId);
-    &#125;
-&#125;</code></pre>
-<p><strong>3.</strong></p>
-<p><strong>Web》WebMain</strong></p>
-<pre><code class="Java">//如果报错的话，记得导包
-import Service.StudentService;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-//如果idea自动导的话就没事
+<p><code>title</code>可以当用户鼠标悬停在照片上时，会显示图片信息（彩蛋），你可以尝试一下，鼠标悬停在图片上。</p>
+<img src="https://s3.ax1x.com/2020/11/27/DDAP1I.png" alt="LIEFox的LOGO" title="LIEFox牛逼" />
 
-//Web层:类WebMain,主方法中调用Service层的selectAll方法。
+<h1 id="lt-a-gt-超链接标签（锚标签）"><a href="#lt-a-gt-超链接标签（锚标签）" class="headerlink" title="&lt;a&gt;超链接标签（锚标签）"></a><code>&lt;a&gt;</code>超链接标签（锚标签）</h1><h2 id="1-超链接作用："><a href="#1-超链接作用：" class="headerlink" title="1.超链接作用："></a>1.超链接作用：</h2><p>源码：</p>
+<pre><code>&lt;a href=&quot;cxq21.gitee.io&quot;&gt;LIEFox网站 点我试试&lt;/a&gt;</code></pre>
+<h3 id="实例：LIEFox网站-点我试试"><a href="#实例：LIEFox网站-点我试试" class="headerlink" title="实例：LIEFox网站 点我试试"></a>实例：<a href="https://cxq21.gitee.io">LIEFox网站 点我试试</a></h3><p>其中可以设置的属性有：<code>target</code> 可以设置点击超链接时打开的是自身这个页面还是要浏览器新开一个标签页浏览。</p>
+<p><code>target=&quot;_blank&quot;</code>新开一个标签页浏览网页</p>
+<p><a href="https://cxq21.gitee.io" target="_blank">LIEFox网站  点我试试</a></p>
+<p><code>target=&quot;_self&quot;</code>在本身的标签页浏览网页</p>
+<p><a href="https://cxq21.gitee.io" target="_self">LIEFox网站  点我试试</a></p>
+<h2 id="2-创建发送邮箱，拨打电话"><a href="#2-创建发送邮箱，拨打电话" class="headerlink" title="2.创建发送邮箱，拨打电话"></a>2.创建发送邮箱，拨打电话</h2><p>如果 <code>href</code>中填的是邮箱，当点击时，电脑端或手机端会自动调用邮件，</p>
+<p>源码：</p>
+<pre><code>&lt;a href=&quot;mailto:2606097218@qq.com&quot; target=&quot;_blank&quot;&gt;mail我&lt;/a&gt;</code></pre>
+<h3 id="点击试试：mail我"><a href="#点击试试：mail我" class="headerlink" title="点击试试：mail我"></a>点击试试：<a href="mailto:2606097218@qq.com" target="_blank">mail我</a></h3><h3 id="其实a标签在这方面用的最多的也是最常见的是美团外卖，我们点击商家电话时，会自动跳到拨号界面，而且商家的电话号码也会呈现在拨号界面，-仅手机端"><a href="#其实a标签在这方面用的最多的也是最常见的是美团外卖，我们点击商家电话时，会自动跳到拨号界面，而且商家的电话号码也会呈现在拨号界面，-仅手机端" class="headerlink" title="其实a标签在这方面用的最多的也是最常见的是美团外卖，我们点击商家电话时，会自动跳到拨号界面，而且商家的电话号码也会呈现在拨号界面，**(仅手机端)**"></a>其实a标签在这方面用的最多的也是最常见的是美团外卖，我们点击商家电话时，会自动跳到拨号界面，而且商家的电话号码也会呈现在拨号界面，**(仅手机端)**</h3><p>源码：</p>
+<pre><code>&lt;a href=&quot;tel:15270055490&quot; target=&quot;_blank&quot;&gt;call me&lt;/a&gt;</code></pre>
+<h3 id="快用手机点击试一下：call-me"><a href="#快用手机点击试一下：call-me" class="headerlink" title="快用手机点击试一下：call me"></a>快用手机点击试一下：<a href="tel:15270055490" target="_blank">call me</a></h3><h2 id="3-超链接也叫为锚点"><a href="#3-超链接也叫为锚点" class="headerlink" title="3.超链接也叫为锚点"></a>3.超链接也叫为锚点</h2><p>为什么叫锚点呢？一般用于网页的目录，如果你是电脑端访问本站，你应该可以看见LIEFox网页右侧有一个悬浮目录的功能，当你点击了其中一个小标题，你将会跳到文章相应位置。</p>
+<p>源码：</p>
+<p>定义一个 <code>p</code>标签 <code>id</code>设置为”无序列表”,这样相当于给他添加了一个锚点，</p>
+<pre><code>&lt;p id=&quot;无序列表&quot;&gt;无序列表&lt;/p&gt;</code></pre>
+<p>当用户点击链接时，就会跳到 “无序列表” 这个标题。</p>
+<pre><code>&lt;a href=&quot;#无序列表&quot; &gt;无序列表&lt;/a&gt;</code></pre>
+<h3 id="点击超链接试试：无序列表"><a href="#点击超链接试试：无序列表" class="headerlink" title="点击超链接试试：无序列表"></a>点击超链接试试：<a href="#无序列表" >无序列表</a></h3><h2 id="4-补充黑科技"><a href="#4-补充黑科技" class="headerlink" title="4.补充黑科技"></a>4.补充黑科技</h2><p>在 <code>href</code>中可以填入协议限定符，说的可能有点不太好理解，那么，我们将写一个无限弹窗脚本；</p>
+<p>说白了就是这里面herf里面写JavaScript代码。</p>
+<p>源码：</p>
+<pre><code>&lt;a href=&quot;javascript:while(1)&#123;alert(&#39;LIEFox诚邀你加入我们&#39;)&#125;&quot; &gt;恭喜你中了100万现金大奖&lt;/a&gt;</code></pre>
+<p>效果：</p>
+<h3 id="恭喜你中了100万现金大奖-不点点！😏？"><a href="#恭喜你中了100万现金大奖-不点点！😏？" class="headerlink" title="恭喜你中了100万现金大奖    不点点！😏？"></a><a href="javascript:while(1){alert('LIEFox诚邀你加入我们')}" >恭喜你中了100万现金大奖 </a>   不点点！😏？</h3><h1 id="lt-form-gt-标签"><a href="#lt-form-gt-标签" class="headerlink" title="&lt;form&gt;标签"></a><code>&lt;form&gt;</code>标签</h1><p>表单标签，是前端与后端交互数据的最常见的方法，比如用户注册，登录，搜索等等。</p>
+<pre><code>        &lt;form method=&quot;get&quot; action=&quot;#&quot;&gt;
+            &lt;p&gt;
+                用户名：&lt;input type=&quot;text&quot; name=&quot;username&quot;/&gt;
+            &lt;/p&gt;
+            &lt;p&gt;
+                密  码：&lt;input type=&quot;password&quot; name=&quot;password&quot;/&gt;记住密码&lt;input type=&quot;radio&quot;/&gt;
+            &lt;/p&gt;
+            &lt;input type=&quot;submit&quot; value=&quot;登录&quot;/&gt;
 
-public class WebMain &#123;
-    public static void main(String[] args) &#123;
-        //1.容器初始化
-        ApplicationContext context=new ClassPathXmlApplicationContext(&quot;ApplicationContext.xml&quot;);
-        //2.创建实例
-        StudentService service=(StudentService) context.getBean(&quot;StudentService&quot;);
-        service.selectAll();
-    &#125;
-&#125;</code></pre>
-<p><strong>这样，我们的一个基于注解的Spring项目是写完了。</strong></p>
+        &lt;/form&gt;</code></pre>
+<p>效果：</p>
+<form method="get" action="#">
+            <p>
+                用户名：<input type="text" name="username"/>
+            </p>
+            <p>
+                密  码：<input type="password" name="password"/>记住密码<input type="radio"/>
+            </p>
+            <input type="submit" value="登录"/>
+</form>
+
+<p><code>&lt;form&gt;</code>标签内可以填的属性有<code>method</code>里面的属性有 get、post。是发送数据的方式。</p>
+<p>一对form标签中可以填<code>&lt;input type=&quot;text&quot;/&gt;</code>type中可以填 text、password、radio、checkbox等等。</p>
+<p><code>text</code>：是文本域标签，明文，用户填入可以看见内容。效果：用户名：<input type="text" name="username"/></p>
+<p><code>password</code>：是密码标签，密文，用户填入不可以看见内容。效果：密码：<input type="password" name="password"/></p>
+<p><code>radio</code>：单选按钮，效果：记住密码<input type="radio"/></p>
+<p><code>checkbox</code>：多选按钮，效果：</p>
+<p>可乐<input type="checkbox"/></p>
+<p>雪碧<input type="checkbox"/></p>
+<p>牛奶<input type="checkbox"/></p>
+<p>单选、多选按钮中还可以添加默认选择属性：<code>checked=&quot;checked&quot;</code></p>
+<pre><code>可乐&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;
+
+雪碧&lt;input type=&quot;checkbox&quot;/&gt;
+
+牛奶&lt;input type=&quot;checkbox&quot;/&gt;</code></pre>
+<p>效果：</p>
+<p>可乐<input type="checkbox" checked="checked" /></p>
+<p>雪碧<input type="checkbox"/></p>
+<p>牛奶<input type="checkbox"/></p>
+<h1 id="select组件"><a href="#select组件" class="headerlink" title="select组件"></a>select组件</h1><p>select被用做于下拉菜单</p>
+<p>代码：</p>
+<pre><code>&lt;select&gt;
+    &lt;option&gt;北京&lt;/option&gt;
+    &lt;option&gt;上海&lt;/option&gt;
+    &lt;option&gt;江西&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+<p>效果：</p>
+<select>
+                <option>北京</option>
+                <option>上海</option>
+                <option>江西</option>
+            </select>
+
 <hr>
-<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a><strong>第四步</strong></h1><p><strong>运行项目。。。</strong></p>
-<p><strong>结果出来了</strong></p>
-<p><strong><a href="https://imgchr.com/i/D68G3n"><img src="https://s3.ax1x.com/2020/11/28/D68G3n.md.png" alt="D68G3n.md.png"></a></strong></p>
-<hr>
-<h2 id="原项目"><a href="#原项目" class="headerlink" title="原项目"></a>原项目</h2><p><strong>最后，附上，我的gitee原项目，地址：<a href="https://gitee.com/cxq21/spring_-ioc">https://gitee.com/cxq21/spring_-ioc</a></strong></p>
-<p><strong>下载zip，然后解压就欧克了</strong></p>
-<p><strong><a href="https://imgchr.com/i/D6Gfs0"><img src="https://s3.ax1x.com/2020/11/28/D6Gfs0.md.png" alt="D6Gfs0.md.png"></a></strong></p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a><strong>小结</strong></h1><p><strong>使用Annotation可以大幅简化配置，每个Bean通过<code>@Component</code>和<code>@Autowired</code>注入；</strong></p>
-<p><strong>必须合理设计包的层次结构，才能发挥<code>@ComponentScan</code>的威力。</strong></p>
-<p><strong><em>作者：zjh</em></strong></p>
-<h2 id="码字不易，留下你的评论吧"><a href="#码字不易，留下你的评论吧" class="headerlink" title="码字不易，留下你的评论吧"></a>码字不易，留下你的评论吧</h2>]]></content>
+<p>作者：<em>zjh</em></p>
+]]></content>
       <categories>
-        <category>JAVA案例</category>
+        <category>前端笔记</category>
       </categories>
       <tags>
-        <tag>案例记录</tag>
+        <tag>前端笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VIP电影</title>
+    <url>/posts/78a19d7.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/78a19d7.html"><img src="https://s3.ax1x.com/2021/01/09/sM67h6.png" alt="sM67h6.png" style="zoom:25%;" /></a></p>
+<a id="more"></a>
+
+<h1 id="高清电影在线观看"><a href="#高清电影在线观看" class="headerlink" title="高清电影在线观看"></a>高清电影在线观看</h1><div style="position: relative; width: 100%; height: 100%; padding-bottom: 100%;"><iframe 
+src="https://www.o8tv.com/" scrolling="yes" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
+height: 100%; left: 0; top: 0;"> </iframe></div>
+#### LIEFox加入了很多实用有趣的小工具，链接在这👉<a href="https://cxq21.gitee.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" target="_blank">实用工具传送门</a>👈
+
+<p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>实用工具</category>
+      </categories>
+      <tags>
+        <tag>实用工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS基础属性</title>
+    <url>/posts/b83b1352.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/b83b1352.html"><img src="https://s3.ax1x.com/2021/01/09/sM0400.png" alt="sM0400.png" style="zoom:25%;" /></a></p>
+<a id="more"></a>
+
+<h1 id="CSS基础属性"><a href="#CSS基础属性" class="headerlink" title="CSS基础属性"></a>CSS基础属性</h1><h2 id="字体修饰"><a href="#字体修饰" class="headerlink" title="字体修饰"></a>字体修饰</h2><pre><code>font-size: 30px;
+font-weight: normal;
+font-style: normal;
+font-family: arial;
+color: #f40;</code></pre>
+<p><code>font-size</code>设置字号，设置字体大小 默认16 一般用12/14，<strong>设置字体的时候实际上就是设置字体的高</strong>；</p>
+<p><code>font-weight</code>设置字体粗细，可设置的加粗属性：</p>
+<table>
+<thead>
+<tr>
+<th align="center">bold</th>
+<th align="center">加粗</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">lighter</td>
+<td align="center">最细</td>
+</tr>
+<tr>
+<td align="center">normal</td>
+<td align="center">正常</td>
+</tr>
+<tr>
+<td align="center">bolder</td>
+<td align="center">特别粗</td>
+</tr>
+<tr>
+<td align="center">100-900（也是设置粗细）</td>
+<td align="center">数值型设置</td>
+</tr>
+</tbody></table>
+<p><code>font-style</code>可以设置字体斜体</p>
+<p><code>italic</code>斜体 等同<code>em</code></p>
+<p><code>font-family</code>设置字体，补充：最常用字体 arial -乔布斯发明</p>
+<p><code>color</code>设置字体颜色，有三种设置方法：</p>
+<p>1.土鳖式 纯英文单词 red green blue。。<br>2.颜色代码：#ff00ff<br>3.颜色函数：rgb（255，255,0）</p>
+<h2 id="边框修饰"><a href="#边框修饰" class="headerlink" title="边框修饰"></a>边框修饰</h2><pre><code>       边框宽度 边框类型 边框颜色
+border:  10px    solid   red;可以拆解开</code></pre>
+<p>10px是设置边框的粗细</p>
+<p>solid是设置边框的类型，有三种：</p>
+<pre><code>solid 线性
+dotted 虚线-点型
+dashed 虚线-条型</code></pre>
+<p>red边框颜色</p>
+<p><code>border</code>复合属性</p>
+<pre><code>    width: 10px;
+    height: 10px;
+    border-left-color: red;
+    border-top-color: blue;
+    border-right-color: green;
+    border-bottom-color: transparent;</code></pre>
+<p><strong>补充：transparent：透明色</strong></p>
+<h2 id="文本修饰"><a href="#文本修饰" class="headerlink" title="文本修饰"></a>文本修饰</h2><pre><code>.demo&#123;
+    line-height: 20px;
+    text-indent: 2em;
+    text-decoration:underline;
+    cursor: copy;
+&#125;</code></pre>
+<p><code>line-height</code>是行高（行间距）</p>
+<p><code>text-indent</code>是文本缩进，解决首行缩进2个字符，而属性值的单位 <code>em</code>是 1<code>font-size</code>，也就是说，字号是16px，那么，1 <code>em</code>=16 <code>px</code>，这样的话，以后需要改字号大小，就不需要修改缩进的值了</p>
+<p><code>text-decoration</code> 是文本修饰，常设置的属性是 <code>underline</code>（下划线）</p>
+<p><code>cursor</code>是鼠标修饰，可以设置光标移动到文字上，会出现特定的效果</p>
+<h2 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h2><p>格式：</p>
+<pre><code>选择器 ：hover&#123;
+
+&#125;</code></pre>
+<pre><code>.demo:hover&#123;
+    height: 200px;
+    width: 400px;
+    line-height: 100px;
+    text-indent: 2em;
+    background-color: #f40;
+    border-radius: 50px;  设置圆角
+    text-decoration:underline;
+
+&#125;</code></pre>
+<p>当鼠标移动到修饰的文字上，就会有伪类效果</p>
+<p><a href="https://imgchr.com/i/smYdDH"><img src="https://s3.ax1x.com/2021/01/07/smYdDH.gif" alt="smYdDH.gif" style="zoom:50%;" /></a></p>
+<hr>
+<p>作者：<em>zjh</em></p>
+]]></content>
+      <categories>
+        <category>前端笔记</category>
+      </categories>
+      <tags>
+        <tag>前端笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS盒子模型</title>
+    <url>/posts/1279ea3.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/1279ea3.html"><img src="https://s3.ax1x.com/2021/01/09/sM0bp4.png" alt="sM0bp4.png" style="zoom:20%;" /></a></p>
+<a id="more"></a>
+
+<h1 id="CSS盒子模型"><a href="#CSS盒子模型" class="headerlink" title="CSS盒子模型"></a>CSS盒子模型</h1><p>在讲盒子模型前，我们先来了解一下三元素</p>
+<h2 id="标签分类"><a href="#标签分类" class="headerlink" title="标签分类"></a>标签分类</h2><ul>
+<li><h3 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h3></li>
+</ul>
+<p>feature（特征）：<strong>独占一行，可以通过css改变宽高</strong><br>例如：<code>div</code>  <code>p</code>   <code>ul</code>  <code>li</code>   <code>ol</code>    <code>form</code>   <code>address</code>。。。</p>
+<ul>
+<li><h3 id="行元素"><a href="#行元素" class="headerlink" title="行元素"></a>行元素</h3></li>
+</ul>
+<p>feature：<strong>内容决定元素所占位置，不可以通过css改变宽高</strong><br>例如：<code>span</code>    <code>strong</code>   <code>em</code>    <code>a</code>     <code>del</code>。。。</p>
+<ul>
+<li><h3 id="行块元素（特殊）"><a href="#行块元素（特殊）" class="headerlink" title="行块元素（特殊）"></a>行块元素（特殊）</h3></li>
+</ul>
+<p>feature：内容决定大小，可以改宽高<br><code>img</code></p>
+<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p>以块元素标签为例：</p>
+<p>html：</p>
+<pre><code class="jsp">&lt;div class=&quot;demo&quot;&gt;
+            LIEFoxLIEFoxLIEFoxLIEFox&lt;br&gt;
+            LIEFoxLIEFoxLIEFox
+&lt;/div&gt;</code></pre>
+<p>css样式：</p>
+<pre><code class="css">.demo&#123;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 20px;
+&#125;</code></pre>
+<p>效果：</p>
+<p><a href="https://imgchr.com/i/sm6KW4"><img src="https://s3.ax1x.com/2021/01/07/sm6KW4.gif" alt="sm6KW4.gif" style="zoom: 50%;" /></a></p>
+<p>这就是一个盒子模型，一般由center（height，width），padding，border，margin组成。右下角的盒子模型，是控制台的调试，可以让我们视图化的检查盒子的大小。</p>
+<p><code>注意</code>：<code>margin</code>不属于盒子里的，所以计算时不用。</p>
+<h3 id="复合属性值"><a href="#复合属性值" class="headerlink" title="复合属性值"></a>复合属性值</h3><ul>
+<li>一个值代表4个方向</li>
+</ul>
+<pre><code>padding: 10px;</code></pre>
+<ul>
+<li>4个值  上    右    下      左</li>
+</ul>
+<pre><code>padding: 10px 10px 20px 10px;</code></pre>
+<ul>
+<li>3个值  上      左右        下</li>
+</ul>
+<pre><code>padding: 10px 20px 10px;</code></pre>
+<ul>
+<li>2个值      上下    左右</li>
+</ul>
+<pre><code>padding: 10px 40px;</code></pre>
+<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3><pre><code>position: absolute;</code></pre>
+<h4 id="absolute：绝对定位，脱离原来位置进行定位，最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位。"><a href="#absolute：绝对定位，脱离原来位置进行定位，最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位。" class="headerlink" title="absolute：绝对定位，脱离原来位置进行定位，最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位。"></a>absolute：绝对定位，脱离原来位置进行定位，最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位。</h4><pre><code>position: relative;</code></pre>
+<h4 id="relative：相对定位，保留原来位置进行定位，相对自己原来的位置进行定位。"><a href="#relative：相对定位，保留原来位置进行定位，相对自己原来的位置进行定位。" class="headerlink" title="relative：相对定位，保留原来位置进行定位，相对自己原来的位置进行定位。"></a>relative：相对定位，保留原来位置进行定位，相对自己原来的位置进行定位。</h4><p><strong><code>定位口诀</code>：用relative作为参照物，用absolute进行定位</strong></p>
+<p>在平常浏览网页时，有些广告不管你怎么滚动滚动条，都是在规定的位置，是利用广告定位来做到的。</p>
+<p><a href="https://imgchr.com/i/su1jOJ"><img src="https://s3.ax1x.com/2021/01/08/su1jOJ.gif" alt="su1jOJ.gif" style="zoom:50%;" /></a></p>
+<pre><code>position: fixed;</code></pre>
+<h4 id="广告定位，可视区窗口定位，无论屏幕如何滚动都固定不动"><a href="#广告定位，可视区窗口定位，无论屏幕如何滚动都固定不动" class="headerlink" title="广告定位，可视区窗口定位，无论屏幕如何滚动都固定不动"></a>广告定位，可视区窗口定位，无论屏幕如何滚动都固定不动</h4><p>我们自己来实现一下这个功能</p>
+<pre><code class="css">.demo1&#123;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    width: 100px;
+    height: 100px;
+    background-color: #f40;
+    margin-top: -50px;
+    margin-left: -50px;
+&#125;</code></pre>
+<p><a href="https://imgchr.com/i/suG7FI"><img src="https://s3.ax1x.com/2021/01/08/suG7FI.gif" alt="suG7FI.gif"></a></p>
+<h4 id="注意："><a href="#注意：" class="headerlink" title="注意："></a><code>注意</code>：</h4><ul>
+<li>left、top设置成50%的作用是为了，当用户改变的浏览器的大小时，永远在固定位置（最中间）</li>
+<li>margin-top、margin-left设置成-50，是因为计算机定位是在方块的左上角，所以要减掉相应的</li>
+</ul>
+<h2 id="奥运五环案例"><a href="#奥运五环案例" class="headerlink" title="奥运五环案例"></a>奥运五环案例</h2><p>做一个奥运五环，永远在最中间</p>
+<p><a href="https://imgchr.com/i/suwZ2n"><img src="https://s3.ax1x.com/2021/01/08/suwZ2n.gif" alt="suwZ2n.gif" style="zoom:50%;" /></a></p>
+<p>HTML：</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;标题&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;lessn1.css&quot;&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;div class=&quot;five&quot;&gt;
+            &lt;div class=&quot;blue&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;yellow&quot;&gt;&lt;/div&gt;    
+            &lt;div class=&quot;red&quot;&gt;&lt;/div&gt;    
+            &lt;div class=&quot;black&quot;&gt;&lt;/div&gt;    
+            &lt;div class=&quot;green&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+                &lt;br&gt;*100
+    &lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<p>css：</p>
+<pre><code class="css">.five&#123;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 250px;
+    background-color: transparent;
+
+    margin-left: -250px;
+
+    margin-top: -125px;
+&#125;
+.blue&#123;
+
+position: absolute;
+
+left:65px;
+
+top:30px;
+
+width: 100px;
+
+height:100px;
+
+border: 10px solid blue;
+
+border-radius: 50%;
+
+z-index: 1;
+
+&#125;
+
+.yellow&#123;
+
+position: absolute;
+
+left:190px;
+
+top:30px;
+
+width: 100px;
+
+height:100px;
+
+border: 10px solid #FFFF00;
+
+border-radius: 50%;
+
+z-index: 3;
+
+&#125;
+
+.black&#123;
+
+position: absolute;
+
+right:65px;
+
+top:30px;
+
+width: 100px;
+
+height:100px;
+
+border: 10px solid black;
+
+border-radius: 50%;
+
+z-index: 5;
+
+&#125;
+
+.green&#123;
+
+position: absolute;
+
+left:127px;
+
+top:100px;
+
+width: 100px;
+
+height:100px;
+
+border: 10px solid green;
+
+border-radius: 50%;
+
+z-index: 2;
+
+&#125;
+
+.red&#123;
+
+position: absolute;
+
+right:127px;
+
+top:100px;
+
+width: 100px;
+
+height:100px;
+
+border: 10px solid red;
+
+border-radius: 50%;
+
+    z-index: 4;
+
+&#125;
+</code></pre>
+<hr>
+<p>作者：<em>zjh</em></p>
+]]></content>
+      <categories>
+        <category>前端笔记</category>
+      </categories>
+      <tags>
+        <tag>前端笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS初级</title>
+    <url>/posts/ba82d224.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/b83b1352.html"><img src="https://s3.ax1x.com/2021/01/09/sM0bp4.png" alt="sM0bp4.png" style="zoom:20%;" /></a></p>
+<a id="more"></a>
+
+<h1 id="CSS初级"><a href="#CSS初级" class="headerlink" title="CSS初级"></a>CSS初级</h1><p>HTML在平常开发的时候用作于网页的框架搭建，相当于大楼的框架，而CSS是大楼的装修。</p>
+<h2 id="引入CSS"><a href="#引入CSS" class="headerlink" title="引入CSS"></a>引入CSS</h2><h3 id="1-行间样式"><a href="#1-行间样式" class="headerlink" title="1.行间样式"></a>1.行间样式</h3><pre><code class="HTML">&lt;div style=&quot;width: 1000px; background-color: aqua;height: 20px;&quot;&gt;234&lt;/div&gt;</code></pre>
+<p>在标签中写入 <code>style</code> 并设置对应css样式。</p>
+<h3 id="2-页面级CSS"><a href="#2-页面级CSS" class="headerlink" title="2.页面级CSS"></a>2.页面级CSS</h3><p>在 <code>&lt;herd&gt;</code>里写一对 <code>&lt;style&gt;</code>标签，<code>type=&quot;text/css&quot;</code>告诉浏览器是css样式，但可写可不写。</p>
+<pre><code class="html">&lt;style type=&quot;text/css&quot;&gt;
+            div&#123;
+                background-color: burlywood;
+            &#125;
+&lt;/style&gt;</code></pre>
+<h3 id="3-外部CSS文件"><a href="#3-外部CSS文件" class="headerlink" title="3.外部CSS文件"></a>3.外部CSS文件</h3><p>在<code>&lt;herd&gt;</code>里写上 <code>&lt;link&gt;</code>标签，在 <code>href</code>里填入css文件路径</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;lessn1.css&quot;&gt;</code></pre>
+<hr>
+<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><p>以在css外链式操作</p>
+<h3 id="1-id选择器"><a href="#1-id选择器" class="headerlink" title="1.id选择器"></a>1.id选择器</h3><p>其特点是一对一。</p>
+<p>.html文件</p>
+<pre><code>&lt;div id=&quot;only&quot;&gt;234&lt;/div&gt;</code></pre>
+<p>.css文件</p>
+<p><code>#</code>开头加上<code>id</code></p>
+<pre><code>#only&#123;
+    background-color: aqua;
+&#125;</code></pre>
+<h3 id="2-类选择器"><a href="#2-类选择器" class="headerlink" title="2.类选择器"></a>2.类选择器</h3><p>类选择器特点是多对多</p>
+<p>class选择器可以拥有一个或多个类选择器，类选择器中空格隔开，</p>
+<p>.html文件</p>
+<pre><code>&lt;div class=&quot;demo demo1&quot;&gt;234&lt;/div&gt;</code></pre>
+<p>.css文件</p>
+<p><code>.</code>开头</p>
+<pre><code class="html">.demo&#123;
+    background-color: aqua
+&#125;
+.demo1&#123;
+    width: 100px;
+&#125;</code></pre>
+<h3 id="3-标签选择器"><a href="#3-标签选择器" class="headerlink" title="3.标签选择器"></a>3.标签选择器</h3><p>可以直接用标签选择,HTML文件中全部div表签都可生效</p>
+<p>.html文件</p>
+<pre><code>&lt;div&gt;234&lt;/div&gt;</code></pre>
+<p>.css文件</p>
+<pre><code>div&#123;
+    background-color: blue;
+&#125;</code></pre>
+<h3 id="4-通配符选择器"><a href="#4-通配符选择器" class="headerlink" title="4.通配符选择器"></a>4.通配符选择器</h3><p>以 <code>*</code>来选择，可以选择全部</p>
+<p><code>补充</code>：<strong>通配符的应用是初始化所有标签最好的一种方式</strong></p>
+<pre><code>*&#123;
+    background-color: blue;
+&#125;</code></pre>
+<h3 id="5-选择器的优先级"><a href="#5-选择器的优先级" class="headerlink" title="5.选择器的优先级"></a>5.选择器的优先级</h3><h4 id="important-gt-行间样式-gt-id-gt-class-属性-gt-标签选择器-gt-通配符"><a href="#important-gt-行间样式-gt-id-gt-class-属性-gt-标签选择器-gt-通配符" class="headerlink" title="important &gt; 行间样式 &gt; id &gt; class|属性 &gt; 标签选择器 &gt; 通配符"></a><code>important</code> &gt; 行间样式 &gt; id &gt; class|属性 &gt; 标签选择器 &gt; 通配符</h4><h3 id="6-CSS权重"><a href="#6-CSS权重" class="headerlink" title="6.CSS权重"></a>6.CSS权重</h3><table>
+<thead>
+<tr>
+<th align="center">！important</th>
+<th align="center">Infinity（正无穷大）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">行间样式</td>
+<td align="center">1000</td>
+</tr>
+<tr>
+<td align="center">id</td>
+<td align="center">100</td>
+</tr>
+<tr>
+<td align="center">class|属性|伪类</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">标签|伪元素</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">通配符</td>
+<td align="center">0</td>
+</tr>
+</tbody></table>
+<p><strong><code>注意：</code>css权重是以256进制进行计算的</strong></p>
+<h2 id="CSS复杂选择器"><a href="#CSS复杂选择器" class="headerlink" title="CSS复杂选择器"></a>CSS复杂选择器</h2><h3 id="父类选择器"><a href="#父类选择器" class="headerlink" title="父类选择器"></a>父类选择器</h3><p>选择标签可以加很多修饰条件，但是只能修饰父子条件，父子选择器的每一个层级都不需要必须是标签，<br>可以用类标签</p>
+<p>举个栗子：</p>
+<p>.html</p>
+<pre><code>&lt;div class=&quot;demo&quot;&gt;
+            &lt;span&gt;234&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+<p>.css</p>
+<pre><code>div span&#123;
+    background-color: blue;
+&#125;</code></pre>
+<p>也可</p>
+<pre><code>.demo span&#123;
+    background-color: blue;
+&#125;</code></pre>
+<h3 id="子元素选择器"><a href="#子元素选择器" class="headerlink" title="子元素选择器"></a>子元素选择器</h3><pre><code>div &gt; span &#123;
+    background-color: red;
+&#125;</code></pre>
+<h3 id="并列选择器"><a href="#并列选择器" class="headerlink" title="并列选择器"></a>并列选择器</h3><p>用多个限制条件选择一个选择器并且不加空格</p>
+<pre><code>div.demo&#123;
+    background-color: red;
+&#125;</code></pre>
+<h3 id="分组选择器"><a href="#分组选择器" class="headerlink" title="分组选择器"></a>分组选择器</h3><p>.html</p>
+<pre><code>&lt;div class=&quot;demo&quot;&gt;
+    &lt;strong&gt;
+            &lt;span&gt;234&lt;/span&gt;
+    &lt;/strong&gt;
+&lt;/div&gt;</code></pre>
+<p>.css</p>
+<pre><code>div,
+strong,
+span&#123;
+    background-color: red;
+&#125;</code></pre>
+<p>作者：<em>zjh</em></p>
+]]></content>
+      <categories>
+        <category>前端笔记</category>
+      </categories>
+      <tags>
+        <tag>前端笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -2731,7 +2544,7 @@ public class WebMain &#123;
 <thead>
 <tr>
 <th align="center">邮箱</th>
-<th align="center"><a href="mailto:&#x32;&#54;&#x30;&#54;&#48;&#57;&#x37;&#50;&#x31;&#56;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;">&#x32;&#54;&#x30;&#54;&#48;&#57;&#x37;&#50;&#x31;&#56;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;</a></th>
+<th align="center"><a href="mailto:&#50;&#54;&#48;&#54;&#x30;&#57;&#x37;&#x32;&#49;&#56;&#64;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;">&#50;&#54;&#48;&#54;&#x30;&#57;&#x37;&#x32;&#49;&#56;&#64;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;</a></th>
 </tr>
 </thead>
 <tbody><tr>
@@ -2784,23 +2597,6 @@ public class WebMain &#123;
       </tags>
   </entry>
   <entry>
-    <title>江信19级软件测试刷题系统</title>
-    <url>/posts/1e3f2157.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/1e3f2157.html"><img src="https://s3.ax1x.com/2021/01/09/sM02lj.png" alt="sMaPL6.png" style="zoom:25%;" /></a></p>
-<a id="more"></a>
-
-<h1 id="江信19级软件测试刷题系统"><a href="#江信19级软件测试刷题系统" class="headerlink" title="江信19级软件测试刷题系统"></a>江信19级软件测试刷题系统</h1><hr>
-<h1 id="上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。"><a href="#上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。" class="headerlink" title="上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。"></a>上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。</h1><h1 id="这个系统手机电脑都可刷。有任何疑问请在微信群或评论区质询！"><a href="#这个系统手机电脑都可刷。有任何疑问请在微信群或评论区质询！" class="headerlink" title="这个系统手机电脑都可刷。有任何疑问请在微信群或评论区质询！"></a>这个系统手机电脑都可刷。有任何疑问请在<strong>微信群或评论区</strong>质询！</h1><p><a href="https://imgchr.com/i/rMyKOO"><img src="https://s3.ax1x.com/2020/12/15/rMyKOO.png" alt="rMyKOO.png" style="zoom:50%;" /></a></p>
-<h3 id="致敬题库制作人员：-佐佳豪、李玮峰"><a href="#致敬题库制作人员：-佐佳豪、李玮峰" class="headerlink" title="致敬题库制作人员： 佐佳豪、李玮峰"></a>致敬题库制作人员： 佐佳豪、李玮峰</h3><p><em>作者：zjh</em></p>
-]]></content>
-      <categories>
-        <category>江信1+X</category>
-      </categories>
-      <tags>
-        <tag>实用工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>网站来源灵感</title>
     <url>/posts/6b5b190a.html</url>
     <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/6b5b190a.html"><img src="https://s3.ax1x.com/2020/11/27/DDAeAg.md.jpg" alt="DDAeAg.md.jpg"></a></p>
@@ -2830,286 +2626,490 @@ public class WebMain &#123;
       </tags>
   </entry>
   <entry>
-    <title>JAVA简介</title>
-    <url>/posts/98ac5948.html</url>
-    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/98ac5948.html"><img src="https://s3.ax1x.com/2021/01/09/sM07hF.png" alt="sM07hF.png" style="zoom:25%;" /></a></p>
+    <title>数组控制</title>
+    <url>/posts/335f9f1b.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/335f9f1b.html"><img src="https://s3.ax1x.com/2021/01/09/sM0jn1.png" alt="sM0jn1.png" style="zoom:25%;" /></a></p>
 <a id="more"></a>
 
-<h1 id="（1）JAVA简介"><a href="#（1）JAVA简介" class="headerlink" title="（1）JAVA简介"></a>（1）JAVA简介</h1><p>Java最早是由SUN公司（已被Oracle收购）的<a href="https://en.wikipedia.org/wiki/James_Gosling">詹姆斯·高斯林</a>（高斯林，人称Java之父）在上个世纪90年代初开发的一种编程语言，最初被命名为Oak，目标是针对小型家电设备的嵌入式应用，结果市场没啥反响。谁料到互联网的崛起，让Oak重新焕发了生机，于是SUN公司改造了Oak，在1995年以Java的名称正式发布，原因是Oak已经被人注册了，因此SUN注册了Java这个商标。随着互联网的高速发展，Java逐渐成为最重要的网络编程语言。</p>
-<p>Java介于编译型语言和解释型语言之间。编译型语言如C、C++，代码是直接编译成机器码执行，但是不同的平台（x86、ARM等）CPU的指令集不同，因此，需要编译出每一种平台的对应机器码。解释型语言如Python、Ruby没有这个问题，可以由解释器直接加载源码然后运行，代价是运行效率太低。而Java是将代码编译成一种“字节码”，它类似于抽象的CPU指令，然后，针对不同平台编写虚拟机，不同平台的虚拟机负责加载字节码并执行，这样就实现了“一次编写，到处运行”的效果。当然，这是针对Java开发者而言。对于虚拟机，需要为每个平台分别开发。为了保证不同平台、不同公司开发的虚拟机都能正确执行Java字节码，SUN公司制定了一系列的Java虚拟机规范。从实践的角度看，JVM的兼容性做得非常好，低版本的Java字节码完全可以正常运行在高版本的JVM上。</p>
-<p>随着Java的发展，SUN给Java又分出了三个不同版本：</p>
+<p>本节我们将讲解对数组的操作，包括：</p>
 <ul>
-<li>Java SE：Standard Edition</li>
-<li>Java EE：Enterprise Edition</li>
-<li>Java ME：Micro Edition</li>
+<li>遍历；</li>
+<li>排序。</li>
 </ul>
-<p>这三者之间有啥关系呢？</p>
-<pre><code class="ascii">┌───────────────────────────┐
-│Java EE                    │
-│    ┌────────────────────┐ │
-│    │Java SE             │ │
-│    │    ┌─────────────┐ │ │
-│    │    │   Java ME   │ │ │
-│    │    └─────────────┘ │ │
-│    └────────────────────┘ │
-└───────────────────────────┘</code></pre>
-<p>简单来说，Java SE就是标准版，包含标准的JVM和标准库，而Java EE是企业版，它只是在Java SE的基础上加上了大量的API和库，以便方便开发Web应用、数据库、消息服务等，Java EE的应用使用的虚拟机和Java SE完全相同。</p>
-<p>Java ME就和Java SE不同，它是一个针对嵌入式设备的“瘦身版”，Java SE的标准库无法在Java ME上使用，Java ME的虚拟机也是“瘦身版”。</p>
-<p>毫无疑问，Java SE是整个Java平台的核心，而Java EE是进一步学习Web应用所必须的。我们熟悉的Spring等框架都是Java EE开源生态系统的一部分。不幸的是，Java ME从来没有真正流行起来，反而是Android开发成为了移动平台的标准之一，因此，没有特殊需求，不建议学习Java ME。</p>
-<p>因此我们推荐的Java学习路线图如下：</p>
-<ol>
-<li>首先要学习Java SE，掌握Java语言本身、Java核心开发技术以及Java标准库的使用；</li>
-<li>如果继续学习Java EE，那么Spring框架、数据库开发、分布式架构就是需要学习的；</li>
-<li>如果要学习大数据开发，那么Hadoop、Spark、Flink这些大数据平台就是需要学习的，他们都基于Java或Scala开发；</li>
-<li>如果想要学习移动开发，那么就深入Android平台，掌握Android App开发。</li>
-</ol>
-<p>无论怎么选择，Java SE的核心技术是基础，这个教程的目的就是让你完全精通Java SE！</p>
-<h3 id="Java版本"><a href="#Java版本" class="headerlink" title="Java版本"></a>Java版本</h3><p>从1995年发布1.0版本开始，到目前为止，最新的Java版本是Java 15：</p>
-<table>
-<thead>
-<tr>
-<th align="left">时间</th>
-<th align="left">版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1995</td>
-<td align="left">1.0</td>
-</tr>
-<tr>
-<td align="left">1998</td>
-<td align="left">1.2</td>
-</tr>
-<tr>
-<td align="left">2000</td>
-<td align="left">1.3</td>
-</tr>
-<tr>
-<td align="left">2002</td>
-<td align="left">1.4</td>
-</tr>
-<tr>
-<td align="left">2004</td>
-<td align="left">1.5 / 5.0</td>
-</tr>
-<tr>
-<td align="left">2005</td>
-<td align="left">1.6 / 6.0</td>
-</tr>
-<tr>
-<td align="left">2011</td>
-<td align="left">1.7 / 7.0</td>
-</tr>
-<tr>
-<td align="left">2014</td>
-<td align="left">1.8 / 8.0</td>
-</tr>
-<tr>
-<td align="left">2017/9</td>
-<td align="left">1.9 / 9.0</td>
-</tr>
-<tr>
-<td align="left">2018/3</td>
-<td align="left">10</td>
-</tr>
-<tr>
-<td align="left">2018/9</td>
-<td align="left">11</td>
-</tr>
-<tr>
-<td align="left">2019/3</td>
-<td align="left">12</td>
-</tr>
-<tr>
-<td align="left">2019/9</td>
-<td align="left">13</td>
-</tr>
-<tr>
-<td align="left">2020/3</td>
-<td align="left">14</td>
-</tr>
-<tr>
-<td align="left">2020/9</td>
-<td align="left">15</td>
-</tr>
-</tbody></table>
-<p>本教程使用的Java版本是最新版的<strong>Java 8</strong>。</p>
-<h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><p>初学者学Java，经常听到JDK、JRE这些名词，它们到底是啥？</p>
-<ul>
-<li>JDK：Java Development Kit</li>
-<li>JRE：Java Runtime Environment</li>
-</ul>
-<p>简单地说，JRE就是运行Java字节码的虚拟机。但是，如果只有Java源码，要编译成Java字节码，就需要JDK，因为JDK除了包含JRE，还提供了编译器、调试器等开发工具。</p>
-<p>二者关系如下：</p>
-<pre><code class="ascii">  ┌─    ┌──────────────────────────────────┐
-  │     │     Compiler, debugger, etc.     │
-  │     └──────────────────────────────────┘
- JDK ┌─ ┌──────────────────────────────────┐
-  │  │  │                                  │
-  │ JRE │      JVM + Runtime Library       │
-  │  │  │                                  │
-  └─ └─ └──────────────────────────────────┘
-        ┌───────┐┌───────┐┌───────┐┌───────┐
-        │Windows││ Linux ││ macOS ││others │
-        └───────┘└───────┘└───────┘└───────┘</code></pre>
-<p>要学习Java开发，当然需要安装JDK了。</p>
-<p>那JSR、JCP……又是啥？</p>
-<ul>
-<li>JSR规范：Java Specification Request</li>
-<li>JCP组织：Java Community Process</li>
-</ul>
-<p>为了保证Java语言的规范性，SUN公司搞了一个JSR规范，凡是想给Java平台加一个功能，比如说访问数据库的功能，大家要先创建一个JSR规范，定义好接口，这样，各个数据库厂商都按照规范写出Java驱动程序，开发者就不用担心自己写的数据库代码在MySQL上能跑，却不能跑在PostgreSQL上。</p>
-<p>所以JSR是一系列的规范，从JVM的内存模型到Web程序接口，全部都标准化了。而负责审核JSR的组织就是JCP。</p>
-<p>一个JSR规范发布时，为了让大家有个参考，还要同时发布一个“参考实现”，以及一个“兼容性测试套件”：</p>
-<ul>
-<li>RI：Reference Implementation</li>
-<li>TCK：Technology Compatibility Kit</li>
-</ul>
-<p>比如有人提议要搞一个基于Java开发的消息服务器，这个提议很好啊，但是光有提议还不行，得贴出真正能跑的代码，这就是RI。如果有其他人也想开发这样一个消息服务器，如何保证这些消息服务器对开发者来说接口、功能都是相同的？所以还得提供TCK。</p>
-<p>通常来说，RI只是一个“能跑”的正确的代码，它不追求速度，所以，如果真正要选择一个Java的消息服务器，一般是没人用RI的，大家都会选择一个有竞争力的商用或开源产品。</p>
+<p>以及多维数组的概念。</p>
 <hr>
 <p>[TOC]</p>
-<h1 id="（2）安装JDK"><a href="#（2）安装JDK" class="headerlink" title="（2）安装JDK"></a>（2）安装JDK</h1><p>因为Java程序必须运行在JVM之上，所以，我们第一件事情就是安装JDK。</p>
-<p>搜索JDK 15，确保从<a href="https://www.oracle.com/java/technologies/javase-downloads.html">Oracle的官网</a>下载最新的稳定版JDK：</p>
-<p><a href="https://imgchr.com/i/DjuG4g"><img src="https://s3.ax1x.com/2020/12/06/DjuG4g.md.png" alt="DjuG4g.md.png"></a></p>
-<p>找到Java SE 8的下载链接，下载安装即可。</p>
-<h3 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h3><p>安装完JDK后，需要设置一个<code>JAVA_HOME</code>的环境变量，它指向JDK的安装目录。在Windows下，它是安装目录，类似：</p>
-<pre><code>C:\Program Files\Java\jdk-8</code></pre>
-<p>在Mac下，它在<code>~/.bash_profile</code>或<code>~/.zprofile</code>里，它是：</p>
-<pre><code>export JAVA_HOME=`/usr/libexec/java_home -v 8`</code></pre>
-<p>然后，把<code>JAVA_HOME</code>的<code>bin</code>目录附加到系统环境变量<code>PATH</code>上。在Windows下，它长这样：</p>
-<pre><code>Path=%JAVA_HOME%\bin;&lt;现有的其他路径&gt;</code></pre>
-<p>在Mac下，它在<code>~/.bash_profile</code>或<code>~/.zprofile</code>里，长这样：</p>
-<pre><code>export PATH=$JAVA_HOME/bin:$PATH</code></pre>
-<p>把<code>JAVA_HOME</code>的<code>bin</code>目录添加到<code>PATH</code>中是为了在任意文件夹下都可以运行<code>java</code>。打开命令提示符窗口，输入命令<code>java -version</code>，如果一切正常，你会看到如下输出：</p>
-<pre><code class="ascii">┌────────────────────────────────────────────────────────┐
-│Command Prompt                                    - □ x │
-├────────────────────────────────────────────────────────┤
-│Microsoft Windows [Version 10.0.0]                      │
-│(c) 2015 Microsoft Corporation. All rights reserved.    │
-│                                                        │
-│C:\&gt; java -version                                      │
-│java version &quot;8&quot; ...                                   │
-│Java(TM) SE Runtime Environment                         │
-│Java HotSpot(TM) 64-Bit Server VM                       │
-│                                                        │
-│C:\&gt;                                                    │
-│                                                        │
-│                                                        │
-└────────────────────────────────────────────────────────┘</code></pre>
-<p>如果你看到的版本号不是<code>8</code>，而是<code>14</code>、<code>1.4</code>之类，说明系统存在多个JDK，且默认JDK不是JDK 15，需要把JDK 8提到<code>PATH</code>前面。</p>
-<p>如果你得到一个错误输出：</p>
-<pre><code class="ascii">┌────────────────────────────────────────────────────────┐
-│Command Prompt                                    - □ x │
-├────────────────────────────────────────────────────────┤
-│Microsoft Windows [Version 10.0.0]                      │
-│(c) 2015 Microsoft Corporation. All rights reserved.    │
-│                                                        │
-│C:\&gt; java -version                                      │
-│&#39;java&#39; is not recognized as an internal or external comm│
-│and, operable program or batch file.                    │
-│                                                        │
-│C:\&gt;                                                    │
-│                                                        │
-│                                                        │
-│                                                        │
-└────────────────────────────────────────────────────────┘</code></pre>
-<p>这是因为系统无法找到Java虚拟机的程序<code>java.exe</code>，需要检查JAVA_HOME和PATH的配置。</p>
-<p>可以参考<a href="https://www.java.com/zh_CN/download/help/path.xml">如何设置或更改PATH系统变量</a>。</p>
-<h3 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h3><p>细心的童鞋还可以在<code>JAVA_HOME</code>的<code>bin</code>目录下找到很多可执行文件：</p>
-<ul>
-<li><p>java：这个可执行程序其实就是JVM，运行Java程序，就是启动JVM，然后让JVM执行指定的编译后的代码；</p>
-</li>
-<li><p>javac：这是Java的编译器，它用于把Java源码文件（以<code>.java</code>后缀结尾）编译为Java字节码文件（以<code>.class</code>后缀结尾）；</p>
-</li>
-<li><p>jar：用于把一组<code>.class</code>文件打包成一个<code>.jar</code>文件，便于发布；</p>
-</li>
-<li><p>javadoc：用于从Java源码中自动提取注释并生成文档；</p>
-</li>
-<li><p>jdb：Java调试器，用于开发阶段的运行调试。</p>
-<hr>
-<p>[TOC]</p>
-</li>
-</ul>
-<h1 id="（3）第一个Java程序"><a href="#（3）第一个Java程序" class="headerlink" title="（3）第一个Java程序"></a>（3）第一个Java程序</h1><p>我们来编写第一个Java程序。</p>
-<p>打开文本编辑器，输入以下代码：</p>
-<pre><code class="java">public class Hello &#123;
+<h1 id="（1）数组遍历"><a href="#（1）数组遍历" class="headerlink" title="（1）数组遍历"></a>（1）数组遍历</h1><p>数组遍历有两种方法：</p>
+<p>1、for循环</p>
+<p>2、for each循环</p>
+<p>一一道来；</p>
+<p>for循环来遍历数组</p>
+<pre><code class="java">        int[]num =&#123;1,2,23,42,11,90&#125;;
+        for (int i=0;i&lt;num.length;i++)&#123;
+            System.out.print(num[i]+&quot; &quot;);
+        &#125;//打印 1 2 23 42 11 90</code></pre>
+<p>注意：</p>
+<p>如果循环索引超过数组的长度会报空指针异常（ArrayIndexOutOfBoundsException）。为了避免，我们应该注意索引不要超过数组长度，举个栗子：</p>
+<pre><code class="java">int[]num =&#123;1,2,23,42,11,90&#125;; //num.length=6,不可超过6，所以一般遍历的时候，循环条件都会是i&lt;num.length</code></pre>
+<p>for each 遍历</p>
+<p>for each 是一种循环数组更简单一点的方法，只不过他只可以读取数据，不可以像for遍历改变或写入数组里的数据。但只是遍历数组的数据的时候，却很好用。上才艺：</p>
+<pre><code class="java">int[]num =&#123;1,2,23,42,11,90&#125;;
+for (int n:num)&#123;
+    sout(n);
+&#125;//打印 1 2 23 42 11 90</code></pre>
+<h1 id="（2）排序"><a href="#（2）排序" class="headerlink" title="（2）排序"></a>（2）排序</h1><p>讲到排序，比较经典的是冒泡排序了，就是将数组里的数值像水里的气泡一样，从下往上冒</p>
+<pre><code class="java">import java.util.Arrays;
+
+public class Main &#123;
     public static void main(String[] args) &#123;
-        System.out.println(&quot;Hello, LIEFox!&quot;);
+        int[] ns = &#123; 28, 12, 89, 73, 65, 18, 96, 50, 8, 36 &#125;;
+        // 排序前:
+        System.out.println(Arrays.toString(ns));
+        for (int i = 0; i &lt; ns.length - 1; i++) &#123;
+            for (int j = 0; j &lt; ns.length - i - 1; j++) &#123;
+                if (ns[j] &gt; ns[j+1]) &#123;
+                    // 交换ns[j]和ns[j+1]:
+                    int tmp = ns[j];
+                    ns[j] = ns[j+1];
+                    ns[j+1] = tmp;
+                &#125;
+            &#125;
+        &#125;
+        // 排序后:
+        System.out.println(Arrays.toString(ns));
+    &#125;//[28, 12, 89, 73, 65, 18, 96, 50, 8, 36]
+    //[8, 12, 18, 28, 36, 50, 65, 73, 89, 96]    
+&#125;</code></pre>
+<p>冒泡排序的特点是，每一轮循环后，最大的一个数被交换到末尾，因此，下一轮循环就可以“刨除”最后的数，每一轮循环都比上一轮循环的结束位置靠前一位。</p>
+<p>另外，注意到交换两个变量的值必须借助一个临时变量。</p>
+<p>正确的写法是：</p>
+<pre><code>int x = 1;
+int y = 2;
+
+int t = x; // 把x的值保存在临时变量t中, t现在是1
+x = y; // x现在是2
+y = t; // y现在是t的值1</code></pre>
+<p>实际上，Java的标准库已经内置了排序功能，我们只需要调用JDK提供的<code>Arrays.sort()</code>就可以排序：</p>
+<pre><code class="java">    public static void main(String[] args) &#123;
+        int[] ns = &#123; 28, 12, 89, 73, 65, 18, 96, 50, 8, 36 &#125;;
+        Arrays.sort(ns);
+        System.out.println(Arrays.toString(ns));
+    &#125;</code></pre>
+<p>必须注意，对数组排序实际上修改了数组本身。例如，排序前的数组是：</p>
+<pre><code class="java">int[] ns = &#123; 9, 3, 6, 5 &#125;;</code></pre>
+<p>在内存中，这个整型数组表示如下：</p>
+<pre><code class="ascii">      ┌───┬───┬───┬───┐
+ns───&gt;│ 9 │ 3 │ 6 │ 5 │
+      └───┴───┴───┴───┘</code></pre>
+<p>当我们调用<code>Arrays.sort(ns);</code>后，这个整型数组在内存中变为：</p>
+<pre><code class="ascii">      ┌───┬───┬───┬───┐
+ns───&gt;│ 3 │ 5 │ 6 │ 9 │
+      └───┴───┴───┴───┘</code></pre>
+<p>即变量<code>ns</code>指向的数组内容已经被改变了。</p>
+<p>如果对一个字符串数组进行排序，例如：</p>
+<pre><code class="java">String[] ns = &#123; &quot;banana&quot;, &quot;apple&quot;, &quot;pear&quot; &#125;;</code></pre>
+<p>排序前，这个数组在内存中表示如下：</p>
+<pre><code class="ascii">                   ┌──────────────────────────────────┐
+               ┌───┼──────────────────────┐           │
+               │   │                      ▼           ▼
+         ┌───┬─┴─┬─┴─┬───┬────────┬───┬───────┬───┬──────┬───┐
+ns ─────&gt;│░░░│░░░│░░░│   │&quot;banana&quot;│   │&quot;apple&quot;│   │&quot;pear&quot;│   │
+         └─┬─┴───┴───┴───┴────────┴───┴───────┴───┴──────┴───┘
+           │                 ▲
+           └─────────────────┘</code></pre>
+<p>调用<code>Arrays.sort(ns);</code>排序后，这个数组在内存中表示如下：</p>
+<pre><code class="ascii">                   ┌──────────────────────────────────┐
+               ┌───┼──────────┐                       │
+               │   │          ▼                       ▼
+         ┌───┬─┴─┬─┴─┬───┬────────┬───┬───────┬───┬──────┬───┐
+ns ─────&gt;│░░░│░░░│░░░│   │&quot;banana&quot;│   │&quot;apple&quot;│   │&quot;pear&quot;│   │
+         └─┬─┴───┴───┴───┴────────┴───┴───────┴───┴──────┴───┘
+           │                              ▲
+           └──────────────────────────────┘</code></pre>
+<p>原来的3个字符串在内存中均没有任何变化，但是<code>ns</code>数组的每个元素指向变化了。</p>
+<p>[TOC]</p>
+<h1 id="（3）多维数组"><a href="#（3）多维数组" class="headerlink" title="（3）多维数组"></a>（3）多维数组</h1><h3 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h3><p>二维数组就是数组的数组。定义一个二维数组如下：</p>
+<h4 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h4><pre><code class="java">public class Main &#123;
+    public static void main(String[] args) &#123;
+        int[][] ns = &#123;
+            &#123; 1, 2, 3, 4 &#125;,
+            &#123; 5, 6, 7, 8 &#125;,
+            &#123; 9, 10, 11, 12 &#125;
+        &#125;;
+        System.out.println(ns.length); // 3
     &#125;
 &#125;</code></pre>
-<p>在一个Java程序中，你总能找到一个类似：</p>
-<pre><code class="java">public class Hello &#123;
-    ...
+<h4 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h4><pre><code class="java">int [] [] arr = new int [3] [4];
+int [0] [] =&#123; 1, 2, 3, 4 &#125;;
+int [1] [] =&#123; 5, 6, 7, 8  &#125;;
+int [2] [] =&#123; 9, 10, 11, 12 &#125;;</code></pre>
+<h4 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h4><pre><code class="java">int [] [] arr = new int [3] [];
+int [0] [] =&#123; 1, 2, 3, 4 &#125;;
+int [1] [] =&#123; 1, 2, 3, 4 &#125;;
+int [2] [] =&#123; 9, 10, 11, 12 &#125;;</code></pre>
+<p>因为<code>ns</code>包含3个数组，因此，<code>ns.length</code>为<code>3</code>。实际上<code>ns</code>在内存中的结构如下：</p>
+<pre><code class="ascii">                    ┌───┬───┬───┬───┐
+         ┌───┐  ┌──&gt;│ 1 │ 2 │ 3 │ 4 │
+ns ─────&gt;│░░░│──┘   └───┴───┴───┴───┘
+         ├───┤      ┌───┬───┬───┬───┐
+         │░░░│─────&gt;│ 5 │ 6 │ 7 │ 8 │
+         ├───┤      └───┴───┴───┴───┘
+         │░░░│──┐   ┌───┬───┬───┬───┐
+         └───┘  └──&gt;│ 9 │10 │11 │12 │
+                    └───┴───┴───┴───┘</code></pre>
+<p>要打印一个二维数组，可以使用两层嵌套的for循环：</p>
+<pre><code class="java">for (int[] arr : ns) &#123;
+    for (int n : arr) &#123;
+        System.out.print(n);
+        System.out.print(&#39;, &#39;);
+    &#125;
+    System.out.println();
 &#125;</code></pre>
-<p>的定义，这个定义被称为class（类），这里的类名是<code>Hello</code>，大小写敏感，<code>class</code>用来定义一个类，<code>public</code>表示这个类是公开的，<code>public</code>、<code>class</code>都是Java的关键字，必须小写，<code>Hello</code>是类的名字，按照习惯，首字母<code>H</code>要大写。而花括号<code>&#123;&#125;</code>中间则是类的定义。</p>
-<p>注意到类的定义中，我们定义了一个名为<code>main</code>的方法：</p>
-<pre><code class="java">    public static void main(String[] args) &#123;
-        ...
-    &#125;</code></pre>
-<p>方法是可执行的代码块，一个方法除了方法名<code>main</code>，还有用<code>()</code>括起来的方法参数，这里的<code>main</code>方法有一个参数，参数类型是<code>String[]</code>，参数名是<code>args</code>，<code>public</code>、<code>static</code>用来修饰方法，这里表示它是一个公开的静态方法，<code>void</code>是方法的返回类型，而花括号<code>&#123;&#125;</code>中间的就是方法的代码。</p>
-<p>方法的代码每一行用<code>;</code>结束，这里只有一行代码，就是：</p>
-<pre><code class="java">        System.out.println(&quot;Hello, LIEFox!&quot;);</code></pre>
-<p>它用来打印一个字符串到屏幕上。</p>
-<p>Java规定，某个类定义的<code>public static void main(String[] args)</code>是Java程序的固定入口方法，因此，Java程序总是从<code>main</code>方法开始执行。</p>
-<p>注意到Java源码的缩进不是必须的，但是用缩进后，格式好看，很容易看出代码块的开始和结束，缩进一般是4个空格或者一个tab。</p>
-<p>最后，当我们把代码保存为文件时，文件名必须是<code>Hello.java</code>，而且文件名也要注意大小写，因为要和我们定义的类名<code>Hello</code>完全保持一致。</p>
-<h3 id="如何运行Java程序"><a href="#如何运行Java程序" class="headerlink" title="如何运行Java程序"></a>如何运行Java程序</h3><p>Java源码本质上是一个文本文件，我们需要先用<code>javac</code>把<code>Hello.java</code>编译成字节码文件<code>Hello.class</code>，然后，用<code>java</code>命令执行这个字节码文件：</p>
-<pre><code class="ascii">┌──────────────────┐
-│    Hello.java    │&lt;─── source code
-└──────────────────┘
-          │ compile
-          ▼
-┌──────────────────┐
-│   Hello.class    │&lt;─── byte code
-└──────────────────┘
-          │ execute
-          ▼
-┌──────────────────┐
-│    Run on JVM    │
-└──────────────────┘</code></pre>
-<p>因此，可执行文件<code>javac</code>是编译器，而可执行文件<code>java</code>就是虚拟机。</p>
-<p>第一步，在保存<code>Hello.java</code>的目录下执行命令<code>javac Hello.java</code>：</p>
-<pre><code>$ javac Hello.java</code></pre>
-<p>如果源代码无误，上述命令不会有任何输出，而当前目录下会产生一个<code>Hello.class</code>文件：</p>
-<pre><code>$ ls
-Hello.class    Hello.java</code></pre>
-<p>第二步，执行<code>Hello.class</code>，使用命令<code>java Hello</code>：</p>
-<pre><code>$ java Hello
-Hello, LIEFox!</code></pre>
-<p>注意：给虚拟机传递的参数<code>Hello</code>是我们定义的类名，虚拟机自动查找对应的class文件并执行。</p>
-<p>有一些童鞋可能知道，直接运行<code>java Hello.java</code>也是可以的：</p>
-<pre><code>$ java Hello.java 
-Hello, LIEFox!</code></pre>
-<p>这是Java 11新增的一个功能，它可以直接运行一个单文件源码！</p>
-<p>需要注意的是，在实际项目中，单个不依赖第三方库的Java源码是非常罕见的，所以，绝大多数情况下，我们无法直接运行一个Java源码文件，原因是它需要依赖其他的库。</p>
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>一个Java源码只能定义一个<code>public</code>类型的class，并且class名称和文件名要完全一致；</p>
-<p>使用<code>javac</code>可以将<code>.java</code>源码编译成<code>.class</code>字节码；</p>
-<p>使用<code>java</code>可以运行一个已编译的Java程序，参数是类名。</p>
+<h3 id="三维数组"><a href="#三维数组" class="headerlink" title="三维数组"></a>三维数组</h3><p>三维数组就是二维数组的数组。可以这么定义一个三维数组：</p>
+<pre><code>int[][][] ns = &#123;
+    &#123;
+        &#123;1, 2, 3&#125;,
+        &#123;4, 5, 6&#125;,
+        &#123;7, 8, 9&#125;
+    &#125;,
+    &#123;
+        &#123;10, 11&#125;,
+        &#123;12, 13&#125;
+    &#125;,
+    &#123;
+        &#123;14, 15, 16&#125;,
+        &#123;17, 18&#125;
+    &#125;
+&#125;;</code></pre>
+<p>它在内存中的结构如下：</p>
+<pre><code class="ascii">                              ┌───┬───┬───┐
+                   ┌───┐  ┌──&gt;│ 1 │ 2 │ 3 │
+               ┌──&gt;│░░░│──┘   └───┴───┴───┘
+               │   ├───┤      ┌───┬───┬───┐
+               │   │░░░│─────&gt;│ 4 │ 5 │ 6 │
+               │   ├───┤      └───┴───┴───┘
+               │   │░░░│──┐   ┌───┬───┬───┐
+        ┌───┐  │   └───┘  └──&gt;│ 7 │ 8 │ 9 │
+ns ────&gt;│░░░│──┘              └───┴───┴───┘
+        ├───┤      ┌───┐      ┌───┬───┐
+        │░░░│─────&gt;│░░░│─────&gt;│10 │11 │
+        ├───┤      ├───┤      └───┴───┘
+        │░░░│──┐   │░░░│──┐   ┌───┬───┐
+        └───┘  │   └───┘  └──&gt;│12 │13 │
+               │              └───┴───┘
+               │   ┌───┐      ┌───┬───┬───┐
+               └──&gt;│░░░│─────&gt;│14 │15 │16 │
+                   ├───┤      └───┴───┴───┘
+                   │░░░│──┐   ┌───┬───┐
+                   └───┘  └──&gt;│17 │18 │
+                              └───┴───┘</code></pre>
+<p>如果我们要访问三维数组的某个元素，例如，<code>ns[2][0][1]</code>，只需要顺着定位找到对应的最终元素<code>15</code>即可。</p>
+<p>理论上，我们可以定义任意的N维数组。但在实际应用中，除了二维数组在某些时候还能用得上，更高维度的数组很少使用。</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>二维数组就是数组的数组，三维数组就是二维数组的数组；</p>
+<p>多维数组的每个数组元素长度都不要求相同；</p>
+<p>最常见的多维数组是二维数组，访问二维数组的一个元素使用<code>array[row][col]</code>。</p>
 <p>[TOC]</p>
-<hr>
-<h1 id="（4）使用IDE"><a href="#（4）使用IDE" class="headerlink" title="（4）使用IDE"></a>（4）使用IDE</h1><p>IDE是集成开发环境：Integrated Development Environment的缩写。</p>
-<p>使用IDE的好处在于，可以把编写代码、组织项目、编译、运行、调试等放到一个环境中运行，能极大地提高开发效率。</p>
-<p>IDE提升开发效率主要靠以下几点：</p>
-<ul>
-<li>编辑器的自动提示，可以大大提高敲代码的速度；</li>
-<li>代码修改后可以自动重新编译，并直接运行；</li>
-<li>可以方便地进行断点调试。</li>
-</ul>
-<p>目前，流行的用于Java开发的IDE有：</p>
-<h3 id="Eclipse"><a href="#Eclipse" class="headerlink" title="Eclipse"></a>Eclipse</h3><p><a href="https://www.eclipse.org/">Eclipse</a>是由IBM开发并捐赠给开源社区的一个IDE，也是目前应用最广泛的IDE。Eclipse的特点是它本身是Java开发的，并且基于插件结构，即使是对Java开发的支持也是通过插件JDT实现的。</p>
-<p>除了用于Java开发，Eclipse配合插件也可以作为C/C++开发环境、PHP开发环境、Rust开发环境等。</p>
-<h3 id="IntelliJ-Idea"><a href="#IntelliJ-Idea" class="headerlink" title="IntelliJ Idea"></a>IntelliJ Idea</h3><p><a href="https://www.jetbrains.com/idea/">IntelliJ Idea</a>是由JetBrains公司开发的一个功能强大的IDE，分为免费版和商用付费版。JetBrains公司的IDE平台也是基于IDE平台+语言插件的模式，支持Python开发环境、Ruby开发环境、PHP开发环境等，这些开发环境也分为免费版和付费版。</p>
-<hr>
-<p>[TOC]</p>
-<p>。。。。。。。。。。。。。。</p>
-<p><strong><em>作者：zjh</em></strong></p>
+<p>。。。。。。。。。。</p>
+<p><em>作者：zjh</em></p>
 ]]></content>
       <categories>
         <category>JAVA笔记</category>
       </categories>
       <tags>
         <tag>JAVA笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象基础</title>
+    <url>/posts/9d9ad23f.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/9d9ad23f.html"><img src="https://s3.ax1x.com/2021/01/09/sM0Lc9.png" alt="sM0Lc9.png" style="zoom: 25%;" /></a></p>
+<a id="more"></a>
+
+<h1 id="（1）面向对象的概念"><a href="#（1）面向对象的概念" class="headerlink" title="（1）面向对象的概念"></a>（1）面向对象的概念</h1><p>面向对象是一种符合人类思维的编程思想，将万物比作对象，说一个栗子：</p>
+<p><strong>把大象装进冰箱需要几步</strong></p>
+<p>三步</p>
+<ol>
+<li>打开冰箱</li>
+<li>装进大象</li>
+<li>关上冰箱门</li>
+</ol>
+<p><strong>这个是一个典型的面向过程的编程思想，把这个事情，像成敲java代码，如果换成装狐狸，那也要重新写一遍代码，将狐狸放进冰箱，执行三步，如果又换把狐狸放进笼子里呢，又要重新写一遍。所以为了解决事情的重复性，就有了面向对象思想。</strong></p>
+<p>就可以将装进某件事物封装成一个对象，只需要改动一点点，就可以实现这个功能。。。。</p>
+<p>而面向对象有三个特点：</p>
+<p>1.封装性</p>
+<p>封装性是将对象的属性和行为封装起来，然后不需要让用户知道他是怎么执行的，只需要改变对应的参数，就可以实现用户想要达到的功能。</p>
+<p>2.继承性</p>
+<p>继承性主要讲的是类与类之间的关系，可以通过继承将代码的冗余降低。用最少的代码，做更多的功能。</p>
+<p>3.多态性</p>
+<p>多态性是指程序之间允许出现重名的现象。在继承关系中，子类如果定义了一个与父类方法签名完全相同的方法，被称为覆写（Override）。</p>
+]]></content>
+      <categories>
+        <category>JAVA笔记</category>
+      </categories>
+      <tags>
+        <tag>JAVA笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WebGL流体效果</title>
+    <url>/posts/3731d3f9.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/3731d3f9.html"><img src="https://s3.ax1x.com/2021/01/09/sM69lF.png" alt="sM69lF.png"></a></p>
+<a id="more"></a>
+
+<h1 id="WebGL流体效果"><a href="#WebGL流体效果" class="headerlink" title="WebGL流体效果"></a>WebGL流体效果</h1><p>WebGL流体效果，拖动鼠标即可展现炫酷的流体动画，可以截图用来做背景，发挥自己的创造力。。。《Close Controls》可以关闭菜单，自己研究英语。<strong>（显示不出的话，就刷新一下）</strong></p>
+<div style="position: relative; width: 100%; height: 100%; padding-bottom: 100%;"><iframe 
+src="https://paveldogreat.github.io/WebGL-Fluid-Simulation/" scrolling="yes" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
+height: 100%; left: 0; top: 0;"> </iframe></div>
+
+<h4 id="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"><a href="#LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈" class="headerlink" title="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"></a>LIEFox加入了很多实用有趣的小工具，链接在这👉<a href="https://cxq21.gitee.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" target="_blank">实用工具传送门</a>👈</h4><p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>实用工具</category>
+      </categories>
+      <tags>
+        <tag>实用工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>流程控制</title>
+    <url>/posts/368ebfeb.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/368ebfeb.html"><img src="https://s3.ax1x.com/2021/01/09/sM0q1J.png" alt="sMa5TO.png" style="zoom:25%;" /></a></p>
+<a id="more"></a>
+
+<h1 id="（1）选择结构语句"><a href="#（1）选择结构语句" class="headerlink" title="（1）选择结构语句"></a>（1）选择结构语句</h1><h2 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h2><p>if语句格式是</p>
+<pre><code class="java">if(条件语句)&#123;
+    代码块
+&#125;</code></pre>
+<p>条件语句里是只可以放布尔值，当为true是，执行代码块里的，反之。举个栗子：</p>
+<pre><code class="java"> int i=1;
+        if(i&gt;0)&#123;
+            i++;
+        &#125;
+        System.out.println(i);//2</code></pre>
+<h2 id="if…else语句"><a href="#if…else语句" class="headerlink" title="if…else语句"></a>if…else语句</h2><p>当判断条件为true时，执行if语句的。如果为false执行else里的。</p>
+<p>语法格式</p>
+<pre><code class="java">if(判断条件)&#123;
+    执行语句
+&#125;else&#123;
+    执行语句
+&#125;</code></pre>
+<p>举个栗子</p>
+<pre><code class="java"> int i=1;
+        if(i&gt;2)&#123;//false
+            System.out.println(i);
+        &#125;else &#123;
+            System.out.println(&quot;执行else&quot;);//打印执行else
+        &#125;</code></pre>
+<p>还有一种三元运算，类似if…else：</p>
+<pre><code>判断条件？表达式1：表达式2</code></pre>
+<p>当判断条件为true时，执行冒号前面的，反之，执行冒号后面的。</p>
+<h2 id="if…else-if…else语句"><a href="#if…else-if…else语句" class="headerlink" title="if…else if…else语句"></a>if…else if…else语句</h2><p>该语句根据多种判断结果，执行相应结果。</p>
+<p>语法格式</p>
+<pre><code class="java">if(判断条件)&#123;
+    执行语句
+&#125;else if(判断条件)&#123;
+    执行语句
+&#125;else&#123;
+    执行语句。。。
+&#125;</code></pre>
+<p>举个栗子</p>
+<pre><code class="java">int i = 10;
+if(i&gt;11)&#123;
+    sout(&quot;执行语句&quot;);
+&#125;else if(true)&#123;
+    sout(&quot;LIEFox&quot;);//最后打印出来的结果是LIEFox
+&#125;else&#123;
+    sout(&quot;FOX&quot;);
+&#125;</code></pre>
+<h2 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h2><p>语法格式</p>
+<pre><code class="java">switch (表达式)&#123;
+           case 1:
+               执行语句1;
+               break;
+           case 2:
+               执行语句2;
+               break;
+           case 3:
+               执行语句3;
+               break;
+           default:
+               执行语句4;
+               break;
+       &#125;</code></pre>
+<p>如果不break，将不会结束语句，会执行下一个语句。举个栗子</p>
+<pre><code class="java">switch (2)&#123;
+           case 1:
+               sout(1);
+               break;
+           case 2:
+               sout(2);
+           case 3:
+               sout(3);
+               break;
+           default:
+               sout(4);
+               break;
+       &#125;
+/*结果为23。因为表达式为2，就从case 2 开始执行，
+打印2、又因为没有break，不会跳出循环，就会继续执
+行case 3 里的语句，直到break跳出语句。*/</code></pre>
+<p>switch在JDK7.0的时候，加入了可以判断String类型。</p>
+<p>switch中还加入了简单的写法，因为有些情况，case1、2、3都有可能结果相同，所以可以这样：</p>
+<pre><code class="java">switch (2)&#123;
+           case 1:
+           case 2:
+           case 3:
+               sout(3);
+               break;
+           default:
+               sout(4);
+               break;
+       &#125;//结果为3</code></pre>
+<hr>
+<p>[TOC]</p>
+<h1 id="（2）循环结构语句"><a href="#（2）循环结构语句" class="headerlink" title="（2）循环结构语句"></a>（2）循环结构语句</h1><h2 id="while语句"><a href="#while语句" class="headerlink" title="while语句"></a>while语句</h2><p>语法格式</p>
+<pre><code class="java">while (循环条件)&#123;
+    执行语句
+&#125;</code></pre>
+<p>循环条件里依旧，true就执行，false就停止。</p>
+<p>举个栗子</p>
+<pre><code class="java">int i =1;
+       while (i&lt;=5)&#123;
+           System.out.println(&quot;i=&quot;+i);
+           i++;
+       &#125;
+       结果/*i=1
+            i=2
+            i=3
+            i=4
+            i=5*/</code></pre>
+<h2 id="do…while循环语句"><a href="#do…while循环语句" class="headerlink" title="do…while循环语句"></a>do…while循环语句</h2><p>语法格式</p>
+<pre><code class="java">do&#123;
+    执行语句
+&#125;while(循环条件)</code></pre>
+<p>可见，<code>do while</code>循环会至少循环一次。</p>
+<p>我们把对1到100的求和用<code>do while</code>循环改写一下：</p>
+<pre><code class="java">int sum = 0;
+        int n = 1;
+        do &#123;
+            sum = sum + n;
+            n ++;
+        &#125; while (n &lt;= 100);
+        System.out.println(sum);//结果为5050</code></pre>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p><code>do while</code>循环先执行循环，再判断条件；</p>
+<p><code>do while</code>循环会至少执行一次。</p>
+<h2 id="for语句"><a href="#for语句" class="headerlink" title="for语句"></a>for语句</h2><p>语法格式</p>
+<pre><code class="java">for (初始化表达式;循环条件;操作表达式)&#123;
+    执行语句
+&#125;</code></pre>
+<p>举个栗子</p>
+<pre><code class="java">for (int i =0;i&lt;=7;i++)&#123;
+      System.out.println(&quot;LIEFox&quot;);
+&#125;//将会打印7次LIEFox</code></pre>
+<p>执行顺序是这样的》</p>
+<pre><code>1.起始位置从i=0开始，“0&lt;=7”为true，打印LIEFox，回到i++,i=1。
+2.i=1,&quot;1&lt;=7&quot;为true，打印LIEFox，回到i++,i=2。
+。。。。。
+7.i=7,&quot;7&lt;=7&quot;为true，打印LIEFox，回到i++,i=8。
+8.i=8,&quot;8&lt;=7&quot;为false，循环结束。</code></pre>
+<h2 id="循环嵌套"><a href="#循环嵌套" class="headerlink" title="循环嵌套"></a>循环嵌套</h2><p>所谓循环嵌套，指的是多种控制语句相组合，实现自己想要的功能。</p>
+<p>就简单的两层for循环，就可以实现一个美妙的形状组成的实现。</p>
+<pre><code class="java">        for (int i =0;i&lt;=10;i++)&#123;
+            for (int x =i;x&lt;=5;x++)&#123;
+                 System.out.print(&quot;*&quot;);
+            &#125;
+            System.out.println();
+        &#125;
+******
+*****
+****
+***
+**
+*</code></pre>
+<p>运行到第二层的for循环，因为最后i=x=6；6&lt;=5=false,就停止打印*</p>
+<p><a href="https://imgchr.com/i/rpcv5R"><img src="https://s3.ax1x.com/2020/12/08/rpcv5R.png" alt="rpcv5R.png"></a></p>
+<h2 id="跳转语句"><a href="#跳转语句" class="headerlink" title="跳转语句"></a>跳转语句</h2><p>break和continue</p>
+<p>break：在之前的switch控制语句就用到了，执行到break，就结束循环。</p>
+<p>continue：是跳出本次循环。</p>
+<p>举个continue的栗子</p>
+<pre><code class="java">public class Main &#123;
+    public static void main(String[] args) &#123;
+        int sum = 0;
+        for (int i=1; i&lt;=5; i++) &#123;
+            System.out.println(&quot;begin i = &quot; + i);
+            if (i % 2 == 0) &#123;
+                continue; // continue语句会结束本次循环
+            &#125;
+            sum = sum + i;
+            System.out.println(&quot;end i = &quot; + i);
+        &#125;
+        System.out.println(sum); // 9
+    &#125;
+&#125;
+//结果
+begin i = 1
+end i = 1
+begin i = 2
+begin i = 3
+end i = 3
+begin i = 4
+begin i = 5
+end i = 5
+9</code></pre>
+<p>注意观察<code>continue</code>语句的效果。当<code>i</code>为奇数时，完整地执行了整个循环，因此，会打印<code>begin i=1</code>和<code>end i=1</code>。在i为偶数时，<code>continue</code>语句会提前结束本次循环，因此，会打印<code>begin i=2</code>但不会打印<code>end i = 2</code>。</p>
+<p>在多层嵌套的循环中，<code>continue</code>语句同样是结束本次自己所在的循环。</p>
+<h3 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h3><p><code>break</code>语句可以跳出当前循环；</p>
+<p><code>break</code>语句通常配合<code>if</code>，在满足条件时提前结束整个循环；</p>
+<p><code>break</code>语句总是跳出最近的一层循环；</p>
+<p><code>continue</code>语句可以提前结束本次循环；</p>
+<p><code>continue</code>语句通常配合<code>if</code>，在满足条件时提前结束本次循环。</p>
+<hr>
+<p>。。。。。。。</p>
+<p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>JAVA笔记</category>
+      </categories>
+      <tags>
+        <tag>JAVA笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解压开车</title>
+    <url>/posts/a4acce0b.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/a4acce0b.html"><img src="https://s3.ax1x.com/2021/01/09/sMaNSs.png" alt="sMaNSs.png" style="zoom: 80%;" /></a></p>
+<a id="more"></a>
+
+<h2 id="等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。"><a href="#等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。" class="headerlink" title="等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。"></a>等待加载，点击START进入游戏。建议WASD操作，不要用上下左右方向键操作。</h2></iframe><div style="position: relative; width: 100%; height: 90%; padding-bottom: 100%;"><iframe 
+src="https://bruno-simon.com/" scrolling="yes" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
+height: 100%; left: 0; top: 0;"> </iframe></div>
+
+<h4 id="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"><a href="#LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈" class="headerlink" title="LIEFox加入了很多实用有趣的小工具，链接在这👉实用工具传送门👈"></a>LIEFox加入了很多实用有趣的小工具，链接在这👉<a href="https://cxq21.gitee.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" target="_blank">实用工具传送门</a>👈</h4><p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>实用工具</category>
+      </categories>
+      <tags>
+        <tag>实用工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>江信19级软件测试刷题系统</title>
+    <url>/posts/1e3f2157.html</url>
+    <content><![CDATA[<p><a href="https://cxq21.gitee.io/posts/1e3f2157.html"><img src="https://s3.ax1x.com/2021/01/09/sM02lj.png" alt="sMaPL6.png" style="zoom:25%;" /></a></p>
+<a id="more"></a>
+
+<h1 id="江信19级软件测试刷题系统"><a href="#江信19级软件测试刷题系统" class="headerlink" title="江信19级软件测试刷题系统"></a>江信19级软件测试刷题系统</h1><hr>
+<h1 id="上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。"><a href="#上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。" class="headerlink" title="上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。"></a>上一个刷题系统已经关闭，微信群里将提供永久刷题系统，请同学们扫码进群。</h1><h1 id="这个系统手机电脑都可刷。有任何疑问请在微信群或评论区质询！"><a href="#这个系统手机电脑都可刷。有任何疑问请在微信群或评论区质询！" class="headerlink" title="这个系统手机电脑都可刷。有任何疑问请在微信群或评论区质询！"></a>这个系统手机电脑都可刷。有任何疑问请在<strong>微信群或评论区</strong>质询！</h1><p><a href="https://imgchr.com/i/rMyKOO"><img src="https://s3.ax1x.com/2020/12/15/rMyKOO.png" alt="rMyKOO.png" style="zoom:50%;" /></a></p>
+<h3 id="致敬题库制作人员：-佐佳豪、李玮峰"><a href="#致敬题库制作人员：-佐佳豪、李玮峰" class="headerlink" title="致敬题库制作人员： 佐佳豪、李玮峰"></a>致敬题库制作人员： 佐佳豪、李玮峰</h3><p><em>作者：zjh</em></p>
+]]></content>
+      <categories>
+        <category>江信1+X</category>
+      </categories>
+      <tags>
+        <tag>实用工具</tag>
       </tags>
   </entry>
 </search>
