@@ -86,7 +86,7 @@
 <p>​    具有过硬的前端语言（HTML+CSS+JS)等等（选）</p>
 <p>​    具有审美高的UI设计（PS+AI+会使用图床）等等（选）</p>
 <p>​    具有JAVA,JAVAScript,Python等等清晰过硬的理论（选）</p>
-<h1 id="加入邮箱（-50-54-48-54-48-x39-55-x32-x31-56-x40-x71-x71-46-99-111-x6d"><a href="#加入邮箱（-50-54-48-54-48-x39-55-x32-x31-56-x40-x71-x71-46-99-111-x6d" class="headerlink" title="加入邮箱（&#50;&#54;&#48;&#54;&#48;&#x39;&#55;&#x32;&#x31;&#56;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;)"></a>加入邮箱（<a href="mailto:&#50;&#54;&#48;&#54;&#48;&#x39;&#55;&#x32;&#x31;&#56;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;">&#50;&#54;&#48;&#54;&#48;&#x39;&#55;&#x32;&#x31;&#56;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;</a>)</h1><h1 id="联系电话（-15270055490佐佳豪）"><a href="#联系电话（-15270055490佐佳豪）" class="headerlink" title="联系电话（ 15270055490佐佳豪）"></a>联系电话（<a herf="tel:15270055490" target="_blank"> 15270055490佐佳豪</a>）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
+<h1 id="加入邮箱（-x32-x36-48-x36-x30-x39-55-x32-x31-x38-64-x71-x71-x2e-x63-111-x6d"><a href="#加入邮箱（-x32-x36-48-x36-x30-x39-55-x32-x31-x38-64-x71-x71-x2e-x63-111-x6d" class="headerlink" title="加入邮箱（&#x32;&#x36;&#48;&#x36;&#x30;&#x39;&#55;&#x32;&#x31;&#x38;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;)"></a>加入邮箱（<a href="mailto:&#x32;&#x36;&#48;&#x36;&#x30;&#x39;&#55;&#x32;&#x31;&#x38;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#x32;&#x36;&#48;&#x36;&#x30;&#x39;&#55;&#x32;&#x31;&#x38;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;</a>)</h1><h1 id="联系电话（-15270055490佐佳豪）"><a href="#联系电话（-15270055490佐佳豪）" class="headerlink" title="联系电话（ 15270055490佐佳豪）"></a>联系电话（<a herf="tel:15270055490" target="_blank"> 15270055490佐佳豪</a>）</h1><h1 id="地址（江信学院教学楼606）"><a href="#地址（江信学院教学楼606）" class="headerlink" title="地址（江信学院教学楼606）"></a>地址（江信学院教学楼606）</h1><h1 id="！！！任何时间都可以！！！"><a href="#！！！任何时间都可以！！！" class="headerlink" title="！！！任何时间都可以！！！"></a>！！！任何时间都可以！！！</h1><p>​                                                                                                                                                                                                                <em>作者：zjh</em></p>
 ]]></content>
       <categories>
         <category>关于本站</category>
@@ -179,6 +179,106 @@ git push -u origin master
       </categories>
       <tags>
         <tag>案例记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git语句</title>
+    <url>/posts/8996a410.html</url>
+    <content><![CDATA[<p><img src="https://i.loli.net/2021/01/11/dNRl7PTqiboOheB.png" alt="logo@2x.png"></p>
+<a id="more"></a>
+
+<h1 id="Git语句"><a href="#Git语句" class="headerlink" title="Git语句"></a>Git语句</h1><h3 id="Git：分布式版本控制系统"><a href="#Git：分布式版本控制系统" class="headerlink" title="Git：分布式版本控制系统"></a>Git：分布式版本控制系统</h3><h2 id="1-基本信息"><a href="#1-基本信息" class="headerlink" title="1.基本信息"></a>1.基本信息</h2><p><strong>版本查询</strong></p>
+<pre><code class="git">git version</code></pre>
+<p><strong>基本信息查询</strong></p>
+<pre><code>git config -l</code></pre>
+<p><strong>基本信息配置</strong></p>
+<pre><code>git config --global user.name &quot;用户名&quot;
+git config --global user.email &quot;邮箱&quot;</code></pre>
+<h2 id="2-创建提交语句"><a href="#2-创建提交语句" class="headerlink" title="2.创建提交语句"></a>2.创建提交语句</h2><p><strong>创建文件夹</strong></p>
+<pre><code>mkdir jxyy $创建文件夹</code></pre>
+<p><strong>初始化仓库</strong></p>
+<pre><code>git init</code></pre>
+<p><strong>创建文件</strong></p>
+<pre><code>touch 文件名</code></pre>
+<p><strong>查看文件状态</strong></p>
+<pre><code>git status</code></pre>
+<ul>
+<li><p><code>绿色：暂存区</code></p>
+</li>
+<li><p><code>红色：工作区</code></p>
+</li>
+</ul>
+<p><strong>添加到暂存区</strong></p>
+<pre><code>git add .</code></pre>
+<p><strong>提交到版本库</strong></p>
+<pre><code>git commit -m &quot;描述&quot;</code></pre>
+<h2 id="3-删除操作"><a href="#3-删除操作" class="headerlink" title="3.删除操作"></a>3.删除操作</h2><p><strong>工作区删除</strong></p>
+<pre><code>rm 文件名</code></pre>
+<p><strong>暂存区</strong></p>
+<pre><code>git rm 文件夹名</code></pre>
+<p><strong>版本库</strong></p>
+<pre><code>git commit -m &quot;描述&quot;</code></pre>
+<h2 id="4-修改文件名"><a href="#4-修改文件名" class="headerlink" title="4.修改文件名"></a>4.修改文件名</h2><p><strong>工作区</strong></p>
+<pre><code>mv 旧文件名 新文件名</code></pre>
+<p><strong>暂存区</strong></p>
+<pre><code>git rm 旧文件名
+git add 新文件</code></pre>
+<h2 id="5-查看版本和状态"><a href="#5-查看版本和状态" class="headerlink" title="5.查看版本和状态"></a>5.查看版本和状态</h2><pre><code>git status
+git diff
+git log --oneline -n数量</code></pre>
+<h2 id="6-状态改变"><a href="#6-状态改变" class="headerlink" title="6.状态改变"></a>6.状态改变</h2><h3 id="场景一：修改了工作区，但是发现代码出现问题了！"><a href="#场景一：修改了工作区，但是发现代码出现问题了！" class="headerlink" title="场景一：修改了工作区，但是发现代码出现问题了！"></a>场景一：修改了工作区，但是发现代码出现问题了！</h3><pre><code>     git checkout 文件名
+
+     将版本库的对应文件的最新版本，覆盖工作区对应文件！
+
+     文件一定被提交过！！</code></pre>
+<h3 id="场景二-错误文件提交到了暂存区！怎么处理！"><a href="#场景二-错误文件提交到了暂存区！怎么处理！" class="headerlink" title="场景二:错误文件提交到了暂存区！怎么处理！"></a>场景二:错误文件提交到了暂存区！怎么处理！</h3><pre><code>     危险命令： git reset --hard 
+
+     步骤1：暂存区状态去掉
+
+     git reset head 文件名
+
+     步骤2：工作区覆盖
+
+     git checkout 文件名</code></pre>
+<h3 id="场景三：提交到版本库或者远程仓库"><a href="#场景三：提交到版本库或者远程仓库" class="headerlink" title="场景三：提交到版本库或者远程仓库"></a>场景三：提交到版本库或者远程仓库</h3><pre><code>减量更新：版本回滚(不推荐)
+      git reset --hard
+
+           git reset --hard 版本号
+
+         问题：会去掉别人的代码！
+
+         增量更新：
+
+           修改错误代码！再次提交！</code></pre>
+<h2 id="7-git-分支操作"><a href="#7-git-分支操作" class="headerlink" title="7.git 分支操作"></a>7.git 分支操作</h2><ol>
+<li><h3 id="主干开发"><a href="#主干开发" class="headerlink" title="主干开发"></a>主干开发</h3><ul>
+<li><strong>Google和Facebook等公司使用的就是主干开发模式</strong></li>
+<li><strong>要求开发人员能力较强，代码质量较高，不会反复修改！</strong></li>
+<li><strong>主干开发也适合Java，Java微服务服务开发， 每人负责一个服务，冲突率不高！</strong></li>
+</ul>
+</li>
+<li><h3 id="Github-Flow"><a href="#Github-Flow" class="headerlink" title="Github Flow"></a>Github Flow</h3><ul>
+<li><strong>开发新的功能的时候创建新分支，完善以后，合并到主分支即可！</strong></li>
+<li><strong>这样的流程敏捷度较好，容错度较高！</strong></li>
+<li><strong>同时也可以配置code review，控制代码质量！</strong></li>
+</ul>
+</li>
+<li><h3 id="分支操作语句"><a href="#分支操作语句" class="headerlink" title="分支操作语句"></a>分支操作语句</h3><p><img src="https://i.loli.net/2021/01/11/gIK74py5YmiDCMb.jpg" alt="{EEFE9601-22DA-48AA-B879-67CEE8C0B457}.png.jpg"></p>
+</li>
+</ol>
+<p><code>注意：但跳出变基操作时</code></p>
+<p><img src="https://i.loli.net/2021/01/11/eGSbdoR5MQ9Pq8c.jpg" alt="FY3@H6@~ZJO_ONUB_GF1Q3C.jpg"></p>
+<p><strong>命令是：</strong></p>
+<pre><code>shift + ：
+q</code></pre>
+<p>。。。未完待续。。。</p>
+<p>作者：<em>zjh</em></p>
+]]></content>
+      <categories>
+        <category>实用工具</category>
+      </categories>
+      <tags>
+        <tag>版本控制工具</tag>
       </tags>
   </entry>
   <entry>
@@ -2544,7 +2644,7 @@ span&#123;
 <thead>
 <tr>
 <th align="center">邮箱</th>
-<th align="center"><a href="mailto:&#50;&#54;&#48;&#54;&#x30;&#57;&#x37;&#x32;&#49;&#56;&#64;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;">&#50;&#54;&#48;&#54;&#x30;&#57;&#x37;&#x32;&#49;&#56;&#64;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;</a></th>
+<th align="center"><a href="mailto:&#x32;&#54;&#x30;&#x36;&#48;&#x39;&#x37;&#x32;&#x31;&#x38;&#64;&#113;&#x71;&#46;&#x63;&#x6f;&#109;">&#x32;&#54;&#x30;&#x36;&#48;&#x39;&#x37;&#x32;&#x31;&#x38;&#64;&#113;&#x71;&#46;&#x63;&#x6f;&#109;</a></th>
 </tr>
 </thead>
 <tbody><tr>

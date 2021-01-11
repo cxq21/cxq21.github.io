@@ -18,7 +18,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    CSS盒子模型 |  LIEFox
+    Git语句 |  LIEFox
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -90,7 +90,7 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-CSS盒子模型"
+  id="post-Git语句"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -101,18 +101,18 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  CSS盒子模型
+  Git语句
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/posts/1279ea3.html" class="article-date">
-  <time datetime="2020-12-09T16:00:00.000Z" itemprop="datePublished">2020-12-10</time>
+      <a href="/posts/8996a410.html" class="article-date">
+  <time datetime="2021-01-10T16:00:00.000Z" itemprop="datePublished">2021-01-11</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">前端笔记</a>
+    <a class="article-category-link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
   </div>
   
 <div class="word_count">
@@ -120,7 +120,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">813</span>
+            <span class="post-count">550</span>
         </span>
     </span>
 
@@ -129,7 +129,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">3 分钟</span>
+            <span class="post-count">2 分钟</span>
         </span>
     </span>
 </div>
@@ -144,217 +144,94 @@ var _hmt = _hmt || [];
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p><a href="https://cxq21.gitee.io/posts/1279ea3.html"><img src="https://s3.ax1x.com/2021/01/09/sM0bp4.png" alt="sM0bp4.png" style="zoom:20%;" /></a></p>
+  <p><img src="https://i.loli.net/2021/01/11/dNRl7PTqiboOheB.png" alt="logo@2x.png"></p>
 <a id="more"></a>
 
-<h1 id="CSS盒子模型"><a href="#CSS盒子模型" class="headerlink" title="CSS盒子模型"></a>CSS盒子模型</h1><p>在讲盒子模型前，我们先来了解一下三元素</p>
-<h2 id="标签分类"><a href="#标签分类" class="headerlink" title="标签分类"></a>标签分类</h2><ul>
-<li><h3 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h3></li>
-</ul>
-<p>feature（特征）：<strong>独占一行，可以通过css改变宽高</strong><br>例如：<code>div</code>  <code>p</code>   <code>ul</code>  <code>li</code>   <code>ol</code>    <code>form</code>   <code>address</code>。。。</p>
+<h1 id="Git语句"><a href="#Git语句" class="headerlink" title="Git语句"></a>Git语句</h1><h3 id="Git：分布式版本控制系统"><a href="#Git：分布式版本控制系统" class="headerlink" title="Git：分布式版本控制系统"></a>Git：分布式版本控制系统</h3><h2 id="1-基本信息"><a href="#1-基本信息" class="headerlink" title="1.基本信息"></a>1.基本信息</h2><p><strong>版本查询</strong></p>
+<pre><code class="git">git version</code></pre>
+<p><strong>基本信息查询</strong></p>
+<pre><code>git config -l</code></pre>
+<p><strong>基本信息配置</strong></p>
+<pre><code>git config --global user.name &quot;用户名&quot;
+git config --global user.email &quot;邮箱&quot;</code></pre>
+<h2 id="2-创建提交语句"><a href="#2-创建提交语句" class="headerlink" title="2.创建提交语句"></a>2.创建提交语句</h2><p><strong>创建文件夹</strong></p>
+<pre><code>mkdir jxyy $创建文件夹</code></pre>
+<p><strong>初始化仓库</strong></p>
+<pre><code>git init</code></pre>
+<p><strong>创建文件</strong></p>
+<pre><code>touch 文件名</code></pre>
+<p><strong>查看文件状态</strong></p>
+<pre><code>git status</code></pre>
 <ul>
-<li><h3 id="行元素"><a href="#行元素" class="headerlink" title="行元素"></a>行元素</h3></li>
+<li><p><code>绿色：暂存区</code></p>
+</li>
+<li><p><code>红色：工作区</code></p>
+</li>
 </ul>
-<p>feature：<strong>内容决定元素所占位置，不可以通过css改变宽高</strong><br>例如：<code>span</code>    <code>strong</code>   <code>em</code>    <code>a</code>     <code>del</code>。。。</p>
-<ul>
-<li><h3 id="行块元素（特殊）"><a href="#行块元素（特殊）" class="headerlink" title="行块元素（特殊）"></a>行块元素（特殊）</h3></li>
+<p><strong>添加到暂存区</strong></p>
+<pre><code>git add .</code></pre>
+<p><strong>提交到版本库</strong></p>
+<pre><code>git commit -m &quot;描述&quot;</code></pre>
+<h2 id="3-删除操作"><a href="#3-删除操作" class="headerlink" title="3.删除操作"></a>3.删除操作</h2><p><strong>工作区删除</strong></p>
+<pre><code>rm 文件名</code></pre>
+<p><strong>暂存区</strong></p>
+<pre><code>git rm 文件夹名</code></pre>
+<p><strong>版本库</strong></p>
+<pre><code>git commit -m &quot;描述&quot;</code></pre>
+<h2 id="4-修改文件名"><a href="#4-修改文件名" class="headerlink" title="4.修改文件名"></a>4.修改文件名</h2><p><strong>工作区</strong></p>
+<pre><code>mv 旧文件名 新文件名</code></pre>
+<p><strong>暂存区</strong></p>
+<pre><code>git rm 旧文件名
+git add 新文件</code></pre>
+<h2 id="5-查看版本和状态"><a href="#5-查看版本和状态" class="headerlink" title="5.查看版本和状态"></a>5.查看版本和状态</h2><pre><code>git status
+git diff
+git log --oneline -n数量</code></pre>
+<h2 id="6-状态改变"><a href="#6-状态改变" class="headerlink" title="6.状态改变"></a>6.状态改变</h2><h3 id="场景一：修改了工作区，但是发现代码出现问题了！"><a href="#场景一：修改了工作区，但是发现代码出现问题了！" class="headerlink" title="场景一：修改了工作区，但是发现代码出现问题了！"></a>场景一：修改了工作区，但是发现代码出现问题了！</h3><pre><code>     git checkout 文件名
+
+     将版本库的对应文件的最新版本，覆盖工作区对应文件！
+
+     文件一定被提交过！！</code></pre>
+<h3 id="场景二-错误文件提交到了暂存区！怎么处理！"><a href="#场景二-错误文件提交到了暂存区！怎么处理！" class="headerlink" title="场景二:错误文件提交到了暂存区！怎么处理！"></a>场景二:错误文件提交到了暂存区！怎么处理！</h3><pre><code>     危险命令： git reset --hard 
+
+     步骤1：暂存区状态去掉
+
+     git reset head 文件名
+
+     步骤2：工作区覆盖
+
+     git checkout 文件名</code></pre>
+<h3 id="场景三：提交到版本库或者远程仓库"><a href="#场景三：提交到版本库或者远程仓库" class="headerlink" title="场景三：提交到版本库或者远程仓库"></a>场景三：提交到版本库或者远程仓库</h3><pre><code>减量更新：版本回滚(不推荐)
+      git reset --hard
+
+           git reset --hard 版本号
+
+         问题：会去掉别人的代码！
+
+         增量更新：
+
+           修改错误代码！再次提交！</code></pre>
+<h2 id="7-git-分支操作"><a href="#7-git-分支操作" class="headerlink" title="7.git 分支操作"></a>7.git 分支操作</h2><ol>
+<li><h3 id="主干开发"><a href="#主干开发" class="headerlink" title="主干开发"></a>主干开发</h3><ul>
+<li><strong>Google和Facebook等公司使用的就是主干开发模式</strong></li>
+<li><strong>要求开发人员能力较强，代码质量较高，不会反复修改！</strong></li>
+<li><strong>主干开发也适合Java，Java微服务服务开发， 每人负责一个服务，冲突率不高！</strong></li>
 </ul>
-<p>feature：内容决定大小，可以改宽高<br><code>img</code></p>
-<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p>以块元素标签为例：</p>
-<p>html：</p>
-<pre><code class="jsp">&lt;div class=&quot;demo&quot;&gt;
-            LIEFoxLIEFoxLIEFoxLIEFox&lt;br&gt;
-            LIEFoxLIEFoxLIEFox
-&lt;/div&gt;</code></pre>
-<p>css样式：</p>
-<pre><code class="css">.demo&#123;
-    width: 200px;
-    height: 100px;
-    padding: 10px;
-    border: 2px solid red;
-    margin: 20px;
-&#125;</code></pre>
-<p>效果：</p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/sm6KW4"><img src="https://s3.ax1x.com/2021/01/07/sm6KW4.gif" alt="sm6KW4.gif" style="zoom: 50%;" /></a></p>
-<p>这就是一个盒子模型，一般由center（height，width），padding，border，margin组成。右下角的盒子模型，是控制台的调试，可以让我们视图化的检查盒子的大小。</p>
-<p><code>注意</code>：<code>margin</code>不属于盒子里的，所以计算时不用。</p>
-<h3 id="复合属性值"><a href="#复合属性值" class="headerlink" title="复合属性值"></a>复合属性值</h3><ul>
-<li>一个值代表4个方向</li>
+</li>
+<li><h3 id="Github-Flow"><a href="#Github-Flow" class="headerlink" title="Github Flow"></a>Github Flow</h3><ul>
+<li><strong>开发新的功能的时候创建新分支，完善以后，合并到主分支即可！</strong></li>
+<li><strong>这样的流程敏捷度较好，容错度较高！</strong></li>
+<li><strong>同时也可以配置code review，控制代码质量！</strong></li>
 </ul>
-<pre><code>padding: 10px;</code></pre>
-<ul>
-<li>4个值  上    右    下      左</li>
-</ul>
-<pre><code>padding: 10px 10px 20px 10px;</code></pre>
-<ul>
-<li>3个值  上      左右        下</li>
-</ul>
-<pre><code>padding: 10px 20px 10px;</code></pre>
-<ul>
-<li>2个值      上下    左右</li>
-</ul>
-<pre><code>padding: 10px 40px;</code></pre>
-<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3><pre><code>position: absolute;</code></pre>
-<h4 id="absolute：绝对定位，脱离原来位置进行定位，最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位。"><a href="#absolute：绝对定位，脱离原来位置进行定位，最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位。" class="headerlink" title="absolute：绝对定位，脱离原来位置进行定位，最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位。"></a>absolute：绝对定位，脱离原来位置进行定位，最近的有定位的父级进行定位，如果没有，那么相对于文档进行定位。</h4><pre><code>position: relative;</code></pre>
-<h4 id="relative：相对定位，保留原来位置进行定位，相对自己原来的位置进行定位。"><a href="#relative：相对定位，保留原来位置进行定位，相对自己原来的位置进行定位。" class="headerlink" title="relative：相对定位，保留原来位置进行定位，相对自己原来的位置进行定位。"></a>relative：相对定位，保留原来位置进行定位，相对自己原来的位置进行定位。</h4><p><strong><code>定位口诀</code>：用relative作为参照物，用absolute进行定位</strong></p>
-<p>在平常浏览网页时，有些广告不管你怎么滚动滚动条，都是在规定的位置，是利用广告定位来做到的。</p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/su1jOJ"><img src="https://s3.ax1x.com/2021/01/08/su1jOJ.gif" alt="su1jOJ.gif" style="zoom:50%;" /></a></p>
-<pre><code>position: fixed;</code></pre>
-<h4 id="广告定位，可视区窗口定位，无论屏幕如何滚动都固定不动"><a href="#广告定位，可视区窗口定位，无论屏幕如何滚动都固定不动" class="headerlink" title="广告定位，可视区窗口定位，无论屏幕如何滚动都固定不动"></a>广告定位，可视区窗口定位，无论屏幕如何滚动都固定不动</h4><p>我们自己来实现一下这个功能</p>
-<pre><code class="css">.demo1&#123;
-    position: fixed;
-    left: 50%;
-    top:50%;
-    width: 100px;
-    height: 100px;
-    background-color: #f40;
-    margin-top: -50px;
-    margin-left: -50px;
-&#125;</code></pre>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/suG7FI"><img src="https://s3.ax1x.com/2021/01/08/suG7FI.gif" alt="suG7FI.gif"></a></p>
-<h4 id="注意："><a href="#注意：" class="headerlink" title="注意："></a><code>注意</code>：</h4><ul>
-<li>left、top设置成50%的作用是为了，当用户改变的浏览器的大小时，永远在固定位置（最中间）</li>
-<li>margin-top、margin-left设置成-50，是因为计算机定位是在方块的左上角，所以要减掉相应的</li>
-</ul>
-<h2 id="奥运五环案例"><a href="#奥运五环案例" class="headerlink" title="奥运五环案例"></a>奥运五环案例</h2><p>做一个奥运五环，永远在最中间</p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/suwZ2n"><img src="https://s3.ax1x.com/2021/01/08/suwZ2n.gif" alt="suwZ2n.gif" style="zoom:50%;" /></a></p>
-<p>HTML：</p>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;标题&lt;/title&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;lessn1.css&quot;&gt;
-    &lt;/head&gt;
-
-    &lt;body&gt;
-        &lt;div class=&quot;five&quot;&gt;
-            &lt;div class=&quot;blue&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;yellow&quot;&gt;&lt;/div&gt;    
-            &lt;div class=&quot;red&quot;&gt;&lt;/div&gt;    
-            &lt;div class=&quot;black&quot;&gt;&lt;/div&gt;    
-            &lt;div class=&quot;green&quot;&gt;&lt;/div&gt;
-            &lt;/div&gt;
-                &lt;br&gt;*100
-    &lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre>
-<p>css：</p>
-<pre><code class="css">.five&#123;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    width: 500px;
-    height: 250px;
-    background-color: transparent;
-
-    margin-left: -250px;
-
-    margin-top: -125px;
-&#125;
-.blue&#123;
-
-position: absolute;
-
-left:65px;
-
-top:30px;
-
-width: 100px;
-
-height:100px;
-
-border: 10px solid blue;
-
-border-radius: 50%;
-
-z-index: 1;
-
-&#125;
-
-.yellow&#123;
-
-position: absolute;
-
-left:190px;
-
-top:30px;
-
-width: 100px;
-
-height:100px;
-
-border: 10px solid #FFFF00;
-
-border-radius: 50%;
-
-z-index: 3;
-
-&#125;
-
-.black&#123;
-
-position: absolute;
-
-right:65px;
-
-top:30px;
-
-width: 100px;
-
-height:100px;
-
-border: 10px solid black;
-
-border-radius: 50%;
-
-z-index: 5;
-
-&#125;
-
-.green&#123;
-
-position: absolute;
-
-left:127px;
-
-top:100px;
-
-width: 100px;
-
-height:100px;
-
-border: 10px solid green;
-
-border-radius: 50%;
-
-z-index: 2;
-
-&#125;
-
-.red&#123;
-
-position: absolute;
-
-right:127px;
-
-top:100px;
-
-width: 100px;
-
-height:100px;
-
-border: 10px solid red;
-
-border-radius: 50%;
-
-    z-index: 4;
-
-&#125;
-</code></pre>
-<hr>
+</li>
+<li><h3 id="分支操作语句"><a href="#分支操作语句" class="headerlink" title="分支操作语句"></a>分支操作语句</h3><p><img src="https://i.loli.net/2021/01/11/gIK74py5YmiDCMb.jpg" alt="{EEFE9601-22DA-48AA-B879-67CEE8C0B457}.png.jpg"></p>
+</li>
+</ol>
+<p><code>注意：但跳出变基操作时</code></p>
+<p><img src="https://i.loli.net/2021/01/11/eGSbdoR5MQ9Pq8c.jpg" alt="FY3@H6@~ZJO_ONUB_GF1Q3C.jpg"></p>
+<p><strong>命令是：</strong></p>
+<pre><code>shift + ：
+q</code></pre>
+<p>。。。未完待续。。。</p>
 <p>作者：<em>zjh</em></p>
  
       <!-- reward -->
@@ -426,12 +303,12 @@ border-radius: 50%;
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cxq21.gitee.io/posts/1279ea3.html" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cxq21.gitee.io/posts/8996a410.html" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/" rel="tag">前端笔记</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%B7%A5%E5%85%B7/" rel="tag">版本控制工具</a></li></ul>
 
     </footer>
   </div>
@@ -439,19 +316,10 @@ border-radius: 50%;
    
   <nav class="article-nav">
     
-      <a href="/posts/b83b1352.html" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            CSS基础属性
-          
-        </div>
-      </a>
     
-    
-      <a href="/posts/ba82d224.html" class="article-nav-link">
+      <a href="/posts/8c85f492.html" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">CSS初级</div>
+        <div class="article-nav-title">HTML基础标签</div>
       </a>
     
   </nav>
