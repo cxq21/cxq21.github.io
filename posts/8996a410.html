@@ -120,7 +120,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">550</span>
+            <span class="post-count">783</span>
         </span>
     </span>
 
@@ -231,7 +231,50 @@ git log --oneline -n数量</code></pre>
 <p><strong>命令是：</strong></p>
 <pre><code>shift + ：
 q</code></pre>
+<h2 id="8-远程仓库操作"><a href="#8-远程仓库操作" class="headerlink" title="8.远程仓库操作"></a>8.远程仓库操作</h2><ul>
+<li><p>配置RSA的公钥</p>
+<pre><code>   git 自带的工具 生成钥匙对！
+
+   将公钥配置到github网站即可！
+
+   个人信息 -- settings --- ssh and gpg --- add key </code></pre>
+</li>
+<li><p>创建远程仓库</p>
+<pre><code>   https
+
+   ssh: 直接通过验证rsa的钥匙对进行权限验证！</code></pre>
+</li>
+<li><p>本地关联远程仓库操作</p>
+<pre><code>  1.关联远程仓库
+
+      git remote add 仓库别名  ssh的url
+
+   2.移除关联远程仓库
+
+      git remote remove 仓库别名
+
+   3.查看仓库信息
+
+      git remote -v</code></pre>
+</li>
+<li><p>本地数据推送到远程仓库</p>
+<pre><code>   1.默认分支
+       git push 远程仓库别名 本地分支名
+       会默认在远程仓库创建袷本地分支同名的分支！
+
+    2.指定分支
+
+       git push 远程仓库别名 本地分支名:远程仓库分支名</code></pre>
+</li>
+<li><p>拉去远程仓库的数据</p>
+<pre><code>    1.指定分支拉取
+        git pull 仓库别名 远程仓库分支名
+
+    2.克隆工程
+        git clone url</code></pre>
 <p>。。。未完待续。。。</p>
+</li>
+</ul>
 <p>作者：<em>zjh</em></p>
  
       <!-- reward -->
